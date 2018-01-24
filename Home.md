@@ -150,29 +150,9 @@ And of course you can always buy me a beer, coffee, tea,... via the donation but
 
 [![Donate to ESPurna Project](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=xose%2eperez%40gmail%2ecom&lc=US&no_note=0&currency_code=EUR&bn=PP%2dDonationsBF%3abtn_donate_LG%2egif%3aNonHostedGuest)
 
-## Index
+## Documentation
 
-* [Supported hardware](Hardware)
-* Build and flash...
-    * [Backup](Backup) the stock firmware
-    * Flash a [pre-built binary](Binaries) image
-    * Using [PlatformIO](PlatformIO) (>=1.7.0)
-    * Using [Arduino IDE](ArduinoIDE) (>=1.7.0)
-    * Build the [Web Interface](WebInterface) (optional, >=1.7.0)
-* [Configuration](Configuration)
-    * Default values
-    * Web interface
-    * [Terminal](Terminal)
-* Communications
-    * [REST API](RESTAPI)
-    * MQTT
-    * [Domoticz](Domoticz)
-    * [Home Assistant](HomeAssistant)
-* [Over-the-air updates](OTA)
-* [Sensors](Sensors)
-* [Troubleshooting](Troubleshooting)
-* Developers
-    * [Pull Requests](PullRequests)
+For more information please refer to the [ESPurna Wiki](https://github.com/xoseperez/espurna/wiki).
 
 ## Supported hardware
 
