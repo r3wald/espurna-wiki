@@ -48,7 +48,7 @@ If it compiles you are ready to flash the firmware.
 
 ## Flash your board
 
-Wire your board (check the [Hardware page](Hardware.md)) and flash the firmware (with ```upload```):
+Wire your board (check the [Hardware page](Hardware)) and flash the firmware (with ```upload```):
 
 ```bash
 > pio run -t upload -e itead-sonoff-basic

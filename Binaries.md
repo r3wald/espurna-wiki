@@ -8,7 +8,7 @@ You will also nee a binary image of the ESPurna firmware. Pre-built binary image
 
 ## Set up your device
 
-To backup the image you will need to boot your board in flash mode. The procedure is exactly the same as when you are getting ready to flash a new image and it will depend on your device. Check the [supported hardware page](https://github.com/xoseperez/espurna/wiki/Hardware.md) for instructions.
+To backup the image you will need to boot your board in flash mode. The procedure is exactly the same as when you are getting ready to flash a new image and it will depend on your device. Check the [supported hardware page](https://github.com/xoseperez/espurna/wiki/Hardware) for instructions.
 
 You will need to go into boot mode every time you want to erase the flash or flash a new image. After either of these two the board will reboot into normal unless GPIO0 is still tied to ground.
 

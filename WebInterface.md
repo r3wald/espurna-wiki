@@ -40,4 +40,4 @@ Some users have had issue with old versions of NodeJS. Check you have at least 4
 
 ## Flashing it
 
-Once you have the 'code/espurna/static/index.html.gz.h' file, it is included from the 'code/espurna/web.ino' file and compiled with the firmware image. Read the sections related to building the firmware using [PlatformIO](PlatformIO.md) or [Arduino IDE](ArduinoIDE.md).
+Once you have the 'code/espurna/static/index.html.gz.h' file, it is included from the 'code/espurna/web.ino' file and compiled with the firmware image. Read the sections related to building the firmware using [PlatformIO](PlatformIO) or [Arduino IDE](ArduinoIDE).

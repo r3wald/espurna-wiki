@@ -10,7 +10,7 @@ The examples below assume you have esptool.py somewhere in the path, otherwise s
 
 ## Connection
 
-To backup the image you will need to boot your board in flash mode. The procedure is exactly the same as when you are getting ready to flash a new image and it will depend on your device. Check the [supported hardware page](https://github.com/xoseperez/espurna/wiki/Hardware.md) for instructions.
+To backup the image you will need to boot your board in flash mode. The procedure is exactly the same as when you are getting ready to flash a new image and it will depend on your device. Check the [supported hardware page](https://github.com/xoseperez/espurna/wiki/Hardware) for instructions.
 
 ## Backup
 

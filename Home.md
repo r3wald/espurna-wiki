@@ -152,31 +152,27 @@ And of course you can always buy me a beer, coffee, tea,... via the donation but
 
 ## Index
 
-* [Supported hardware](Hardware.md)
+* [Supported hardware](Hardware)
 * Build and flash...
-    * [Backup](Backup.md) the stock firmware
-    * Flash a [pre-built binary](Binaries.md) image
-    * Using [PlatformIO](PlatformIO.md) (>=1.7.0) 
-    * Using [Arduino IDE](ArduinoIDE.md) (>=1.7.0) 
-    * Build the [Web Interface](WebInterface.md) (optional, >=1.7.0) 
-    * Deprecated
-        * Build using [PlatformIO](PlatformIO.deprecated.md) (< 1.7.0)
-        * Build using [Arduino IDE](ArduinoIDE.deprecated.md) (< 1.7.0)
-        * [Build the filesystem](Filesystem.deprecated.md) (< 1.7.0)
-* [Configuration](Configuration.md)
+    * [Backup](Backup) the stock firmware
+    * Flash a [pre-built binary](Binaries) image
+    * Using [PlatformIO](PlatformIO) (>=1.7.0)
+    * Using [Arduino IDE](ArduinoIDE) (>=1.7.0)
+    * Build the [Web Interface](WebInterface) (optional, >=1.7.0)
+* [Configuration](Configuration)
     * Default values
     * Web interface
-    * [Terminal](Terminal.md)
+    * [Terminal](Terminal)
 * Communications
-    * [REST API](RESTAPI.md)
+    * [REST API](RESTAPI)
     * MQTT
-    * [Domoticz](Domoticz.md)
-    * [Home Assistant](HomeAssistant.md)
-* [Over-the-air updates](OTA.md)
-* [Sensors](Sensors.md)
-* [Troubleshooting](Troubleshooting.md)
+    * [Domoticz](Domoticz)
+    * [Home Assistant](HomeAssistant)
+* [Over-the-air updates](OTA)
+* [Sensors](Sensors)
+* [Troubleshooting](Troubleshooting)
 * Developers
-    * [Pull Requests](PullRequests.md)
+    * [Pull Requests](PullRequests)
 
 ## Supported hardware
 
