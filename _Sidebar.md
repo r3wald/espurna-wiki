@@ -25,7 +25,7 @@
 * Scheduler
 * [Terminal](Terminal)
 
-### Communications
+### Integrations
 * MQTT
 * [REST API](RESTAPI)
 * [Domoticz](Domoticz)
