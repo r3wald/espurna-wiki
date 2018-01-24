@@ -1,24 +1,28 @@
-[Home](Home)
-
+[Home](Home)  
 [Change log](https://github.com/xoseperez/espurna/blob/master/CHANGELOG.md)
 
 ### Getting started
 * [Backup](Backup) the stock firmware
 * Flash a [pre-built binary](Binaries) image
-* Using [PlatformIO](PlatformIO) (>=1.7.0)
-* Using [Arduino IDE](ArduinoIDE) (>=1.7.0)
-* Build the [Web Interface](WebInterface) (optional, >=1.7.0)
+* Using [PlatformIO](PlatformIO)
+* Using [Arduino IDE](ArduinoIDE)
+* Build the [Web Interface](WebInterface)
 * [Over-the-air updates](OTA)
+* NoFUSS
 * [Troubleshooting](Troubleshooting)
 
 ### Supported hardware
 * [Devices](Hardware)
+* General
+* Lights
 * Sensors
 
 ### Configuration
-* [Initial](InitialConfiguration)
+* [Initial](Configuration)
 * Default values
 * Web interface
+* Telnet
+* Scheduler
 * [Terminal](Terminal)
 
 ### Communications
@@ -28,6 +32,16 @@
 * [Home Assistant](HomeAssistant)
 * InfluxDB
 * Thingspeak
+* Alexa
+* Google Home
+
+### Network
+* WiFi
+* mDNS
+* SSDP
+* LLMNR
+* NetBios
+* NTP
 
 ### Developers
 * Arquitecture
