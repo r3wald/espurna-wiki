@@ -4,37 +4,37 @@ This is the official list of supported hardware for the ESPurna firmware. The ha
 
 **CAUTION: Never ever connect any of these devices to your computer and to mains at the same time. Never ever manipulate them while connected to mains. Seriously. I don't want you to die. I hold no responsibility for any damage to you, your family, your house,... for any action or results derived from flashing or using these devices.**
 
-* [Tinkerman's ESPurna H](tinkermans-espurna-h)
-* [IteadStudio Sonoff Basic](iteadstudio-sonoff)
-* [IteadStudio Sonoff RF](iteadstudio-sonoff-rf)
-* [IteadStudio Sonoff TH10/16](iteadstudio-sonoff-th)
-* [IteadStudio Sonoff POW](iteadstudio-sonoff-pow)
-* [IteadStudio Sonoff DUAL](iteadstudio-sonoff-dual)
-* [IteadStudio Sonoff 4CH](iteadstudio-sonoff-4ch)
+* [Tinkerman's ESPurna H](#tinkermans-espurna-h)
+* [IteadStudio Sonoff Basic](#iteadstudio-sonoff)
+* [IteadStudio Sonoff RF](#iteadstudio-sonoff-rf)
+* [IteadStudio Sonoff TH10/16](#iteadstudio-sonoff-th)
+* [IteadStudio Sonoff POW](#iteadstudio-sonoff-pow)
+* [IteadStudio Sonoff DUAL](#iteadstudio-sonoff-dual)
+* [IteadStudio Sonoff 4CH](#iteadstudio-sonoff-4ch)
 * IteadStudio Sonoff 4CH Pro
-* [IteadStudio Sonoff TOUCH](iteadstudio-sonoff-touch)
+* [IteadStudio Sonoff TOUCH](#iteadstudio-sonoff-touch)
 * IteadStudio Sonoff B1
 * IteadStudio Sonoff T1
 * IteadStudio Sonoff LED
 * IteadStudio Sonoff 433 RF Bridge
-* [IteadStudio Slampher](#markdown-header-iteadstudio-slampher)
-* [IteadStudio Slampher 2.0](#markdown-header-iteadstudio-slampher-v20)
-* [IteadStudio S20](#markdown-header-iteadstudio-s20-smart-socket)
-* [IteadStudio 1CH Inching](#markdown-header-iteadstudio-1ch-inching)
-* [IteadStudio Motor Clockwise/Anticlockwise](iteadstudio-motor-clockwiseanticlockwise)
-* [IteadStudio Sonoff SV](iteadstudio-sonoff-sv)
+* [IteadStudio Slampher](#iteadstudio-slampher)
+* [IteadStudio Slampher 2.0](#iteadstudio-slampher-v20)
+* [IteadStudio S20](#iteadstudio-s20-smart-socket)
+* [IteadStudio 1CH Inching](#iteadstudio-1ch-inching)
+* [IteadStudio Motor Clockwise/Anticlockwise](#iteadstudio-motor-clockwiseanticlockwise)
+* [IteadStudio Sonoff SV](#iteadstudio-sonoff-sv)
 * IteadStudio BN-SZ01
-* [Electrodragon ESP Relay Board](electrodragon-esp-relay-board)
-* [WorkChoice EcoPlug](workchoice-ecoplug)
-* [Jan Goedeke Wifi Relay Board (NC/NO)](jangoe-wifi-relay-board)
-* [OpenEnergyMonitor Wifi MQTT Relay / Thermostat](openenergymonitor-wifi-mqtt-relay-thermostat)
-* [Jorge García Wifi + Relay Board Kit](jorge-garcia-wifi-relays-board-kit)
-* [AI-Thinker AI Light / Noduino OpenLight](ai-thinker-ai-light-noduino-openlight)
-* [Magic Home LED Controller](magic-home-led-controller)
+* [Electrodragon ESP Relay Board](#electrodragon-esp-relay-board)
+* [WorkChoice EcoPlug](#workchoice-ecoplug)
+* [Jan Goedeke Wifi Relay Board (NC/NO)](#jangoe-wifi-relay-board)
+* [OpenEnergyMonitor Wifi MQTT Relay / Thermostat](#openenergymonitor-wifi-mqtt-relay-thermostat)
+* [Jorge García Wifi + Relay Board Kit](#jorge-garcia-wifi-relays-board-kit)
+* [AI-Thinker AI Light / Noduino OpenLight](#ai-thinker-ai-light-noduino-openlight)
+* [Magic Home LED Controller](#magic-home-led-controller)
 * Huacanxing H801
 * WiOn 50055
 * EXS WiFi Relay v3.1
-* [Wemos D1 Mini Relay Shield](wemos-d1-mini-relay-shield)
+* [Wemos D1 Mini Relay Shield](#wemos-d1-mini-relay-shield)
 
 ## IteadStudio Sonoff
 
