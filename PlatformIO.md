@@ -12,29 +12,38 @@ PlatformIO will take care of the library dependencies. The first time you run th
 * Marvin Roger's [AsyncMqttClient](https://github.com/marvinroger/async-mqtt-client) (1)
 * Pascal Kurtansky's [Brzo I2C](https://github.com/pasko-zh/brzo_i2c) (2)
 * The PatternAgents (et al.) [Embedis](https://github.com/thingSoC/embedis)
-* Oscar Rovira's fork of Peter Lerup [ESPSoftwareSerial](https://github.com/krosk93/espsoftwareserial)
+* Oscar Rovira's fork of Peter Lerup [ESPSoftwareSerial](https://github.com/krosk93/espsoftwareserial) (3)
 * Hristo Gochkov's [ESPAsyncTCP](https://github.com/me-no-dev/ESPAsyncTCP)
 * Hristo Gochkov's [ESPAsyncWebServer](https://github.com/me-no-dev/ESPAsyncWebServer)
-* Mark Szabo (et al.) [IrRemoteES8266](https://github.com/markszabo/IRremoteESP8266)
-* Myles Eftos's [mDNSresolver](https://github.com/madpilot/mDNSResolver)
+* Mark Szabo (et al.) [IrRemoteES8266](https://github.com/markszabo/IRremoteESP8266) (4)
+* Myles Eftos's [mDNSresolver](https://github.com/madpilot/mDNSResolver) (5)
 * German Martin's [NtpCLientLib](https://github.com/gmag11/NtpClient)
 * Paul Stoffregen (et al.) [OneWire](https://github.com/PaulStoffregen/OneWire)
-* Mariusz Kacki's [PMS](https://github.com/fu-hsi/PMS)
+* Mariusz Kacki's [PMS](https://github.com/fu-hsi/PMS) (6)
 * Nick O'Leary's [PubSubClient](https://github.com/knolleary/pubsubclient) (1)
-* Randy Simons' [RemoteSwitch](https://github.com/jccprj/RemoteSwitch-arduino-library) (required if using custom RF module: -DRF_SUPPORT)
+* Randy Simons' [RemoteSwitch](https://github.com/jccprj/RemoteSwitch-arduino-library) (7)
 * My fork of Michael Maregolis & Paul Stoffregen's [Time](https://github.com/xoseperez/Time)
 
 And my own libraries:
 
 * [DebounceEvent](https://bitbucket.org/xoseperez/debounceevent.git)
-* [FauxmoESP](https://bitbucket.org/xoseperez/fauxmoesp.git) (required if compiling with WeMo emulation support: -DALEXA_SUPPORT)
-* [HLW8012](https://bitbucket.org/xoseperez/hlw8012.git) (required if compiling for Sonoff POW: -DHLW8012_SUPPORT)
+* [FauxmoESP](https://bitbucket.org/xoseperez/fauxmoesp.git) (8)
+* [HLW8012](https://bitbucket.org/xoseperez/hlw8012.git) (9)
 * [JustWifi](https://bitbucket.org/xoseperez/justwifi.git)
-* [my92xx](https://github.com/xoseperez/my92xx) (required if compiling for AI-Thinker Wifi Light: -DAI_THINKER)
-* [NoFUSS](https://bitbucket.org/xoseperez/nofuss.git) (required if compiling with NoFUSS Automatic OTA support: -DNOFUSS_SUPPORT)
+* [my92xx](https://github.com/xoseperez/my92xx) (10)
+* [NoFUSS](https://bitbucket.org/xoseperez/nofuss.git) (11)
 
-(1): The firmware will be compiled either with AsyncMqttClient or PubSubClient, depending on the MQTT_USE_ASYNC setting.
-(2): The firmware will be compiled either with Wire or Brzo I2C, depending on the I2C_USE_BRZO setting.
+(1): The firmware will be compiled either with AsyncMqttClient or PubSubClient, depending on the MQTT_USE_ASYNC setting. Default to use AsyncMqttClient.  
+(2): The firmware will be compiled either with Wire or Brzo I2C, depending on the I2C_USE_BRZO setting. Defaults to use the standard Wire library.   
+(3): Required for some sensors.  
+(4): Required for some LED controller with IR receivers.  
+(5): Required when MDNS_CLIENT_SUPPORT is set to 1.  
+(6): Required for the PMSX003 sensor.  
+(7): Required when RF_SUPPORT is set to 1.  
+(8): Required when ALEXA_SUPPORT is set to 1. This is the default value.  
+(9): Required when HLW8012_SUPPORT is set to 1.  
+(10): Required when using LIGHT_PROVIDER_MY92XX.  
+(11): Required when NOFUSS_SUPPORT is set to 1.  
 
 These libraries are automatically installed once you first try to build the project. But if you are updating to a newer version it's always a good idea to **manually force them to update**:
 
