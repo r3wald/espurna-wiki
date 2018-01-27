@@ -38,4 +38,4 @@ You can directly upload the firmware file (.bin extension) to the device using t
 
 You can also use the automatic OTA update feature. Check the [NoFUSS library](https://bitbucket.org/xoseperez/nofuss) for more info.
 
-This options is disabled by default. Enable it in your firmware with the -DNOFUSS_SUPPORT build flag.
+This options is disabled by default. Enable it in your firmware setting NOFUSS_SUPPORT to 1 in general.h or via a build parameter.
