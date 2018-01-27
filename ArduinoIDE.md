@@ -16,7 +16,9 @@ First step is to install support for ESP8266 based boards on the Arduino IDE thr
 - Select the version you need from a drop-down box.
 - Click *install* button.
 
-## **Add a new flash layout** ##
+**NOTE: latest version of the Arduino Core for ESP8266 is 2.4.0. At the moment, pre-build binaries of ESPurna are still built using 2.3.0 version.**
+
+## **Add a new flash layout (only for Arduino Core for ESP8266 2.3.0)** ##
 
 To increase the available space for firmware on 1M boards it's a good idea to use a flash layout with no partition for SPIFFS, since ESPurna does not use it. Unfortunately there is no layout available for 1M boards without SPIFFS, so we will have to modify some files in out "portable" folder to achieve this.
 
