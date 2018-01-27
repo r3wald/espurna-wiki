@@ -88,15 +88,9 @@ This is the list, in **bold** the text you have to search for:
 |**ArduinoJson** by Benoit Blanchon||
 |**Embedis** by David Turnball and Tom Moxon||
 |**NtpCLientLib** by German Martin||
-|**PubSubClient** by Nick O'Leary|Since version 1.6.5. **Read note 1 below**|
-|**DHT Sensor Library** by Adafruit|Only for DHT support|
-|**Adafruit Unified Sensor** by Adafruit|Only for DHT support|
-|**OneWire** by Paul Stoffregen (et al.)|Only for DS18B20 support|
-|**DallasTemperature** by Miles Burton (et al.)|Only for DS18B20 support|
-
+|**OneWire** by Paul Stoffregen (et al.)|Required when DALLAS_SUPPORT0. **Read note 1 below**|
 
 Note 1: The PubSubClient library requires a little modification in order to work with long MQTT message payloads (like when using Domoticz integration). You will need to edit the ```PubSubClient.h``` file (for me that file is under the "C:\Users\xose\Documents\Arduino\libraries\arduino_281549\src\PubSubClient.h" folder), line 26 and change the MQTT_MAX_PACKET_SIZE to at least 400.
-
 
 ```
 // MQTT_MAX_PACKET_SIZE : Maximum packet size
