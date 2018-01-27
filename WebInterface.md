@@ -6,6 +6,11 @@
 
 **Note** Previous versions of ESPurna (prior to 1.7.0) used the SPIFFS partition to store the static contents for the web interface (HTML, scripts, style sheets, images). Since 1.7.0 all these resources are encoded into a header file (a file with the .h extension) and copied to program memory (PROGMEM) during the build process. This means they are included in the firmware image and only one flash step is required. The overall size of the image is (of course) bigger than just the code but way smaller than the firmware plus the filesystem size. In particular this means that 512Kb devices can now have the full featured web interface.
 
+Here you can read a couple of posts about this procedure:
+
+* [Optimizing files for SPIFFS with Gulp](http://tinkerman.cat/optimizing-files-for-spiffs-with-gulp/)
+* [Embed your website in your ESP8266 firmware image](http://tinkerman.cat/embed-your-website-in-your-esp8266-firmware-image/)
+
 ## Web interface build process explanation
 
 The build process of the web interface performs different steps:
