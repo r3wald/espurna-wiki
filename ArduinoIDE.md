@@ -86,9 +86,12 @@ This is the list, in **bold** the text you have to search for:
 |Library|Notes|
 |-|-|
 |**ArduinoJson** by Benoit Blanchon||
+|**Brzo I2C** by Pascal Kurtansky|Required when I2C_USE_BRZO is 1|
 |**Embedis** by David Turnball and Tom Moxon||
+|**IRRemoteESP8266** by Sebastien Warin et al.|Required when IR_SUPPORT is 1|
 |**NtpCLientLib** by German Martin||
-|**OneWire** by Paul Stoffregen (et al.)|Required when DALLAS_SUPPORT0.|
+|**OneWire** by Paul Stoffregen (et al.)|Required when DALLAS_SUPPORT is 1|
+|**PMS Library** by Mariusz Kacki|Required when PMSX003_SUPPORT is 1|
 |**PubSubClient** by Nick O'Leary|Required when MQTT_USE_ASYNC is 0. Read note below|
 
 **Note**: The PubSubClient library requires a little modification in order to work with long MQTT message payloads (like when using Domoticz integration). You will need to edit the ```PubSubClient.h``` file (for me that file is under the "C:\Users\xose\Documents\Arduino\libraries\arduino_281549\src\PubSubClient.h" folder), line 26 and change the MQTT_MAX_PACKET_SIZE to at least 400.
