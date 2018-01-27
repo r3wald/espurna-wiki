@@ -33,18 +33,20 @@ And my own libraries:
 * [my92xx](https://github.com/xoseperez/my92xx) (11)
 * [NoFUSS](https://bitbucket.org/xoseperez/nofuss.git) (12)
 
-(1): The firmware will be compiled either with AsyncMqttClient or PubSubClient, depending on the MQTT_USE_ASYNC setting. Default to use AsyncMqttClient.  
-(2): The firmware will be compiled either with Wire or Brzo I2C, depending on the I2C_USE_BRZO setting. Defaults to use the standard Wire library.   
-(3): Required when either MHZ19_SUPPORT, PMSX003_SUPPORT or V9261F_SUPPORT are set to 1 (sensor).
-(4): Required for some LED controller with IR receivers.  
-(5): Required when MDNS_CLIENT_SUPPORT is set to 1.  
-(6): Required when DALLAS_SUPPORT is set to 1 (sensor).  
-(7): Required when PMSX003_SUPPORT is set to 1 (sensor).  
-(8): Required when RF_SUPPORT is set to 1.  
-(9): Required when ALEXA_SUPPORT is set to 1. This is the default value.  
-(10): Required when HLW8012_SUPPORT is set to 1 (sensor).  
-(11): Required when using LIGHT_PROVIDER_MY92XX.  
-(12): Required when NOFUSS_SUPPORT is set to 1.  
+Notes in the list above: 
+
+1. The firmware will be compiled either with AsyncMqttClient or PubSubClient, depending on the MQTT_USE_ASYNC setting. Default to use AsyncMqttClient.  
+1. The firmware will be compiled either with Wire or Brzo I2C, depending on the I2C_USE_BRZO setting. Defaults to use the standard Wire library.   
+1. Required when either MHZ19_SUPPORT, PMSX003_SUPPORT or V9261F_SUPPORT are set to 1 (sensor).
+1. Required for some LED controller with IR receivers.  
+1. Required when MDNS_CLIENT_SUPPORT is set to 1.  
+1. Required when DALLAS_SUPPORT is set to 1 (sensor).  
+1. Required when PMSX003_SUPPORT is set to 1 (sensor).  
+1. Required when RF_SUPPORT is set to 1.  
+1. Required when ALEXA_SUPPORT is set to 1. This is the default value.  
+1. Required when HLW8012_SUPPORT is set to 1 (sensor).  
+1. Required when using LIGHT_PROVIDER_MY92XX.  
+1. Required when NOFUSS_SUPPORT is set to 1.  
 
 These libraries are automatically installed once you first try to build the project. But if you are updating to a newer version it's always a good idea to **manually force them to update**:
 
