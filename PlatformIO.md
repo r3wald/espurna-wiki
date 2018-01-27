@@ -38,7 +38,7 @@ And my own libraries:
 (3): Required when either MHZ19_SUPPORT, PMSX003_SUPPORT or V9261F_SUPPORT are set to 1 (sensor).
 (4): Required for some LED controller with IR receivers.  
 (5): Required when MDNS_CLIENT_SUPPORT is set to 1.  
-(6): Required when DALLAS_SUPPORT is set to 1 (sensor).
+(6): Required when DALLAS_SUPPORT is set to 1 (sensor).  
 (7): Required when PMSX003_SUPPORT is set to 1 (sensor).  
 (8): Required when RF_SUPPORT is set to 1.  
 (9): Required when ALEXA_SUPPORT is set to 1. This is the default value.  
