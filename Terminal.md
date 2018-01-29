@@ -39,6 +39,7 @@ Available commands as of 1.12.1 (the actual list of available commands will depe
 |**subscribe**|Built-in publish/subscriber method. Not implemented|
 |**unsubscribe**|Built-in publish/subscriber method. Not implemented|
 |**uptime**|Shows the current uptime in seconds|
+|**wifi.ap**|Disconnect and create an access point|
 |**wifi.reset**|Reconnects to the WiFi using current settings|
 |**wifi.scan**|Scans for WiFi networks around and shows info|
 |**write**|Access hardware resources. Built-in. Not implemented|
