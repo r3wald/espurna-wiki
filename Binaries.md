@@ -25,7 +25,7 @@ esptool.py --port /dev/ttyUSB0 --baud 115200 erase_flash
 To flash the binary into your device go into flash mode and run the next command replacing "firmware.bin" with the path (relative or absolute) to the pre-built image you previously downloaded.
 
 ```
-esptool.py --port /dev/ttyUSB0 --baud 115200 write_flash -fs 8m -fm dout 0x00000 firmware.bin
+esptool.py --port /dev/ttyUSB0 --baud 115200 write_flash -fs 1MB -fm dout 0x00000 firmware.bin
 ```
 
-"fs" stands for "flash size" and 8m is 8 megabits or 1 Megabyte. That's the standard size of the flash chips in Sonoff devices. If you are using a 4 Megabyte module you might want to change this value to "32m" (maybe if you add some SPIFFS based logging system, for instance). DOUT flash mode should work for all devices.
+"fs" stands for "flash size" and is set to 1 Megabyte in the example. That is the standard size for Sonoff devices. If you are using a 4 Megabyte module you might want to change this value to "4MB" (maybe if you add some SPIFFS based logging system, for instance). DOUT flash mode should work for all devices.

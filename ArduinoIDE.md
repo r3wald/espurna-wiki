@@ -16,7 +16,13 @@ First step is to install support for ESP8266 based boards on the Arduino IDE thr
 - Select the version you need from a drop-down box.
 - Click *install* button.
 
+**NOTE: latest version of the Arduino Core for ESP8266 is 2.4.0. At the moment, pre-build binaries of ESPurna are still built using 2.3.0 version.**
+
 ## **Add a new flash layout** ##
+
+**This step is not required but strongly recommended.**
+
+**This step is only necessary when using Arduino Core for ESP8266 2.3.0. New version 2.4.0 already comes with the 1M0 layout defined.** 
 
 To increase the available space for firmware on 1M boards it's a good idea to use a flash layout with no partition for SPIFFS, since ESPurna does not use it. Unfortunately there is no layout available for 1M boards without SPIFFS, so we will have to modify some files in out "portable" folder to achieve this.
 
@@ -80,17 +86,15 @@ This is the list, in **bold** the text you have to search for:
 |Library|Notes|
 |-|-|
 |**ArduinoJson** by Benoit Blanchon||
+|**Brzo I2C** by Pascal Kurtansky|Required when I2C_USE_BRZO is 1|
 |**Embedis** by David Turnball and Tom Moxon||
+|**IRRemoteESP8266** by Sebastien Warin et al.|Required when IR_SUPPORT is 1|
 |**NtpCLientLib** by German Martin||
-|**PubSubClient** by Nick O'Leary|Since version 1.6.5. **Read note 1 below**|
-|**DHT Sensor Library** by Adafruit|Only for DHT support|
-|**Adafruit Unified Sensor** by Adafruit|Only for DHT support|
-|**OneWire** by Paul Stoffregen (et al.)|Only for DS18B20 support|
-|**DallasTemperature** by Miles Burton (et al.)|Only for DS18B20 support|
+|**OneWire** by Paul Stoffregen (et al.)|Required when DALLAS_SUPPORT is 1|
+|**PMS Library** by Mariusz Kacki|Required when PMSX003_SUPPORT is 1|
+|**PubSubClient** by Nick O'Leary|Required when MQTT_USE_ASYNC is 0. Read note below|
 
-
-Note 1: The PubSubClient library requires a little modification in order to work with long MQTT message payloads (like when using Domoticz integration). You will need to edit the ```PubSubClient.h``` file (for me that file is under the "C:\Users\xose\Documents\Arduino\libraries\arduino_281549\src\PubSubClient.h" folder), line 26 and change the MQTT_MAX_PACKET_SIZE to at least 400.
-
+**Note**: The PubSubClient library requires a little modification in order to work with long MQTT message payloads (like when using Domoticz integration). You will need to edit the ```PubSubClient.h``` file (for me that file is under the "C:\Users\xose\Documents\Arduino\libraries\arduino_281549\src\PubSubClient.h" folder), line 26 and change the MQTT_MAX_PACKET_SIZE to at least 400.
 
 ```
 // MQTT_MAX_PACKET_SIZE : Maximum packet size
@@ -109,19 +113,19 @@ You will have to install manually the libraries that are not available from the 
 
 |Library|Repository|ZIP|Notes|
 |-|-|-|-|
-|**Time** by Michael Maregolis and Paul Stoffregen (fork)|[GIT](https://github.com/xoseperez/Time)|[ZIP](https://github.com/xoseperez/Time/archive/master.zip)||
-|**ESPAsyncTCP** by Hristo Gochkov|[GIT](https://github.com/me-no-dev/ESPAsyncTCP)|[ZIP](https://github.com/me-no-dev/ESPAsyncTCP/archive/master.zip)||
-|**ESPAsyncUDP** by Hristo Gochkov|[GIT](https://github.com/me-no-dev/ESPAsyncUDP)|[ZIP](https://github.com/me-no-dev/ESPAsyncUDP/archive/master.zip)||
-|**ESPAsyncWebServer** by Hristo Gochkov|[GIT](https://github.com/me-no-dev/ESPAsyncWebServer)|[ZIP](https://github.com/me-no-dev/ESPAsyncWebServer/archive/master.zip)||
-|**AsyncMqttClient** by Marvin Roger|[GIT](https://github.com/marvinroger/async-mqtt-client)|[ZIP](https://github.com/marvinroger/async-mqtt-client/archive/master.zip)|Not needed if using PubSubClient|
+|**AsyncMqttClient** by Marvin Roger|[GIT](https://github.com/marvinroger/async-mqtt-client)|[ZIP](https://github.com/marvinroger/async-mqtt-client/archive/master.zip)|Required if MQTT_USE_ASYNC is 1 (default value)|
 |**DebounceEvent** by Xose Pérez|[GIT](https://bitbucket.org/xoseperez/debounceevent)|[ZIP](https://bitbucket.org/xoseperez/debounceevent/get/master.zip)||
+|**ESPSoftwareSerial** fork by Oscar rovira|[GIT](https://github.com/krosk93/espsoftwareserial)|[ZIP](https://github.com/krosk93/espsoftwareserial/archive/master.zip)|Required if either MHZ19_SUPPORT, PMSX003_SUPPORT or V9261F_SUPPORT are set to 1|
+|**ESPAsyncTCP** by Hristo Gochkov|[GIT](https://github.com/me-no-dev/ESPAsyncTCP)|[ZIP](https://github.com/me-no-dev/ESPAsyncTCP/archive/master.zip)||
+|**ESPAsyncWebServer** by Hristo Gochkov|[GIT](https://github.com/me-no-dev/ESPAsyncWebServer)|[ZIP](https://github.com/me-no-dev/ESPAsyncWebServer/archive/master.zip)||
+|**FauxmoESP** by Xose Pérez|[GIT](https://bitbucket.org/xoseperez/fauxmoesp)|[ZIP](https://bitbucket.org/xoseperez/fauxmoesp/get/master.zip)|Required if ALEXA_SUPPORT is 1 (default value)|
+|**HLW8012** by Xose Pérez|[GIT](https://bitbucket.org/xoseperez/hlw8012)|[ZIP](https://bitbucket.org/xoseperez/hlw8012/get/master.zip)|Required if HLW8012_SUPPORRT is 1|
 |**JustWifi** by Xose Pérez|[GIT](https://bitbucket.org/xoseperez/justwifi)|[ZIP](https://bitbucket.org/xoseperez/justwifi/get/master.zip)||
-|**FauxmoESP** by Xose Pérez|[GIT](https://bitbucket.org/xoseperez/fauxmoesp)|[ZIP](https://bitbucket.org/xoseperez/fauxmoesp/get/master.zip)||
-|**HLW8012** by Xose Pérez|[GIT](https://bitbucket.org/xoseperez/hlw8012)|[ZIP](https://bitbucket.org/xoseperez/hlw8012/get/master.zip)|Only for Sonoff POW|
-|**EmonLiteESP** by Xose Pérez|[GIT](https://bitbucket.org/xoseperez/emonliteesp)|[ZIP](https://bitbucket.org/xoseperez/emonliteesp/get/master.zip)|Only for current sensor support|
-|**my9291** by Xose Pérez|[GIT](https://github.com/xoseperez/my9291)|[ZIP](https://github.com/xoseperez/my9291/archive/master.zip)|Only for AI Thinker Wifi Light|
-|**RemoteSwitch** by Randy Simons (fork)|[GIT](https://github.com/xoseperez/RemoteSwitch-arduino-library)|[ZIP](https://github.com/xoseperez/RemoteSwitch-arduino-library/archive/master.zip)|Only for custom RF support|
-|**NoFUSS** by Xose Pérez|[GIT](https://bitbucket.org/xoseperez/nofuss)|[ZIP](https://bitbucket.org/xoseperez/nofuss/get/master.zip)|Only for unattended OTA updates support|
+|**mDNSResolver** by Myles Eftos|[GIT](https://github.com/madpilot/mDNSResolver)|[ZIP](https://github.com/madpilot/mDNSResolver/archive/master.zip)|Required if MDNS_CLIENT_SUPPORT is 1|
+|**my92xx** by Xose Pérez|[GIT](https://github.com/xoseperez/my92xx)|[ZIP](https://github.com/xoseperez/my92xx/archive/master.zip)|Required if LIGHT_PROVIDER_MY92XX|
+|**NoFUSS** by Xose Pérez|[GIT](https://bitbucket.org/xoseperez/nofuss)|[ZIP](https://bitbucket.org/xoseperez/nofuss/get/master.zip)|Required if NOFUSS_SUPPORT is 1|
+|**RemoteSwitch** by Randy Simons (fork)|[GIT](https://github.com/xoseperez/RemoteSwitch-arduino-library)|[ZIP](https://github.com/xoseperez/RemoteSwitch-arduino-library/archive/master.zip)|Required if RF_SUPPORT is 1|
+|**Time** by Michael Maregolis and Paul Stoffregen (fork)|[GIT](https://github.com/xoseperez/Time)|[ZIP](https://github.com/xoseperez/Time/archive/master.zip)||
 
 Download the ZIP files from the links in the table above only for those libraries you actually need. If you are unsure start with the mandatory ones. Then use the menu under "Sketch > Include Library > Add .ZIP Library..." and load them one by one.
 
