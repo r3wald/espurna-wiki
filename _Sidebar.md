@@ -46,5 +46,5 @@
 
 ### Developers
 * Arquitecture
-* Coding style
+* [Coding style](CodingStyle)
 * [Pull Requests](PullRequests)
