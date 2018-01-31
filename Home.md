@@ -55,7 +55,7 @@ It uses the Arduino Core for ESP8266 framework and a number of 3rd party librari
     * Multiple virtual switches (tested with up to 16)
     * MQTT-to-RF two-way bridge (no need to learn codes)
     * Support for https://github.com/rhx/RF-Bridge-EFM8BB1 custom firmware
-* Support for different **sensors**
+* Support for [different **sensors**](Sensors)
     * Environment
         * **DHT11 / DHT22 / DHT21 / AM2301 / Itead's SI7021**
         * **BMP280** and **BME280** temperature, humidity (BME280) and pressure sensor by Bosch
