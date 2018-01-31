@@ -93,32 +93,37 @@ The relay module publishes the relay state and subscribes to command topics to m
 Relay command payloads accept both numbers (0 for 'off', 1 for 'on' and 2 for 'toggle') or words (case insensitive).
 
 ### Lights
+
+The light module publishes and subscribes to different topics.
+
+| State topic | Example payload | Notes |
+| --- | --- | --- |
+| `{root topic}/rgb` | `#FF0000` | Also as CSV if "Use CSS style" is off |
+| `{root topic}/hsv` | `300,100,100` | Hue from 0 to 360<br />Saturation from 0 to 100<br />Value from 0 to 100 |
+| `{root topic}/brightness` | `35` | From 0 to 100 |
+| `{root topic}/ch/0` | `128` | For each channel,<br />from 0 to 255 |
+
+
 ### Sensors
-### Special topics
+
+## Features based on MQTT
+
+### Relay & color synchronization across devices
 
 * mqttGroup
 * mqttGroupInv
 
-## Examples
-
-* Toggle a relay
-* Changing the color
-* Subscribing to all messages of a device
-
-## Features based on MQTT
-
-* Relay & color synchronization across devices
-* Home Assistant auto-discovery
-* Domoticz
+### Home Assistant auto-discovery
+### Domoticz
 
 ## Implementation
 
-* AsyncMqttClient vs PubSubClient
+### AsyncMqttClient vs PubSubClient
 
 ## SSL support
 
-* Memory limitations
-* Build image with SSL support
-* Suggested configuration
-* Server footprints
+### Memory limitations
+### Build image with SSL support
+### Suggested configuration
+### Server footprints
 
