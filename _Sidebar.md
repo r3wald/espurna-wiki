@@ -16,7 +16,7 @@
 * [Devices](Hardware)
 * General
 * Lights
-* Sensors
+* [Sensors](Sensors)
 
 ### Configuration
 * [Initial](Configuration)
