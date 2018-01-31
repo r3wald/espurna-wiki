@@ -36,8 +36,8 @@ The root topic may include one of these placeholders:
 
 | Placeholder | Value | 
 |--- | --- |  
-| {hostname} | The hostname of the board as defined in the General tab | 
-| {mac} | The MAC of the ESP8266 | 
+| `{hostname}` | The hostname of the board as defined in the General tab | 
+| `{mac}` | The MAC of the ESP8266 | 
 
 There is one special placeholder: '**#**'. The hash symbol indicates where the specific message topic will be inserted. If you don't specify a location for the specific message topic it will be inserted after the root topic. For instance, if you have a temperature sensor called "garden", and you set the root topic to `sensor/#/{hostname}` the messages will be sent to `sensor/temperature/garden`. In the documentation all topic examples asume the hash placeholder is either not used or placed at the end of the root topic.
 
@@ -64,25 +64,40 @@ With the "Use JSON payload" option enabled only one message will be sent:
 
 Heartbeat messages are only state messages and are sent every X seconds (5 minutes by default). These messages report the status of the device amb some useful info.
 
-| Topic | Example payload | Notes |
+| State topic | Example payload | Notes |
 | --- | --- |  --- |
-| `{root topic}/status` | `1` | This is also the will topic with a payload of "0" |
+| `{root topic}/status` | `1` | This is also the will topic<br />with a payload of "0" |
 | `{root topic}/app` | `ESPURNA` | |
 | `{root topic}/version` | `1.12.3` | |
 | `{root topic}/hostname` | `MINI` | |
 | `{root topic}/ip` | `192.168.1.105` | |
 | `{root topic}/mac` | `00:11:22:33:44:55` | |
 | `{root topic}/uptime` | `3215` | Seconds |
-| `{root topic}/datetime` | `2018-02-01 00:03:25` | Only if NTP enabled and synced |
+| `{root topic}/datetime` | `2018-02-01 00:03:25` | Only if NTP enabled<br />and synced |
 | `{root topic}/freeheap` | `22056` | Bytes |
 
 Relay and light status are also sent along with the heartbeat. Check topics for those below.
 
+### Relays
 
+The relay module publishes the relay state and subscribes to command topics to manage the relays via MQTT. The specific message topic will always end with a 0-based index (first relay is index 0).
 
-* Relays
-* Lights
-* Sensors
+| State topic | Example payload | Notes |
+| --- | --- | --- |
+| `{root topic}/relay/0` | `1` | [0,1] |
+
+| Command topic | Example payload | Notes |
+| --- | --- |  --- |
+| `{root topic}/relay/0/set` | `toggle` | [0,1,2,on,off,toggle,query] |
+
+Relay command payloads accept both numbers (0 for 'off', 1 for 'on' and 2 for 'toggle') or words (case insensitive).
+
+### Lights
+### Sensors
+### Special topics
+
+* mqttGroup
+* mqttGroupInv
 
 ## Examples
 
