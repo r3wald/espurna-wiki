@@ -1,6 +1,6 @@
 This page describes various sensors supported by ESPurna. 
 
-To enable particular sensor in firmware, you should build the firmware with appropriate build flags set to `1`. Below table is listing all supported build flags. Some sensors have additional options, so please check additional information below.
+To enable particular sensor in firmware, you should build the firmware with appropriate build flags (`-D`) set to `1`. Below table is listing all supported build flags. Some sensors have additional options, so please check additional information below.
 
 In most of the cases, just setting a build flag to `1` will do the trick - most sensors have default options for auto-detecting sensor parameters or using most widely used values. Still, you have full control, so feel free to customize.
 
@@ -28,14 +28,14 @@ build_flags = ${common.build_flags_1m} -DDHT_SUPPORT=1 -DDHT_PIN=14
 | [ECH1560 based power sensor](#ECH1560-based-power-sensor)| `ECH1560_SUPPORT` | 
 | [ADC121 Energy monitor](#ADC121-Energy-monitor) | `EMON_ADC121_SUPPORT` | 
 | [ADS1x15 Energy monitor](#ADS1x15-Energy-monitor) | `EMON_ADS1X15_SUPPORT` | 
-| | `EMON_ANALOG_SUPPORT={0,1}` || 
-|| `EVENTS_SUPPORT={0,1}` | `EVENTS_PIN={0,15}` <br> `EVENTS_PIN_MODE` <br> `EVENTS_INTERRUPT_MODE` | |
-|| `HLW8012_SUPPORT={0,1}` | `HLW8012_SEL_PIN={0,15}` <br> `HLW8012_CF1_PIN={0,15}` <Br> `HLW8012_CF_PIN={0,15}` <br> `HLW8012_SEL_CURRENT` <Br> `HLW8012_CURRENT_R` <br> `HLW8012_VOLTAGE_R_UP` <br> `HLW8012_VOLTAGE_R_DOWN` ||
-|| `MHZ19_SUPPORT={0,1}` | `MHZ19_TX_PIN={0,15}` | |
-|| `PMSX003_SUPPORT={0,1}` | `PMS_RX_PIN={0,15}` <br> `PMS_TX_PIN={0,15}` ||
-|| `SHT3X_I2C_SUPPORT={0,1}` | `SHT3X_I2C_ADDRESS` || 
-|| `SI7021_SUPPORT={0,1}` | `SI7021_ADDRESS` ||
-|| `V9261F_SUPPORT={0,1}` | `V9261F_PIN={0,15}` <br> `V9261F_PIN_INVERSE` ||
+| [Analog energy monitor](#Analog-energy-monitor) | `EMON_ANALOG_SUPPORT` |
+| [Counter sensor](#Counter-sensor) | `EVENTS_SUPPORT` | 
+| [HLW8012 Energy monitor IC](#HLW8012-Energy-monitor-IC) | `HLW8012_SUPPORT` |
+| [MHZ19 CO2 sensor](#MHZ19-CO2-sensor) | `MHZ19_SUPPORT` | 
+| [Particle Monitor based on Plantower PMSX003](#Particle-Monitor-based-on-Plantower-PMSX003) | `PMSX003_SUPPORT` | 
+| [SHT3X environmental sensor](#SHT3X-environmental-sensor) | `SHT3X_I2C_SUPPORT` | 
+| [SI7021 environmental sensor](#SI7021-environmental-sensor) | `SI7021_SUPPORT` | 
+| [V9261F based power sensor](#V9261F-based-power-sensor) | `V9261F_SUPPORT` | 
 
 ---
 
@@ -51,16 +51,15 @@ This will enable support for Analog sensors, connected on ADC pin.
 
 ## Generic digital sensor
 
-This will enable generic digital input sensor. ESPurna will report status
+This will enable generic digital input sensor (switch or a pushbutton).
 
 | Option | Note | 
 | --- | --- | 
 |  `DIGITAL_PIN={0-15}` | GPIO to use (default: `2`) |
-| `DIGITAL_PIN_MODE` | Initial GPIO status. One of: <br> `INPUT_PULLUP` (default)|
+| `DIGITAL_PIN_MODE` | Initial GPIO status. One of: <br> - `INPUT_PULLUP` (default) <br> - `INPUT` |
 | `DIGITAL_DEFAULT_STATE` | Default state on boot (default: `1` / on / high) | 
 
 ---
-
 
 ## I2C Bus
 
@@ -82,7 +81,6 @@ Datasheet for the sensor itself is [here](http://www.elechouse.com/elechouse/ima
 | Option | Note | 
 | --- | --- |
 | `BH1750_ADDRESS={0x00-0xFF}` | I2C address of BH1750 sensor. Default 0x00 (auto) |
-| `BH1750_MODE` | One of: <br> `BH1750_CONTINUOUS_LOW_RES_MODE` <br> `BH1750_CONTINUOUS_HIGH_RES_MODE` (default) <br> `BH1750_CONTINUOUS_HIGH_RES_MODE2`   |
 
 Note: Will automatically enable I2C. 
 
@@ -95,13 +93,7 @@ This will enable support for BME280 or BMP280 humidity, temperature and pressure
 | Option | Note | 
 | --- | --- |
 | `BMX280_ADDRESS={0x00-0xFF}` | Default is 0x00 (auto) |
-| `BMX280_MODE={0-3}` | One of: <br> `0` - sleep mode, <br> `1` or `2` - forced mode (default) <br> `3` - normal mode |
-| `BMX280_STANDBY={0-7}` | One of: <br> `0` - 0.5ms (default), <br> `1` - 62.5ms, <br> `2` - 125ms <br> `3` - 250ms, <br> `4` - 500ms, <br> `5` - 1s <br> `6` - 10s <br> `7` - 20s |
-| `BMX280_FILTER={0-4}` ||
-| `BMX280_TEMPERATURE={0,1}` ||
-| `BMX280_HUMIDITY={0,1}` ||
-| `BMX280_PRESSURE={0,1}` || 
- 
+
 Note: Will automatically enable I2C. 
 
 ---
@@ -110,7 +102,9 @@ Note: Will automatically enable I2C.
 
 | Option | Note | 
 | --- | --- |
-`DALLAS_PIN={0-15}` | | 
+| `DALLAS_PIN={0-15}` | GPIO where 1-Wire will be enabled | 
+
+All sensors discovered on a 1-Wire bus will be reported.
 
 ---
 
@@ -118,8 +112,8 @@ Note: Will automatically enable I2C.
 
 | Option | Note | 
 | --- | --- |
-| `DHT_PIN={0-15}` ||
-| `DHT_TYPE=<type>` | One of the: <br> |
+| `DHT_PIN={0-15}` | GPIO where DHT sensors are connected |
+| `DHT_TYPE=<type>` | One of the: <br> - `DHT_CHIP_DHT11` <br> - `DHT_CHIP_DHT21` <br> - `DHT_CHIP_DHT22` (default) |
 
 ---
 
@@ -127,9 +121,9 @@ Note: Will automatically enable I2C.
 
 | Option | Note | 
 | --- | --- |
-| `ECH1560_CLK_PIN={0,15}` ||
-| `ECH1560_MISO_PIN={0,15}` ||
-| `ECH1560_INVERTED={0,1}` | |
+| `ECH1560_CLK_PIN={0,15}` | GPIO where ECH1560 CLK is connected (default: `4`)|
+| `ECH1560_MISO_PIN={0,15}` | GPIO where ECH1560 MISO is connected (default: `5`) |
+| `ECH1560_INVERTED={0,1}` | Is signal inverted (default: `0` - no) |
 
 ---
 
@@ -139,16 +133,90 @@ Note: Will automatically enable I2C.
 | --- | --- |
 | `EMON_ADC121_I2C_ADDRESS={0x00-0xFF}` | I2C address of ADC121 sensor (default: `0x00` - auto) | 
 
+Note: Will automatically enable I2C. 
+
 ---
 
 ## ADS1x15 Energy monitor
 
 | Option | Note | 
 | --- | --- |
-| `EMON_ADS1X15_I2C_ADDRESS={0x00-0xFF}` ||
-| `EMON_ADS1X15_TYPE` ||
-| `EMON_ADS1X15_GAIN` ||
-| `EMON_ADS1X15_MASK` ||
 
+Note: Will automatically enable I2C. 
 
+---
+
+## Analog energy monitor
+
+Energy Monitor based on interval analog GPIO.
+
+| Option | Note | 
+| --- | --- |
+
+---
+
+## Counter sensor
+
+| Option | Note | 
+| --- | --- |
+| `EVENTS_PIN={0,15}` | GPIO to monitor for pulses (default: `2`) |
+| `EVENTS_PIN_MODE` | Initial GPIO status. One of: <br> - `INPUT_PULLUP` <br> - `INPUT` (default) |
+| `EVENTS_INTERRUPT_MODE` | On which signal transition to react. One of: <br> - `RISING` (default) <br> - `FALLING` <br> - `BOTH` |
+
+---
+
+## HLW8012 Energy monitor IC
+
+| Option | Note | 
+| --- | --- |
+| `HLW8012_SEL_PIN={0,15}` | GPIO where SEL is connected (default: `5`) |
+| `HLW8012_CF1_PIN={0,15}` | GPIO where SEL is connected (default: `5`) |
+| `HLW8012_CF_PIN={0,15}`  | GPIO where SEL is connected (default: `5`) |
+| `HLW8012_SEL_CURRENT`    | SEL pin transition to start measuring. One of: <br> - `HIGH` (default) <br> - `LOW` |
+| `HLW8012_CURRENT_R=<n>`  | Current resistor, default: `0.001` |
+| `HLW8012_VOLTAGE_R_UP`   | Upstream voltage resistor, default: `( 5 * 470000 )` |
+| `HLW8012_VOLTAGE_R_DOWN` | Downstream voltage resistor, default: `( 1000 )` |
+
+---
+
+## MHZ19 CO2 sensor
+
+| Option | Note | 
+| --- | --- |
+
+---
+
+## Particle Monitor based on Plantower PMSX003
+
+| Option | Note | 
+| --- | --- |
+
+---
+
+## SHT3X environmental sensor
+
+| Option | Note | 
+| --- | --- |
+| `SHT3X_I2C_ADDRESS={0x00-0xFF}` | I2C address of SXT3X sensor (default: `0x00` - auto) | 
+
+Note: This will enable I2C.
+
+---
+
+## SI7021 environmental sensor
+
+| Option | Note | 
+| --- | --- |
+| `SI7021_ADDRESS={0x00-0xFF}` | I2C address of SI7021 sensor (default: `0x00` - auto) | 
+
+Note: This will enable I2C.
+
+---
+
+## V9261F based power sensor
+
+| Option | Note | 
+| --- | --- |
+| `V9261F_PIN={0,15}`  | GPIO where V9261 is connected (default: `2`) |
+| `V9261F_PIN_INVERSE` | Is signal inverted? (default: `1` - inverted signal) |
 
