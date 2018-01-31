@@ -116,6 +116,29 @@ Hue value ranges from 0 to 360. Saturation and Value from 0 to 100.
 
 ### Sensors
 
+### Buttons
+
+The button module publishes button events.
+
+State topic               | Example payload | Notes
+------------------------- | --------------- | -----------------------------------------
+`{root topic}/button/0    | `3`             | See table below
+
+The payload value is the one defined by the BUTTON_EVENT_* settings. 
+
+Button event    | Value
+--------------- | -----
+Pressed         | 1
+Releases        | 2
+Click           | 2
+Double click    | 3
+Long click      | 4
+Long-long click | 5
+
+### LEDs
+
+### Sonoff RF Bridge
+
 ## Features based on MQTT
 
 ### Relay & color synchronization across devices
