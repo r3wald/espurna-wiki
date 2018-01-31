@@ -100,8 +100,17 @@ State topic               | Example payload | Notes
 ------------------------- | --------------- | -------------------------------------
 `{root topic}/rgb`        | `#FF0000`       | Also as CSV if "Use CSS style" is off
 `{root topic}/hsv`        | `300,100,100`   | See note below
-`{root topic}/brightness` | `35`            | From 0 to 100
-`{root topic}/ch/0`       | `128`           | For each channel,<br />from 0 to 255
+`{root topic}/brightness` | `35`            | From 0 to 255
+`{root topic}/ch/0`       | `128`           | For each channel, from 0 to 255
+
+Command topic                 | Example payload | Notes
+----------------------------- | --------------- | -------------------------------------
+`{root topic}/rgb/set`        | `#FF0000`       | Also as CSV
+`{root topic}/hsv/set`        | `300,100,100`   | See note below
+`{root topic}/brightness/set` | `35`            | From 0 to 255
+`{root topic}/ch/0/set`       | `128`           | For each channel, from 0 to 255
+`{root topic}/mired/set`      | `320`           | Color temperature in Mired
+`{root topic}/kelvin/set`     | `6000`          | Color temperature in Kelvin
 
 Hue value ranges from 0 to 360. Saturation and Value from 0 to 100.
 
