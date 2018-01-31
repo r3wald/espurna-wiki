@@ -16,19 +16,19 @@ You can configure MQTT via the web interface or the terminal. Check the commands
 
 ### Root topic
 
-Every MQTT message that ESPurna publishes starts with the **root topic** you define in the "MQTT Root Topic" setting. That root topic is then complemented by the **specific message topic** (like "relay" or "temperature") plus **an index** when there is more that one of such elements (more than one relay) plus a trailing particle to tell commands from states.
+Every MQTT message that ESPurna publishes starts with the **root topic** you define in the "MQTT Root Topic" setting. That root topic is then complemented by the **specific message topic** (like "relay" or "temperature"), **an index** when there is more that one of such elements (more than one relay) and a trailing particle to tell commands from states.
 
-### Command and state
+### Commands and states
 
-A **state topic** is what ESPurna broadcasts telling every listener out there about something that happened ("the temperature is 18.3C"). A **command topic** is one ESPurna subscribes to to listen to requests from other services. The default state topic particle is "" (empty string, meaning no trailing particle). The default command topic particle is "/set".
+A **state topic** is what ESPurna broadcasts telling every listener out there about something that happened ("the temperature is 18.3C"). A **command topic** is one ESPurna subscribes to listen to requests from other services. The default state topic particle is `""` (empty string, meaning no trailing particle). The default command topic particle is `"/set"`.
 
 As an example, a board with one relay will publish the relay status when it changes to:
 
-`<root topic>/relay/0`
+`{root topic}/relay/0`
 
 And will listen to commands to modify the relay status at:
 
-`<root topic>/relay/0/set`
+`{root topic}/relay/0/set`
 
 ### Placeholders
 
@@ -39,28 +39,47 @@ The root topic may include one of these placeholders:
 | {hostname} | The hostname of the board as defined in the General tab | 
 | {mac} | The MAC of the ESP8266 | 
 
-There is one special placeholder: '**#**'. The hash symbol indicated where the specific message topic will be inserted. If you don't specify a location for the specific message topic it will be inserted after the root topic. For instance, if you have a temperature sensor called "garden", and you set the root topic to `sensor/#/{hostname}` the messages will be sent to `sensor/temperature/garden`.
+There is one special placeholder: '**#**'. The hash symbol indicates where the specific message topic will be inserted. If you don't specify a location for the specific message topic it will be inserted after the root topic. For instance, if you have a temperature sensor called "garden", and you set the root topic to `sensor/#/{hostname}` the messages will be sent to `sensor/temperature/garden`. In the documentation all topic examples asume the hash placeholder is either not used or placed at the end of the root topic.
 
 ### JSON payload
 
-When the "Use JSON Payload" option is enabled, the messages will be grouped in a JSON payload. The way it works is that, internally, messages are enqueued and sent after a certain time (100 milliseconds). Any message that is enqueued during that time lapse will reset the count down. When the countdown is done all enqueued messages are grouped in a JSON payload an sent to the `<root topic>/data` topic along with some extra info.
+When the "Use JSON Payload" option is enabled, messages will be grouped in a JSON payload. Internally, messages will be enqueued and sent after a certain time (100 milliseconds). Any message that is also enqueued during that time lapse will reset the count down. When the count down is done all enqueued messages are grouped in a JSON payload and sent to the `data` specific message topic along with some extra info.
 
 For instance, a sensor that reports temperature and humidity will publish two topics every X seconds like this:
 
 ```
-<root topic>/temperature => 18.3
-<root topic>/humidity => 65
+{root topic}/temperature => 18.3
+{root topic}/humidity => 65
 ```
 
 With the "Use JSON payload" option enabled only one message will be sent:
 
 ```
-<root topic>/data => {'temperature': 18.3, 'humidity': 65, 'datetime': '2018-01-31 23:46:17', 'mac': '00:11:22:33:44:55', 'hostname': 'MINI', 'ip': '192.168.1.105', 'id': 37}
+{root topic}/data => {'temperature': 18.3, 'humidity': 65, 'datetime': '2018-01-31 23:46:17', 'mac': '00:11:22:33:44:55', 'hostname': 'MINI', 'ip': '192.168.1.105', 'id': 37}
 ```
 
 ## Messages
 
-* Heartbeat
+### Heartbeat
+
+Heartbeat messages are only state messages and are sent every X seconds (5 minutes by default). These messages report the status of the device amb some useful info.
+
+| Topic | Example payload | Notes |
+| --- | --- |  --- |
+| `{root topic}/status` | `1` | This is also the will topic with a payload of "0" |
+| `{root topic}/app` | `ESPURNA` | |
+| `{root topic}/version` | `1.12.3` | |
+| `{root topic}/hostname` | `MINI` | |
+| `{root topic}/ip` | `192.168.1.105` | |
+| `{root topic}/mac` | `00:11:22:33:44:55` | |
+| `{root topic}/uptime` | `3215` | Seconds |
+| `{root topic}/datetime` | `2018-02-01 00:03:25` | Only if NTP enabled and synced |
+| `{root topic}/freeheap` | `22056` | Bytes |
+
+Relay and light status are also sent along with the heartbeat. Check topics for those below.
+
+
+
 * Relays
 * Lights
 * Sensors
