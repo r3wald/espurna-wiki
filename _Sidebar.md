@@ -27,7 +27,7 @@
 * [Terminal](Terminal)
 
 ### Integrations
-* MQTT
+* [MQTT](MQTT)
 * [REST API](RESTAPI)
 * [Domoticz](Domoticz)
 * [Home Assistant](HomeAssistant)
