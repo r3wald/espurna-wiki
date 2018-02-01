@@ -123,6 +123,34 @@ Command topic                 | Example payload | Notes
 
 ### Sensors
 
+The sensors module (sensors.ino) provides a common interface with the rest of the firmware for all sensor defined in the sensors folder. See [Sensors](Sensors) for more info about the available sensors.
+
+Sensors publish magnitudes (temperature, power, current, co2,...). If there is more than one magnitude of the same type and index will be added to the magnitude topic (0-based). Available magnitude topics will depend on the available sensors. At the moment they are:
+
+State topic                 | Example payload | Notes
+----------------------------| --------------- | --------------------------
+`{root topic}/temperature`  | `18.3`          | i C or F, see note 1 below
+`{root topic}/humidity`     | `65`            | in % 
+`{root topic}/pressure`     | `1018.52`       | in hPa
+`{root topic}/current`      | `0.35`          | in A
+`{root topic}/voltage`      | `227`           | in V
+`{root topic}/power`        | `430`           | active power, in W
+`{root topic}/apparent`     | `320`           | apparent power, in W
+`{root topic}/reactive`     | `100`           | reactive power, in W
+`{root topic}/factor`       | `95`            | power factor, in %
+`{root topic}/energy`       | `253654`        | aggregated, in J
+`{root topic}/energy_delta` | `60`            | since last report, in J 
+`{root topic}/analog`       | `780`           | from 0 to 1023
+`{root topic}/digital`      | `1`             | 0 (low) or 1 (high)
+`{root topic}/events`       | `18`            | since last report, count
+`{root topic}/pm1dot0`      | `180`           | in ppm
+`{root topic}/pm2dot5`      | `13`            | in ppm
+`{root topic}/pm10`         | `5`             | in ppm
+`{root topic}/co2`          | `65`            | in ppm
+`{root topic}/lux`          | `430`           | in lux
+
+(1) Temperature units are defined in the Sensors tab in the web UI.
+
 ### Buttons
 
 The button module publishes button events. The specific message topic will always end with a 0-based index (first button is index 0).
@@ -181,6 +209,7 @@ Command topic                | Example payload        | Notes
 ## Implementation
 
 ### AsyncMqttClient vs PubSubClient
+### mqttRegister
 
 ## SSL support
 
