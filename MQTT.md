@@ -128,8 +128,8 @@ The sensors module (sensors.ino) provides a common interface with the rest of th
 Sensors publish magnitudes (temperature, power, current, co2,...). If there is more than one magnitude of the same type and index will be added to the magnitude topic (0-based). Available magnitude topics will depend on the available sensors. At the moment they are:
 
 State topic                 | Example payload | Notes
-----------------------------| --------------- | --------------------------
-`{root topic}/temperature`  | `18.3`          | i C or F, see note 1 below
+----------------------------| --------------- | ---------------------------
+`{root topic}/temperature`  | `18.3`          | in C or F, see note 1 below
 `{root topic}/humidity`     | `65`            | in % 
 `{root topic}/pressure`     | `1018.52`       | in hPa
 `{root topic}/current`      | `0.35`          | in A
