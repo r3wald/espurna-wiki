@@ -163,12 +163,14 @@ The payload value is the one defined by the BUTTON_EVENT_* settings.
 
 Button event    | Value
 --------------- | -----
-Pressed         | 1
-Releases        | 2
+Press           | 1
+Release         | 2
 Click           | 2
 Double click    | 3
 Long click      | 4
 Long-long click | 5
+
+Notice "release" and "click" events are actually the same. Some devices will report both the pressed and the released events whilst other might only report click events. In either case a value of `2` will mean something has happened and an action can be taken.
 
 ### LEDs
 
