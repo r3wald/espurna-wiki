@@ -118,7 +118,7 @@ Command topic                 | Example payload | Notes
 `{root topic}/mired/set`      | `320`           | color temperature in Mired
 `{root topic}/kelvin/set`     | `6000`          | color temperature in Kelvin
 
-(1) Channel topic will end with a 0-based index of the channel. In particular for an RGB bulb, red channel is index 0, green is index 1 and blue is index 2.
+(1) Channel topic will end with a 0-based index of the channel. In particular for an RGB bulb, red channel is index 0, green is index 1 and blue is index 2.  
 (2) Hue value ranges from 0 to 360. Saturation and Value from 0 to 100.
 
 ### Sensors
@@ -128,8 +128,8 @@ Command topic                 | Example payload | Notes
 The button module publishes button events. The specific message topic will always end with a 0-based index (first button is index 0).
 
 State topic             | Example payload | Notes
------------------------ | --------------- | -----------------------------------------
-`{root topic}/button/0` | `3`             | See table below
+----------------------- | --------------- | ---------------
+`{root topic}/button/0` | `3`             | see table below
 
 The payload value is the one defined by the BUTTON_EVENT_* settings. 
 
@@ -147,10 +147,26 @@ Long-long click | 5
 When the LED mode in the General tab is set to "MQTT Managed", the first LED will accept a command to change its state. Valid values are the same as for a relay (0, 1, 2, 'on', 'off' or 'toggle'). The specific message topic will always end with a 0-based index (first LED is index 0).
 
 Command topic            | Example payload | Notes
------------------------- | --------------- | -----------------------------------------
-`{root topic}/led/0/set` | `2`             | Toggle LED status
+------------------------ | --------------- | -----------------
+`{root topic}/led/0/set` | `2`             | toggle LED status
 
 ### Sonoff RF Bridge
+
+The Sonoff RF Bridge has a dedicated module (rfbridge.ino) that provides an MQTT to RF bridge functionality via the `rfin` and `rfout` topics.
+
+State topic         | Example payload      | Notes
+--------------------| -------------------- | -----------------
+`{root topic}/rfin` | `26C0013603CA511451` | received code
+
+Command topic                | Example payload        | Notes
+---------------------------- | ---------------------- | -----------------
+`{root topic}/rflearn/0/set` | `1`                    | see note 1 below
+`{root topic}/rfout/set`     | `26C0013603CA511451`   | send code
+`{root topic}/rfout/set`     | `26C0013603CA511451,3` | send code N times
+`{root topic}/rfraw/set`     |                        | see note 2 below
+
+(1) Triggers a learn action. The index after the "learn" magnitude indicates the relay the code will be linked to. The payload of the message indicates the action (`0` for off, `1` for on).  
+(2) Raw codes require a special firmware in the EFM8BB1. See issue #386 for more info.
 
 ## Features based on MQTT
 
