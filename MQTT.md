@@ -39,8 +39,6 @@ Placeholder  | Value
 `{hostname}` | The hostname of the board as defined in the General tab
 `{mac}`      | The MAC of the ESP8266
 
-There is one special placeholder: '**#**'. The hash symbol indicates where the specific message topic will be inserted. If you don't specify a location for the specific message topic it will be inserted after the root topic. For instance, if you have a temperature sensor called "garden", and you set the root topic to `sensor/#/{hostname}` the messages will be sent to `sensor/temperature/garden`. In the documentation all topic examples asume the hash placeholder is either not used or placed at the end of the root topic.
-
 ### JSON payload
 
 When the "Use JSON Payload" option is enabled, messages will be grouped in a JSON payload. Internally, messages will be enqueued and sent after a certain time (100 milliseconds). Any message that is also enqueued during that time lapse will reset the count down. When the count down is done all enqueued messages are grouped in a JSON payload and sent to the `data` specific message topic along with some extra info.
