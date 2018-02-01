@@ -118,11 +118,11 @@ Hue value ranges from 0 to 360. Saturation and Value from 0 to 100.
 
 ### Buttons
 
-The button module publishes button events.
+The button module publishes button events. The specific message topic will always end with a 0-based index (first button is index 0).
 
-State topic               | Example payload | Notes
-------------------------- | --------------- | -----------------------------------------
-`{root topic}/button/0    | `3`             | See table below
+State topic             | Example payload | Notes
+----------------------- | --------------- | -----------------------------------------
+`{root topic}/button/0` | `3`             | See table below
 
 The payload value is the one defined by the BUTTON_EVENT_* settings. 
 
@@ -136,6 +136,12 @@ Long click      | 4
 Long-long click | 5
 
 ### LEDs
+
+When the LED mode in the General tab is set to "MQTT Managed", the first LED will accept a command to change its state. Valid values are the same as for a relay (0, 1, 2, 'on', 'off' or 'toggle'). The specific message topic will always end with a 0-based index (first LED is index 0).
+
+Command topic            | Example payload | Notes
+------------------------ | --------------- | -----------------------------------------
+`{root topic}/led/0/set` | `2`             | Toggle LED status
 
 ### Sonoff RF Bridge
 
