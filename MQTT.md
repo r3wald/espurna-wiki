@@ -16,7 +16,7 @@ You can configure MQTT via the web interface or the terminal. Check the commands
 
 ### Root topic
 
-Every MQTT message that ESPurna publishes starts with the **root topic** you define in the "MQTT Root Topic" setting. That root topic is then complemented by the **specific message topic** (like "relay" or "temperature"), **an index** when there is more that one of such elements (more than one relay) and a trailing particle to tell commands from states.
+Every MQTT message that ESPurna publishes starts with the **root topic** you define in the "MQTT Root Topic" setting. That root topic is then complemented by the **magnitude** (like "temperature", "rfin" or "relay"), **an index** when there is more that one of such elements (more than one relay) and a trailing particle to tell commands from states.
 
 ### Commands and states
 
@@ -38,6 +38,9 @@ Placeholder  | Value
 ------------ | -------------------------------------------------------
 `{hostname}` | The hostname of the board as defined in the General tab
 `{mac}`      | The MAC of the ESP8266
+`{magnitude}`| The magnitude particle (+1.12.4)
+
+The `{magnitude}` placeholder is a special one. It indicates where the magnitude particle will be inserted. If you don't specify a location for the magnitude it will be inserted after the root topic. For instance, if you have a temperature sensor called "garden", and you set the root topic to `sensor/{magnitude}/{hostname}` the messages will be sent to `sensor/temperature/garden`. In the documentation all topic examples asume the magnitude placeholder is either not used or placed at the end of the root topic.
 
 ### JSON payload
 
