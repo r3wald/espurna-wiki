@@ -7,7 +7,6 @@ It uses the Arduino Core for ESP8266 framework and a number of 3rd party librari
 ![branch](https://img.shields.io/badge/branch-master-orange.svg)
 [![travis](https://travis-ci.org/xoseperez/espurna.svg?branch=master)](https://travis-ci.org/xoseperez/espurna)
 [![license](https://img.shields.io/github/license/xoseperez/espurna.svg)](LICENSE)
-[![donate](https://img.shields.io/badge/donate-PayPal-blue.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=xose%2eperez%40gmail%2ecom&lc=US&no_note=0&currency_code=EUR&bn=PP%2dDonationsBF%3abtn_donate_LG%2egif%3aNonHostedGuest)
 [![twitter](https://img.shields.io/twitter/follow/xoseperez.svg?style=social)](https://twitter.com/intent/follow?screen_name=xoseperez)
 
 ---
@@ -156,9 +155,7 @@ There are several ways to contribute to ESpurna development. You can contribute 
 * Documentation (I reckon I'm bad at it)
 * Testing (filing issues or help resolving them, they take a lot of time and sometimes I don't have the required hardware to test them all)
 
-And of course you can always buy me a beer, coffee, tea,... via the donation button below.
-
-[![Donate](https://img.shields.io/badge/donate-PayPal-blue.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=xose%2eperez%40gmail%2ecom&lc=US&no_note=0&currency_code=EUR&bn=PP%2dDonationsBF%3abtn_donate_LG%2egif%3aNonHostedGuest)
+And of course you can always buy me a beer, coffee, tea,... via the donation button in the [README](https://github.com/xoseperez/espurna).
 
 ## Documentation
 
