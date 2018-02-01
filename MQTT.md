@@ -66,16 +66,18 @@ With the "Use JSON payload" option enabled only one message will be sent:
 Heartbeat messages are only state messages and are sent every X seconds (5 minutes by default). These messages report the status of the device amb some useful info.
 
 State topic             | Example payload       | Notes
------------------------ | --------------------- | ------------------------------------------------------
-`{root topic}/status`   | `1`                   | This is also the will topic<br />with a payload of "0"
+----------------------- | --------------------- | ------------------
+`{root topic}/status`   | `1`                   | see note 1 below
 `{root topic}/app`      | `ESPURNA`             |
 `{root topic}/version`  | `1.12.3`              |
 `{root topic}/hostname` | `MINI`                |
 `{root topic}/ip`       | `192.168.1.105`       |
 `{root topic}/mac`      | `00:11:22:33:44:55`   |
-`{root topic}/uptime`   | `3215`                | Seconds
-`{root topic}/datetime` | `2018-02-01 00:03:25` | Only if NTP enabled<br />and synced
-`{root topic}/freeheap` | `22056`               | Bytes
+`{root topic}/uptime`   | `3215`                | seconds
+`{root topic}/datetime` | `2018-02-01 00:03:25` | only if NTP synced
+`{root topic}/freeheap` | `22056`               | bytes
+
+(1) This is also the will topic. Upon disconnection and after the keepalive timeout the broker should publish a payload `0` to this topic.
 
 Relay and light status are also sent along with the heartbeat. Check topics for those below.
 
@@ -84,14 +86,15 @@ Relay and light status are also sent along with the heartbeat. Check topics for 
 The relay module publishes the relay state and subscribes to command topics to manage the relays via MQTT. The specific message topic will always end with a 0-based index (first relay is index 0).
 
 State topic            | Example payload | Notes
----------------------- | --------------- | -----
-`{root topic}/relay/0` | `1`             | [0,1]
+---------------------- | --------------- | -----------------------
+`{root topic}/relay/0` | `1`             | 0 for 'off', 1 for 'on'
 
 Command topic              | Example payload | Notes
 -------------------------- | --------------- | ---------------------------
-`{root topic}/relay/0/set` | `toggle`        | [0,1,2,on,off,toggle,query]
+`{root topic}/relay/0/set` | `2`             | see note 1 below
+`{root topic}/relay/0/set` | `toggle`        | see note 1 below
 
-Relay command payloads accept both numbers (0 for 'off', 1 for 'on' and 2 for 'toggle') or words (case insensitive).
+(1) Relay command payloads accept both numbers (`0` for off, `1` for on and `2` for toggle) or words (`on`, `off`, `toggle` or `query`; case insensitive). The `query` payload does not change the relay state but triggers a state topic message.
 
 ### Lights
 
@@ -99,21 +102,24 @@ The light module publishes and subscribes to different topics.
 
 State topic               | Example payload | Notes
 ------------------------- | --------------- | -------------------------------------
-`{root topic}/rgb`        | `#FF0000`       | Also as CSV if "Use CSS style" is off
-`{root topic}/hsv`        | `300,100,100`   | See note below
-`{root topic}/brightness` | `35`            | From 0 to 255
-`{root topic}/ch/0`       | `128`           | For each channel, from 0 to 255
+`{root topic}/rgb`        | `#FF0000`       | if "Use CSS style" is on
+`{root topic}/rgb`        | `255,0,0`       | if "Use CSS style" is off
+`{root topic}/hsv`        | `300,100,100`   | see note below
+`{root topic}/brightness` | `35`            | from 0 to 255
+`{root topic}/ch/0`       | `128`           | from 0 to 255, see note 1 below
 
 Command topic                 | Example payload | Notes
 ----------------------------- | --------------- | -------------------------------------
-`{root topic}/rgb/set`        | `#FF0000`       | Also as CSV
-`{root topic}/hsv/set`        | `300,100,100`   | See note below
-`{root topic}/brightness/set` | `35`            | From 0 to 255
-`{root topic}/ch/0/set`       | `128`           | For each channel, from 0 to 255
-`{root topic}/mired/set`      | `320`           | Color temperature in Mired
-`{root topic}/kelvin/set`     | `6000`          | Color temperature in Kelvin
+`{root topic}/rgb/set`        | `#FF0000`       | in CSS format
+`{root topic}/rgb/set`        | `255,0,0`       | or CSV (comma-separated-values)
+`{root topic}/hsv/set`        | `300,100,100`   | see note 2 below
+`{root topic}/brightness/set` | `35`            | from 0 to 255
+`{root topic}/ch/0/set`       | `128`           | for each channel, from 0 to 255
+`{root topic}/mired/set`      | `320`           | color temperature in Mired
+`{root topic}/kelvin/set`     | `6000`          | color temperature in Kelvin
 
-Hue value ranges from 0 to 360. Saturation and Value from 0 to 100.
+(1) Channel topic will end with a 0-based index of the channel. In particular for an RGB bulb, red channel is index 0, green is index 1 and blue is index 2.
+(2) Hue value ranges from 0 to 360. Saturation and Value from 0 to 100.
 
 ### Sensors
 
