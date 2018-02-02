@@ -4,31 +4,31 @@ This is the official list of supported hardware for the ESPurna firmware. The ha
 
 > **CAUTION: Never ever connect any of these devices to your computer and to mains at the same time. Never ever manipulate them while connected to mains. Seriously. I don't want you to die. I hold no responsibility for any damage to you, your family, your house,... for any action or results derived from flashing or using these devices.**
 
-
+-
 > **CAUTION:  Different devices are flashed at different voltages.  Make sure your USB-to-UART device is set to the correct one or you risk destroying your device.**
 
 ## Sonoff Modules
 
-| Board | Build flag | 
-| --- | --- | 
-| [IteadStudio Sonoff Basic](#iteadstudio-sonoff) | `ITEAD_SONOFF_BASIC` |
-| [IteadStudio Sonoff RF](#iteadstudio-sonoff-rf) | `ITEAD_SONOFF_RF` |
-| [IteadStudio Sonoff TH10/16](#iteadstudio-sonoff-th) | `ITEAD_SONOFF_TH` |
-| [IteadStudio Sonoff POW](#iteadstudio-sonoff-pow) | `ITEAD_SONOFF_POW` | 
-| [IteadStudio Sonoff DUAL](#iteadstudio-sonoff-dual) | `ITEAD_SONOFF_DUAL` <br> `ITEAD_SONOFF_DUAL_R2`  | 
-| [IteadStudio Sonoff 4CH](#iteadstudio-sonoff-4ch) | `ITEAD_SONOFF_4CH` | 
-| [IteadStudio Sonoff 4CH Pro](#iteadstudio-sonoff-4ch-pro) | `ITEAD_SONOFF_4CH_PRO` | 
-| [IteadStudio Sonoff TOUCH](#iteadstudio-sonoff-touch) | `ITEAD_SONOFF_TOUCH` | 
-| [IteadStudio Sonoff B1](#iteadstudio-sonoff-b1) | `ITEAD_SONOFF_B1` | 
-| [IteadStudio Sonoff T1](#iteadstudio-sonoff-t1) | `ITEAD_SONOFF_T1_1CH` <br> `ITEAD_SONOFF_T1_2CH` <br> `ITEAD_SONOFF_T1_3CH` | 
-| [IteadStudio Sonoff LED](#iteadstudio-sonoff-led) | `ITEAD_SONOFF_LED` | 
-| IteadStudio Sonoff 433 RF Bridge | `ITEAD_SONOFF_RFBRIDGE` | 
-| [IteadStudio Slampher](#iteadstudio-slampher)<br>[IteadStudio Slampher 2.0](#iteadstudio-slampher-v20)  | `ITEAD_SLAMPHER` | 
-| [IteadStudio S20](#iteadstudio-s20-smart-socket) | `ITEAD_S20` | 
-| [IteadStudio 1CH Inching](#iteadstudio-1ch-inching) | `ITEAD_1CH_INCHING` | 
-| [IteadStudio Motor Clockwise/Anticlockwise](#iteadstudio-motor-clockwiseanticlockwise) | `ITEAD_MOTOR` | 
-| [IteadStudio Sonoff SV](#iteadstudio-sonoff-sv) | `ITEAD_SONOFF_SV` | 
-| IteadStudio BN-SZ01 | `ITEAD_BNSZ01` | 
+| Board | Build flag | Summary |
+| --- | --- | --- |
+| [IteadStudio Sonoff Basic](#iteadstudio-sonoff) | `ITEAD_SONOFF_BASIC` | Switch |
+| [IteadStudio Sonoff RF](#iteadstudio-sonoff-rf) | `ITEAD_SONOFF_RF` | Switch with RF Reciever |
+| [IteadStudio Sonoff TH10/16](#iteadstudio-sonoff-th) | `ITEAD_SONOFF_TH` | Switch with Temperature and Humidity Monitoring |
+| [IteadStudio Sonoff POW](#iteadstudio-sonoff-pow) | `ITEAD_SONOFF_POW` | Switch With Power Consumption Measurement |
+| [IteadStudio Sonoff DUAL](#iteadstudio-sonoff-dual) | `ITEAD_SONOFF_DUAL` <br> `ITEAD_SONOFF_DUAL_R2`  | 2 Switches|
+| [IteadStudio Sonoff 4CH](#iteadstudio-sonoff-4ch) | `ITEAD_SONOFF_4CH` |  4 Switches with din rail mounting |
+| [IteadStudio Sonoff 4CH Pro](#iteadstudio-sonoff-4ch-pro) | `ITEAD_SONOFF_4CH_PRO` | 4 Switches with din rail mounting and RF Receiver|
+| [IteadStudio Sonoff TOUCH](#iteadstudio-sonoff-touch) | `ITEAD_SONOFF_TOUCH` | Touch Wall Switch| 
+| [IteadStudio Sonoff B1](#iteadstudio-sonoff-b1) | `ITEAD_SONOFF_B1` | Dimmable E27 LED Lamp RGB Color Light Bulb|
+| [IteadStudio Sonoff T1](#iteadstudio-sonoff-t1) | `ITEAD_SONOFF_T1_1CH` <br> `ITEAD_SONOFF_T1_2CH` <br> `ITEAD_SONOFF_T1_3CH` | 1-3 Gang Touch Wall Switch |
+| [IteadStudio Sonoff LED](#iteadstudio-sonoff-led) | `ITEAD_SONOFF_LED` | Adjustable LED strip
+| IteadStudio Sonoff 433 RF Bridge | `ITEAD_SONOFF_RFBRIDGE` | Bridge between 433MHz RF and WiFi |
+| [IteadStudio Slampher](#iteadstudio-slampher)<br>[IteadStudio Slampher 2.0](#iteadstudio-slampher-v20)  | `ITEAD_SLAMPHER` | 433MHz RF & WiFi Smart Light Bulb Holder
+| [IteadStudio S20](#iteadstudio-s20-smart-socket) | `ITEAD_S20` | Outlet
+| [IteadStudio 1CH Inching](#iteadstudio-1ch-inching) | `ITEAD_1CH_INCHING` | [Inching/Self-Locking Switch](https://www.quora.com/What-is-an-inching-switch) |
+| [IteadStudio Motor Clockwise/Anticlockwise](#iteadstudio-motor-clockwiseanticlockwise) | `ITEAD_MOTOR` | Controls 7-32V DC or 125-250V AC motor|
+| [IteadStudio Sonoff SV](#iteadstudio-sonoff-sv) | `ITEAD_SONOFF_SV` |  5-24V low voltage Switch |
+| IteadStudio BN-SZ01 | `ITEAD_BNSZ01` | LED Ceiling Light |
 
 ## Other modules
 
@@ -76,6 +76,7 @@ This is the official list of supported hardware for the ESPurna firmware. The ha
 |Web page|[https://www.itead.cc/sonoff-wifi-wireless-switch.html](https://www.itead.cc/sonoff-wifi-wireless-switch.html)|
 |Build flag|`ITEAD_SONOFF_BASIC`|
 | Voltage |  <span style="color:red">3v3</span> |
+
 
 The [IteadStudio Sonoff](https://www.itead.cc/sonoff-wifi-wireless-switch.html) has an ESP8266 on board with a 8Mbit flash memory chip, a mains to 3V3 transformer and a relay (GPIO12). It also features a button (GPIO0), an LED (GPIO13) and an unpopulated header you can use to reprogram it.
 
