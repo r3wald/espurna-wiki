@@ -14,13 +14,13 @@ It uses the Arduino Core for ESP8266 framework and a number of 3rd party librari
 ## Features
 
 * *KRACK* vulnerability free (when built against Arduino Core 2.4.0)
-* Support for **multiple ESP8266-based boards** ([check list](https://github.com/xoseperez/espurna/wiki/Hardware))
+* Support for **multiple ESP8266-based boards** ([Hardware list](https://github.com/xoseperez/espurna/wiki/Hardware))
 * Power saving options
 * Wifi **AP Mode** or **STA mode**
     * Up to 5 different networks can be defined
     * Supports static IP
     * Scans for strongest network if more than one defined (also available in web UI)
-    * Handles correctly multiple AP with the same SSID
+    * Handles multiple AP with the same SSID correctly
     * Defaults to AP mode (also available after double clicking the main button)
 * Network visibility
     * Supports mDNS (service reporting and metadata) both server mode and client mode (.local name resolution)
@@ -76,7 +76,7 @@ It uses the Arduino Core for ESP8266 framework and a number of 3rd party librari
     * MY92XX-based light bulbs and PWM LED strips (dimmers) up to 5 channels (RGB, cold white and warm white, for instance)
     * RGB and HSV color codes supported
     * Manage channels individually
-    * Temperature color supported (in mired and kelvin) via MQTT / REST API
+    * Temperature color supported (in [mired](https://en.wikipedia.org/wiki/Mired) and [kelvin](https://en.wikipedia.org/wiki/Color_temperature)) via MQTT / REST API
     * Flicker-free PWM management
     * Soft color transitions
     * Color synchronization between light using MQTT
@@ -87,7 +87,7 @@ It uses the Arduino Core for ESP8266 framework and a number of 3rd party librari
     * Web-based configuration
     * Relay switching and sensor data from the web interface
     * Handle color, brightness, and white/warm channels for lights
-    * Websockets-based communication between the device and the browser
+    * Websockets based communication between the device and the browser
     * Backup and restore settings option
     * Upgrade firmware from the web interface
     * Works great behind a [secured reverse proxy](http://tinkerman.cat/secure-remote-access-to-your-iot-devices/)
@@ -132,7 +132,7 @@ It uses the Arduino Core for ESP8266 framework and a number of 3rd party librari
 >* **Issues** are all on GitHub already **but** all issues and comments show up as reported by me. The original reporter is referenced inside the body of the issue (or comment) with a link to his/her profile at Bitbucket and a link to his/her profile at GitHub if it happens to be the same username. I **suggest all reporters to subscribe to the issues they originally filed** (search for your BitBucket username to list them).
 >* **Pull requests** historic has not been migrated. At the moment of the migration all pull-requests have been either merged or declined. Of course, those PR merged are in the code base, but the historic and comments in the PR pages will be lost.
 >* **Documentation** it's on it way, first step will be to migrate existing wiki, maybe with a new TOC structure
->* **Watchers**, **Forks**, I'm afraid they are all gone. Visit the new repop home and click on the "Watch" button on the top right. And as you do it click also on the "Star" button too :)
+>* **Watchers**, **Forks**, I'm afraid they are all gone. Visit the new repo home and click on the "Watch" button on the top right. And as you do it click also on the "Star" button too :)
 >
 >I apologize for any inconvenience this migration may have caused. I have decided to do it the hard way.
 
