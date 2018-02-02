@@ -4,6 +4,9 @@ This is the official list of supported hardware for the ESPurna firmware. The ha
 
 > **CAUTION: Never ever connect any of these devices to your computer and to mains at the same time. Never ever manipulate them while connected to mains. Seriously. I don't want you to die. I hold no responsibility for any damage to you, your family, your house,... for any action or results derived from flashing or using these devices.**
 
+-
+> **CAUTION:  Different devices are flashed at different voltages.  Make sure your USB-to-UART device is set to the correct one or you risk destroying your device.**
+
 ## Sonoff Modules
 
 | Board | Build flag | 
@@ -71,7 +74,8 @@ This is the official list of supported hardware for the ESPurna firmware. The ha
 |---|---|
 |Manufacturer|Itead Studio|
 |Web page|[https://www.itead.cc/sonoff-wifi-wireless-switch.html](https://www.itead.cc/sonoff-wifi-wireless-switch.html)|
-|Build flag|ITEAD_SONOFF_BASIC|
+|Build flag|`ITEAD_SONOFF_BASIC`|
+| Voltage |  <span style="color:red">3v3</span> |
 
 The [IteadStudio Sonoff](https://www.itead.cc/sonoff-wifi-wireless-switch.html) has an ESP8266 on board with a 8Mbit flash memory chip, a mains to 3V3 transformer and a relay (GPIO12). It also features a button (GPIO0), an LED (GPIO13) and an unpopulated header you can use to reprogram it.
 
@@ -81,7 +85,7 @@ The [IteadStudio Sonoff](https://www.itead.cc/sonoff-wifi-wireless-switch.html) 
 
 The unpopulated header in the Sonoff has all the required pins. My board has a 5 pins header in-line with the button. They are (from the button outwards) 3V3, RX, TX, GND and GPIO14.
 
-Last one is not necessary. Mind it's a **3V3 device**, if connected to 5V you will probably fry it. Button is connected to GPIO0 on the ESP8266 chip, so to enter flash mode you have to hold the button pressed while powering on the board, then you can release it again.
+Last one is not necessary.  Button is connected to GPIO0 on the ESP8266 chip, so to enter flash mode you have to hold the button pressed while powering on the board, then you can release it again.
 
 --- 
 
@@ -91,7 +95,9 @@ Last one is not necessary. Mind it's a **3V3 device**, if connected to 5V you wi
 |---|---|
 |Manufacturer|Itead Studio|
 |Web page|[https://www.itead.cc/sonoff-rf.html](https://www.itead.cc/sonoff-rf.html)|
-|Build flag|ITEAD_SONOFF_RF|
+|Build flag|`ITEAD_SONOFF_RF`|
+| Voltage |  <span style="color:red">3v3</span> |
+
 
 ### Flashing
 
@@ -99,7 +105,7 @@ Last one is not necessary. Mind it's a **3V3 device**, if connected to 5V you wi
 
 The Sonoff RF has the same unpopulated header as the Sonoff. It is a 5 pins header in-line with the button. They are (from the button outwards) 3V3, RX, TX, GND and GPIO14.
 
-Solder a male or female header here and connect your USB-to-UART programmer (remember **it's a 3V3 device**). This time through **the button is not connected to GPIO0** but to a EFM8BB1 microcontroller that also monitors the RF module output.
+Solder a male or female header here and connect your USB-to-UART programmer. This time through **the button is not connected to GPIO0** but to a EFM8BB1 micro-controller that also monitors the RF module output.
 
 There are a couple of ways to enter flash mode. Some recommend to move 0Ohm R9 resistor to R21 to connect the button directly to the ESP8266 GPIO0 and use it in the same way as for the Sonoff or Sonoff TH. The drawback is the by doing that you lose the RF capability.
 
@@ -113,13 +119,15 @@ My recommendation is to **temporary shortcut the bottom pad of the unpopulated R
 |---|---|
 |Manufacturer|Itead Studio|
 |Web page|[https://www.itead.cc/sonoff-th.html](https://www.itead.cc/sonoff-th.html)|
-|Build flag|ITEAD_SONOFF_TH|
+|Build flag|`ITEAD_SONOFF_TH`|
+| Voltage |  <span style="color:red">3v3</span> |
+
 
 ### Flashing
 
 ![Sonoff TH - Inside back view](images/flashing/sonoff-th-flash.jpg)
 
-You have all the required pins in an unpopulated header in one of the corners of the board (see top left corner in the image above). Solder a 4 pins male or female header here and connect it to your favourite USB-to-UART module. Remember: **it's a 3V3 device**!!.
+You have all the required pins in an unpopulated header in one of the corners of the board (see top left corner in the image above). Solder a 4 pins male or female header here and connect it to your favorite USB-to-UART module. 
 
 As in the Sonoff the button is connected to GPIO0, so to enter flash mode press and hold the button and connect the programmer to your computer to power the board.
 
@@ -131,7 +139,9 @@ As in the Sonoff the button is connected to GPIO0, so to enter flash mode press 
 |---|---|
 |Manufacturer|Itead Studio|
 |Web page|[https://www.itead.cc/sonoff-pow.html](https://www.itead.cc/sonoff-pow.html)|
-|Build flag|ITEAD_SONOFF_POW|
+|Build flag|`ITEAD_SONOFF_POW`|
+| Voltage |  <span style="color:red">3v3</span> |
+
 
 ### Flashing
 
@@ -147,7 +157,9 @@ Same as for the [Sonoff TH](#iteadstudio-sonoff-th) above.
 |---|---|
 |Manufacturer|Itead Studio|
 |Web page|[https://www.itead.cc/sonoff-dual.html](https://www.itead.cc/sonoff-dual.html)|
-|Build flag|ITEAD_SONOFF_DUAL|
+|Build flag|`ITEAD_SONOFF_DUAL`|
+| Voltage |  <span style="color:red">3v3</span> |
+
 
 ### Flashing
 
@@ -155,9 +167,9 @@ Same as for the [Sonoff TH](#iteadstudio-sonoff-th) above.
 
 The Sonoff Dual it's a bit tricky to flash since GPIO0 is not connected to the button as in the TH or POW, but to the pin 15 in the SIL F330 chip that manages the buttons and the relays. SO you have to locate a pad connected to GPIO and short it to ground while powering the device.
 
-In the picture above you have a location of an available and easily accessible GPIO0 pad. The other required pins are brought out in the top header. Remember it's a *3V3* device.
+In the picture above you have a location of an available and easily accessible GPIO0 pad. The other required pins are brought out in the top header.
 
-Once flashed use OTA to update the firmware.
+Once flashed you can use OTA to update the firmware without having to open the device.
 
 ---
 
@@ -167,7 +179,10 @@ Once flashed use OTA to update the firmware.
 |---|---|
 |Manufacturer|Itead Studio|
 |Web page|[https://www.itead.cc/sonoff-touch.html](https://www.itead.cc/sonoff-touch.html)|
-|Build flag|ITEAD_SONOFF_TOUCH|
+|Build flag|`ITEAD_SONOFF_TOUCH`|
+| Voltage |  <span style="color:red">3v3</span> |
+
+
 
 ### Flashing
 
@@ -176,9 +191,9 @@ Once flashed use OTA to update the firmware.
 The Sonoff Touch is a bit tricky to flash since GPIO 0 is not connected to the button as in the TH or POW. So you have to locate the pad for GPIO 0 and short it to ground while powering on the device, once it is on in
 flash mode you can remove the GND connection.
 
-The picture above shows the location of the GPIO 0 pad. The other required pins are available on the header at the top which has to be soldered in the existing slots. Do not forget to use 3.3 V when connecting to your USB to Serial device.
+The picture above shows the location of the GPIO 0 pad. The other required pins are available on the header at the top which has to be soldered in the existing slots.
 
-Once flashed use OTA to update the firmware.
+Once flashed you can use OTA to update the firmware without having to open the device.
 
 ---
 
@@ -188,11 +203,13 @@ Once flashed use OTA to update the firmware.
 |---|---|
 |Manufacturer|Itead Studio|
 |Web page|[https://www.itead.cc/sonoff-4ch.html](https://www.itead.cc/sonoff-4ch.html)|
-|Build flag|ITEAD_SONOFF_4CH|
+|Build flag|`ITEAD_SONOFF_4CH`|
+| Voltage |  <span style="color:red">3v3</span> |
+
 
 ### Flashing
 
-You will have to open the case. There is a 5 pin header with VCC33 (3V3), TX, RX and GND. First button is properly labelled FW/IO0 so all you have to do is to connect TX, RX and GND to your USB2UART programmer, press the button and connect the VCC33 pin to power the board and enter flash mode. One very important thing: the **TX and RX pins are crossed**. You have to connect TX to your programmer TX and RX to RX. Remember to connect it to *3V3*.
+You will have to open the case. There is a 5 pin header with VCC33 (3V3), TX, RX and GND. First button is properly labelled FW/IO0 so all you have to do is to connect TX, RX and GND to your USB2UART programmer, press the button and connect the VCC33 pin to power the board and enter flash mode. One very important thing: the **TX and RX pins are crossed**. You have to connect TX to your programmer TX and RX to RX. 
 
 ---
 
@@ -202,7 +219,9 @@ You will have to open the case. There is a 5 pin header with VCC33 (3V3), TX, RX
 |---|---|
 |Manufacturer|Itead Studio|
 |Web page|[https://www.itead.cc/sonoff-4ch-pro.html](https://www.itead.cc/sonoff-4ch-pro.html)|
-|Build flag|ITEAD_SONOFF_4CH_PRO|
+|Build flag|`ITEAD_SONOFF_4CH_PRO`|
+| Voltage |  TODO |
+
 
 ### Flashing
 
@@ -216,7 +235,9 @@ You will have to open the case. There is a 5 pin header with VCC33 (3V3), TX, RX
 |---|---|
 |Manufacturer|Itead Studio|
 |Web page|[https://www.itead.cc/sonoff-b1.html](https://www.itead.cc/sonoff-b1.html)|
-|Build flag|ITEAD_SONOFF_B1|
+|Build flag|`ITEAD_SONOFF_B1`|
+| Voltage |  TODO |
+
 
 ### Flashing
 
@@ -230,7 +251,9 @@ You will have to open the case. There is a 5 pin header with VCC33 (3V3), TX, RX
 |---|---|
 |Manufacturer|Itead Studio|
 |Web page|[https://www.itead.cc/sonoff-t1.html](https://www.itead.cc/sonoff-t1.html)|
-|Build flag|ITEAD_SONOFF_T1|
+|Build flag|`ITEAD_SONOFF_T1`|
+| Voltage |  TODO |
+
 
 ### Flashing
 
@@ -244,7 +267,8 @@ You will have to open the case. There is a 5 pin header with VCC33 (3V3), TX, RX
 |---|---|
 |Manufacturer|Itead Studio|
 |Web page|[https://www.itead.cc/sonoff-led.html](https://www.itead.cc/sonoff-led.html)|
-|Build flag|ITEAD_SONOFF_LED|
+|Build flag|`ITEAD_SONOFF_LED`|
+| Voltage |  TODO |
 
 ### Flashing
 
@@ -258,7 +282,9 @@ You will have to open the case. There is a 5 pin header with VCC33 (3V3), TX, RX
 |---|---|
 |Manufacturer|Itead Studio|
 |Web page|[https://www.itead.cc/sonoff-sv.html](https://www.itead.cc/sonoff-sv.html)|
-|Build flag|ITEAD_SONOFF_SV|
+|Build flag|`ITEAD_SONOFF_SV`|
+| Voltage |  TODO |
+
 
 ### Flashing
 
@@ -273,14 +299,19 @@ You will have to open the case. There is a 5 pin header with VCC33 (3V3), TX, RX
 |---|---|
 |Manufacturer|Itead Studio|
 |Web page|[https://www.itead.cc/slampher.html](https://www.itead.cc/slampher.html)|
-|Build flag|ITEAD_SLAMPHER|
+|Build flag|`ITEAD_SLAMPHER`|
+| Voltage |  <span style="color:red">3v3</span> |
+
+
 
 ### Flashing
 
 ![Slampher - Inside front view](images/flashing/slampher-flash1.jpg)
 ![Slampher - Flashing short](images/flashing/slampher-flash2.jpg)
 
-There is a 4 pin unpopulated header in a border near the ESP8266 chip. Starting form the little white mark this header brings out 3V3, RX, TX and GND. Solder a male or female header here and connect your USB-to-UART programmer (remember it's a 3V3 device). This time through **the button is not connected to GPIO0** but to a EFM8BB1 microcontroller that also monitors the RF module output.
+There is a 4 pin unpopulated header in a border near the ESP8266 chip. Starting from the little white mark the pins are 3V3, RX, TX and GND. Solder a male or female header here and connect your USB-to-UART programmer. 
+
+This time through **the button is not connected to GPIO0** but to a EFM8BB1 micro-controller that also monitors the RF module output.
 
 There are a couple of ways to enter flash mode. Some recommend to move R21 to R20 (at the top right of the first picture above) to connect the button directly to the ESP8266 GPIO0 and use it in the same way as for the Sonoff or Sonoff TH. The drawback is the by doing that you lose the RF capability.
 
@@ -294,7 +325,9 @@ My recommendation is to **temporary shortcut the right pad of the unpopulated R2
 |---|---|
 |Manufacturer|Itead Studio|
 |Web page|[https://www.itead.cc/slampher.html](https://www.itead.cc/slampher.html)|
-|Build flag|ITEAD_SLAMPHER|
+|Build flag|`ITEAD_SLAMPHER`|
+| Voltage |  <span style="color:red">3v3</span> |
+
 
 ### Flashing
 
@@ -303,7 +336,7 @@ My recommendation is to **temporary shortcut the right pad of the unpopulated R2
 
 New Slampher boards are labeled "Slampher V2.0 2017-04-14". These boards are slightly different.
 
-There is a 4 pin unpopulated header in a border near the ESP8266 chip. Starting form the closer to the drilled hole they are 3V3, TX RX and GND. Solder a male or female header here and connect your USB-to-UART programmer (remember it's a 3V3 device).
+There is a 4 pin unpopulated header in a border near the ESP8266 chip. Starting form the closer to the drilled hole they are 3V3, TX, RX and GND. Solder a male or female header here and connect your USB-to-UART programmer.
 
 To enter flash mode the ESPurna user Tomasz Pacak recommends shortcutting the ground pad to the R9 resistor pad closer to the ESP8266 (check the image above). Again this is a temporary shortcut. You will have to do it just once (unless there is something really wrong in the firmware) and use OTA updates from there on.
 
@@ -319,7 +352,9 @@ Also, user [P.B.](https://bitbucket.org/PieBru/) has suggested to add a pushbutt
 |---|---|
 |Manufacturer|Itead Studio|
 |Web page|[https://www.itead.cc/smart-socket.html](https://www.itead.cc/smart-socket.html)|
-|Build flag|ITEAD_S20|
+|Build flag|`ITEAD_S20`|
+| Voltage |  <span style="color:red">3v3</span> |
+
 
 ### Flashing
 
@@ -327,7 +362,7 @@ Also, user [P.B.](https://bitbucket.org/PieBru/) has suggested to add a pushbutt
 
 There is a labeled header in the front of the PCB and the button is connected to GPIO0, so no problems here.
 
-Solder a 4 pin male or female header and connect it to your USB-to-UART bridge. Again, remember **it's a 3V3 device**. Then press and hold the button and connect the programmer to your computer. The microcontroller will boot into flash mode and you are ready to update the firmware.
+Solder a 4 pin male or female header and connect it to your USB-to-UART bridge.  Then press and hold the button and connect the programmer to your computer. The micro-controller will boot into flash mode and you are ready to update the firmware.
 
 ---
 
@@ -337,7 +372,9 @@ Solder a 4 pin male or female header and connect it to your USB-to-UART bridge. 
 |---|---|
 |Manufacturer|Itead Studio|
 |Web page|[https://www.itead.cc/smart-home/inching-self-locking-wifi-wireless-switch.html](https://www.itead.cc/smart-home/inching-self-locking-wifi-wireless-switch.html)|
-|Build flag|ITEAD_1CH_INCHING|
+|Build flag|`ITEAD_1CH_INCHING`|
+| Voltage |  ? |
+
 
 ### Flashing
 
@@ -355,7 +392,9 @@ Check my post here: [http://tinkerman.cat/the-mysterious-ic/](http://tinkerman.c
 |---|---|
 |Manufacturer|Itead Studio|
 |Web page|[https://www.itead.cc/smart-home/motor-reversing-wifi-wireless-switch.html](https://www.itead.cc/smart-home/motor-reversing-wifi-wireless-switch.html)|
-|Build flag|ITEAD_MOTOR|
+|Build flag|`ITEAD_MOTOR`|
+| Voltage |  ? |
+
 
 ### Flashing
 
@@ -371,7 +410,9 @@ Very much like the 1CH above (actually the pic is from the 1CH). The main button
 |---|---|
 |Manufacturer|Electrodragon|
 |Web page|[http://www.electrodragon.com/product/wifi-iot-relay-board-based-esp8266/](http://www.electrodragon.com/product/wifi-iot-relay-board-based-esp8266/)|
-|Build flag|ELECTRODRAGON_WIFI_IOT|
+|Build flag|`ELECTRODRAGON_WIFI_IOT`|
+| Voltage |  <span style="color:red">5v</span> |
+
 
 ### Flashing
 
@@ -392,7 +433,9 @@ The Electrodragon ESP Relay Board is pretty easy to flash IF you do not follow t
 |---|---|
 |Manufacturer|WorkChoice|
 |Web page (non-official)|[http://thegreatgeekery.blogspot.com.es/2016/02/ecoplug-wifi-switch-hacking.html](http://thegreatgeekery.blogspot.com.es/2016/02/ecoplug-wifi-switch-hacking.html)|
-|Build flag|WORKCHOICE_ECOPLUG|
+|Build flag|`WORKCHOICE_ECOPLUG`|
+| Voltage |  TODO |
+
 
 ### Flashing
 
@@ -406,7 +449,9 @@ The Electrodragon ESP Relay Board is pretty easy to flash IF you do not follow t
 |---|---|
 |Manufacturer|Wemos|
 |Web page|[https://www.wemos.cc/product/relay-shield.html](https://www.wemos.cc/product/relay-shield.html)|
-|Build flag|WEMOS_D1_MINI_RELAYSHIELD|
+|Build flag|`WEMOS_D1_MINI_RELAYSHIELD`|
+| Voltage |  USB |
+
 
 ### Flashing
 
@@ -420,13 +465,15 @@ The Wemos D1 Mini has an microUSB port, can't be easier.
 |---|---|
 |Manufacturer|JanGoe|
 |Web page|[https://github.com/JanGoe/esp8266-wifi-relay](https://github.com/JanGoe/esp8266-wifi-relay)|
-|Build flag|JANGOE_WIFI_RELAY_NC or JANGOE_WIFI_RELAY_NO|
+|Build flag|`JANGOE_WIFI_RELAY_NC` or `JANGOE_WIFI_RELAY_NO`|
+| Voltage |  <span style="color:red">5v</span> |
+
 
 ### Flashing
 
 ![Jan Goedeke Wifi Relay - Top view](images/devices/jangoe-wifi-relay.png)
 
-Connect GPIO0 to GND in the bottom-left header in the picture above and then connect your USB2UART programmer to the top-left corner header. Use 5V.
+Connect GPIO0 to GND in the bottom-left header in the picture above and then connect your USB-to-UART programmer to the top-left corner header. 
 
 ---
 
@@ -436,7 +483,10 @@ Connect GPIO0 to GND in the bottom-left header in the picture above and then con
 |---|---|
 |Manufacturer|OpenEnergyMonitor|
 |Web page|[http://guide.openenergymonitor.org/integrations/mqtt-relay/](http://guide.openenergymonitor.org/integrations/mqtt-relay/)|
-|Build flag|OPENENERGYMONITOR_MQTT_RELAY|
+|Build flag|`OPENENERGYMONITOR_MQTT_RELAY`|
+| Voltage |  <span style="color:red">3v3</span> |
+
+
 
 ### Flashing
 
@@ -450,13 +500,15 @@ Check the "Programming (advanced)" section in the [MQTT Relay Guide](http://guid
 |---|---|
 |Manufacturer|Jorge García|
 |Web page|https://www.tindie.com/products/jorgegarciadev/wifi--relays-board-kit|
-|Build flag|JORGEGARCIA_WIFI_RELAYS|
+|Build flag|`JORGEGARCIA_WIFI_RELAYS`|
+| Voltage |  <span style="color:red">5V</span> |
+
 
 ### Flashing
 
 ![Wifi Relays Board Kit - Top view](images/flashing/jorge-garcia-wifi-relays-board-lit-flash.jpg)
 
-You have all the required pins in an unpopulated header between the relays and the transformer. Solder a 4 pins male or female header here and connect it to your favourite USB-to-UART module. The VCC pin should be connected to 5V.
+You have all the required pins in an unpopulated header between the relays and the transformer. Solder a 4 pins male or female header here and connect it to your favorite USB-to-UART module. The VCC pin should be connected to 5V.
 
 Press and hold the "Flash" button and then press and release the "Reset" button. You are now in flash mode and ready to upload the firmware image.
 
@@ -468,15 +520,17 @@ Press and hold the "Flash" button and then press and release the "Reset" button.
 |---|---|
 |Manufacturer|AI Thinker / Noduino|
 |Web page|[http://wiki.jackslab.org/Noduino_OpenLight](http://wiki.jackslab.org/Noduino_OpenLight) [buy it at Aliexpress](http://s.click.aliexpress.com/e/ybuVN3n)|
-|Build flag|AITHINKER_AI_LIGHT|
+|Build flag|`AITHINKER_AI_LIGHT`|
+| Voltage |  <span style="color:red">3v3</span> |
 
-The AI Light is a ESP8255 (?) bulb light with 8 high power white LEDs, 6 red LEDs, 4 green LEDs and 4 blue LEDs driven by an My-Semi MY9291 LED driver. The bulb itself comes unbranded but the user manual (only in chinese) says clearly "Ai Light" with the AI-Thinker logo. It's the same Noduino OpenLight bulb at JackLabs (Noduino, Maike Labs, ICamGo) designed by Jack Tan (comcat @ github).
+
+The AI Light is a ESP8255 (?) bulb light with 8 high power white LEDs, 6 red LEDs, 4 green LEDs and 4 blue LEDs driven by an My-Semi MY9291 LED driver. The bulb itself comes unbranded but the user manual (only in Chinese) says clearly "Ai Light" with the AI-Thinker logo. It's the same Noduino OpenLight bulb at JackLabs (Noduino, Maike Labs, ICamGo) designed by Jack Tan (comcat @ GitHub).
 
 ### Flashing
 
 ![AI Light - Flashing](images/flashing/ailight-flash.jpg)
 
-Pop out the bulb head to access the PCB. It's actually 2 PCBs, and outer one with the LEDs and an inner one with the microcontroller and led driver. There are 5 pads labelled with everything you need to flash the ESP on board: 3V3, GND, TX, RX and IO0.
+Pop out the bulb head to access the PCB. It's actually 2 PCBs, and outer one with the LEDs and an inner one with the micro-controller and led driver. There are 5 pads labelled with everything you need to flash the ESP on board: 3V3, GND, TX, RX and IO0.
 
 It might seem hard but it's not. Get a 5 wire cable and remove 1-2mm of insulation from the wires, tin them a bit. Apply a hot wire on the pads and leave a small drop of tin on them too. Then just touch each wire with a pad and heat them together for less than a second.
 
@@ -490,7 +544,9 @@ Connect the wires to you FTDI (or alike) board. TX to RX and RX to TX. Connect G
 |---|---|
 |Manufacturer|Magic Home|
 |Web page|[Magic Home LED Controller at Aliexpress](http://s.click.aliexpress.com/e/VNnYVjE)|
-|Build flag|MAGICHOME_LED_CONTROLLER|
+|Build flag|`MAGICHOME_LED_CONTROLLER`|
+| Voltage | Use power supply |
+
 
 This is a small controller for RGBW 5050 LED strips, the kind of strips that show just one color on all the LEDs at the same time (no WS2812 controller). It has what looks like to be an ESP-12E module but it's not. My board reports being a generic 1MB ESP8266 module with QIO flash mode but other user's have reported it to be connected in DIO configuration like a ESP8285.
 
@@ -513,7 +569,9 @@ Version 2.0 of the board is different. Solder the 4 wires on the module (GND to 
 |---|---|
 |Manufacturer|Tinkerman|
 |Web page|[ESPurna-H board at tinkerman.cat](http://tinkerman.cat/the-espurna-board-a-smart-wall-switch-with-power-monitoring/)|
-|Build flag|TINKERMAN_ESPURNA_H|
+|Build flag|`TINKERMAN_ESPURNA_H`|
+| Voltage |  <span style="color:red">5v</span> |
+
 
 Custom smart switch board that features:
 
