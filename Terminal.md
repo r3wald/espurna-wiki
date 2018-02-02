@@ -74,7 +74,7 @@ This is a list of current settings with description and default values. '#' mean
 |board|Board id (this setting is meant for future identification)|||
 |boardName|Board id (this setting is used to identify the board on OTA updates)|||
 |cfg|Configuration version (this setting is meant for future identification)|||
-|loopDelay|Delay in milliseconds at the end of the main loop (reduces power consumption but also resposiveness)|A number equals or greater than 0|10|
+|loopDelay|Delay in milliseconds at the end of the main loop (reduces power consumption but also responsiveness)|A number equals or greater than 0|10|
 |**HOME ASSISTANT**|
 |haEnabled|Home Assistant auto-discover feature enabled|0 (no) or 1 (yes)|1 (yes)|
 |haPrefix|Home Assistant MQTT prefix|A string|homeassistant|
