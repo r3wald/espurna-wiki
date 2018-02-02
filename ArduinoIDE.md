@@ -11,7 +11,7 @@ All you have to do is decompress it (unzip it or unbzip it) where you want, open
 First step is to install support for ESP8266 based boards on the Arduino IDE through the Board Manager. These instruction are copied and adapted from the Arduino Core for ESP8266 documentation here: [https://github.com/esp8266/Arduino/blob/master/doc/installing.md](https://github.com/esp8266/Arduino/blob/master/doc/installing.md).
 
 - Start Arduino and open Preferences window.
-- Enter ```http://arduino.esp8266.com/stable/package_esp8266com_index.json``` into *Additional Board Manager URLs* field. You can add multiple URLs, separating them with commas.
+- Enter `http://arduino.esp8266.com/stable/package_esp8266com_index.json` into *Additional Board Manager URLs* field. 
 - Open Boards Manager from Tools > Board menu and find *esp8266* platform.
 - Select the version you need from a drop-down box.
 - Click *install* button.
@@ -26,7 +26,7 @@ First step is to install support for ESP8266 based boards on the Arduino IDE thr
 
 To increase the available space for firmware on 1M boards it's a good idea to use a flash layout with no partition for SPIFFS, since ESPurna does not use it. Unfortunately there is no layout available for 1M boards without SPIFFS, so we will have to modify some files in out "portable" folder to achieve this.
 
-First edit the "<arduino folder>/portable/packages/esp8266/hardware/esp8266/2.3.0/boards.txt" file and locate the definitions for "generic.menu.FlashSize.1M64". These few lines define a layour for 1Mbytes ESP8266 boards with 64KBytes SPIIFS. You will have to create a new group of lines below that one for our new layout:
+First edit the '**\<arduino folder\>/portable/packages/esp8266/hardware/esp8266/2.3.0/boards.txt**' file and locate the definitions for `generic.menu.FlashSize.1M64`. These few lines define a layout for 1Mbytes ESP8266 boards with 64KBytes SPIIFS. You will have to create a new group of lines below that one for our new layout:
 
 ```
 generic.menu.FlashSize.1M0=1M (no SPIFFS)
@@ -36,7 +36,7 @@ generic.menu.FlashSize.1M0.upload.maximum_size=1023984
 
 ```
 
-Same thing for ESP8295 boards, locate the "esp8285.menu.FlashSize.1M64" group of lines and copy the following line below that one:
+Same thing for ESP8295 boards, locate the `esp8285.menu.FlashSize.1M64` group of lines and copy the following line below that one:
 
 ```
 esp8285.menu.FlashSize.1M0=1M (no SPIFFS)
@@ -46,7 +46,7 @@ esp8285.menu.FlashSize.1M0.upload.maximum_size=1023984
 
 ```
 
-These new flash layout refer to a file (eagle.flash.1m0.ld) that does not exist, so we will create that one too. It has to be in "<arduino folder>/portable/packages/esp8266/hardware/esp8266/2.3.0/tools/sdk/ld/eagle.flash.1m0.ld" with these contents:
+These new flash layout refer to a file ('**eagle.flash.1m0.ld**') that does not exist, so we will create that one too. It has to be in '**\<arduino folder\>/portable/packages/esp8266/hardware/esp8266/2.3.0/tools/sdk/ld/eagle.flash.1m0.ld**' with these contents:
 
 ```
 /* Flash Split for 1M chips, no SPIFFS */
@@ -94,7 +94,7 @@ This is the list, in **bold** the text you have to search for:
 |**PMS Library** by Mariusz Kacki|Required when PMSX003_SUPPORT is 1|
 |**PubSubClient** by Nick O'Leary|Required when MQTT_USE_ASYNC is 0. Read note below|
 
-**Note**: The PubSubClient library requires a little modification in order to work with long MQTT message payloads (like when using Domoticz integration). You will need to edit the ```PubSubClient.h``` file (for me that file is under the "C:\Users\xose\Documents\Arduino\libraries\arduino_281549\src\PubSubClient.h" folder), line 26 and change the MQTT_MAX_PACKET_SIZE to at least 400.
+**Note**: The PubSubClient library requires a little modification in order to work with long MQTT message payloads (like when using Domoticz integration). You will need to edit the '**PubSubClient.h**' file (for me that file is under the '**C:\Users\xose\Documents\Arduino\libraries\arduino_281549\src\PubSubClient.h**' folder), line 26 and change the MQTT_MAX_PACKET_SIZE to at least 400.
 
 ```
 // MQTT_MAX_PACKET_SIZE : Maximum packet size
@@ -137,11 +137,11 @@ Depending on your level of GIT confidence you can checkout the repositories for 
 
 ## Open ESPurna in the IDE ##
 
-Assuming you have already checked out the project from bitbucket using git, you just have to open the ```code/espurna/espurna.ino``` file. The rest of the files will open as tabs in the IDE. Unfortunately the IDE does not support opening files under subfolders, and that includes the configuration files you will have to modify in the next step.
+Assuming you have already checked out the project from github using git, you just have to open the '**code/espurna/espurna.ino**' file. The rest of the files will open as tabs in the IDE. Unfortunately the IDE does not support opening files under subfolders, and that includes the configuration files you will have to modify in the next step.
 
 ## Configuring the hardware ##
 
-The ESPurna firmware uses build flags to target specific boards or enable support for certain sensors. The Arduino IDE does not have a friendly way to specify build flags from the interface so the best option is to manually modify the '**code/espurna/config/arduino.h**' file to define what we want to build. Edit that file with your favourite editor (it's not accessible from the IDE, the pic below is from Atom) and uncomment the options to suit your need. In the example below we are compiling for Sonoff TH with DHT support.
+The ESPurna firmware uses build flags to target specific boards or enable support for certain sensors. The Arduino IDE does not have a friendly way to specify build flags from the interface so the best option is to manually modify the '**code/espurna/config/arduino.h**' file to define what we want to build. Edit that file with your favorite editor (it's not accessible from the IDE, the pic below is from Atom) and uncomment the options to suit your need. In the example below we are compiling for Sonoff TH with DHT support.
 
 ![Arduino IDE - Hardware configuration from Atom](images/arduino/arduino-hardware.jpg)
 
