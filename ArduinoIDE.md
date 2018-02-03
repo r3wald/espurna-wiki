@@ -127,7 +127,7 @@ You will have to install manually the libraries that are not available from the 
 |**RemoteSwitch** by Randy Simons (fork)|[GIT](https://github.com/xoseperez/RemoteSwitch-arduino-library)|[ZIP](https://github.com/xoseperez/RemoteSwitch-arduino-library/archive/master.zip)|Required if RF_SUPPORT is 1|
 |**Time** by Michael Maregolis and Paul Stoffregen (fork)|[GIT](https://github.com/xoseperez/Time)|[ZIP](https://github.com/xoseperez/Time/archive/master.zip)||
 
-(1) Please note that versions newer than https://github.com/me-no-dev/ESPAsyncWebServer/commit/313f3372c61f6f4bff9c157f02a07ba912d3d4d9 have been reported as having websocket authentication issues with Safari and iOS.
+(1) Please note that versions newer than https://github.com/me-no-dev/ESPAsyncWebServer/commit/313f3372c61f6f4bff9c157f02a07ba912d3d4d9 have been reported as having websocket authentication issues with Safari and iOS. It is recommended to use that commit version for the moment.
 
 Download the ZIP files from the links in the table above only for those libraries you actually need. If you are unsure start with the mandatory ones. Then use the menu under "Sketch > Include Library > Add .ZIP Library..." and load them one by one.
 
