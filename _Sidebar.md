@@ -17,7 +17,7 @@
 * General
 * Lights
 * [Sensors](Sensors)
-* [Software features](Software)
+* [Software features](Software-features)
 
 ### Configuration
 * [Initial](Configuration)
