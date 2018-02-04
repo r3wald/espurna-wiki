@@ -1,4 +1,7 @@
-This page describes software features of ESPUrna.
+This page describes software features of ESPurna.
+You can enable or disable some of the features by using C preprocessor build flags (`-D`), ie: `-DMQTT_SUPPORT=0` will disable MQTT, as per below tables.
+
+Tables list all options that can be supplied during runtime. Some are not documented well - feel free to enhance this page.
 
 # Interfaces
 
