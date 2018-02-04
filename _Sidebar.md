@@ -8,6 +8,7 @@
 * Using [Arduino IDE](ArduinoIDE)
 * Build the [Web Interface](WebInterface)
 * [Over-the-air updates](OTA)
+* [Two-step updates](TwoStepUpdates)
 * ESPurna OTA Manager
 * NoFUSS
 * [Troubleshooting](Troubleshooting)
