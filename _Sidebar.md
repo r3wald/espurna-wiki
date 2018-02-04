@@ -12,11 +12,12 @@
 * NoFUSS
 * [Troubleshooting](Troubleshooting)
 
-### Supported hardware
+### Supported hardware and options
 * [Devices](Hardware)
 * General
 * Lights
 * [Sensors](Sensors)
+* [Software features](Software)
 
 ### Configuration
 * [Initial](Configuration)
