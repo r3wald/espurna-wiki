@@ -8,13 +8,13 @@ Once you have flashed your board with the ESPurna firmware you can flash it agai
 > pio run -t upload -e itead-sonoff-basic-ota
 ```
 
-When using OTA environment it defaults to the IP address of the device in SoftAP mode. If you want to flash it when connected to your home network best way is to supply the IP of the device:
+When using OTA environment it defaults to the IP address of the device in SoftAP mode. If you want to flash it when connected to your home network the best way is to supply the IP of the device:
 
 ```bash
 > pio run -t upload -e itead-sonoff-basic-ota --upload-port 192.168.1.151
 ```
 
-Please note that if you have changed the admin password from the web interface you will have to change it too in the platformio.ini file for the OTA to work. Check for the *upload_flags* option in your ota-enabled environment.
+Please note that if you have changed the admin password from the web interface you will have to change it in the platformio.ini file for the OTA to work. Check for the *upload_flags* option in your ota-enabled environment.
 
 With version 1.9.0 the platformio.ini file defines 3 useful environments for custom OTA updates: esp8266-1m-ota, esp8266-4m-ota and esp8285-1m-ota. And example of use is:
 

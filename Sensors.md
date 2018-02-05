@@ -1,6 +1,6 @@
 This page describes various sensors supported by ESPurna. 
 
-To enable particular sensor in firmware, you should build the firmware with appropriate build flags (`-D`) set to `1`. Below table is listing all supported build flags. Some sensors have additional options, so please check additional information below.
+To enable particular sensor in firmware, you should build the firmware with appropriate build flags (`-D`) set to `1`. The table below lists all supported build flags. Some sensors have additional options, so please check additional information below.
 
 In most of the cases, just setting a build flag to `1` will do the trick - most sensors have default options for auto-detecting sensor parameters or using most widely used values. Still, you have full control, so feel free to customize.
 
@@ -63,7 +63,7 @@ This will enable generic digital input sensor (switch or a pushbutton).
 
 ## I2C Bus
 
-Enable generic I2C bus support. It will automatically if any sensor that requires it is also enabled, but you might want to choose non-default ports.
+Enable generic I2C bus support. It will be automatically enab;ed if any sensor that requires it is also enabled, but you might want to choose non-default ports.
 
 | Option | Note | 
 | --- | --- | 
@@ -170,8 +170,8 @@ Energy Monitor based on interval analog GPIO.
 | Option | Note | 
 | --- | --- |
 | `HLW8012_SEL_PIN={0,15}` | GPIO where SEL is connected (default: `5`) |
-| `HLW8012_CF1_PIN={0,15}` | GPIO where SEL is connected (default: `5`) |
-| `HLW8012_CF_PIN={0,15}`  | GPIO where SEL is connected (default: `5`) |
+| `HLW8012_CF1_PIN={0,15}` | GPIO where CF1 is connected (default: `5`) |
+| `HLW8012_CF_PIN={0,15}`  | GPIO where CF is connected (default: `5`) |
 | `HLW8012_SEL_CURRENT`    | SEL pin transition to start measuring. One of: <br> - `HIGH` (default) <br> - `LOW` |
 | `HLW8012_CURRENT_R=<n>`  | Current resistor, default: `0.001` |
 | `HLW8012_VOLTAGE_R_UP`   | Upstream voltage resistor, default: `( 5 * 470000 )` |

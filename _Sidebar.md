@@ -8,15 +8,17 @@
 * Using [Arduino IDE](ArduinoIDE)
 * Build the [Web Interface](WebInterface)
 * [Over-the-air updates](OTA)
+* [Two-step updates](TwoStepUpdates)
 * ESPurna OTA Manager
 * NoFUSS
 * [Troubleshooting](Troubleshooting)
 
-### Supported hardware
+### Supported hardware and options
 * [Devices](Hardware)
 * General
 * Lights
 * [Sensors](Sensors)
+* [Software features](Software-features)
 
 ### Configuration
 * [Initial](Configuration)

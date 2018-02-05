@@ -1,17 +1,17 @@
-# Home Assistant Integration #
+# Home Assistant Integration 
 
-Integrating and ESPurna switch into [Home Assistant](https://home-assistant.io/) is very easy since both talk MQTT. You don't need any special addon in ESPurna but you will need to properly configure the MQTT connection.
+Integrating an ESPurna switch into [Home Assistant](https://home-assistant.io/) is very easy since both talk MQTT. You don't need any special addon in ESPurna but you will need to properly configure the MQTT connection.
 
-Once the ESPurna powered device is connected to your MQTT broker of choice, it's time to configure the link from the configuration.yaml file of you Home Assistant instance.
+Once the ESPurna powered device is connected to your MQTT broker of choice, it's time to configure the link from the configuration.yaml file of your Home Assistant instance.
 
 *Note: I'm assuming here you already have Home Assistant installed somewhere. Head over to their [getting started](https://home-assistant.io/getting-started/) page to do it if you have not.*
 
-## HomeAssistant Configuration ##
+## HomeAssistant Configuration 
 
 First make sure your Home Assistant instance connects to the same broker you connected the ESPurna device. You can read the [Home Assistant MQTT](https://home-assistant.io/components/mqtt/) page for a full explanation of the process but you will basically have to add these lines to your configuration.yaml file:
 
 
-```
+```yaml
 #!yaml
 
 mqtt:
@@ -23,12 +23,14 @@ mqtt:
 
 This is the bare minimum (username and password are optional, but you really should use them). If your broker setup is not standard check all the configuration options in the [Home Assistant MQTT](https://home-assistant.io/components/mqtt/) page.
 
-## Link your ESPurna device to Home Assistant ##
+## Link your ESPurna device to Home Assistant 
 
-Home Assistant has a special type of device called "switch". You can configure this switch to use MQTT connection. Basically you will have to define the command (write) and status (read) topics and payloads. And done. Here you have a sample configuration (add these lines to the same configuration.yaml file):
+Home Assistant has a special type of device called "switch". You can configure this switch to use MQTT connection. Basically you will have to define the command (write) and status (read) topics and payloads.
+
+Here you have a sample configuration (add these lines to the same configuration.yaml file):
 
 
-```
+```yaml
 #!yaml
 switch:
   - platform: mqtt
@@ -49,7 +51,7 @@ As you can see we are setting the "platform" to "mqtt" to use the connection be 
 
 ESpurna supports color, brightness, temperature color and individual channels for light devices (dimmers, my9192-based light bulbs,...). An example configuration for Home Assistant would be:
 
-```
+```yaml
 #!yaml
 light:
   - platform: mqtt

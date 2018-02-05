@@ -1,16 +1,14 @@
-# Terminal #
-
 The ESPurna firmware outputs debug information to the terminal interface (except for the Sonoff Dual and the Sonoff RF Bridge). You only have to connect your USB2UART board to the TX, RX and GND pins in your board and open a terminal at **115200 baud** (8,N,1).
 
 But the terminal not only shows information about what the device is doing, it also accepts several commands thanks to the Embedis library. You can get a list of these commands typing ```help``` and enter. It's recommended to enable echo to see what you are typing. Backspace or delete won't work in the terminal.
 
 Available commands as of 1.12.1 (the actual list of available commands will depend on the built-in functionalities of your specific image):
 
-|command|description|
-|-|-|
-|**brightness** <value>|Sets RGB brightness (only for lights)|
-|**channel** <id> <value>|Sets value for channel #id (only for lights)|
-|**color** <value>|Sets RGB color (only for lights)|
+| command | description |  
+| --- | --- |
+|**brightness** &lt;value&gt;|Sets RGB brightness (only for lights)|
+|**channel** &lt;id&gt; &lt;value&gt;|Sets value for channel #id (only for lights)|
+|**color** &lt;value&gt;|Sets RGB color (only for lights)|
 |**commands**|Lists available commands|
 |**crash**|Shows stack dump from last crash|
 |**del** &lt;key&gt;|Deletes setting from EEPROM. Built-in|
@@ -55,7 +53,7 @@ Settings are stored in EEPROM. They persist across reboots and they survive firm
 This is a list of current settings with description and default values. '#' means a number starting from 0.
 
 |Key|Description|Possible values|Default value|
-|-|-|-|-|
+| --- | --- | --- | --- |
 |**ALEXA**|
 |alexaEnabled|Is Alexa integration enabled?|0 (no) or 1 (yes)|1 (yes)|
 |**API**|
@@ -76,7 +74,7 @@ This is a list of current settings with description and default values. '#' mean
 |board|Board id (this setting is meant for future identification)|||
 |boardName|Board id (this setting is used to identify the board on OTA updates)|||
 |cfg|Configuration version (this setting is meant for future identification)|||
-|loopDelay|Delay in milliseconds at the end of the main loop (reduces power consumption but also resposiveness)|A number equals or greater than 0|10|
+|loopDelay|Delay in milliseconds at the end of the main loop (reduces power consumption but also responsiveness)|A number equals or greater than 0|10|
 |**HOME ASSISTANT**|
 |haEnabled|Home Assistant auto-discover feature enabled|0 (no) or 1 (yes)|1 (yes)|
 |haPrefix|Home Assistant MQTT prefix|A string|homeassistant|

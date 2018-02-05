@@ -1,6 +1,6 @@
 # MQTT
 
-MQTT stands for "Message Queueing Telemetry Transport". It uses the publisher-subscriber pattern and it's especially suited for small messages when networks bandwidth is limited or when the network is not reliable. Nevertheless, it has become a defacto standard for sensor messaging over TCP.
+MQTT stands for "Message Queueing Telemetry Transport". It uses the publisher-subscriber pattern and it's especially suited for small messages when networks bandwidth is limited or when the network is not reliable. It has become a de facto standard for sensor messaging over TCP.
 
 Check [MQTT.org](http://mqtt.org/) for more info.
 
@@ -16,11 +16,11 @@ You can configure MQTT via the web interface or the terminal. Check the commands
 
 ### Root topic
 
-Every MQTT message that ESPurna publishes starts with the **root topic** you define in the "MQTT Root Topic" setting. That root topic is then complemented by the **magnitude** (like "temperature", "rfin" or "relay"), **an index** when there is more that one of such elements (more than one relay) and a trailing particle to tell commands from states.
+Every MQTT message that ESPurna publishes starts with the **root topic** you define in the "MQTT Root Topic" setting. That root topic is then complemented by the **magnitude** (like "temperature", "rfin" or "relay"), an **index** when there is more that one of such elements (more than one relay) and a trailing particle to tell commands from states.
 
 ### Commands and states
 
-A **state topic** is what ESPurna broadcasts telling every listener out there about something that happened ("the temperature is 18.3C"). A **command topic** is one ESPurna subscribes to listen to requests from other services. The default state topic particle is `""` (empty string, meaning no trailing particle). The default command topic particle is `"/set"`.
+A **state topic** is what ESPurna broadcasts telling every listener out there about something that happened ("the temperature is 18.3C"). A **command topic** is one ESPurna subscribes to to listen to requests from other services. The default state topic particle is `""` (empty string, meaning no trailing particle). The default command topic particle is `"/set"`.
 
 As an example, a board with one relay will publish the relay status when it changes to:
 
@@ -40,7 +40,7 @@ Placeholder  | Value
 `{mac}`      | The MAC of the ESP8266
 `{magnitude}`| The magnitude particle (+1.12.4)
 
-The `{magnitude}` placeholder is a special one. It indicates where the magnitude particle will be inserted. If you don't specify a location for the magnitude it will be inserted after the root topic. For instance, if you have a temperature sensor called "garden", and you set the root topic to `sensor/{magnitude}/{hostname}` the messages will be sent to `sensor/temperature/garden`. In the documentation all topic examples asume the magnitude placeholder is either not used or placed at the end of the root topic.
+The `{magnitude}` placeholder is a special one. It indicates where the magnitude particle will be inserted. If you don't specify a location for the magnitude it will be inserted after the root topic. For instance, if you have a temperature sensor called "garden", and you set the root topic to `sensor/{magnitude}/{hostname}` the messages will be sent to `sensor/temperature/garden`. In the documentation all topic examples assume the magnitude placeholder is either not used or placed at the end of the root topic.
 
 ### JSON payload
 
@@ -63,7 +63,7 @@ With the "Use JSON payload" option enabled only one message will be sent:
 
 ### Heartbeat
 
-Heartbeat messages are only state messages and are sent every X seconds (5 minutes by default). These messages report the status of the device amb some useful info.
+Heartbeat messages are only state messages and are sent every X seconds (5 minutes by default). These messages report the status of the device and some useful info.
 
 State topic             | Example payload       | Notes
 ----------------------- | --------------------- | ------------------
@@ -159,7 +159,7 @@ State topic             | Example payload | Notes
 ----------------------- | --------------- | ---------------
 `{root topic}/button/0` | `3`             | see table below
 
-The payload value is the one defined by the BUTTON_EVENT_* settings. 
+The payload value is the one defined by the BUTTON\_EVENT\_* settings. 
 
 Button event    | Value
 --------------- | -----
