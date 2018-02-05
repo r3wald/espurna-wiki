@@ -7,43 +7,43 @@ Tables list all options that can be supplied during runtime. Some are not docume
 
 | Feature | Build flag | Description | 
 | --- | --- | --- |
-| | `MQTT_SUPPORT` | Enable MQTT client (default: `1` - on) |
-| | `INFLUXDB_SUPPORT` | Enable (default: `0` - off) <Br> Uses ESPAsyncTCP library (see below) |
+| MQTT | `MQTT_SUPPORT` | Enable MQTT client (default: `1` - on) |
+| InfluxDB | `INFLUXDB_SUPPORT` | Enable InfluxDB HTTP interface (default: `0` - off) <Br> Uses ESPAsyncTCP library (see below) |
 | | `THINGSPEAK_SUPPORT` | (default: `1` - on) <Br> Uses ESPAsyncTCP library (see below) |
-| | `ALEXA_SUPPORT` | (default: `1` - on) <Br> Uses ESPAsyncTCP library (see below) |
-| | `IR_SUPPORT` | (default: `0` - on) |
-| | `RF_SUPPORT` | (default: `0` -on) |
+| Alexa | `ALEXA_SUPPORT` | Enable Alexa discovery and support (default: `1` - on) <Br> Uses ESPAsyncTCP library (see below) |
+| IR Rx/Tx | `IR_SUPPORT` | Enable IR Receiver / Transmitter support (default: `0` - off) |
+| 433Mhz RF | `RF_SUPPORT` | (default: `0` - off) |
 | Telnet | `TELNET_SUPPORT` | Enable telnet support (default: `1` - on) <Br> Uses ESPAsyncTCP library (see below) |
 | | `TELNET_STA` | Should telnet be enabled in STA mode (default: `0` - off ) |
-| | `TERMINAL_SUPPORT` | (default: `1` - on) |
+|  | `TERMINAL_SUPPORT` | (default: `1` - on) |
 | | `WEB_SUPPORT` | (default: `1` - on) <Br> Uses ESPAsyncTCP library (see below) | 
 | | `WEB_EMBEDDED` | (default: `1` - on) |
-| | `MDNS_SERVER_SUPPORT` | (default: `1` - on) |
-| | `MDNS_CLIENT_SUPPORT` | (default: `0` - off) |
-| | `LLMNR_SUPPORT` | (default: `0` - off) |
-| | `NETBIOS_SUPPORT` | (default: `0` - off) |
-| | `SSDP_SUPPORT` | (default: `0` - off) |
-| | `SSDP_DEVICE_TYPE` | (default: `"upnp:rootdevice"`) |
+| mDNS announcements | `MDNS_SERVER_SUPPORT` | Announce device via mDNS (default: `1` - on) |
+| mDNS discovery | `MDNS_CLIENT_SUPPORT` | Use mDNS to discover endpoints (like MQTT or InfluxDB) (default: `0` - off) |
+| LLMNR | `LLMNR_SUPPORT` | (default: `0` - off) |
+| NetBIOS | `NETBIOS_SUPPORT` | (default: `0` - off) |
+| SSDP | `SSDP_SUPPORT` | (default: `0` - off) |
+| SSDP device class | `SSDP_DEVICE_TYPE` | (default: `"upnp:rootdevice"`) |
 
 
 # Button configuration
 
 | Feature | Build flag | Description | 
 | --- | --- | --- |
-| | `BUTTON_DEBOUNCE_DELAY` | (default: `50`) | 
-| | `BUTTON_DBLCLICK_DELAY` | (default: `500`) | 
-| | `BUTTON_LNGCLICK_DELAY` | (default: `1000`) | 
-| | `BUTTON_LNGLNGCLICK_DELAY` | (default: `10000`) | 
+| Debounce delay | `BUTTON_DEBOUNCE_DELAY` | (default: `50`) | 
+| Double-click delay | `BUTTON_DBLCLICK_DELAY` | (default: `500`) | 
+| Long-click delay | `BUTTON_LNGCLICK_DELAY` | (default: `1000`) | 
+| Loooooong-click delay | `BUTTON_LNGLNGCLICK_DELAY` | (default: `10000`) | 
 
 # MQTT settings
 
 | Feature | Build flag | Description | 
 | --- | --- | --- |
-| | `DOMOTICZ_SUPPORT` | Enable Domoticz-specific layout of MQTT topics (default: `MQTT_SUPPORT`) |
-| | `HOMEASSISTANT_SUPPORT` | Enable Home-Assistant-specific layout of MQTT topics (default: `MQTT_SUPPORT`) |
-| | `MQTT_USE_ASYNC` | Which TCP library to use. One of: <br> - `0` - PubSubClient (will break other things) <Br> - `1` - ESPAsyncTCP (default)  |
-| | `MQTT_GETTER` | Subtopic for getting a value from an object (default: `""`) |
-| | `MQTT_SETTER` | Subtopic for setting a value to an object (default: `"/set"`) |
+| Domoticz | `DOMOTICZ_SUPPORT` | Enable Domoticz-specific layout of MQTT topics (default: `MQTT_SUPPORT`) |
+| Home Assistant | `HOMEASSISTANT_SUPPORT` | Enable Home-Assistant-specific layout of MQTT topics (default: `MQTT_SUPPORT`) |
+| TCP Library | `MQTT_USE_ASYNC` | Which TCP library to use. One of: <br> - `0` - PubSubClient (will break other things) <Br> - `1` - ESPAsyncTCP (default)  |
+| MQTT get root | `MQTT_GETTER` | Subtopic for getting a value from an object (default: `""`) |
+| MQTT set root | `MQTT_SETTER` | Subtopic for setting a value to an object (default: `"/set"`) |
 | | `BROKER_SUPPORT` | (default: `1`) |
 
 # IR / RF support
