@@ -14,7 +14,7 @@ Of course, it's not as easy as it is doing a single flash, but I think it's wort
 
 ## Procedure
 
-Well, as the name says, you will have to flash over-the-air your device twice. The first time with the `espurna-X.X.X-espurna-core.bin` image and the second one with the specific image for your device. You can do the firsr OTA upgrade using Arduino OTA or via the web interface, just like you do now.
+Well, as the name says, you will have to flash over-the-air your device twice. The first time with the `espurna-X.X.X-espurna-core.bin` image and the second one with the specific image for your device. You can do the first OTA upgrade using Arduino OTA or via the web interface, just like you do now.
 
 But for the second upgrade (from the core image to the final device image) only the Arduino OTA procedure is available at the moment. From the Arduino IDE you can build the image and flash it selecting the proper "Network Port" that points to your device (under "Tools > Port > Network ports").
 
