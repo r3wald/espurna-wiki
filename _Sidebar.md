@@ -4,6 +4,7 @@
 ### Getting started
 * [Backup](Backup) the stock firmware
 * Flash a [pre-built binary](Binaries) image
+* Flash a virgin Itead Sonoff device [without opening](OTA-flashing-of-virgin-Itead-Sonoff-devices)
 * Using [PlatformIO](PlatformIO)
 * Using [Arduino IDE](ArduinoIDE)
 * Build the [Web Interface](WebInterface)
