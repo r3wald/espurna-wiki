@@ -34,6 +34,20 @@ Sometimes OTA updates fail. It happens. It's not a problem since the firmware do
 
 You can directly upload the firmware file (.bin extension) to the device using the "Upgrade" option in the "Admin" tab of the web interface. You can find the latest firmware images for your device in the [releases page](https://github.com/xoseperez/espurna/releases/).
 
+## Updating from the Terminal
+
+From version 1.12.4, ESPurna includes an 'ota' command in the terminal that allows you to update the firmware in the device passing the URL of a binary as an argument. The URL can be in the local network or the internet, but the device has to have direct access to that resource (no redirects). HTTPS is not supported at the moment.
+
+Simply open a telnet session to the device and request an OTA update passing the URL:
+
+```
+> telnet 192.168.1.15
+ota http://192.168.1.11/espurna-1.12.4a-wemos-d1mini-relayshield.bin
+[038771] +OK
+[038771] [OTA] Downloading from 'http://192.168.1.11/espurna-1.12.4a-wemos-d1mini-relayshield.bin'
+[053298] [OTA] Done, restarting...
+```
+
 ## Automatic OTA updates
 
 You can also use the automatic OTA update feature. Check the [NoFUSS library](https://bitbucket.org/xoseperez/nofuss) for more info.
