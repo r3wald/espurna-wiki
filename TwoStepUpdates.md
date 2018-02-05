@@ -26,7 +26,7 @@ If you are using PlatformIO you can build and flash the image providing the IP o
 
 Finally, if you are using PlatformIO, you can also use the ESPurna OTA Manager (still a beta feature) that will guide you throu the process...
 
-Starting from 1.12.4 you can also upgrade de firmware from the Terminal providing the URL of an image. Check [OTA updates from the Terminal](https://github.com/xoseperez/espurna/wiki/OTA#updating-from-the-terminal).
+Starting from 1.12.4 you can also upgrade de firmware from the Terminal providing the URL of an image. Check [Updating from the Terminal](https://github.com/xoseperez/espurna/wiki/OTA#updating-from-the-terminal).
 
 ## About ESPurna Core
 
