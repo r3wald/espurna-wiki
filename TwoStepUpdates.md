@@ -1,5 +1,7 @@
 # Two-Step updates
 
+## Introduction
+
 As more and more features get packed into the firmware the binary image grows bigger. Until a few weeks ago it was one of my requirements to build images below the 512000 bytes size. That's the maximum size of an image so two of them would fit in a 1MB flash memory using the '1M (no SPIFFS)' memory layout.
 
 The flash memory is split into 4096 bytes sectors, so a 1MB flash memory has 256 sectors. One of those sectors is used for EEPROM and 4 more are reserved space at the end of the flash. That leaves us with 251 sectors for code (assuming no SPIFFS partition). And that means the code must not be larger than 125 sectors to be able to do OTA. That's 512000 bytes or 500Kb.
@@ -10,3 +12,40 @@ That's why I'm starting to use another approach: **the two-steps updates**. The 
 
 Of course, it's not as easy as it is doing a single flash, but I think it's worth it.
 
+## Procedure
+
+Well, as the name says, you will have to flash over-the-air your device twice. The first time with the `espurna-X.X.X-espurna-core.bin` image and the second one with the specific image for your device. You can do the firsr OTA upgrade using Arduino OTA or via the web interface, just like you do now.
+
+But for the second upgrade (from the core image to the final device image) only the Arduino OTA procedure is available at the moment. From the Arduino IDE you can build the image and flash it selecting the proper "Network Port" that points to your device (under "Tools > Port > Network ports").
+
+![Arduino OTA](images/arduino/arduino-ota.jpg)
+
+If you are using PlatformIO you can build and flash the image providing the IP of the device as the Upload Port:
+
+`platformio run -e itead-sonoff-basic-ota -t upload --upload-port=192.168.1.115`
+
+Finally, if you are using PlatformIO, you can also use the ESPurna OTA Manager (still a beta feature) that will guide you throu the process...
+
+## About ESPurna Core
+
+The ESPurna core image is basically a stripped-off version of the ESPurna firmware without several features that usually come bundled in. So, aside from the features that are not enabled by default, you don't have either:
+
+* Alexa support
+* Domoticz support
+* Home Assistant auto-discover
+* I2C support
+* MQTT
+* NTP sync
+* Web interface
+* HTTP API
+* Sensors
+* Scheduler
+* Thinkspeak support
+
+But you do have: 
+
+* mDNS
+* OTA
+* Telnet
+* Terminal
+* WiFi
