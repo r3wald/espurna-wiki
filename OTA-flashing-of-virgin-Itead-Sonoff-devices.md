@@ -1,3 +1,5 @@
+> This method is experimental. If it doesn't work, you will have to use [standard flashing method](Binaries)
+
 # Introduction 
 
 You just got your Sonoff device and would like to flash it using ESPurna, but would like to avoid opening device, and even soldering?
@@ -6,7 +8,7 @@ Clever folks at [SonOTA](https://github.com/mirko/SonOTA) and [Espressif2Arduino
  
 # Tested devices and firmware
 
-This method is compatible _only_ to Itead Sonoff devices, and only those running firmware _up until 1.60_. If your device arrived with newer firmware, process will not work, so you might need to downgrade using eWeLink. 
+This method is compatible _only_ to Itead Sonoff devices, and only those running firmware _up until 1.60_. If your device arrived with newer firmware, process will not work, so you might need to downgrade using eWeLink. This method will also not (and never) work on non Itead Sonoff devices or Itead Sonoff devices that don't have "pairing" mode.
 
 Tested devices:
 
