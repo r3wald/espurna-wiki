@@ -16,7 +16,7 @@
 
 ### Supported hardware and options
 * [Devices](Hardware)
-* General
+* [General](General)
 * Lights
 * [Sensors](Sensors)
 * [Software features](Software-features)
