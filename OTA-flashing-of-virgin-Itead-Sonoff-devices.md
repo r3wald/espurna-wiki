@@ -105,7 +105,9 @@ While keeping the script running, you should switch to newly created `ITEAD-1000
 [...]
 ```
 
-That's it :) You are just running ESPurna on your new device. Note that device will use ESPURNA-xxxxxx network for initial provisioning, but that's "business as usual". After this, you can use normal OTA to upgrade to any image you actually need, including newer versions.
+That's it :) You are just running ESPurna on your new device. 
+
+> With above instructions, you'll be loading "espurna-core" on your device, which is a minimal image including only necessary functionality to actually connect to device. You probably need device/functionality specific image, which now you can load using inbuilt OTA.
 
 You can let the script running, switch back to your home Wifi and flash another device.
 
