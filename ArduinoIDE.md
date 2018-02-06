@@ -116,8 +116,8 @@ You will have to install manually the libraries that are not available from the 
 |**AsyncMqttClient** by Marvin Roger|[GIT](https://github.com/marvinroger/async-mqtt-client)|[ZIP](https://github.com/marvinroger/async-mqtt-client/archive/master.zip)|Required if MQTT_USE_ASYNC is 1 (default value)|
 |**DebounceEvent** by Xose Pérez|[GIT](https://bitbucket.org/xoseperez/debounceevent)|[ZIP](https://bitbucket.org/xoseperez/debounceevent/get/master.zip)||
 |**ESPSoftwareSerial** fork by Oscar rovira|[GIT](https://github.com/krosk93/espsoftwareserial)|[ZIP](https://github.com/krosk93/espsoftwareserial/archive/master.zip)|Required if either MHZ19_SUPPORT, PMSX003_SUPPORT or V9261F_SUPPORT are set to 1|
-|**ESPAsyncTCP** by Hristo Gochkov|[GIT](https://github.com/me-no-dev/ESPAsyncTCP)|[ZIP](https://github.com/me-no-dev/ESPAsyncTCP/archive/master.zip)|See note 2 below|
-|**ESPAsyncWebServer** by Hristo Gochkov|[GIT](https://github.com/me-no-dev/ESPAsyncWebServer)|[ZIP](https://github.com/me-no-dev/ESPAsyncWebServer/archive/master.zip)|See note 1 below|
+|**ESPAsyncTCP** by Hristo Gochkov|[GIT](https://github.com/me-no-dev/ESPAsyncTCP)|[ZIP](https://github.com/me-no-dev/ESPAsyncTCP/archive/master.zip)|See note 1 below|
+|**ESPAsyncWebServer** by Hristo Gochkov|[GIT](https://github.com/me-no-dev/ESPAsyncWebServer)|[ZIP](https://github.com/me-no-dev/ESPAsyncWebServer/archive/master.zip)|See note 2 below|
 |**FauxmoESP** by Xose Pérez|[GIT](https://bitbucket.org/xoseperez/fauxmoesp)|[ZIP](https://bitbucket.org/xoseperez/fauxmoesp/get/master.zip)|Required if ALEXA_SUPPORT is 1 (default value)|
 |**HLW8012** by Xose Pérez|[GIT](https://bitbucket.org/xoseperez/hlw8012)|[ZIP](https://bitbucket.org/xoseperez/hlw8012/get/master.zip)|Required if HLW8012_SUPPORRT is 1|
 |**JustWifi** by Xose Pérez|[GIT](https://bitbucket.org/xoseperez/justwifi)|[ZIP](https://bitbucket.org/xoseperez/justwifi/get/master.zip)||
@@ -127,8 +127,10 @@ You will have to install manually the libraries that are not available from the 
 |**RemoteSwitch** by Randy Simons (fork)|[GIT](https://github.com/xoseperez/RemoteSwitch-arduino-library)|[ZIP](https://github.com/xoseperez/RemoteSwitch-arduino-library/archive/master.zip)|Required if RF_SUPPORT is 1|
 |**Time** by Michael Maregolis and Paul Stoffregen (fork)|[GIT](https://github.com/xoseperez/Time)|[ZIP](https://github.com/xoseperez/Time/archive/master.zip)||
 
-(1) Please note that versions newer than https://github.com/me-no-dev/ESPAsyncWebServer/commit/313f3372c61f6f4bff9c157f02a07ba912d3d4d9 have been reported as having websocket authentication issues with Safari and iOS. It is recommended to use that commit version for the moment.
-(2) If you are using Arduino core 2.3.0 stable, please install and use this version, [ESPAsyncTCP #9b0cc37](https://github.com/me-no-dev/ESPAsyncTCP#9b0cc37).
+
+(1) If you are using Arduino core 2.3.0 stable, please install and use this version, [ESPAsyncTCP #9b0cc37](https://github.com/me-no-dev/ESPAsyncTCP#9b0cc37).
+
+(2) Please note that versions newer than https://github.com/me-no-dev/ESPAsyncWebServer/commit/313f3372c61f6f4bff9c157f02a07ba912d3d4d9 have been reported as having websocket authentication issues with Safari and iOS. It is recommended to use that commit version for the moment.
 
 Download the ZIP files from the links in the table above only for those libraries you actually need. If you are unsure start with the mandatory ones. Then use the menu under "Sketch > Include Library > Add .ZIP Library..." and load them one by one.
 
