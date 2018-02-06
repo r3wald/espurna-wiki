@@ -1,0 +1,45 @@
+This page is about general options you can compile-in into your ESPurna.
+
+# Buttons and switches 
+
+ESPurna supports up to 8 buttons connected to various GPIO pins. These buttons are defined using C preprocessor flag `BUTTONx_PIN` (x being a number from 1 to 8). Some buttons might be onboard, and you might have the option of connecting some additional, depending on the board you are using.
+
+Each button can operate in number of different modes, configured using `BUTTON_MODE` flag:
+- `BUTTON_PUSHBUTTON` - connected button is of push-button type and event is fired when button is released.
+- `BUTTON_SWITCH` - connected button is actually a flip-switch, and event is fired on either transition (On->Off and Off-On).
+
+In addition, each button can have additional options that are logically `ORed` with type of button:
+- `BUTTON_DEFAULT_HIGH` - what should be default state of a button.
+- `BUTTON_SET_PULLUP` - should internal pull-up be enabled for a given GPIO (note that not all GPIOs support pullup)
+
+For example `-DBUTTON3_PIN=2 -DBUTTON_MODE="BUTTON_PUSHBUTTON|BUTTON_SET_PULLUP"` will configure Button3 on a GPIO02, will treat it as Push-button and will set the internal pull-up.
+
+# LEDs 
+
+ESPurna supports up to 8 connected LEDs to various GPIO pins. These LEDs are defined using C preprocessor flag `LEDx_PIN` (x being a number from 1 to 8). Some LEDs might be onboard, and you might have the option of connecting some additional, depending on the board you are using.
+
+Each LED can be bound to a relay state (see below), or operate in one of following modes, defined by `LED_MODE`:
+- `LED_MODE_WIFI` -
+- `LED_MODE_MQTT` -
+
+You can invert the LED status by set `LEDx_PIN_INVERSE` to `1`
+
+# Relays 
+
+ESPurna supports up to 8 connected relays to various GPIO pins. These relays are defined using C preprocessor flag `RELAYx_PIN` (x being a number from 1 to 8).
+
+Each relay can operate in one of the following modes: 
+- `RELAY_TYPE_NORMAL` - high-level-trigger, normally open relay.
+- `RELAY_TYPE_INVERSE` - either low-level-trigger, or normally closed relay. 
+- `RELAY_TYPE_LATCHED`- 
+
+## Binding buttons, relays and LEDs
+
+ESPurna has ability to change relay state based on the event coming from a button and set a LED status accordingly.
+
+To do that, one should define `BUTTONx_RELAY` with a relay number that's "bound" to a switch. 
+So, for example `-DBUTTON1_PIN=10 -DRELAY2_PIN=11  -DBUTTON1_RELAY=2` will configure Button1 on GPIO10, Relay2 on GPIO11, and will connect Button1 to Relay2.
+
+To also reflect Relay2 state (as defined above) on a LED1 connected to GPIO02, one should configure: `-DLED1_PIN=2 -DLED1_RELAY=2` in addition to the above line. 
+
+
