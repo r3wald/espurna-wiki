@@ -44,6 +44,7 @@ This is the official list of supported hardware for the ESPurna firmware. The ha
 | Xenon SM PW 702U | `XENON_SM_PW702U` | 
 | Arilux AL-LC | `ARILUX_AL_LC01` <br> `ARILUX_AL_LC02` <br> `ARILUX_AL_LC06` <br> `ARILUX_AL_LC11` <br> `ARILUX_E27` | 
 | QuinLED | `INTERMITTECH_QUINLED` | 
+| [NodeMCU Lolin](#nodemcu-lolin) | `NODEMCU_LOLIN` |
 
 ## Custom Boards
 
@@ -457,6 +458,22 @@ The Electrodragon ESP Relay Board is pretty easy to flash IF you do not follow t
 ### Flashing
 
 The Wemos D1 Mini has an microUSB port, can't be easier.
+
+---
+
+## NodeMCU Lolin
+
+|Property|Value|
+|---|---|
+|Manufacturer|NodeMCU|
+|Web page|[http://www.nodemcu.com/index_en.html](http://www.nodemcu.com/index_en.html)|
+|Build flag|`NODEMCU_LOLIN`|
+| Voltage |  USB |
+
+
+### Flashing
+
+The NodeMCU has an microUSB port, can't be easier.
 
 ---
 
