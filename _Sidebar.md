@@ -49,6 +49,6 @@
 * NTP
 
 ### Developers
-* Arquitecture
+* Architecture
 * [Coding style](CodingStyle)
 * [Pull Requests](PullRequests)
