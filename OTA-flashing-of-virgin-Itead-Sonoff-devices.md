@@ -16,6 +16,7 @@ Tested devices:
 | --- | --- | --- | 
 | Itead Sonoff Dual | lobradov | 2018-Feb-05 |  
 | Itead Sonoff 4CH  | lobradov | 2018-Feb-05 | 
+| Itead Sonoff Basic | jkohrman | 2018-Feb-08 |
 
 If you test/verify any other device, please update the table above.
 
