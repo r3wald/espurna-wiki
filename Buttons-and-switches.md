@@ -12,7 +12,7 @@ In addition, each button can have additional options that are logically `ORed` w
 - `BUTTON_DEFAULT_HIGH` - what should be default state of a button.
 - `BUTTON_SET_PULLUP` - should internal pull-up be enabled for a given GPIO (note that not all GPIOs support pullup)
 
-For example `-DBUTTON3_PIN=2 -DBUTTON3_MODE="BUTTON_PUSHBUTTON|BUTTON_SET_PULLUP"` will configure Button3 on a GPIO02, will treat it as Push-button and will set the internal pull-up.
+For example `-DBUTTON3_PIN=2 -DBUTTON3_MODE=4` (4 is the sum of BUTTON_PUSHBUTTON + BUTTON_SET_PULLUP) will configure Button3 on a GPIO02, will treat it as Push-button and will set the internal pull-up.
 
 # LEDs 
 
