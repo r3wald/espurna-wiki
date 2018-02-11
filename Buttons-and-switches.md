@@ -4,7 +4,7 @@ This page is about general options you can compile-in into your ESPurna.
 
 ESPurna supports up to 8 buttons connected to various GPIO pins. These buttons are defined using C preprocessor flag `BUTTONx_PIN` (x being a number from 1 to 8). Some buttons might be onboard, and you might have the option of connecting some additional, depending on the board you are using.
 
-Each button can operate in number of different modes, configured using `BUTTON_MODE` flag:
+Each button can operate in number of different modes, configured using `BUTTONx_MODE` flag:
 - `BUTTON_PUSHBUTTON` - connected button is of push-button type and event is fired when button is released.
 - `BUTTON_SWITCH` - connected button is actually a flip-switch, and event is fired on either transition (On->Off and Off-On).
 
@@ -12,7 +12,7 @@ In addition, each button can have additional options that are logically `ORed` w
 - `BUTTON_DEFAULT_HIGH` - what should be default state of a button.
 - `BUTTON_SET_PULLUP` - should internal pull-up be enabled for a given GPIO (note that not all GPIOs support pullup)
 
-For example `-DBUTTON3_PIN=2 -DBUTTON_MODE="BUTTON_PUSHBUTTON|BUTTON_SET_PULLUP"` will configure Button3 on a GPIO02, will treat it as Push-button and will set the internal pull-up.
+For example `-DBUTTON3_PIN=2 -DBUTTON3_MODE="BUTTON_PUSHBUTTON|BUTTON_SET_PULLUP"` will configure Button3 on a GPIO02, will treat it as Push-button and will set the internal pull-up.
 
 # LEDs 
 
