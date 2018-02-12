@@ -4,7 +4,7 @@ This is the official list of supported hardware for the ESPurna firmware. The ha
 
 > **CAUTION: Never ever connect any of these devices to your computer and to mains at the same time. Never ever manipulate them while connected to mains. Seriously. I don't want you to die. I hold no responsibility for any damage to you, your family, your house,... for any action or results derived from flashing or using these devices.**
 
--
+
 > **CAUTION:  Different devices are flashed at different voltages.  Make sure your USB-to-UART device is set to the correct one or you risk destroying your device.**
 
 ## Sonoff Modules
