@@ -61,6 +61,7 @@ light:
     payload_on: 1
     payload_off: 0
     rgb_state_topic: '/test/light/color'
+    rgb_value_template: "{{ '%s,%s,%s' | format(value[1:3] | int(value[1:3], 16), value[3:5] | int(value[3:5], 16), value[5:7] | int(value[5:7], 16)) }}"
     rgb_command_topic: '/test/light/color/set'
     rgb: true
     optimistic: false
