@@ -17,23 +17,30 @@ To backup the image you will need to boot your board in flash mode. The procedur
 Depending on your device flash memory size you will need to specify a different size. Check the read_flash options:
 
 ```
-$ esptool.py read_flash -h
-usage: esptool read_flash [-h] [--progress] address size filename
-
-positional arguments:
-  address         Start address
-  size            Size of region to dump
-  filename        Name of binary dump
-
-optional arguments:
-  -h, --help      show this help message and exit
-  --progress, -p  Show progression
+$ esptool.py read_flash -h                                                                                                                                                                           
+usage: esptool read_flash [-h] [--spi-connection SPI_CONNECTION]                                                                                                                                     
+                          [--no-progress]                                                                                                                                                            
+                          address size filename                                                                                                                                                      
+                                                                                                                                                                                                    
+positional arguments:                                                                                                                                                                                
+  address               Start address                                                                                                                                                                
+  size                  Size of region to dump                                                                                                                                                       
+  filename              Name of binary dump                                                                                                                                                          
+                                                                                                                                                                                                    
+optional arguments:                                                                                                                                                                                  
+  -h, --help            show this help message and exit                                                                                                                                              
+  --spi-connection SPI_CONNECTION, -sc SPI_CONNECTION                                                                                                                                                
+                        ESP32-only argument. Override default SPI Flash                                                                                                                              
+                        connection. Value can be SPI, HSPI or a comma-                                                                                                                               
+                        separated list of 5 I/O numbers to use for SPI flash                                                                                                                         
+                        (CLK,Q,D,HD,CS).                                                                                                                                                             
+  --no-progress, -p     Suppress progress output  
 ```
 
 To backup a Sonoff device (1Mbyte flash size) you will need to (change port to match yours):
 
 ```
-esptool.py --port /dev/ttyUSB0 --baud 115200 read_flash --progress 0x00000 0x100000 sonoff-backup.bin
+esptool.py --port /dev/ttyUSB0 --baud 115200 read_flash 0x00000 0x100000 sonoff-backup.bin
 ```
 
 To restore the image do a:
