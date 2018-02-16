@@ -1,4 +1,4 @@
-This page is about general options you can compile-in into your ESPurna.
+This page is about general options you can compile-in into your ESPurna. The hardware defining settings can be found in header file ``hardware.h``
 
 # Buttons and switches 
 
@@ -25,6 +25,33 @@ Event codes (as reported via MQTT) are (note that `released` and `click` have th
 #define BUTTON_EVENT_LNGCLICK       4
 #define BUTTON_EVENT_LNGLNGCLICK    5
 ```
+To every button event an action can be assigned by setting the corresponding value to the button event define. The following button events are available
+```
+#define BUTTONx_PRESS
+#define BUTTONx_CLICK     (what is the also used for _released_ event)
+#define BUTTONx_DBLCLICK
+#define BUTTONx_LNGCLICK
+#define BUTTONx_LNGLNGCLICK
+```
+To every event one of the following actions can be assigned
+```
+BUTTON_MODE_NONE
+BUTTON_MODE_ON
+BUTTON_MODE_OFF
+BUTTON_MODE_TOGGLE
+BUTTON_MODE_AP (-> Access point mode)
+BUTTON_MODE_RESET
+BUTTON_MODE_FACTORY
+```
+By default button 2-8 are set to ``BUTTON_MODE_NONE``, for button 1 the following defaults are set which can be overwritten by device specific configuration:
+```
+#define BUTTONx_PRESS           BUTTON_MODE_NONE
+#define BUTTONx_CLICK           BUTTON_MODE_TOGGLE    
+#define BUTTONx_DBLCLICK        BUTTON_MODE_AP
+#define BUTTONx_LNGCLICK        BUTTON_MODE_RESET
+#define BUTTONx_LNGLNGCLICK     BUTTON_MODE_FACTORY
+```
+Remember: For button mode ``BUTTON_SWITCH`` only the click event is available currently, therefore configuration of other events make no sense.
 
 
 # LEDs 
@@ -40,6 +67,10 @@ You can invert the LED status by set `LEDx_PIN_INVERSE` to `1`
 # Relays 
 
 ESPurna supports up to 8 connected relays to various GPIO pins. These relays are defined using C preprocessor flag `RELAYx_PIN` (x being a number from 1 to 8).
+
+Example:
+
+``#define RELAY1_PIN        4`` defines that relay 1 is connected to GPIO4
 
 Each relay can operate in one of the following modes: 
 - `RELAY_TYPE_NORMAL` - high-level-trigger, normally open relay.
