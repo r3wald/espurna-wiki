@@ -12,8 +12,6 @@ First make sure your Home Assistant instance connects to the same broker you con
 
 
 ```yaml
-#!yaml
-
 mqtt:
   broker: <your broker ip>
   username: "<username for the MQTT connection>"
@@ -31,7 +29,6 @@ Here you have a sample configuration (add these lines to the same configuration.
 
 
 ```yaml
-#!yaml
 switch:
   - platform: mqtt
     name: "Test Switch"
@@ -52,7 +49,6 @@ As you can see we are setting the "platform" to "mqtt" to use the connection be 
 ESpurna supports color, brightness, temperature color and individual channels for light devices (dimmers, my9192-based light bulbs,...). An example configuration for Home Assistant would be:
 
 ```yaml
-#!yaml
 light:
   - platform: mqtt
     name: 'Test RGBW Light'
