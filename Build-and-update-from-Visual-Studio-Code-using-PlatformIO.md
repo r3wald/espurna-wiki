@@ -2,7 +2,7 @@ This page summarizes all you need to compil and deploy Espurna on Windows 10 wit
 
 # Install main components
 
-## Install git##
+## Install git
 
 Download it from https://git-scm.com/download/win (choose appropriate version).
 
