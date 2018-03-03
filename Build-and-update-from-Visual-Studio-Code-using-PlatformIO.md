@@ -20,7 +20,9 @@ Download it from https://nodejs.org/en/download/ (more convenient with the ***Wi
 
 NPM gets installed with node.js
 
-Restart your computer. Lauch Visual studio code. It should detect git (displaying a message in a git pane at the bottom of the vsc window).
+Restart your computer. 
+
+Lauch Visual studio code. It should detect git (displaying a message in a git pane at the bottom of the vsc window).
 
 ## Install gulp
 
@@ -34,6 +36,7 @@ From the extensions pane of Visual studio code install the following extensions.
 
 Mandatory :
 - Platformio IDE
+
 And, optionaly, the usefull :
 - Python
 - GitLens (to show authors of modifications)
