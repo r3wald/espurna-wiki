@@ -1,4 +1,4 @@
-This page summarizes all you need to compil and deploy Espurna on Windows 10 with Visual Studio Code.
+This page summarizes all you need to compil and deploy Espurna on Windows 10 with Visual Studio Code (VSC). VSC is a free, open source, light IDE from Microsoft.
 
 # Install main components
 
@@ -14,11 +14,11 @@ Download it from https://code.visualstudio.com/docs/?dv=win
 
 Ensure that it updates the PATH variable (default option).
 
-## Install node.js
+## Install node.js and npm
 
-Download it from 
+Download it from https://nodejs.org/en/download/ (more convenient with the ***Windows Installer*** (.msi) version)
 
-- node.js (including npm)
+NPM gets installed with node.js
 
 Restart your computer. Lauch Visual studio code. It should detect git (displaying a message in a git pane at the bottom of the vsc window).
 
@@ -26,7 +26,7 @@ Restart your computer. Lauch Visual studio code. It should detect git (displayin
 
 From VSC, open a terminal (`CTRL+ù`) and run
 
-    `npm install --global gulp-cli`
+    npm install --global gulp-cli
 
 # Install main extensions
 
