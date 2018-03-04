@@ -5,7 +5,8 @@
 |Property|Value|
 |---|---|
 |Manufacturer|Itead Studio|
-|Web page|[https://www.itead.cc/sonoff-wifi-wireless-switch.html](https://www.itead.cc/sonoff-wifi-wireless-switch.html)|
+|Product page|[https://www.itead.cc/sonoff-wifi-wireless-switch.html](https://www.itead.cc/sonoff-wifi-wireless-switch.html)|
+|Wiki page|[https://www.itead.cc/wiki/Sonoff](https://www.itead.cc/wiki/Sonoff)|
 |Build flag|`ITEAD_SONOFF_BASIC`|
 
 ## Introduction

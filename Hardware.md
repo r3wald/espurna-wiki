@@ -12,13 +12,13 @@ This is the official list of supported hardware for the ESPurna firmware. The ha
 | Board | Build flag | Summary |
 | --- | --- | --- |
 | [IteadStudio Sonoff Basic](Hardware-Iteadstudio-Sonoff-Basic) | `ITEAD_SONOFF_BASIC` | Switch |
-| [IteadStudio Sonoff RF](#iteadstudio-sonoff-rf) | `ITEAD_SONOFF_RF` | Switch with RF Reciever |
+| [IteadStudio Sonoff RF](Hardware-Iteadstudio-Sonoff-RF) | `ITEAD_SONOFF_RF` | Switch with RF Receiver |
 | [IteadStudio Sonoff TH10/16](#iteadstudio-sonoff-th) | `ITEAD_SONOFF_TH` | Switch with Temperature and Humidity Monitoring |
 | [IteadStudio Sonoff POW](#iteadstudio-sonoff-pow) | `ITEAD_SONOFF_POW` | Switch With Power Consumption Measurement |
 | [IteadStudio Sonoff DUAL](#iteadstudio-sonoff-dual) | `ITEAD_SONOFF_DUAL` <br> `ITEAD_SONOFF_DUAL_R2`  | 2 Switches|
 | [IteadStudio Sonoff 4CH](#iteadstudio-sonoff-4ch) | `ITEAD_SONOFF_4CH` |  4 Switches with din rail mounting |
 | [IteadStudio Sonoff 4CH Pro](#iteadstudio-sonoff-4ch-pro) | `ITEAD_SONOFF_4CH_PRO` | 4 Switches with din rail mounting and RF Receiver|
-| [IteadStudio Sonoff TOUCH](#iteadstudio-sonoff-touch) | `ITEAD_SONOFF_TOUCH` | Touch Wall Switch| 
+| [IteadStudio Sonoff TOUCH](#iteadstudio-sonoff-touch) | `ITEAD_SONOFF_TOUCH` | Touch Wall Switch|
 | [IteadStudio Sonoff B1](#iteadstudio-sonoff-b1) | `ITEAD_SONOFF_B1` | Dimmable E27 LED Lamp RGB Color Light Bulb|
 | [IteadStudio Sonoff T1](#iteadstudio-sonoff-t1) | `ITEAD_SONOFF_T1_1CH` <br> `ITEAD_SONOFF_T1_2CH` <br> `ITEAD_SONOFF_T1_3CH` | 1-3 Gang Touch Wall Switch |
 | [IteadStudio Sonoff LED](#iteadstudio-sonoff-led) | `ITEAD_SONOFF_LED` | Adjustable LED strip
@@ -32,64 +32,40 @@ This is the official list of supported hardware for the ESPurna firmware. The ha
 
 ## Other modules
 
-| Board | Build flag | 
-| --- | --- | 
-| [AI-Thinker AI Light / Noduino OpenLight](#ai-thinker-ai-light-noduino-openlight) | `AITHINKER_AI_LIGHT` | 
-| [Magic Home LED Controller](#magic-home-led-controller) | `MAGICHOME_LED_CONTROLLER` <br> `MAGICHOME_LED_CONTROLLER_23` <br> `MAGICHOME_LED_CONTROLLER_20` | 
-| Huacanxing H801 | `HUACANXING_H801` <br> `HUACANXING_H802` | 
-| WiOn 50055 | `WION_50055` | 
-| EXS WiFi Relay v3.1 | `EXS_WIFI_RELAY_V31` | 
-| [Wemos D1 Mini Relay Shield](#wemos-d1-mini-relay-shield) | `WEMOS_D1_MINI_RELAYSHIELD` | 
-| Autohometion LYT8266 | `AUTHOMETION_LYT8266` | 
-| Xenon SM PW 702U | `XENON_SM_PW702U` | 
-| Arilux AL-LC | `ARILUX_AL_LC01` <br> `ARILUX_AL_LC02` <br> `ARILUX_AL_LC06` <br> `ARILUX_AL_LC11` <br> `ARILUX_E27` | 
-| QuinLED | `INTERMITTECH_QUINLED` | 
+| Board | Build flag |
+| --- | --- |
+| [AI-Thinker AI Light / Noduino OpenLight](#ai-thinker-ai-light-noduino-openlight) | `AITHINKER_AI_LIGHT` |
+| [Magic Home LED Controller](#magic-home-led-controller) | `MAGICHOME_LED_CONTROLLER` <br> `MAGICHOME_LED_CONTROLLER_23` <br> `MAGICHOME_LED_CONTROLLER_20` |
+| Huacanxing H801 | `HUACANXING_H801` <br> `HUACANXING_H802` |
+| WiOn 50055 | `WION_50055` |
+| EXS WiFi Relay v3.1 | `EXS_WIFI_RELAY_V31` |
+| [Wemos D1 Mini Relay Shield](#wemos-d1-mini-relay-shield) | `WEMOS_D1_MINI_RELAYSHIELD` |
+| Autohometion LYT8266 | `AUTHOMETION_LYT8266` |
+| Xenon SM PW 702U | `XENON_SM_PW702U` |
+| Arilux AL-LC | `ARILUX_AL_LC01` <br> `ARILUX_AL_LC02` <br> `ARILUX_AL_LC06` <br> `ARILUX_AL_LC11` <br> `ARILUX_E27` |
+| QuinLED | `INTERMITTECH_QUINLED` |
 | [NodeMCU Lolin](#nodemcu-lolin) | `NODEMCU_LOLIN` |
 
 ## Custom Boards
 
-| Board | Build flag | 
-| --- | --- | 
-| [Tinkerman's ESPurna H](#tinkermans-espurna-h) | `TINKERMAN_ESPURNA_H06` <br> `TINKERMAN_ESPURNA_H08` | 
+| Board | Build flag |
+| --- | --- |
+| [Tinkerman's ESPurna H](#tinkermans-espurna-h) | `TINKERMAN_ESPURNA_H06` <br> `TINKERMAN_ESPURNA_H08` |
 | Tinkerman's ESPurna Switch | `TINKERMAN_ESPURNA_SWITCH` |
 | ManCaveMade ESPLive | `MANCAVEMADE_ESPLIVE` |  
-| [Electrodragon ESP Relay Board](#electrodragon-esp-relay-board) | `ELECTRODRAGON_WIFI_IOT` | 
-| [WorkChoice EcoPlug](#workchoice-ecoplug) | `WORKCHOICE_ECOPLUG` | 
-| [Jan Goedeke Wifi Relay Board (NC/NO)](#jangoe-wifi-relay-board) | `JANGOE_WIFI_RELAY_NC` <br> `JANGOE_WIFI_RELAY_NO` | 
-| [OpenEnergyMonitor Wifi MQTT Relay / Thermostat](#openenergymonitor-wifi-mqtt-relay-thermostat) | `OPENENERGYMONITOR_MQTT_RELAY` | 
-| [Jorge García Wifi + Relay Board Kit](#jorge-garcia-wifi-relays-board-kit) | `JORGEGARCIA_WIFI_RELAYS` | 
+| [Electrodragon ESP Relay Board](#electrodragon-esp-relay-board) | `ELECTRODRAGON_WIFI_IOT` |
+| [WorkChoice EcoPlug](#workchoice-ecoplug) | `WORKCHOICE_ECOPLUG` |
+| [Jan Goedeke Wifi Relay Board (NC/NO)](#jangoe-wifi-relay-board) | `JANGOE_WIFI_RELAY_NC` <br> `JANGOE_WIFI_RELAY_NO` |
+| [OpenEnergyMonitor Wifi MQTT Relay / Thermostat](#openenergymonitor-wifi-mqtt-relay-thermostat) | `OPENENERGYMONITOR_MQTT_RELAY` |
+| [Jorge García Wifi + Relay Board Kit](#jorge-garcia-wifi-relays-board-kit) | `JORGEGARCIA_WIFI_RELAYS` |
 
 ## Generic boards
 
-| Board | Build flag | 
-| --- | --- | 
-| Generic 8 Channel board | `GENERIC_8CH` | 
-| Generic ECH1560 | `GENERIC_ECH1560` | 
+| Board | Build flag |
+| --- | --- |
+| Generic 8 Channel board | `GENERIC_8CH` |
+| Generic ECH1560 | `GENERIC_ECH1560` |
 | Generic V9261F | `GENERIC_V9261F` |
-
----
-
-## IteadStudio Sonoff RF
-
-|Property|Value|
-|---|---|
-|Manufacturer|Itead Studio|
-|Web page|[https://www.itead.cc/sonoff-rf.html](https://www.itead.cc/sonoff-rf.html)|
-|Build flag|`ITEAD_SONOFF_RF`|
-| Voltage |  <span style="color:red">3v3</span> |
-
-
-### Flashing
-
-![Sonoff POW - Inside back view](images/flashing/sonoff-rf-flash.jpg)
-
-The Sonoff RF has the same unpopulated header as the Sonoff. It is a 5 pins header in-line with the button. They are (from the button outwards) 3V3, RX, TX, GND and GPIO14.
-
-Solder a male or female header here and connect your USB-to-UART programmer. This time through **the button is not connected to GPIO0** but to a EFM8BB1 micro-controller that also monitors the RF module output.
-
-There are a couple of ways to enter flash mode. Some recommend to move 0Ohm R9 resistor to R21 to connect the button directly to the ESP8266 GPIO0 and use it in the same way as for the Sonoff or Sonoff TH. The drawback is the by doing that you lose the RF capability.
-
-My recommendation is to **temporary shortcut the bottom pad of the unpopulated R21 footprint** (see the image above) and connect your USB-to-UART board at the same time. You will have to do it just once (unless there is something really wrong in the firmware) and use OTA updates from there on.
 
 ---
 
@@ -107,7 +83,7 @@ My recommendation is to **temporary shortcut the bottom pad of the unpopulated R
 
 ![Sonoff TH - Inside back view](images/flashing/sonoff-th-flash.jpg)
 
-You have all the required pins in an unpopulated header in one of the corners of the board (see top left corner in the image above). Solder a 4 pins male or female header here and connect it to your favorite USB-to-UART module. 
+You have all the required pins in an unpopulated header in one of the corners of the board (see top left corner in the image above). Solder a 4 pins male or female header here and connect it to your favorite USB-to-UART module.
 
 As in the Sonoff the button is connected to GPIO0, so to enter flash mode press and hold the button and connect the programmer to your computer to power the board.
 
@@ -189,7 +165,7 @@ Once flashed you can use OTA to update the firmware without having to open the d
 
 ### Flashing
 
-You will have to open the case. There is a 5 pin header with VCC33 (3V3), TX, RX and GND. First button is properly labelled FW/IO0 so all you have to do is to connect TX, RX and GND to your USB2UART programmer, press the button and connect the VCC33 pin to power the board and enter flash mode. One very important thing: the **TX and RX pins are crossed**. You have to connect TX to your programmer TX and RX to RX. 
+You will have to open the case. There is a 5 pin header with VCC33 (3V3), TX, RX and GND. First button is properly labelled FW/IO0 so all you have to do is to connect TX, RX and GND to your USB2UART programmer, press the button and connect the VCC33 pin to power the board and enter flash mode. One very important thing: the **TX and RX pins are crossed**. You have to connect TX to your programmer TX and RX to RX.
 
 ---
 
@@ -237,7 +213,7 @@ You will have to open the case. There is a 5 pin header with VCC33 (3V3), TX, RX
 
 ### Flashing
 
-*TODO* 
+*TODO*
 
 ---
 
@@ -289,7 +265,7 @@ You will have to open the case. There is a 5 pin header with VCC33 (3V3), TX, RX
 ![Slampher - Inside front view](images/flashing/slampher-flash1.jpg)
 ![Slampher - Flashing short](images/flashing/slampher-flash2.jpg)
 
-There is a 4 pin unpopulated header in a border near the ESP8266 chip. Starting from the little white mark the pins are 3V3, RX, TX and GND. Solder a male or female header here and connect your USB-to-UART programmer. 
+There is a 4 pin unpopulated header in a border near the ESP8266 chip. Starting from the little white mark the pins are 3V3, RX, TX and GND. Solder a male or female header here and connect your USB-to-UART programmer.
 
 This time through **the button is not connected to GPIO0** but to a EFM8BB1 micro-controller that also monitors the RF module output.
 
@@ -469,7 +445,7 @@ The NodeMCU has an microUSB port, can't be easier.
 
 ![Jan Goedeke Wifi Relay - Top view](images/devices/jangoe-wifi-relay.png)
 
-Connect GPIO0 to GND in the bottom-left header in the picture above and then connect your USB-to-UART programmer to the top-left corner header. 
+Connect GPIO0 to GND in the bottom-left header in the picture above and then connect your USB-to-UART programmer to the top-left corner header.
 
 ---
 
