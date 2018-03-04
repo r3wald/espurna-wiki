@@ -32,4 +32,4 @@ The last one is not necessary.  The button is connected to GPIO0 on the ESP8266 
 
 ## Issues
 
-The original Sonoff This is probably due to the antenna placement close to live lines. It works fine if it's near the AP, otherwise, it's often reported to lose connectivity.
+The original Sonoff has some connectivity issues. This is probably due to the antenna placement close to live lines. It works fine if it's near the AP, otherwise, it's often reported to lose connectivity.
