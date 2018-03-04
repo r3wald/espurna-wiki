@@ -10,7 +10,19 @@
 
 The original Sonoff (now renamed Sonoff Basic) has an ESP8266 on board with a 8Mbit flash memory chip, a mains to 3V3 transformer and a relay (GPIO12). It also features a button (GPIO0), an LED (GPIO13) and an unpopulated header you can use to reprogram it.
 
-### Flashing
+|GPIO|Usage|
+|---|---|
+|0|Main button|
+|1|TX|
+|3|RX|
+|12|Relay|
+|13|LED (inversed logic)|
+|14|Available in header|
+
+![Sonoff - Inside front view](images/devices/itead-sonoff-basic.jpg)
+![Sonoff - Inside front view](images/devices/itead-sonoff-basic-2.jpg)
+
+## Flashing
 
 ![Sonoff - Inside front view](images/flashing/sonoff-flash.jpg)
 
