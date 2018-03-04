@@ -166,6 +166,8 @@ First you will have to choose the right board and memory map. Here you have a li
 
 ![Arduino IDE - Library options](images/arduino/arduino-board-options.jpg)
 
+**NOTE**: There are some reports of unstability using Arduino Core 2.4.0 and the new "IwIP v2 Prebuilt (unstable)". If you are experiencing these kind of problems try compiling it changing the IwIP Variant to "V1.4 Prebuilt".
+
 Now you are ready to build the project clicking on the 'tick' button. Take a close look at the output window in the IDE for errors (in red). Common errors here could be missing libraries (go back to the installing dependencies section above) or the "Unsupported hardware" error, meaning you have not defined the target device (go back to the configuring hardware section).
 
 Finally, if there were no errors, connect your device (check the [Hardware](Hardware) document for instruction on how to connect your device to flash it), choose the port your programmer is listening to, and flash it clicking on the 'upload' button.
