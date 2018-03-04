@@ -19,12 +19,12 @@ The original Sonoff (now renamed Sonoff Basic) has an ESP8266 on board with a 8M
 |13|LED (inversed logic)|
 |14|Available in header|
 
-![Sonoff - Inside front view](images/devices/itead-sonoff-basic.jpg)
-![Sonoff - Inside front view](images/devices/itead-sonoff-basic-2.jpg)
+![Sonoff Basic](images/devices/itead-sonoff-basic.jpg)
 
 ## Flashing
 
 ![Sonoff - Inside front view](images/flashing/sonoff-flash.jpg)
+![Sonoff - Inside back view](images/devices/itead-sonoff-basic-2.jpg)
 
 The unpopulated header in the Sonoff has all the required pins. My board has a 5 pins header in-line with the button. They are (from the button outwards) 3V3, RX, TX, GND and GPIO14.
 
