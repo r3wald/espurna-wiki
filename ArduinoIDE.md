@@ -154,19 +154,18 @@ Also, you might want to take a look at other compilation options and default val
 
 ## Building & Flashing the firmware ##
 
-First you will have to choose the right board and memory map. Here you have a list of the supported board types and the suggested memory layout to use:
+First you will have to choose the right board and memory map. Here you have a list of the supported board types and the suggested configuration:
 
-|Board type|Board names|Flash size|Flash mode|
-|-|-|-|-|
-|ESP-12 based modules|Wemos D1 & D1 mini, NodeMCU, Electrodragon, OpenEnergyMonitor MQTT Relay Board,... |4M (3M SPIFFS)|DOUT|
-|Generic ESP8285 module|Sonoff 4CH, Sonoff 4CH Pro, Sonoff Touch, Sonoff B1, Sonoff T1, AI-Thinker Wifi Light|1M (no SPIFFS)*|DOUT|
-|Generic ESP8266 module|All the rest|1M (no SPIFFS)*|DOUT|
+|Board type|Board names|Flash size|Flash mode|IwIP|
+|-|-|-|-|-|
+|ESP-12 based modules|Wemos D1 & D1 mini, NodeMCU, Electrodragon, OpenEnergyMonitor MQTT Relay Board,... |4M (3M SPIFFS)|DOUT|v1.4 Prebuilt|
+|Generic ESP8285 module|Sonoff 4CH, Sonoff 4CH Pro, Sonoff Touch, Sonoff B1, Sonoff T1, AI-Thinker Wifi Light|1M (no SPIFFS)*|DOUT|v1.4 Prebuilt|
+|Generic ESP8266 module|All the rest|1M (no SPIFFS)*|DOUT|v1.4 Prebuilt|
 
 * If you don't see the "1M (no SPIFFS)" option check the "Add a new flash layout" section above. If you still don't see it or you don't want to modify those files you can safely use the "1M (64F SPIFFS)" option for the moment.
+ * There are some reports of unstability using Arduino Core 2.4.0 and the new "IwIP v2 Prebuilt (unstable)". If you are experiencing these kind of problems try compiling it changing the IwIP Variant to "V1.4 Prebuilt" as suggested above.
 
 ![Arduino IDE - Library options](images/arduino/arduino-board-options.jpg)
-
-**NOTE**: There are some reports of unstability using Arduino Core 2.4.0 and the new "IwIP v2 Prebuilt (unstable)". If you are experiencing these kind of problems try compiling it changing the IwIP Variant to "V1.4 Prebuilt".
 
 Now you are ready to build the project clicking on the 'tick' button. Take a close look at the output window in the IDE for errors (in red). Common errors here could be missing libraries (go back to the installing dependencies section above) or the "Unsupported hardware" error, meaning you have not defined the target device (go back to the configuring hardware section).
 
