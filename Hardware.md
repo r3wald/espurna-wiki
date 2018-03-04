@@ -11,7 +11,7 @@ This is the official list of supported hardware for the ESPurna firmware. The ha
 
 | Board | Build flag | Summary |
 | --- | --- | --- |
-| [IteadStudio Sonoff Basic](#iteadstudio-sonoff) | `ITEAD_SONOFF_BASIC` | Switch |
+| [IteadStudio Sonoff Basic](Hardware-Iteadstudio-Sonoff-Basic) | `ITEAD_SONOFF_BASIC` | Switch |
 | [IteadStudio Sonoff RF](#iteadstudio-sonoff-rf) | `ITEAD_SONOFF_RF` | Switch with RF Reciever |
 | [IteadStudio Sonoff TH10/16](#iteadstudio-sonoff-th) | `ITEAD_SONOFF_TH` | Switch with Temperature and Humidity Monitoring |
 | [IteadStudio Sonoff POW](#iteadstudio-sonoff-pow) | `ITEAD_SONOFF_POW` | Switch With Power Consumption Measurement |
@@ -68,28 +68,6 @@ This is the official list of supported hardware for the ESPurna firmware. The ha
 | Generic V9261F | `GENERIC_V9261F` |
 
 ---
-
-## IteadStudio Sonoff
-
-|Property|Value|
-|---|---|
-|Manufacturer|Itead Studio|
-|Web page|[https://www.itead.cc/sonoff-wifi-wireless-switch.html](https://www.itead.cc/sonoff-wifi-wireless-switch.html)|
-|Build flag|`ITEAD_SONOFF_BASIC`|
-| Voltage |  <span style="color:red">3v3</span> |
-
-
-The [IteadStudio Sonoff](https://www.itead.cc/sonoff-wifi-wireless-switch.html) has an ESP8266 on board with a 8Mbit flash memory chip, a mains to 3V3 transformer and a relay (GPIO12). It also features a button (GPIO0), an LED (GPIO13) and an unpopulated header you can use to reprogram it.
-
-### Flashing
-
-![Sonoff - Inside front view](images/flashing/sonoff-flash.jpg)
-
-The unpopulated header in the Sonoff has all the required pins. My board has a 5 pins header in-line with the button. They are (from the button outwards) 3V3, RX, TX, GND and GPIO14.
-
-Last one is not necessary.  Button is connected to GPIO0 on the ESP8266 chip, so to enter flash mode you have to hold the button pressed while powering on the board, then you can release it again.
-
---- 
 
 ## IteadStudio Sonoff RF
 
