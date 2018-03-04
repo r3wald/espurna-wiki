@@ -1,5 +1,7 @@
 # IteadStudio Sonoff Basic
 
+![Sonoff Basic](images/devices/itead-sonoff-basic.jpg)
+
 |Property|Value|
 |---|---|
 |Manufacturer|Itead Studio|
@@ -18,8 +20,6 @@ The original Sonoff (now renamed Sonoff Basic) has an ESP8266 on board with a 8M
 |12|Relay|
 |13|LED (inversed logic)|
 |14|Available in header|
-
-![Sonoff Basic](images/devices/itead-sonoff-basic.jpg)
 
 ## Flashing
 
