@@ -20,7 +20,7 @@ This is the official list of supported hardware for the ESPurna firmware. The ha
 | [IteadStudio Sonoff 4CH Pro](#iteadstudio-sonoff-4ch-pro) | `ITEAD_SONOFF_4CH_PRO` | 4 Switches with din rail mounting and RF Receiver|
 | [IteadStudio Sonoff TOUCH](#iteadstudio-sonoff-touch) | `ITEAD_SONOFF_TOUCH` | Touch Wall Switch|
 | [IteadStudio Sonoff B1](#iteadstudio-sonoff-b1) | `ITEAD_SONOFF_B1` | Dimmable E27 LED Lamp RGB Color Light Bulb|
-| [IteadStudio Sonoff T1](#iteadstudio-sonoff-t1) | `ITEAD_SONOFF_T1_1CH` <br> `ITEAD_SONOFF_T1_2CH` <br> `ITEAD_SONOFF_T1_3CH` | 1-3 Gang Touch Wall Switch |
+| [IteadStudio Sonoff T1](Hardware-Iteadstudio-Sonoff-T1) | `ITEAD_SONOFF_T1_1CH` <br> `ITEAD_SONOFF_T1_2CH` <br> `ITEAD_SONOFF_T1_3CH` | 1-3 Gang Touch Wall Switch |
 | [IteadStudio Sonoff LED](#iteadstudio-sonoff-led) | `ITEAD_SONOFF_LED` | Adjustable LED strip
 | IteadStudio Sonoff 433 RF Bridge | `ITEAD_SONOFF_RFBRIDGE` | Bridge between 433MHz RF and WiFi |
 | [IteadStudio Slampher](#iteadstudio-slampher)<br>[IteadStudio Slampher 2.0](#iteadstudio-slampher-v20)  | `ITEAD_SLAMPHER` | 433MHz RF & WiFi Smart Light Bulb Holder
@@ -172,22 +172,6 @@ You will have to open the case. There is a 5 pin header with VCC33 (3V3), TX, RX
 |Manufacturer|Itead Studio|
 |Web page|[https://www.itead.cc/sonoff-b1.html](https://www.itead.cc/sonoff-b1.html)|
 |Build flag|`ITEAD_SONOFF_B1`|
-| Voltage |  TODO |
-
-
-### Flashing
-
-*TODO*
-
----
-
-## IteadStudio Sonoff T1
-
-|Property|Value|
-|---|---|
-|Manufacturer|Itead Studio|
-|Web page|[https://www.itead.cc/sonoff-t1.html](https://www.itead.cc/sonoff-t1.html)|
-|Build flag|`ITEAD_SONOFF_T1`|
 | Voltage |  TODO |
 
 
