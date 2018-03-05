@@ -13,7 +13,7 @@ This is the official list of supported hardware for the ESPurna firmware. The ha
 | --- | --- | --- |
 | [IteadStudio Sonoff Basic](Hardware-Iteadstudio-Sonoff-Basic) | `ITEAD_SONOFF_BASIC` | Switch |
 | [IteadStudio Sonoff RF](Hardware-Iteadstudio-Sonoff-RF) | `ITEAD_SONOFF_RF` | Switch with RF Receiver |
-| [IteadStudio Sonoff TH10/16](#iteadstudio-sonoff-th) | `ITEAD_SONOFF_TH` | Switch with Temperature and Humidity Monitoring |
+| [IteadStudio Sonoff TH10/16](Hardware-Iteadstudio-Sonoff-TH) | `ITEAD_SONOFF_TH` | Switch with Temperature and Humidity Monitoring |
 | [IteadStudio Sonoff POW](#iteadstudio-sonoff-pow) | `ITEAD_SONOFF_POW` | Switch With Power Consumption Measurement |
 | [IteadStudio Sonoff DUAL](#iteadstudio-sonoff-dual) | `ITEAD_SONOFF_DUAL` <br> `ITEAD_SONOFF_DUAL_R2`  | 2 Switches|
 | [IteadStudio Sonoff 4CH](#iteadstudio-sonoff-4ch) | `ITEAD_SONOFF_4CH` |  4 Switches with din rail mounting |
@@ -66,26 +66,6 @@ This is the official list of supported hardware for the ESPurna firmware. The ha
 | Generic 8 Channel board | `GENERIC_8CH` |
 | Generic ECH1560 | `GENERIC_ECH1560` |
 | Generic V9261F | `GENERIC_V9261F` |
-
----
-
-## IteadStudio Sonoff TH
-
-|Property|Value|
-|---|---|
-|Manufacturer|Itead Studio|
-|Web page|[https://www.itead.cc/sonoff-th.html](https://www.itead.cc/sonoff-th.html)|
-|Build flag|`ITEAD_SONOFF_TH`|
-| Voltage |  <span style="color:red">3v3</span> |
-
-
-### Flashing
-
-![Sonoff TH - Inside back view](images/flashing/sonoff-th-flash.jpg)
-
-You have all the required pins in an unpopulated header in one of the corners of the board (see top left corner in the image above). Solder a 4 pins male or female header here and connect it to your favorite USB-to-UART module.
-
-As in the Sonoff the button is connected to GPIO0, so to enter flash mode press and hold the button and connect the programmer to your computer to power the board.
 
 ---
 
