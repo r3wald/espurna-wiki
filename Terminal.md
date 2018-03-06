@@ -18,6 +18,9 @@ Available commands as of 1.12.1 (the actual list of available commands will depe
 |**factory.reset**|Deletes all settings from EEPROM and resets the device|
 |**get** &lt;key&gt;|Shows the value a the given setting|
 |**gpio** &lt;id&gt; [&lt;value&gt;]|Gets or sets the GPIO #id state|
+|**ha.clear**|Clear retained message for MQTT Discover in Home Assistant|
+|**ha.config**|Output Home Assistant configuration code|
+|**ha.send**|Send message for MQTT Discover in Home Assistant|
 |**hardware**|Access hardware resources. Built-in. Not implemented|
 |**heap**|Shows free heap|
 |**help**|Lists available commands (alias for "commands")|
@@ -28,6 +31,7 @@ Available commands as of 1.12.1 (the actual list of available commands will depe
 |**mired**|Sets the temperature color in Mired (only for lights)|
 |**mqtt.reset**|Reconnects to the MQTT broker using current settings (only if MQTT support)|
 |**nofuss**|Forces a check agains NoFUSS server (only if NoFUSS support)|
+|**ota** &lt;url&gt;|Downloads a firmware image from the give URL and updates the board|
 |**publish**|Built-in publish/subscriber method. Not implemented|
 |**read**|Access hardware resources. Built-in. Not implemented|
 |**relay** &lt;id&gt; [&lt;value&gt;]|Gets or sets the relay #id state|
