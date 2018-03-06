@@ -61,8 +61,8 @@ ESPurna supports up to 8 connected LEDs to various GPIO pins. These LEDs are def
 Each LED can be bound to a relay state (see below), or operate in one of following modes, defined by `LED_MODE`:
 - `LED_MODE_MQTT`: LED will be managed from MQTT (OFF by default)
 - `LED_MODE_WIFI`: LED will blink according to the WIFI status
-- `LED_MODE_FOLLOW`: LED will follow the state of the linked relay (check RELAY#_LED)
-- `LED_MODE_FOLLOW_INVERSE`: LED will follow the opposite state of the linked relay (check RELAY#_LED)
+- `LED_MODE_FOLLOW`: LED will follow the state of the linked relay (check `RELAY#_LED`)
+- `LED_MODE_FOLLOW_INVERSE`: LED will follow the opposite state of the linked relay (check `RELAY#_LED`)
 - `LED_MODE_FINDME`: LED will be ON if all relays are OFF
 - `LED_MODE_FINDME_WIFI`: A mixture of WIFI and FINDME
 - `LED_MODE_ON`: LED always ON
