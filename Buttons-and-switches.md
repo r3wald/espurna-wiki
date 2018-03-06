@@ -59,8 +59,16 @@ Remember: For button mode ``BUTTON_SWITCH`` only the click event is available cu
 ESPurna supports up to 8 connected LEDs to various GPIO pins. These LEDs are defined using C preprocessor flag `LEDx_PIN` (x being a number from 1 to 8). Some LEDs might be onboard, and you might have the option of connecting some additional, depending on the board you are using.
 
 Each LED can be bound to a relay state (see below), or operate in one of following modes, defined by `LED_MODE`:
-- `LED_MODE_WIFI` -
-- `LED_MODE_MQTT` -
+- `LED_MODE_MQTT`: LED will be managed from MQTT (OFF by default)
+- `LED_MODE_WIFI`: LED will blink according to the WIFI status
+- `LED_MODE_FOLLOW`: LED will follow the state of the linked relay (check RELAY#_LED)
+- `LED_MODE_FOLLOW_INVERSE`: LED will follow the opposite state of the linked relay (check RELAY#_LED)
+- `LED_MODE_FINDME`: LED will be ON if all relays are OFF
+- `LED_MODE_FINDME_WIFI`: A mixture of WIFI and FINDME
+- `LED_MODE_ON`: LED always ON
+- `LED_MODE_OFF`: LED always OFF
+- `LED_MODE_RELAY`: If any relay is ON, LED will be ON, otherwise OFF
+- `LED_MODE_RELAY_WIFI`: A mixture of WIFI and RELAY, the reverse of MIXED
 
 You can invert the LED status by set `LEDx_PIN_INVERSE` to `1`
 
@@ -73,9 +81,10 @@ Example:
 ``#define RELAY1_PIN        4`` defines that relay 1 is connected to GPIO4
 
 Each relay can operate in one of the following modes: 
-- `RELAY_TYPE_NORMAL` - high-level-trigger, normally open relay.
-- `RELAY_TYPE_INVERSE` - either low-level-trigger, or normally closed relay. 
-- `RELAY_TYPE_LATCHED`- 
+- `RELAY_TYPE_NORMAL` - High-level-trigger, normally open relay.
+- `RELAY_TYPE_INVERSE` - Either low-level-trigger, or normally closed relay. 
+- `RELAY_TYPE_LATCHED`- Relay is controlled with two normally-low GPIOs, if `set` GPIO goes up the relay will turn on, if `reset` GPIO goes up the relay will turn off
+- `RELAY_TYPE_LATCHED_INVERSE`- Relay is controlled with two normally-high GPIOs, if `set` GPIO goes down the relay will turn on, if `reset` GPIO goes down the relay will turn off
 
 ## Binding buttons, relays and LEDs
 
