@@ -68,7 +68,7 @@ Each LED can be bound to a relay state (see below), or operate in one of followi
 - `LED_MODE_ON`: LED always ON
 - `LED_MODE_OFF`: LED always OFF
 - `LED_MODE_RELAY`: If any relay is ON, LED will be ON, otherwise OFF
-- `LED_MODE_RELAY_WIFI`: A mixture of WIFI and RELAY, the reverse of MIXED
+- `LED_MODE_RELAY_WIFI`: A mixture of WIFI and RELAY, the reverse of FINDME_WIFI
 
 You can invert the LED status by set `LEDx_PIN_INVERSE` to `1`
 
