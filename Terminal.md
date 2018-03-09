@@ -1,5 +1,7 @@
 The ESPurna firmware outputs debug information to the terminal interface (except for the Sonoff Dual and the Sonoff RF Bridge). You only have to connect your USB2UART board to the TX, RX and GND pins in your board and open a terminal at **115200 baud** (8,N,1).
 
+As an alternative you can use all commands also with Telnet, if you activated Telnet on the administration page of the web interface.
+
 But the terminal not only shows information about what the device is doing, it also accepts several commands thanks to the Embedis library. You can get a list of these commands typing ```help``` and enter. It's recommended to enable echo to see what you are typing. Backspace or delete won't work in the terminal.
 
 Available commands as of 1.12.1 (the actual list of available commands will depend on the built-in functionalities of your specific image):
