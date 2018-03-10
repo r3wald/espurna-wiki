@@ -15,7 +15,8 @@ This is the official list of supported hardware for the ESPurna firmware. The ha
 | [IteadStudio Sonoff RF](Hardware-Iteadstudio-Sonoff-RF) | `ITEAD_SONOFF_RF` | Switch with RF Receiver |
 | [IteadStudio Sonoff TH10/16](Hardware-Iteadstudio-Sonoff-TH) | `ITEAD_SONOFF_TH` | Switch with Temperature and Humidity Monitoring |
 | [IteadStudio Sonoff POW](#iteadstudio-sonoff-pow) | `ITEAD_SONOFF_POW` | Switch With Power Consumption Measurement |
-| [IteadStudio Sonoff DUAL](#iteadstudio-sonoff-dual) | `ITEAD_SONOFF_DUAL` <br> `ITEAD_SONOFF_DUAL_R2`  | 2 Switches|
+| [IteadStudio Sonoff DUAL](#iteadstudio-sonoff-dual) | `ITEAD_SONOFF_DUAL` | 2 Switches|
+| [IteadStudio Sonoff DUAL R2](#iteadstudio-sonoff-dual-r2) | `ITEAD_SONOFF_DUAL_R2`  | 2 Switches|
 | [IteadStudio Sonoff 4CH](#iteadstudio-sonoff-4ch) | `ITEAD_SONOFF_4CH` |  4 Switches with din rail mounting |
 | [IteadStudio Sonoff 4CH Pro](#iteadstudio-sonoff-4ch-pro) | `ITEAD_SONOFF_4CH_PRO` | 4 Switches with din rail mounting and RF Receiver|
 | [IteadStudio Sonoff TOUCH](#iteadstudio-sonoff-touch) | `ITEAD_SONOFF_TOUCH` | Touch Wall Switch|
@@ -84,6 +85,7 @@ This is the official list of supported hardware for the ESPurna firmware. The ha
 ![Sonoff POW - Inside back view](images/flashing/sonoff-pow-flash.jpg)
 
 Same as for the [Sonoff TH](#iteadstudio-sonoff-th) above.
+![Sonoff DUAL - Inside back view](images/flashing/sonoff-dual-flash.jpg)
 
 ---
 
@@ -104,6 +106,24 @@ Same as for the [Sonoff TH](#iteadstudio-sonoff-th) above.
 The Sonoff Dual it's a bit tricky to flash since GPIO0 is not connected to the button as in the TH or POW, but to the pin 15 in the SIL F330 chip that manages the buttons and the relays. SO you have to locate a pad connected to GPIO and short it to ground while powering the device.
 
 In the picture above you have a location of an available and easily accessible GPIO0 pad. The other required pins are brought out in the top header.
+
+Once flashed you can use OTA to update the firmware without having to open the device.
+
+---
+
+## IteadStudio Sonoff DUAL R2
+
+|Property|Value|
+|---|---|
+|Manufacturer|Itead Studio|
+|Web page|[https://www.itead.cc/sonoff-dual.html](https://www.itead.cc/sonoff-dual.html)|
+|Build flag|`ITEAD_SONOFF_DUAL_R2`|
+| Voltage |  <span style="color:red">3v3</span> |
+
+
+### Flashing
+
+As well as Sonoff DUAL, the hardware button is not connected to GPIO0. But you can find connection pins on the upper side of the board which are labeled with GND, button 0, button 1. Before connecting your serial adapter, connect GND with button 0 pin, then connect your serial adapter (with 3.3V supply), then remove connection GND-button 0. Now the device is ready for flashing.
 
 Once flashed you can use OTA to update the firmware without having to open the device.
 
