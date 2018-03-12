@@ -8,15 +8,13 @@ All you have to do is decompress it (unzip it or unbzip it) where you want, open
 
 ### Install the Arduino Core for ESP8266 ###
 
-First step is to install support for ESP8266 based boards on the Arduino IDE through the Board Manager. These instruction are copied and adapted from the Arduino Core for ESP8266 documentation here: [https://github.com/esp8266/Arduino/blob/master/doc/installing.md](https://github.com/esp8266/Arduino/blob/master/doc/installing.md).
+First step is to install support for ESP8266 based boards on the Arduino IDE through the Board Manager. These instruction are copied and adapted from the Arduino Core for ESP8266 documentation here: [https://github.com/esp8266/Arduino/](https://github.com/esp8266/Arduino/).
 
-- Start Arduino and open Preferences window.
-- Enter `http://arduino.esp8266.com/stable/package_esp8266com_index.json` into *Additional Board Manager URLs* field. 
-- Open Boards Manager from Tools > Board menu and find *esp8266* platform.
-- Select the version you need from a drop-down box.
-- Click *install* button.
-
-**NOTE: latest version of the Arduino Core for ESP8266 is 2.4.0. At the moment, pre-build binaries of ESPurna are still built using 2.3.0 version.**
+* Start Arduino and open Preferences window.
+* Enter `http://arduino.esp8266.com/stable/package_esp8266com_index.json` into *Additional Board Manager URLs* field. You can add multiple URLs, separating them with commas. 
+* Open Boards Manager from Tools > Board menu and find *esp8266* platform (and don't forget to select your ESP8266 board from Tools > Board menu after installation).
+* Select the version you need from a drop-down box.
+* Click *install* button.
 
 ## **Add a new flash layout** ##
 
