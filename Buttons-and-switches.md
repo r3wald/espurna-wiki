@@ -33,7 +33,7 @@ To every button event an action can be assigned by setting the corresponding val
 #define BUTTONx_LNGCLICK
 #define BUTTONx_LNGLNGCLICK
 ```
-To every event one of the following actions can be assigned
+To every event, one of the following actions can be assigned:
 ```
 BUTTON_MODE_NONE
 BUTTON_MODE_ON
@@ -43,7 +43,10 @@ BUTTON_MODE_AP (-> Access point mode)
 BUTTON_MODE_RESET
 BUTTON_MODE_FACTORY
 ```
-By default button 2-8 are set to ``BUTTON_MODE_NONE``, for button 1 the following defaults are set which can be overwritten by device specific configuration:
+
+> NOTE: For button mode `BUTTON_SWITCH`. only the click event is available currently, therefore configuration of other events make no sense.
+
+By default button 2-8 are set to ``BUTTON_MODE_NONE``, while button 1 has the following defaults:
 ```
 #define BUTTONx_PRESS           BUTTON_MODE_NONE
 #define BUTTONx_CLICK           BUTTON_MODE_TOGGLE    
@@ -51,8 +54,7 @@ By default button 2-8 are set to ``BUTTON_MODE_NONE``, for button 1 the followin
 #define BUTTONx_LNGCLICK        BUTTON_MODE_RESET
 #define BUTTONx_LNGLNGCLICK     BUTTON_MODE_FACTORY
 ```
-Remember: For button mode ``BUTTON_SWITCH`` only the click event is available currently, therefore configuration of other events make no sense.
-
+> NOTE: If you plan using button1, please make sure you override these settings. 
 
 # LEDs 
 
