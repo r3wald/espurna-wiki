@@ -16,26 +16,33 @@ build_flags = ${common.build_flags_1m} -DDHT_SUPPORT=1 -DDHT_PIN=14
 
 # Sensors
 
-| Sensor | Build flag | 
-|--- | --- |  
+| | |
+|--- | --- |
+| **Common Sensors** | Build flag | 
 | [Analog sensors](#Analog-sensors) | `ANALOG_SUPPORT` | 
 | [Generic digital sensor](#Generic-digital-sensor) | `DIGITAL_SUPPORT` |
 | [I2C Bus](#I2C-Bus) | `I2C_SUPPORT` | 
-| [BH1750 Digital light sensor](#BH1750-Digital-light-sensor) | `BH1750_SUPPORT` | 
+| **Power Meter Sensors** | | 
+| [Analog energy monitor](#Analog-energy-monitor) | `EMON_ANALOG_SUPPORT` |
+| [ADC121 Energy monitor](#ADC121-Energy-monitor) | `EMON_ADC121_SUPPORT` | 
+| [ADS1x15 Energy monitor](#ADS1x15-Energy-monitor) | `EMON_ADS1X15_SUPPORT` | 
+| [ECH1560 based power sensor](#ECH1560-based-power-sensor)| `ECH1560_SUPPORT` | 
+| [HLW8012 Energy monitor IC](#HLW8012-Energy-monitor-IC) | `HLW8012_SUPPORT` |
+| [PZEM004T based power monitor](#PZEM004T-based-power-monitor) |`PZEM004T` |
+| [V9261F based power sensor](#V9261F-based-power-sensor) | `V9261F_SUPPORT` | 
+| **Temperature and/or Humidity Sensors** | |
 | [BME280/BMP280 environmental sensor](#BME280/BMP280-environmental-sensor) | `BMX280_SUPPORT` | 
 | [Dallas 1-Wire sensors](#Dallas-1-Wire-sensors) | `DALLAS_SUPPORT` | 
 | [DHT environmental sensors](#DHT-environmental-sensors) | `DHT_SUPPORT` | 
-| [ECH1560 based power sensor](#ECH1560-based-power-sensor)| `ECH1560_SUPPORT` | 
-| [ADC121 Energy monitor](#ADC121-Energy-monitor) | `EMON_ADC121_SUPPORT` | 
-| [ADS1x15 Energy monitor](#ADS1x15-Energy-monitor) | `EMON_ADS1X15_SUPPORT` | 
-| [Analog energy monitor](#Analog-energy-monitor) | `EMON_ANALOG_SUPPORT` |
-| [Counter sensor](#Counter-sensor) | `EVENTS_SUPPORT` | 
-| [HLW8012 Energy monitor IC](#HLW8012-Energy-monitor-IC) | `HLW8012_SUPPORT` |
-| [MHZ19 CO2 sensor](#MHZ19-CO2-sensor) | `MHZ19_SUPPORT` | 
-| [Particle Monitor based on Plantower PMSX003](#Particle-Monitor-based-on-Plantower-PMSX003) | `PMSX003_SUPPORT` | 
 | [SHT3X environmental sensor](#SHT3X-environmental-sensor) | `SHT3X_I2C_SUPPORT` | 
 | [SI7021 environmental sensor](#SI7021-environmental-sensor) | `SI7021_SUPPORT` | 
-| [V9261F based power sensor](#V9261F-based-power-sensor) | `V9261F_SUPPORT` | 
+| **Air Quality Sensors** | | 
+| [MHZ19 CO2 sensor](#MHZ19-CO2-sensor) | `MHZ19_SUPPORT` | 
+| [Particle Monitor based on Plantower PMSX003](#Particle-Monitor-based-on-Plantower-PMSX003) | `PMSX003_SUPPORT` | 
+| **Light Sensors** | |
+| [BH1750 Digital light sensor](#BH1750-Digital-light-sensor) | `BH1750_SUPPORT` |
+| **Other** | |
+| [Counter sensor](#Counter-sensor) | `EVENTS_SUPPORT` | 
 
 ---
 
@@ -141,6 +148,7 @@ Note: Will automatically enable I2C.
 
 | Option | Note | 
 | --- | --- |
+| `EMON_ADS1X15_I2C_ADDRESS={0x00-0xFF}` | I2C address of ADS1x15 sensor (default: `0x00` - auto) |
 
 Note: Will automatically enable I2C. 
 
@@ -183,6 +191,8 @@ Energy Monitor based on interval analog GPIO.
 
 | Option | Note | 
 | --- | --- |
+| `MHZ19_RX_PIN` | GPIO where RX is connected (default: `13`) |
+| `MHZ19_TX_PIN` | GPIO where TX is connected (default: `15`) |
 
 ---
 
@@ -190,6 +200,8 @@ Energy Monitor based on interval analog GPIO.
 
 | Option | Note | 
 | --- | --- |
+| `PMS_RX_PIN` | GPIO where RX is connected (default: `13`) |
+| `PMS_TX_PIN` | GPIO where TX is connected (default: `15`) |
 
 ---
 
@@ -220,3 +232,12 @@ Note: This will enable I2C.
 | `V9261F_PIN={0,15}`  | GPIO where V9261 is connected (default: `2`) |
 | `V9261F_PIN_INVERSE` | Is signal inverted? (default: `1` - inverted signal) |
 
+---
+
+## PZEM004T based power monitor
+
+| Option | Note | 
+| --- | --- |
+| `PZEM004T_RX_PIN` | GPIO where RX is connected (default: `13`) |
+| `PZEM004T_TX_PIN` | GPIO where TX is connected (default: `15`) |
+| `PZEM004T_HW_PORT` | Hardware serial port (if PZEM004T_USE_SOFT == 0) (default: `Serial1`) |
