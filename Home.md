@@ -203,7 +203,7 @@ Here is the list of supported hardware. For more information please refer to the
 |**[Arilux AL-LC11 (RGBWWW) & RF](Hardware-Arilux-AL-LCxx)**|**[MagicHome LED Controller (1.0/2.x)](Hardware-Magic-Home-LED-Controller)**|**[Huacanxing H801/H802](Hardware-Huacanxing-H80x)**|
 |![Itead Sonoff SV](images/devices/itead-sonoff-sv.jpg)|![Itead 1CH Inching](images/devices/itead-1ch-inching.jpg)|![Itead Motor Clockwise/Anticlockwise](images/devices/itead-motor.jpg)|
 |**[ITEAD Sonoff SV](Hardware-Itead-Sonoff-SV)**|**[ITEAD 1CH Inching](Hardware-Itead-1CH)**|**[ITEAD Motor Clockwise/Anticlockwise](Hardware-Itead-Motor)**|
-|![Jan Goedeke Wifi Relay (NO/NC)](images/devices/jangoe-wifi-relay.png)|![Jorge García Wifi + Relays Board Kit](images/devices/jorgegarcia-wifi-relays.jpg)|![EXS Wifi Relay v3.1](images/devices/exs-wifi-relay-v31.jpg)|
+|![Jan Goedeke Wifi Relay (NO/NC)](images/devices/jangoe-wifi-relay.jpg)|![Jorge García Wifi + Relays Board Kit](images/devices/jorgegarcia-wifi-relays.jpg)|![EXS Wifi Relay v3.1](images/devices/exs-wifi-relay-v31.jpg)|
 |**[Jan Goedeke Wifi Relay Board (NC/NO)](Hardware-Jan-Goedeke-Wifi-Relay-Board)**|**[Jorge García Wifi + Relay Board Kit](Hardware-Jorge-Garcia-Wifi-Relay-Board)**|**[EXS WiFi Relay v3.1](Hardware-EXS-WiFi-Relay-v3.1)**|
 |![Wemos D1 Mini Relay Shield](images/devices/wemos-d1-mini-relayshield.jpg)|![Witty Cloud](images/devices/witty-cloud.jpg)||
 |**[Wemos D1 Mini Relay Shield](Hardware-Wemos-D1-Mini-Relay-Shield)**|**[Witty Cloud](Hardware-Witty-Cloud)**||
