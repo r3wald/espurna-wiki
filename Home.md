@@ -176,42 +176,41 @@ Here is the list of supported hardware. For more information please refer to the
 ||||
 |---|---|---|
 |![Tinkerman Espurna H](images/devices/tinkerman-espurna-h.jpg)|||
-|**Tinkerman ESPurna H**|||
+|**[Tinkerman's ESPurna H](Hardware-Tinkerman-ESPurna-H)**|||
 |![Itead Sonoff RF Bridge](images/devices/itead-sonoff-rfbridge.jpg)|||
-|**Itead Sonoff RF Bridge**|||
+|**[ITEAD Sonoff RF Bridge](Hardware-Itead-Sonoff-RF-Bridge)**|||
 |![Itead Sonoff Basic](images/devices/itead-sonoff-basic.jpg)|![Itead Sonoff RF](images/devices/itead-sonoff-rf.jpg)|![Itead Sonoff Dual/Dual R2](images/devices/itead-sonoff-dual.jpg)|
-|**Itead Sonoff Basic**|**Itead Sonoff RF**|**Itead Sonoff Dual/Dual R2**|
+|**[ITEAD Sonoff Basic](Hardware-Itead-Sonoff-Basic)**|**[ITEAD Sonoff RF](Hardware-Itead-Sonoff-RF)**|**[ITEAD Sonoff Dual/Dual R2](Hardware-Itead-Sonoff-Dual)**|
 |![Itead Sonoff POW](images/devices/itead-sonoff-pow.jpg)|![Itead Sonoff TH10/TH16](images/devices/itead-sonoff-th.jpg)|![Electrodragon WiFi IOT](images/devices/electrodragon-wifi-iot.jpg)|
-|**Itead Sonoff POW**|**Itead Sonoff TH10/TH16**|**Electrodragon WiFi IOT**|
+|**[ITEAD Sonoff POW](Hardware-Itead-Sonoff-POW)**|**[ITEAD Sonoff TH10/16](Hardware-Itead-Sonoff-TH)**|**[Electrodragon ESP Relay Board](Hardware-Electrodragon-ESP-Relay-Board)**|
 |![Itead Sonoff 4CH](images/devices/itead-sonoff-4ch.jpg)|![Itead Sonoff 4CH Pro](images/devices/itead-sonoff-4ch-pro.jpg)|![OpenEnergyMonitor WiFi MQTT Relay / Thermostat](images/devices/openenergymonitor-mqtt-relay.jpg)|
-|**Itead Sonoff 4CH**|**Itead Sonoff 4CH Pro**|**OpenEnergyMonitor WiFi MQTT Relay / Thermostat**|
-|![Itead S20](images/devices/itead-s20.jpg)|![WorkChoice EcoPlug](images/devices/workchoice-ecoplug.jpg)|![Power meters based on V9261F and ECH1560](images/devices/generic-v9261f.jpg)|
-|**Itead S20**|**WorkChoice EcoPlug**|**Power meters based on V9261F and ECH1560**|
-|![Schuko Wifi Plug](images/devices/schuko-wifi-plug.jpg)|![KMC 70011 /w power meter](images/devices/kmc-70011.jpg)||
-|**Schuko Wifi Plug**|**KMC 70011 /w power meter**||
+|**[ITEAD Sonoff 4CH](Hardware-Itead-Sonoff-4CH)**|**[ITEAD Sonoff 4CH Pro](Hardware-Itead-Sonoff-4CH-Pro)**|**[OpenEnergyMonitor Wifi MQTT Relay / Thermostat](Hardware-OpenEnergyMonitor-Wifi-MQTT-Relay)**|
+|![Itead S20](images/devices/itead-s20.jpg)|![WorkChoice EcoPlug](images/devices/workchoice-ecoplug.jpg)|![Schuko Wifi Plug](images/devices/schuko-wifi-plug.jpg)|
+|**[ITEAD S20](Hardware-Itead-S20)**|**[WorkChoice EcoPlug](Hardware-WorkChoice-EcoPlug)**|**[Schuko Wifi Plug](Hardware-Schuko-Wifi-Plug)**|
+|![Power meters based on V9261F](images/devices/generic-v9261f.jpg)|![Power meters based on ECH1560](images/devices/generic-v9261f.jpg)|![KMC 70011 /w power meter](images/devices/kmc-70011.jpg)|
+|**[Power meters based on V9261F](Hardware-Generic-V9261F)**|**[Power meters based on ECH1560](Hardware-Generic-ECH1560)**|**[KMC 70011](Hardware-KMC-70011)**|
 |![Itead Sonoff Touch](images/devices/itead-sonoff-touch.jpg)|![Itead Sonoff T1](images/devices/itead-sonoff-t1.jpg)||
-|**Itead Sonoff Touch**|**Itead Sonoff T1**||
-|![Itead Slampher](images/devices/itead-slampher.jpg)|||
-|**Itead Slampher**|||
+|**[ITEAD Sonoff Touch](Hardware-Itead-Sonoff-Touch)**|**[ITEAD Sonoff T1](Hardware-Itead-Sonoff-T1)**||
+|![Itead Slampher](images/devices/itead-slampher.jpg)|![ITEAD Slampher 2.0](images/devices/itead-slampher.jpg)||
+|**[ITEAD Slampher](Hardware-Itead-Slampher)**|**[ITEAD Slampher 2.0](Hardware-Itead-Slampher-v2)**||
 |![Itead Sonoff B1](images/devices/itead-sonoff-b1.jpg)|![AI-Thinker Wifi Light / Noduino OpenLight](images/devices/aithinker-ai-light.jpg)|![Authometion LYT8266](images/devices/authometion-lyt8266.jpg)|
-|**Itead Sonoff B1**|**AI-Thinker Wifi Light / Noduino OpenLight**|**Authometion LYT8266**|
+|**[ITEAD Sonoff B1](Hardware-Itead-Sonoff-B1)**|**[AI-Thinker AI Light / Noduino OpenLight](Hardware-AI-Thinker-AI-Light)**|**[Autohometion LYT8266](Hardware-Autohometion-LYT8266)**|
 |![Itead Sonoff LED](images/devices/itead-sonoff-led.jpg)|![Itead BN-SZ01](images/devices/itead-bn-sz01.jpg)||
-|**Itead Sonoff LED**|**Itead BN-SZ01**||
+|**[ITEAD Sonoff LED](Hardware-Itead-Sonoff-LED)**|**[ITEAD BN-SZ01](Hardware-Itead-BN-SZ01)**||
 |![Arilux AL-LC01 (RGB)](images/devices/arilux-al-lc01.jpg)|![Arilux AL-LC02 (RGBW)](images/devices/arilux-al-lc02.jpg)|![Arilux AL-LC06 (RGBWWCW)](images/devices/arilux-al-lc06.jpg)|
-|**Arilux AL-LC01 (RGB)**|**Arilux AL-LC02 (RGBW)**|**Arilux AL-LC06 (RGBWWCW)**|
+|**[Arilux AL-LC01 (RGB)](Hardware-Arilux-AL-LCxx)**|**[Arilux AL-LC02 (RGBW)](Hardware-Arilux-AL-LCxx)**|**[Arilux AL-LC06 (RGBWWCW)](Hardware-Arilux-AL-LC06)**|
 |![Arilux AL-LC11 (RGBWWW) & RF](images/devices/arilux-al-lc11.jpg)|![MagicHome LED Controller (1.0 and 2.x)](images/devices/magichome-led-controller.jpg)|![Huacanxing H801/802](images/devices/huacanxing-h801.jpg)|
-|**Arilux AL-LC11 (RGBWWW) & RF**|**MagicHome LED Controller (1.0/2.x)**|**Huacanxing H801/802**|
+|**[Arilux AL-LC11 (RGBWWW) & RF](Hardware-Arilux-AL-LCxx)**|**[MagicHome LED Controller (1.0/2.x)](Hardware-Magic-Home-LED-Controller)**|**[Huacanxing H801/H802](Hardware-Huacanxing-H80x)**|
 |![Itead Sonoff SV](images/devices/itead-sonoff-sv.jpg)|![Itead 1CH Inching](images/devices/itead-1ch-inching.jpg)|![Itead Motor Clockwise/Anticlockwise](images/devices/itead-motor.jpg)|
-|**Itead Sonoff SV**|**Itead 1CH Inching**|**Itead Motor Clockwise/Anticlockwise**|
+|**[ITEAD Sonoff SV](Hardware-Itead-Sonoff-SV)**|**[ITEAD 1CH Inching](Hardware-Itead-1CH)**|**[ITEAD Motor Clockwise/Anticlockwise](Hardware-Itead-Motor)**|
 |![Jan Goedeke Wifi Relay (NO/NC)](images/devices/jangoe-wifi-relay.png)|![Jorge García Wifi + Relays Board Kit](images/devices/jorgegarcia-wifi-relays.jpg)|![EXS Wifi Relay v3.1](images/devices/exs-wifi-relay-v31.jpg)|
-|**Jan Goedeke Wifi Relay (NO/NC)**|**Jorge García Wifi + Relays Board Kit**|**EXS Wifi Relay v3.1**|
+|**[Jan Goedeke Wifi Relay Board (NC/NO)](Hardware-Jan-Goedeke-Wifi-Relay-Board)**|**[Jorge García Wifi + Relay Board Kit](Hardware-Jorge-Garcia-Wifi-Relay-Board)**|**[EXS WiFi Relay v3.1](Hardware-EXS-WiFi-Relay-v3.1)**|
 |![Wemos D1 Mini Relay Shield](images/devices/wemos-d1-mini-relayshield.jpg)|![Witty Cloud](images/devices/witty-cloud.jpg)||
-|**Wemos D1 Mini Relay Shield**|**Witty Cloud**||
+|**[Wemos D1 Mini Relay Shield](Hardware-Wemos-D1-Mini-Relay-Shield)**|**[Witty Cloud](Hardware-Witty-Cloud)**||
 
 **Other supported boards:**
-WiOn 50055, ManCaveMade ESP-Live, InterMitTech QuinLED 2.6
-Arilux E27 light bulb, Xenon SM-PW702U, YJZK 2-gang switch
-STM_RELAY, Maxcio W-US002S, HEYGO HY02, YiDian XS-SSA05
+[WiOn 50055](Hardware-WiOn-50055), [ManCaveMade ESPLive](Hardware-ManCaveMade-ESPLive), [InterMitTech QuinLED 2.6](Hardware-QuinLED)
+[Arilux E27](Hardware-Arilux-E27), [Xenon SM PW 702U](Hardware-Xenon-SM-PW-702U), YJZK 2-gang switch, STM_RELAY, [Maxcio W-US002S](Hardware-Maxcio-W-US002S), [HEYGO HY02](Hardware-HEYGO-HY02), [YiDian XS-SSA05](Hardware-YiDian-XS-SSA05), [Tonbux Powerstrip02](Hardware-Tonbux-Powerstrip02)
 
 ## License
 
