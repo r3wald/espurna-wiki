@@ -86,6 +86,15 @@ This is the official list of supported hardware for the ESPurna firmware. The ha
 | [Generic ECH1560](Hardware-Generic-ECH1560) | `GENERIC_ECH1560` | |
 | [Generic V9261F](Hardware-Generic-V9261F) | `GENERIC_V9261F` | |
 
+## Beta Testing
+
+| Board | Build flag | Description |
+| --- | --- | --- |
+| [HEYGO HY02](Hardware-HEYGO-HY02) | | |
+| [Maxcio W-US002S](Hardware-Maxcio-W-US002S) | | |
+| [YiDian XS-SSA05](Hardware-YiDian-XS-SSA05) | | |
+| [Tonbux Powerstrip02](Hardware-Tonbux-Powerstrip02) | | |
+| [LINGAN SWA1](Hardware-LINGAN-SWA1) | | |
 
 ## Community boards
 
