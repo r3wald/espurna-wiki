@@ -44,6 +44,7 @@ This is the official list of supported hardware for the ESPurna firmware. The ha
 | [Arilux AL-LC06](Hardware-Arilux-AL-LC06) | `ARILUX_AL_LC06` | |
 | [Arilux E27](Hardware-Arilux-E27) | `ARILUX_E27` | |
 | [InterMitTech QuinLED](Hardware-QuinLED) | `INTERMITTECH_QUINLED` | |
+| [Autohometion LYT8266](Hardware-Autohometion-LYT8266) | `AUTHOMETION_LYT8266` | |
 
 ## Power Plugs
 
@@ -51,19 +52,22 @@ This is the official list of supported hardware for the ESPurna firmware. The ha
 | --- | --- | --- |
 | [KMC 70011](Hardware-KMC-70011) | `70011` | Power plug /w power meter |
 | [Schuko Wifi Plug](Hardware-Schuko-Wifi-Plug) | `WIFI_STECKER_SCHUKO` | Power plug |
+| [WiOn 50055](Hardware-WiOn-50055) | `WION_50055` | |
+| [Xenon SM PW 702U](Hardware-Xenon-SM-PW-702U) | `XENON_SM_PW702U` | |
+
+## Development Boards
+
+| Board | Build flag | Description |
+| --- | --- | --- |
+| [Wemos D1 Mini Relay Shield](Hardware-Wemos-D1-Mini-Relay-Shield) | `WEMOS_D1_MINI_RELAYSHIELD` | |
+| [NodeMCU Lolin](Hardware-NodeMCU-Lolin) | `NODEMCU_LOLIN` | Actually any NodeMCU clone should work |
+| [Witty Cloud](Hardware-Witty-Cloud) | `WITTY_CLOUD` | Simple Board /w RGB Led & LDR |
 
 ## Other
 
 | Board | Build flag | Description |
 | --- | --- | --- |
-| [WiOn 50055](Hardware-WiOn-50055) | `WION_50055` | |
-| [EXS WiFi Relay v3.1](Hardware-EXS-WiFi-Relay-v3.1) | `EXS_WIFI_RELAY_V31` | |
-| [Wemos D1 Mini Relay Shield](Hardware-Wemos-D1-Mini-Relay-Shield) | `WEMOS_D1_MINI_RELAYSHIELD` | |
-| [Autohometion LYT8266](Hardware-Autohometion-LYT8266) | `AUTHOMETION_LYT8266` | |
-| [Xenon SM PW 702U](Hardware-Xenon-SM-PW-702U) | `XENON_SM_PW702U` | |
-| [NodeMCU Lolin](Hardware-NodeMCU-Lolin) | `NODEMCU_LOLIN` | Actually any NodeMcu clone should work. |
 | YJZK 2-gang switch | `SWITCH_2CH` | |
-| [Witty Cloud](Hardware-Witty-Cloud) | `WITTY_CLOUD` | Simple Board /w RGB Led & LDR |
 
 ## Custom Boards
 
@@ -77,6 +81,7 @@ This is the official list of supported hardware for the ESPurna firmware. The ha
 | [Jan Goedeke Wifi Relay Board (NC/NO)](Hardware-Jan-Goedeke-Wifi-Relay-Board) | `JANGOE_WIFI_RELAY_NC` <br> `JANGOE_WIFI_RELAY_NO` | |
 | [OpenEnergyMonitor Wifi MQTT Relay / Thermostat](Hardware-OpenEnergyMonitor-Wifi-MQTT-Relay) | `OPENENERGYMONITOR_MQTT_RELAY` | |
 | [Jorge García Wifi + Relay Board Kit](Hardware-Jorge-Garcia-Wifi-Relay-Board) | `JORGEGARCIA_WIFI_RELAYS` | |
+| [EXS WiFi Relay v3.1](Hardware-EXS-WiFi-Relay-v3.1) | `EXS_WIFI_RELAY_V31` | |
 
 ## Generic boards
 
