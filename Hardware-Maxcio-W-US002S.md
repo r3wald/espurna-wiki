@@ -19,7 +19,8 @@ Working Current: 15A<br>
 
 ## Flashing
 
-![Maxcio W-US002S board](images/flashing/maxcio-w-us002s-flash.jpg)
+![Maxcio W-US002S board](images/flashing/maxcio-w-us002s-flash1.jpg)
+![Maxcio W-US002S board](images/flashing/maxcio-w-us002s-flash2.jpg)
 
 *TODO*
 
