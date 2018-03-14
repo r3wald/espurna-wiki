@@ -2,13 +2,13 @@
 
 This is the official list of supported hardware for the ESPurna firmware. The hardware configuration for each of these boards can be selected by supplying the build flag (see [Firmware section](Firmware)).
 
-> **CAUTION:<br>
+> **CAUTION:**<br>
 > * Never ever connect any of these devices to your computer and to mains at the same time.<br>
-> * Never ever manipulate them while connected to mains. Seriously. I don't want you to die.<br>
-> * I hold no responsibility for any damage to you, your family, your house,... for any action or results derived from flashing or using these devices.**
+> * Never ever manipulate them while connected to mains. **Seriously, it can be FATAL!** I don't want you to die.<br>
+> * I hold no responsibility for any damage to you, your family, your house,... for any action or results derived from flashing or using these devices.
 
-> **CAUTION:<br>
-> * Different devices are flashed at different voltages. Make sure your USB-to-UART device is set to the correct one or you risk destroying your device.**
+> **CAUTION:**<br>
+> * Different devices may be flashed at different voltages (3.3v, 5v). Make sure your USB-to-UART device is set to the correct one or you risk destroying your device.
 
 ## ITEAD Sonoff Modules
 
