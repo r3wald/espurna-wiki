@@ -7,7 +7,7 @@
 |Manufacturer|LINGAN|
 |Product page|[Aliexpress Link](https://www.aliexpress.com/item/US-EU-Plug-LINGAN-SWA1-Smart-Socket-2-4GHz-Wireless-Remote-Control-100-240V-2000w-Outlet/32822019108.html)|
 |Wiki page||
-|Build flag||
+|Build flag|`LINGAN_SWA1`|
 
 ## Introduction
 
@@ -18,8 +18,6 @@
 ## Flashing
 
 ![LINGAN SWA1 board](images/flashing/lingan-swa1-flash.jpg)
-
-*TODO*
 
 ## Issues
 
