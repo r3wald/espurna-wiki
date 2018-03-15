@@ -99,7 +99,7 @@ This is the official list of supported hardware for the ESPurna firmware. The ha
 | [Maxcio W-US002S](Hardware-Maxcio-W-US002S) | | |
 | [YiDian XS-SSA05](Hardware-YiDian-XS-SSA05) | | |
 | [Tonbux Powerstrip02](Hardware-Tonbux-Powerstrip02) | `TONBUX_POWERSTRIP02` | 4 AC Outlets + 4 USB Charging Ports |
-| [LINGAN SWA1](Hardware-LINGAN-SWA1) | | |
+| [LINGAN SWA1](Hardware-LINGAN-SWA1) | `LINGAN_SWA1` | |
 
 ## Community boards
 
