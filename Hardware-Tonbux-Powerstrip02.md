@@ -7,7 +7,7 @@
 |Manufacturer|Tonbux|
 |Product page|[Amazon Link](https://www.amazon.com/gp/product/B0779R4879/ref=oh_aui_detailpage_o02_s00?ie=UTF8&psc=1)|
 |Wiki page||
-|Build flag||
+|Build flag|`TONBUX_POWERSTRIP02`|
 
 ## Introduction
 
@@ -26,8 +26,6 @@ It seems it has support for HLW8012, but it's unpopulated.
 ## Flashing
 
 ![Tonbux PowerStrip02 board](images/flashing/tonbux-powerstrip02-flash.jpg)
-
-*TODO*
 
 ## Issues
 
