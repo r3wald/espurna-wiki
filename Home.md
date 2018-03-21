@@ -176,7 +176,7 @@ For more information please refer to the [ESPurna Wiki](https://github.com/xosep
 Here is the list of supported hardware. For more information please refer to the [ESPurna Wiki Hardware page](https://github.com/xoseperez/espurna/wiki/Hardware).
 
 ||||
-|---|---|---|
+|:---:|:---:|:---:|
 |![Tinkerman Espurna H](images/devices/tinkerman-espurna-h.jpg)|||
 |**Tinkerman ESPurna H**|||
 |![Itead Sonoff RF Bridge](images/devices/itead-sonoff-rfbridge.jpg)|||
