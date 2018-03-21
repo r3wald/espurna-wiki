@@ -4,12 +4,13 @@
 
 |Property|Value|
 |---|---|
-|Manufacturer|LINGAN|
-|Product page|[Aliexpress Link](https://www.aliexpress.com/item/US-EU-Plug-LINGAN-SWA1-Smart-Socket-2-4GHz-Wireless-Remote-Control-100-240V-2000w-Outlet/32822019108.html)|
+|Manufacturer|LINGAN / TONBUX / MXQ|
+|Product page|[LINGAN Aliexpress Link](https://www.aliexpress.com/item/US-EU-Plug-LINGAN-SWA1-Smart-Socket-2-4GHz-Wireless-Remote-Control-100-240V-2000w-Outlet/32822019108.html)<br>[TONBUX/MXQ SP04](https://www.aliexpress.com/item/Original-Tonbux-UK-US-EU-Smart-Plug-WIFI-Wireless-Switch-Controls-for-IOS-Android-Google/32851361257.html)|
 |Wiki page||
 |Build flag|`LINGAN_SWA1`|
 
 ## Introduction
+LINGAN SWA1, TONBUX/MXQ SP04 (SWA1)
 
 * Rated voltage: AC 100-240V 
 * Rated current: 10A (2000W)
