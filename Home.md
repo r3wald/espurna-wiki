@@ -219,7 +219,7 @@ Here is the list of supported hardware. For more information please refer to the
 |**YJZK 2-gang switch**|**STM_RELAY**||
 
 **Other supported boards:**
-*TODO*
+TONBUX/MXQ SP04 (as LINGAN SWA1)
 
 ## License
 
