@@ -15,7 +15,8 @@
 
 ## Flashing
 
-*TODO*
+![Generic V9261F Board](images/flashing/generic-v9261f-flash1.jpg)
+![Generic V9261F Board](images/flashing/generic-v9261f-flash2.jpg)
 
 ## Issues
 
