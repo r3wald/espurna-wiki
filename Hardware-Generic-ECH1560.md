@@ -15,7 +15,12 @@
 
 ## Flashing
 
-*TODO*
+Here is two different ECH1560 based device boards<br>
+
+![Generic ECH1560 Board Pins](images/flashing/generic-ech1560-flash1.jpg)
+![Generic ECH1560 Board](images/flashing/generic-ech1560-flash2.jpg)
+![Generic ECH1560 Board Pins](images/flashing/generic-ech1560-flash3.jpg)
+![Generic ECH1560 Board](images/flashing/generic-ech1560-flash4.jpg)
 
 ## Issues
 
