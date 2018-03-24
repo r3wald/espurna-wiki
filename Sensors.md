@@ -19,30 +19,30 @@ build_flags = ${common.build_flags_1m} -DDHT_SUPPORT=1 -DDHT_PIN=14
 | | |
 |--- | --- |
 | **Common Sensors** | Build flag | 
-| [Analog sensors](#Analog-sensors) | `ANALOG_SUPPORT` | 
-| [Generic digital sensor](#Generic-digital-sensor) | `DIGITAL_SUPPORT` |
-| [I2C Bus](#I2C-Bus) | `I2C_SUPPORT` | 
+| [Analog sensors](#analog-sensors) | `ANALOG_SUPPORT` | 
+| [Generic digital sensor](#generic-digital-sensor) | `DIGITAL_SUPPORT` |
+| [I2C Bus](#i2c-bus) | `I2C_SUPPORT` | 
 | **Power Meter Sensors** | | 
-| [Analog energy monitor](#Analog-energy-monitor) | `EMON_ANALOG_SUPPORT` |
-| [ADC121 Energy monitor](#ADC121-Energy-monitor) | `EMON_ADC121_SUPPORT` | 
-| [ADS1x15 Energy monitor](#ADS1x15-Energy-monitor) | `EMON_ADS1X15_SUPPORT` | 
-| [ECH1560 based power sensor](#ECH1560-based-power-sensor)| `ECH1560_SUPPORT` | 
-| [HLW8012 Energy monitor IC](#HLW8012-Energy-monitor-IC) | `HLW8012_SUPPORT` |
-| [PZEM004T based power monitor](#PZEM004T-based-power-monitor) |`PZEM004T` |
-| [V9261F based power sensor](#V9261F-based-power-sensor) | `V9261F_SUPPORT` | 
+| [Analog energy monitor](#analog-energy-monitor) | `EMON_ANALOG_SUPPORT` |
+| [ADC121 Energy monitor](#adc121-energy-monitor) | `EMON_ADC121_SUPPORT` | 
+| [ADS1x15 Energy monitor](#ads1x15-energy-monitor) | `EMON_ADS1X15_SUPPORT` | 
+| [ECH1560 based power sensor](#ech1560-based-power-sensor)| `ECH1560_SUPPORT` | 
+| [HLW8012 Energy monitor IC](#hlw8012-energy-monitor-ic) | `HLW8012_SUPPORT` |
+| [PZEM004T based power monitor](#pzem004t-based-power-monitor) |`PZEM004T` |
+| [V9261F based power sensor](#v9261f-based-power-sensor) | `V9261F_SUPPORT` | 
 | **Temperature and/or Humidity Sensors** | |
-| [BME280/BMP280 environmental sensor](#BME280/BMP280-environmental-sensor) | `BMX280_SUPPORT` | 
-| [Dallas 1-Wire sensors](#Dallas-1-Wire-sensors) | `DALLAS_SUPPORT` | 
-| [DHT environmental sensors](#DHT-environmental-sensors) | `DHT_SUPPORT` | 
-| [SHT3X environmental sensor](#SHT3X-environmental-sensor) | `SHT3X_I2C_SUPPORT` | 
-| [SI7021 environmental sensor](#SI7021-environmental-sensor) | `SI7021_SUPPORT` | 
+| [BME280/BMP280 environmental sensor](#bme280/bmp280-environmental-sensor) | `BMX280_SUPPORT` | 
+| [Dallas 1-Wire sensors](#dallas-1-wire-sensors) | `DALLAS_SUPPORT` | 
+| [DHT environmental sensors](#dht-environmental-sensors) | `DHT_SUPPORT` | 
+| [SHT3X environmental sensor](#sht3x-environmental-sensor) | `SHT3X_I2C_SUPPORT` | 
+| [SI7021 environmental sensor](#si7021-environmental-sensor) | `SI7021_SUPPORT` | 
 | **Air Quality Sensors** | | 
-| [MHZ19 CO2 sensor](#MHZ19-CO2-sensor) | `MHZ19_SUPPORT` | 
-| [Particle Monitor based on Plantower PMSX003](#Particle-Monitor-based-on-Plantower-PMSX003) | `PMSX003_SUPPORT` | 
+| [MHZ19 CO2 sensor](#mhz19-co2-sensor) | `MHZ19_SUPPORT` | 
+| [Particle Monitor based on Plantower PMSX003](#particle-monitor-based-on-plantower-pmsx003) | `PMSX003_SUPPORT` | 
 | **Light Sensors** | |
-| [BH1750 Digital light sensor](#BH1750-Digital-light-sensor) | `BH1750_SUPPORT` |
+| [BH1750 Digital light sensor](#bh1750-digital-light-sensor) | `BH1750_SUPPORT` |
 | **Other** | |
-| [Counter sensor](#Counter-sensor) | `EVENTS_SUPPORT` | 
+| [Counter sensor](#counter-sensor) | `EVENTS_SUPPORT` | 
 
 ---
 

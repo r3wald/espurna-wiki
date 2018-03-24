@@ -2,13 +2,13 @@
 
 This is the official list of supported hardware for the ESPurna firmware. The hardware configuration for each of these boards can be selected by supplying the build flag (see [Firmware section](Firmware)).
 
-> **CAUTION:<br>
+> **CAUTION:**<br>
 > * Never ever connect any of these devices to your computer and to mains at the same time.<br>
-> * Never ever manipulate them while connected to mains. Seriously. I don't want you to die.<br>
-> * I hold no responsibility for any damage to you, your family, your house,... for any action or results derived from flashing or using these devices.**
+> * Never ever manipulate them while connected to mains. **Seriously, it can be FATAL!** I don't want you to die.<br>
+> * I hold no responsibility for any damage to you, your family, your house,... for any action or results derived from flashing or using these devices.
 
-> **CAUTION:<br>
-> * Different devices are flashed at different voltages. Make sure your USB-to-UART device is set to the correct one or you risk destroying your device.**
+> **CAUTION:**<br>
+> * Different devices may be flashed at different voltages (3.3v, 5v). Make sure your USB-to-UART device is set to the correct one or you risk destroying your device.
 
 ## ITEAD Sonoff Modules
 
@@ -44,6 +44,7 @@ This is the official list of supported hardware for the ESPurna firmware. The ha
 | [Arilux AL-LC06](Hardware-Arilux-AL-LC06) | `ARILUX_AL_LC06` | |
 | [Arilux E27](Hardware-Arilux-E27) | `ARILUX_E27` | |
 | [InterMitTech QuinLED](Hardware-QuinLED) | `INTERMITTECH_QUINLED` | |
+| [Autohometion LYT8266](Hardware-Autohometion-LYT8266) | `AUTHOMETION_LYT8266` | |
 
 ## Power Plugs
 
@@ -51,19 +52,22 @@ This is the official list of supported hardware for the ESPurna firmware. The ha
 | --- | --- | --- |
 | [KMC 70011](Hardware-KMC-70011) | `70011` | Power plug /w power meter |
 | [Schuko Wifi Plug](Hardware-Schuko-Wifi-Plug) | `WIFI_STECKER_SCHUKO` | Power plug |
+| [WiOn 50055](Hardware-WiOn-50055) | `WION_50055` | |
+| [Xenon SM PW 702U](Hardware-Xenon-SM-PW-702U) | `XENON_SM_PW702U` | |
+
+## Development Boards
+
+| Board | Build flag | Description |
+| --- | --- | --- |
+| [Wemos D1 Mini Relay Shield](Hardware-Wemos-D1-Mini-Relay-Shield) | `WEMOS_D1_MINI_RELAYSHIELD` | |
+| [NodeMCU Lolin](Hardware-NodeMCU-Lolin) | `NODEMCU_LOLIN` | Actually any NodeMCU clone should work |
+| [Witty Cloud](Hardware-Witty-Cloud) | `WITTY_CLOUD` | Simple Board /w RGB Led & LDR |
 
 ## Other
 
 | Board | Build flag | Description |
 | --- | --- | --- |
-| [WiOn 50055](Hardware-WiOn-50055) | `WION_50055` | |
-| [EXS WiFi Relay v3.1](Hardware-EXS-WiFi-Relay-v3.1) | `EXS_WIFI_RELAY_V31` | |
-| [Wemos D1 Mini Relay Shield](Hardware-Wemos-D1-Mini-Relay-Shield) | `WEMOS_D1_MINI_RELAYSHIELD` | |
-| [Autohometion LYT8266](Hardware-Autohometion-LYT8266) | `AUTHOMETION_LYT8266` | |
-| [Xenon SM PW 702U](Hardware-Xenon-SM-PW-702U) | `XENON_SM_PW702U` | |
-| [NodeMCU Lolin](Hardware-NodeMCU-Lolin) | `NODEMCU_LOLIN` | Actually any NodeMcu clone should work. |
 | YJZK 2-gang switch | `SWITCH_2CH` | |
-| [Witty Cloud](Hardware-Witty-Cloud) | `WITTY_CLOUD` | Simple Board /w RGB Led & LDR |
 
 ## Custom Boards
 
@@ -77,6 +81,7 @@ This is the official list of supported hardware for the ESPurna firmware. The ha
 | [Jan Goedeke Wifi Relay Board (NC/NO)](Hardware-Jan-Goedeke-Wifi-Relay-Board) | `JANGOE_WIFI_RELAY_NC` <br> `JANGOE_WIFI_RELAY_NO` | |
 | [OpenEnergyMonitor Wifi MQTT Relay / Thermostat](Hardware-OpenEnergyMonitor-Wifi-MQTT-Relay) | `OPENENERGYMONITOR_MQTT_RELAY` | |
 | [Jorge García Wifi + Relay Board Kit](Hardware-Jorge-Garcia-Wifi-Relay-Board) | `JORGEGARCIA_WIFI_RELAYS` | |
+| [EXS WiFi Relay v3.1](Hardware-EXS-WiFi-Relay-v3.1) | `EXS_WIFI_RELAY_V31` | |
 
 ## Generic boards
 
@@ -86,6 +91,15 @@ This is the official list of supported hardware for the ESPurna firmware. The ha
 | [Generic ECH1560](Hardware-Generic-ECH1560) | `GENERIC_ECH1560` | |
 | [Generic V9261F](Hardware-Generic-V9261F) | `GENERIC_V9261F` | |
 
+## Beta Testing
+
+| Board | Build flag | Description |
+| --- | --- | --- |
+| [HEYGO HY02](Hardware-HEYGO-HY02) | | |
+| [Maxcio W-US002S](Hardware-Maxcio-W-US002S) | | |
+| [YiDian XS-SSA05](Hardware-YiDian-XS-SSA05) | | |
+| [Tonbux Powerstrip02](Hardware-Tonbux-Powerstrip02) | `TONBUX_POWERSTRIP02` | 4 AC Outlets + 4 USB Charging Ports |
+| [LINGAN SWA1](Hardware-LINGAN-SWA1) | `LINGAN_SWA1` | |
 
 ## Community boards
 

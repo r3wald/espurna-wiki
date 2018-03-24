@@ -19,7 +19,9 @@ Obviously the default values for WIFI network and MQTT will probably not match y
 
 ## WiFi configuration
 
-You can configure up to five WIFI networks. It will then try to connect to the configure WIFI networks in order of signal strength. If none of the defined networks succeed it will default to SoftAP mode again. You can also switch to SoftAP mode by double click the on-board button or reset the board long clicking it. It will stay in SoftAP mode for a minute before trying to reconnect.
+You can configure up to five WIFI networks.<br>
+It will then try to connect to the configure WIFI networks in order of signal strength. If none of the defined networks succeed it will default to SoftAP mode again.<br><br>
+You can also switch to **SoftAP mode by double click the on-board button** or **reset the board long pressing** it. It will stay in SoftAP mode for a minute before trying to reconnect.
 
 ## MQTT
 

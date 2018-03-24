@@ -81,16 +81,16 @@ Click on the "Manage Libraries" menu under "Sketch > Include Library". You will 
 
 This is the list, in **bold** the text you have to search for:
 
-|Library|Notes|
-|-|-|
-|**ArduinoJson** by Benoit Blanchon||
-|**Brzo I2C** by Pascal Kurtansky|Required when I2C_USE_BRZO is 1|
-|**Embedis** by David Turnball and Tom Moxon||
-|**IRRemoteESP8266** by Sebastien Warin et al.|Required when IR_SUPPORT is 1|
-|**NtpCLientLib** by German Martin||
-|**OneWire** by Paul Stoffregen (et al.)|Required when DALLAS_SUPPORT is 1|
-|**PMS Library** by Mariusz Kacki|Required when PMSX003_SUPPORT is 1|
-|**PubSubClient** by Nick O'Leary|Required when MQTT_USE_ASYNC is 0. Read note below|
+|Library|Repository|Notes|
+|-|-|-|
+|**ArduinoJson** by Benoit Blanchon|[GIT](https://github.com/bblanchon/ArduinoJson)||
+|**Brzo I2C** by Pascal Kurtansky|[GIT](https://github.com/pasko-zh/brzo_i2c)|Required when I2C_USE_BRZO is 1|
+|**Embedis** by David Turnball and Tom Moxon|[GIT](https://github.com/thingSoC/embedis)||
+|**IRRemoteESP8266** by Sebastien Warin et al.|[GIT](https://github.com/markszabo/IRremoteESP8266)|Required when IR_SUPPORT is 1|
+|**NtpCLientLib** by Germán Martín|[GIT](https://github.com/gmag11/NtpClient)||
+|**OneWire** by Paul Stoffregen (et al.)|[GIT](https://github.com/PaulStoffregen/OneWire)|Required when DALLAS_SUPPORT is 1|
+|**PMS Library** by Mariusz Kacki|[GIT](https://github.com/fu-hsi/PMS)|Required when PMSX003_SUPPORT is 1|
+|**PubSubClient** by Nick O'Leary|[GIT](https://github.com/knolleary/pubsubclient)|Required when MQTT_USE_ASYNC is 0. Read note below|
 
 **Note**: The PubSubClient library requires a little modification in order to work with long MQTT message payloads (like when using Domoticz integration). You will need to edit the '**PubSubClient.h**' file (for me that file is under the '**C:\Users\xose\Documents\Arduino\libraries\arduino_281549\src\PubSubClient.h**' folder), line 26 and change the MQTT_MAX_PACKET_SIZE to at least 400.
 
