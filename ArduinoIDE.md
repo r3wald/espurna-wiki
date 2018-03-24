@@ -87,7 +87,6 @@ This is the list, in **bold** the text you have to search for:
 |**Brzo I2C** by Pascal Kurtansky|[GIT](https://github.com/pasko-zh/brzo_i2c)|Required when I2C_USE_BRZO is 1|
 |**Embedis** by David Turnball and Tom Moxon|[GIT](https://github.com/thingSoC/embedis)||
 |**IRRemoteESP8266** by Sebastien Warin et al.|[GIT](https://github.com/markszabo/IRremoteESP8266)|Required when IR_SUPPORT is 1|
-|**NtpCLientLib** by Germán Martín|[GIT](https://github.com/gmag11/NtpClient)||
 |**OneWire** by Paul Stoffregen (et al.)|[GIT](https://github.com/PaulStoffregen/OneWire)|Required when DALLAS_SUPPORT is 1|
 |**PMS Library** by Mariusz Kacki|[GIT](https://github.com/fu-hsi/PMS)|Required when PMSX003_SUPPORT is 1|
 |**PubSubClient** by Nick O'Leary|[GIT](https://github.com/knolleary/pubsubclient)|Required when MQTT_USE_ASYNC is 0. Read note below|
@@ -122,6 +121,7 @@ You will have to install manually the libraries that are not available from the 
 |**mDNSResolver** by Myles Eftos|[GIT](https://github.com/madpilot/mDNSResolver)|[ZIP](https://github.com/madpilot/mDNSResolver/archive/master.zip)|Required if MDNS_CLIENT_SUPPORT is 1|
 |**my92xx** by Xose Pérez|[GIT](https://github.com/xoseperez/my92xx)|[ZIP](https://github.com/xoseperez/my92xx/archive/master.zip)|Required if LIGHT_PROVIDER_MY92XX|
 |**NoFUSS** by Xose Pérez|[GIT](https://bitbucket.org/xoseperez/nofuss)|[ZIP](https://bitbucket.org/xoseperez/nofuss/get/master.zip)|Required if NOFUSS_SUPPORT is 1|
+|**NtpCLientLib** by Germán Martín|[GIT](https://github.com/gmag11/NtpClient)|[ZIP](https://github.com/gmag11/NtpClient/archive/develop.zip)|Development branch is required|
 |**RemoteSwitch** by Randy Simons (fork)|[GIT](https://github.com/xoseperez/RemoteSwitch-arduino-library)|[ZIP](https://github.com/xoseperez/RemoteSwitch-arduino-library/archive/master.zip)|Required if RF_SUPPORT is 1|
 |**Time** by Michael Maregolis and Paul Stoffregen (fork)|[GIT](https://github.com/xoseperez/Time)|[ZIP](https://github.com/xoseperez/Time/archive/master.zip)||
 
