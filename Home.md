@@ -217,8 +217,8 @@ Here is the list of supported hardware. For more information please refer to the
 |**Jan Goedeke Wifi Relay (NO/NC)**|**Jorge García Wifi + Relays Board Kit**|**EXS Wifi Relay v3.1**|
 |![ManCaveMade ESP-Live](images/devices/mancavemade-esp-live.jpg)|![Wemos D1 Mini Relay Shield](images/devices/wemos-d1-mini-relayshield.jpg)|![Witty Cloud](images/devices/witty-cloud.jpg)|
 |**ManCaveMade ESP-Live**|**Wemos D1 Mini Relay Shield**|**Witty Cloud**|
-|||
-|**YJZK 2-gang switch**|**STM_RELAY**||
+|![Green ESP8266Relay](images/devices/green-esp8266-relay.jpg)||
+|**Green ESP8266Relay**|**YJZK 2-gang switch**|**STM_RELAY**|
 
 **Other supported boards:**
 TONBUX/MXQ SP04 (as LINGAN SWA1)
