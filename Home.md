@@ -193,8 +193,10 @@ Here is the list of supported hardware. For more information please refer to the
 |**Schuko Wifi Plug**|**KMC 70011**|**Xenon SM-PW702U**|
 |![Maxcio W-US002S](images/devices/maxcio-w-us002s.jpg)|![HEYGO HY02](images/devices/heygo-hy02.jpg)|![YiDian XS-SSA05](images/devices/yidian-xs-ssa05.jpg)|
 |**Maxcio W-US002S**|**HEYGO HY02**|**YiDian XS-SSA05**|
-|![WiOn 50055](images/devices/wion-50055.jpg)|![LINGAN SWA1](images/devices/lingan-swa1.jpg)|![Tonbux PowerStrip02](images/devices/tonbux-powerstrip02.jpg)|
+|![WiOn 50055](images/devices/wion-50055.jpg)|![LINGAN SWA1](images/devices/lingan-swa1.jpg)|![Tonbux XS-SSA06](images/devices/tonbux-xs-ssa06.jpg)|
 |**WiOn 50055**|**LINGAN SWA1**|**Tonbux PowerStrip02**
+|![Tonbux PowerStrip02](images/devices/tonbux-powerstrip02.jpg)|||
+|**Tonbux PowerStrip02**|||
 |![Itead Sonoff Touch](images/devices/itead-sonoff-touch.jpg)|![Itead Sonoff T1](images/devices/itead-sonoff-t1.jpg)||
 |**Itead Sonoff Touch**|**Itead Sonoff T1**||
 |![Itead Slampher](images/devices/itead-slampher.jpg)|||
