@@ -1,6 +1,6 @@
 # Xenon SM-PW702U
 
-![Xenon SM-PW702U](images/devices/xenon-sm-pw-702u.jpg)
+![Xenon SM-PW702U](images/devices/xenon-sm-pw702u.jpg)
 
 |Property|Value|
 |---|---|
@@ -12,7 +12,6 @@
 ## Introduction
 
 SM-PW702U is released under different brands.
-*TODO*
 
 ## Flashing
 First, use a dremel to cut around the seam and expose the components.
