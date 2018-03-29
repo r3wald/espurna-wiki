@@ -18,7 +18,7 @@ esptool will hard reset after each operation so unless GPIO0 is still connected 
 
 Erasing a flash is not dangerous, you can always boot into flash mode and flash a new firmware.
 
-Erasing is important as it nullifies the current flash, so you'll have a clean flash.
+**Erasing is important** as it nullifies the current flash, so you'll have a clean flash.
 (If you flash a new firmware without erasing it first, leftover data from previous image -probably won't effect but- may render your device unstable.)
 
 If the device becomes unstable or you want a fresh install you will have to first erase the flash image using this command:
