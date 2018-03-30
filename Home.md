@@ -67,7 +67,7 @@ It uses the Arduino Core for ESP8266 framework and a number of 3rd party librari
         * **PMSX003** dust sensor
         * **BH1750** luminosity sensor
     * Power monitoring
-        * **HLW8012** using the [HLW8012 Library](https://bitbucket.org/xoseperez/hlw8012) (Sonoff POW)
+        * **HLW8012** (and **CSE7759**) using the [HLW8012 Library](https://bitbucket.org/xoseperez/hlw8012) (Sonoff POW)
         * Non-invasive **current sensor** using **internal ADC** or **ADC121** or **ADS1115**
         * **ECH1560** power monitor chip
         * **V9261F** power monitor chip
