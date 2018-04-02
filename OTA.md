@@ -53,7 +53,8 @@ ota http://192.168.1.11/espurna-1.12.4a-wemos-d1mini-relayshield.bin
 You can use the "/upgrade" endpoint to automate upgrades via HTTP using cURL or similar tools. This is the same endpoint that uses the web interface upgrade utility so you will need a device with ESPurna compiled with WEB_SUPPORT (this is the default).
 
 ```
-curl -XPOST --digest -uadmin:<password> -H "Content-Type: multipart/form-data" -F "filename=@<path_to_binary>" http://<ip_device>/upgrade
+curl -XPOST --digest -uadmin:<password> \
+  -H "Content-Type: multipart/form-data" -F "filename=@<path_to_binary>" http://<ip_device>/upgrade
 ```
 
 You will have to replace `<password>`, `<path_to_binary>` and `<ip_device>` with proper values for your device. For instance:
