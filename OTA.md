@@ -6,6 +6,7 @@ ESPurna offers several ways to upgrade an ESPurna device over-the-air:
 * [Web interface updates](#web-interface-updates) (uploading a binary image from the web UI)
 * [Terminal updates](#updating-from-the-terminal) (connecting via serial or telnet and providing a URL of an image)
 * [HTTP updates](#updating-via-http) (POSTing a binary image to the device)
+* [Automatic OTA updates](#automatic-ota-updates) (using the NoFUSS library, not supported by default)
 
 ## Manually driven OTA updates
 
