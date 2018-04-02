@@ -54,16 +54,21 @@ You can use the "/upgrade" endpoint to automate upgrades via HTTP using cURL or 
 
 ```
 curl -XPOST --digest -uadmin:<password> \
-  -H "Content-Type: multipart/form-data" -F "filename=@<path_to_binary>" http://<ip_device>/upgrade
+  -H "Content-Type: multipart/form-data" \
+  -F "filename=@<path_to_binary>" \
+  http://<ip_device>/upgrade
 ```
 
 You will have to replace `<password>`, `<path_to_binary>` and `<ip_device>` with proper values for your device. For instance:
 
 ```
-curl -XPOST --digest -uadmin:fibonacci -H "Content-Type: multipart/form-data" -F "filename=@.pioenvs/esp8266-1m-ota/firmware.bin" http://192.168.4.1/upgrade
+curl -XPOST --digest -uadmin:fibonacci \
+  -H "Content-Type: multipart/form-data" \
+  -F "filename=@.pioenvs/esp8266-1m-ota/firmware.bin" \
+  http://192.168.4.1/upgrade
 ```
 
-Please not the '@' before the path to the binary file. The path can be relative to the current directory.
+Please note the '@' before the path to the binary file. The path can be relative to the current directory. The backslashes in a bash console mean that the command continues in the next line, you can write the full curl command in a single line if you want.
 
 Thanks to @FlorianSW for this tip, check the #745 for the original suggestion.
 
