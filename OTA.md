@@ -70,7 +70,7 @@ curl -XPOST --digest -uadmin:fibonacci \
 
 Please note the '@' before the path to the binary file. The path can be relative to the current directory. The backslashes in a bash console mean that the command continues in the next line, you can write the full curl command in a single line if you want.
 
-Thanks to @FlorianSW for this tip, check the #745 for the original suggestion.
+Thanks to [FlorianSW](https://github.com/FlorianSW) for this tip, check the [#745](https://github.com/xoseperez/espurna/issues/745) for the original suggestion.
 
 ## Automatic OTA updates
 
