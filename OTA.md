@@ -1,5 +1,12 @@
 # Over-the-air updates
 
+ESPurna offers several ways to upgrade an ESPurna device over-the-air:
+
+* [Manually driven OTA updates](#manually-driven-ota-updates) (from PlatformIO or Arduino IDE)
+* [Web interface updates](#web-interface-updates) (uploading a binary image from the web UI)
+* [Terminal updates](#updating-from-the-terminal) (connecting via serial or telnet and providing a URL of an image)
+* [HTTP updates](#updating-via-http) (POSTing a binary image to the device)
+
 ## Manually driven OTA updates
 
 Once you have flashed your board with the ESPurna firmware you can flash it again over-the-air using PlatformIO and the ```ota``` environment:
