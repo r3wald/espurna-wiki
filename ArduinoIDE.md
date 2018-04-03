@@ -126,7 +126,7 @@ You will have to install manually the libraries that are not available from the 
 |**Time** by Michael Maregolis and Paul Stoffregen (fork)|[GIT](https://github.com/xoseperez/Time)|[ZIP](https://github.com/xoseperez/Time/archive/master.zip)||
 
 
-(1) If you are using Arduino core 2.3.0 stable, please install and use this version, [ESPAsyncTCP #9b0cc37](https://github.com/me-no-dev/ESPAsyncTCP#9b0cc37).
+(1) If you are using Arduino core 2.3.0 stable, please install and use this version, [ESPAsyncTCP #9b0cc37](https://github.com/me-no-dev/ESPAsyncTCP/tree/9b0cc37cd7bdf4b7d17a363141d2e988aa46652c).
 
 (2) Please note that versions newer than https://github.com/me-no-dev/ESPAsyncWebServer/commit/313f3372c61f6f4bff9c157f02a07ba912d3d4d9 have been reported as having websocket authentication issues with Safari and iOS. It is recommended to use that commit version for the moment.
 
