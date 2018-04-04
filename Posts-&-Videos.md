@@ -12,6 +12,7 @@ This page gathers online posts and videos (maybe also references to offline arti
 [2017-09-24] [Connected power meter](http://tinkerman.cat/connected-power-meter/) by **Xose Pérez**  
 [2017-09-13] [Hacking the Sonoff RF Bridge 433](http://tinkerman.cat/hacking-sonoff-rf-bridge-433/) by **Xose Pérez**  
 [2017-09-03] [Using Google Assistant to control your ESP8266 devices](http://tinkerman.cat/using-google-assistant-control-your-esp8266-devices/) by **Xose Pérez**  
+[2017-07-30] [Home automation smart node](https://www.srm.im/2017/07/30/home-automation-smart-node/) by **Sean Mitchese**  
 [2017-05-21] [A closer look at the H801 LED WiFi Controller](http://tinkerman.cat/closer-look-h801-led-wifi-controller/) by **Xose Pérez**  
 [2017-04-08] [The ESPurna Board. A smart wall switch with power monitoring](http://tinkerman.cat/the-espurna-board-a-smart-wall-switch-with-power-monitoring/) by **Xose Pérez**  
 [2017-04-02] [Magic Home LED Controller ESPurna’d](http://tinkerman.cat/magic-home-led-controller-espurnad/) by **Xose Pérez**  
