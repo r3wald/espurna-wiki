@@ -17,6 +17,8 @@
 
 ![Sonoff RF Bridge board](images/flashing/sonoff-rf-bridge-v2.jpg)
 
+http://tinkerman.cat/hacking-sonoff-rf-bridge-433/
+
 *TODO*
 
 ## Issues
