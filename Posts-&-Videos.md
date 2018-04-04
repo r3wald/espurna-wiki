@@ -11,8 +11,10 @@ This page gathers online posts and articles (maybe also references to offline ar
 
 ## Videos
 
+[2018-03-11] [H801 Espurna load no wifi connection. Add an antenna.](https://www.youtube.com/watch?v=Fyoz1fdG60o) by **Chris B** (Youtube)  
 [2018-02-14] [Flashing ESPurna Custom Firmware on ITEAD 1CH Wi-Fi Switch](https://www.youtube.com/watch?v=7ZbQVdJZdK8) by **Alex Corvis** (Youtube)  
 [2018-02-14] [How to Flash ESPurna Custom Firmware with PlatformIO](https://www.youtube.com/watch?v=fjY57_LZj88) by **Alex Corvis** (Youtube)  
 [2017-11-20] [How to flash ESPurna firmware to Sonoff Basic](https://www.youtube.com/watch?v=EYeOX4J4yEk) by **Csongor Varga** (Youtube)  
 [2017-09-22] [Quick Basic Sonoff flashing with Espurna. IOT Part one](https://www.youtube.com/watch?v=TEa1c50j298) by **Chris B** (Youtube)  
 [2017-08-10] [Espurna firmware for Itead Studio Sonoff RF Bridge](https://www.youtube.com/watch?v=uGilGeCAV98) by **Xose Pérez** (Youtube)  
+
