@@ -56,4 +56,4 @@
 
 ### More around ESPurna
 * [Contributions](Contributions)
-* Posts & Articles
+* [Posts & Articles](News)
