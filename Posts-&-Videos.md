@@ -2,6 +2,7 @@ This page gathers online posts and videos (maybe also references to offline arti
 
 ## Posts
 
+[2018-01-08] [Tasmota vs ESPurna vs ESPEasy - overview](https://lobradov.github.io/FOSS-Firmware-comparison-overview/) by **Lazar Obradovic**  
 [2017-11-26] [IoT - Dryer / Washer SMS and E-mail Notifications](https://nomiotic.blogspot.com.es/2017/11/iot-dryer-washer-sms-and-e-mail.html) by **Nomiotic**  
 [2017-04-08] [The ESPurna Board. A smart wall switch with power monitoring](http://tinkerman.cat/the-espurna-board-a-smart-wall-switch-with-power-monitoring/) by **Xose Pérez**  
 [2017-01-21] [How to use Sonoff POW with ESPurna Firmware and Domoticz Home Automation System](https://www.cnx-software.com/2017/01/21/how-to-use-sonoff-pow-with-espurna-firmware-and-domoticz-home-automation-system/) by **CNXSOFT**  
