@@ -2,10 +2,12 @@ This page gathers online posts and videos (maybe also references to offline arti
 
 ## Posts
 
+[2018-02-16] [DIY Virtual Alike NEST Thermostat with Node-RED](https://www.hackster.io/alex-corvis-84/diy-virtual-alike-nest-thermostat-with-node-red-04e6f4) by **Alex Corvis**
 [2018-01-08] [Tasmota vs ESPurna vs ESPEasy - overview](https://lobradov.github.io/FOSS-Firmware-comparison-overview/) by **Lazar Obradovic**  
 [2017-11-26] [IoT - Dryer / Washer SMS and E-mail Notifications](https://nomiotic.blogspot.com.es/2017/11/iot-dryer-washer-sms-and-e-mail.html) by **Nomiotic**  
 [2017-11-17] [433 MHz Support in Node-RED](https://www.jackenhack.com/433-mhz-support-node-red/) by **Jack Zimmermann**   
 [2017-09-27] [Sonoff B1, lights and shades](http://tinkerman.cat/sonoff-b1-lights-and-shades/) by **Xose Pérez**  
+[2017-09-25] [ESPurna Firmware Now Supports Power Meters “Augmented” with ESP8266 Modules/Boards](https://www.cnx-software.com/2017/09/25/espurna-firmware-now-supports-power-meters-augmented-with-esp8266-modulesboards/) by **CNXSOFT**  
 [2017-09-24] [Connected power meter](http://tinkerman.cat/connected-power-meter/) by **Xose Pérez**  
 [2017-09-13] [Hacking the Sonoff RF Bridge 433](http://tinkerman.cat/hacking-sonoff-rf-bridge-433/) by **Xose Pérez**  
 [2017-09-03] [Using Google Assistant to control your ESP8266 devices](http://tinkerman.cat/using-google-assistant-control-your-esp8266-devices/) by **Xose Pérez**  
