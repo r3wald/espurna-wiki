@@ -1,4 +1,4 @@
-This page gathers online posts and articles (maybe also references to offline articles) about ESPurna or that could be of some interest for an ESPurna user. Some of these articles are written by me ([@xoseperez](https://github.com/xoseperez)) for my blog [www.tinkerman.cat](http://www.tinkerman.cat). Reverse cronological order (most recent posts first).
+This page gathers online posts and videos (maybe also references to offline articles) about ESPurna or that could be of some interest for an ESPurna user. Some of these articles are written by me ([@xoseperez](https://github.com/xoseperez)) for my blog [www.tinkerman.cat](http://www.tinkerman.cat). Reverse cronological order (most recent posts first).
 
 ## Posts
 
