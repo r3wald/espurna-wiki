@@ -8,6 +8,7 @@ This page gathers online posts and videos (maybe also references to offline arti
 [2017-09-13] [Hacking the Sonoff RF Bridge 433](http://tinkerman.cat/hacking-sonoff-rf-bridge-433/) by **Xose Pérez**  
 [2017-04-08] [The ESPurna Board. A smart wall switch with power monitoring](http://tinkerman.cat/the-espurna-board-a-smart-wall-switch-with-power-monitoring/) by **Xose Pérez**  
 [2017-01-21] [How to use Sonoff POW with ESPurna Firmware and Domoticz Home Automation System](https://www.cnx-software.com/2017/01/21/how-to-use-sonoff-pow-with-espurna-firmware-and-domoticz-home-automation-system/) by **CNXSOFT**  
+[2016-12-07] [ESP8266 Multi-relay boards: Sonoff Dual and Electrodragon](http://tinkerman.cat/esp8266-multi-relay-boards-sonoff-dual-electrodragon/) by **Xose Pérez**  
 [2016-12-03] [How to Build and Flash ESPurna Open Source Firmware to Sonoff POW Wireless Switch](https://www.cnx-software.com/2016/12/03/building-and-flashing-espurna-open-source-firmware-to-sonoff-pow-wireless-switch/) by **CNXSOFT**  
 [2016-11-12] [The Sonoff POW](http://tinkerman.cat/the-sonoff-pow/) by **Xose Pérez**  
 [2016-07-30] [Your laundry is done](http://tinkerman.cat/your-laundry-is-done/) by **Xose Pérez**  
