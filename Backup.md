@@ -8,6 +8,11 @@ You will need a working copy of [esptool.py](https://github.com/espressif/esptoo
 
 The examples below assume you have esptool.py somewhere in the path, otherwise specify the full path to the tool.
 
+You will also need to know the serial port of the device (`--port` argument).  
+Examples in the Wiki are for Linux - port is `/dev/ttyUSB*`  
+For Windows - `COM*`. Run `mode` in the terminal to enumerate available serial ports.  
+For MacOS - `/dev/cu.usbserial-*`
+
 ## Connection
 
 To backup the image you will need to boot your board in flash mode. The procedure is exactly the same as when you are getting ready to flash a new image and it will depend on your device. Check the [supported hardware page](https://github.com/xoseperez/espurna/wiki/Hardware) for instructions.
