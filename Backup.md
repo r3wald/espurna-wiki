@@ -45,17 +45,17 @@ optional arguments:
 To backup a Sonoff device (1Mbyte flash size) you will need to (change port to match yours):
 
 ```
-esptool.py --port /dev/ttyUSB0 --baud 115200 read_flash 0x00000 0x100000 sonoff-backup.bin
+esptool.py --port /dev/ttyUSB0 read_flash 0x00000 0x100000 sonoff-backup.bin
 ```
 
 To restore the image do a:
 
 ```
-esptool.py --port /dev/ttyUSB0 --baud 115200 write_flash -fs 1MB -fm dio 0x00000 sonoff-backup.bin
+esptool.py --port /dev/ttyUSB0 write_flash --file_size 1MB --flash_mode dio 0x00000 sonoff-backup.bin
 ```
 
 The writing process first erases the flash contents. In case you wanted to do it manually you can:
 
 ```
-esptool.py --port /dev/ttyUSB0 --baud 115200 erase_flash
+esptool.py --port /dev/ttyUSB0 erase_flash
 ```
