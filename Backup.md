@@ -51,7 +51,7 @@ esptool.py --port /dev/ttyUSB0 read_flash 0x00000 0x100000 sonoff-backup.bin
 To restore the image do a:
 
 ```
-esptool.py --port /dev/ttyUSB0 write_flash --file_size 1MB --flash_mode dio 0x00000 sonoff-backup.bin
+esptool.py --port /dev/ttyUSB0 write_flash --flash_size 1MB --flash_mode dout 0x00000 sonoff-backup.bin
 ```
 
 The writing process first erases the flash contents. In case you wanted to do it manually you can:
