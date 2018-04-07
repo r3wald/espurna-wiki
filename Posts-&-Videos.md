@@ -2,12 +2,12 @@ This page gathers online posts and videos (maybe also references to offline arti
 
 ## Posts
 
-[2017-03-15] [IoT sensors and time series databases](https://watchmysys.com/blog/2018/03/iot-sensors-time-series-databases/)  
+[2018-03-15] [IoT sensors and time series databases](https://watchmysys.com/blog/2018/03/iot-sensors-time-series-databases/)  
 [2018-02-16] [DIY Virtual Alike NEST Thermostat with Node-RED](https://www.hackster.io/alex-corvis-84/diy-virtual-alike-nest-thermostat-with-node-red-04e6f4) by **Alex Corvis**  
 [2018-01-15] [Tasmota vs ESPurna vs ESPEasy -
 contributing and developing](https://lobradov.github.io/FOSS-Firmware-comparison-developers/) by **Lazar Obradovic**  
 [2018-01-10] [Tasmota vs ESPurna vs ESPEasy -
-connecting and configurin](https://lobradov.github.io/FOSS-Firmware-comparison-configuration/) by **Lazar Obradovic**  
+connecting and configuring](https://lobradov.github.io/FOSS-Firmware-comparison-configuration/) by **Lazar Obradovic**  
 [2018-01-09] [Tasmota vs ESPurna vs ESPEasy -
 getting the firmware](https://lobradov.github.io/FOSS-Firmware-comparison-getting-firmware/) by **Lazar Obradovic**  
 [2018-01-08] [Tasmota vs ESPurna vs ESPEasy - overview](https://lobradov.github.io/FOSS-Firmware-comparison-overview/) by **Lazar Obradovic**  
