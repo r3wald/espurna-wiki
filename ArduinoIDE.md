@@ -121,7 +121,7 @@ You will have to install manually the libraries that are not available from the 
 |**mDNSResolver** by Myles Eftos|[GIT](https://github.com/madpilot/mDNSResolver)|[ZIP](https://github.com/madpilot/mDNSResolver/archive/master.zip)|Required if MDNS_CLIENT_SUPPORT is 1|
 |**my92xx** by Xose Pérez|[GIT](https://github.com/xoseperez/my92xx)|[ZIP](https://github.com/xoseperez/my92xx/archive/master.zip)|Required if LIGHT_PROVIDER_MY92XX|
 |**NoFUSS** by Xose Pérez|[GIT](https://bitbucket.org/xoseperez/nofuss)|[ZIP](https://bitbucket.org/xoseperez/nofuss/get/master.zip)|Required if NOFUSS_SUPPORT is 1|
-|**NtpCLientLib** by Germán Martín|[GIT](https://github.com/gmag11/NtpClient)|[ZIP](https://github.com/gmag11/NtpClient/archive/develop.zip)|Development branch is required|
+|**NtpCLientLib** by Germán Martín (fork)|[GIT](https://github.com/xoseperez/NtpClient/tree/develop)|[ZIP](https://github.com/xoseperez/NtpClient/archive/develop.zip)|Development branch is required|
 |**RemoteSwitch** by Randy Simons (fork)|[GIT](https://github.com/xoseperez/RemoteSwitch-arduino-library)|[ZIP](https://github.com/xoseperez/RemoteSwitch-arduino-library/archive/master.zip)|Required if RF_SUPPORT is 1|
 |**Time** by Michael Maregolis and Paul Stoffregen (fork)|[GIT](https://github.com/xoseperez/Time)|[ZIP](https://github.com/xoseperez/Time/archive/master.zip)||
 
