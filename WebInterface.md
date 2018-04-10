@@ -39,6 +39,7 @@ It will take a minute or two. Then you are ready to build the web interface file
 ```sh
 node node_modules/gulp/bin/gulp.js
 ```
+(if you are using ATOM-PlaformIO - you can install gulp-control package and manage web builds from within the SDK)
 
 The resulting byte array will be embedded in 'code/espurna/static/index.html.gz.h'
 
