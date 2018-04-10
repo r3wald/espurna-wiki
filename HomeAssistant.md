@@ -32,8 +32,8 @@ Here you have a sample configuration (add these lines to the same configuration.
 switch:
   - platform: mqtt
     name: "Test Switch"
-    state_topic: "/test/switch/D1MINI/relay/0"
-    command_topic: "/test/switch/D1MINI/relay/0/set"
+    state_topic: "test/switch/D1MINI/relay/0"
+    command_topic: "test/switch/D1MINI/relay/0/set"
     payload_on: 1
     payload_off: 0
     optimistic: false
@@ -52,23 +52,23 @@ ESpurna supports color, brightness, temperature color and individual channels fo
 light:
   - platform: mqtt
     name: 'Test RGBW Light'
-    state_topic: '/test/light/relay/0'
-    command_topic: '/test/light/relay/0/set'
+    state_topic: 'test/light/relay/0'
+    command_topic: 'test/light/relay/0/set'
     payload_on: 1
     payload_off: 0
-    rgb_state_topic: '/test/light/color'
+    rgb_state_topic: 'test/light/color'
 # the next line is only required if you have css style enabled in espurna "lights" settings
 #    rgb_value_template: "{{ '%s,%s,%s' | format(value[1:3] | int(value[1:3], 16), value[3:5] | int(value[3:5], 16), value[5:7] | int(value[5:7], 16)) }}"
-    rgb_command_topic: '/test/light/color/set'
+    rgb_command_topic: 'test/light/color/set'
     rgb: true
     optimistic: false
     color_temp: true
-    color_temp_command_topic: '/test/light/mired/set'
+    color_temp_command_topic: 'test/light/mired/set'
     brightness: true
     brightness_scale: 255
-    brightness_command_topic:  '/test/light/brightness/set'
-    brightness_state_topic: '/test/light/brightness'
+    brightness_command_topic:  'test/light/brightness/set'
+    brightness_state_topic: 'test/light/brightness'
     white_value: true
-    white_value_command_topic: '/test/light/channel/3/set'
-    white_value_state_topic: '/test/light/channel/3'
+    white_value_command_topic: 'test/light/channel/3/set'
+    white_value_state_topic: 'test/light/channel/3'
 ```
