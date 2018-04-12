@@ -1,11 +1,11 @@
 espurna includes integration hooks for custom code and 3rd party modules integration. 
-This article include template files and document,  integration model to make it easier when integrating plugins (or 3rd party code). 
-Please also look at the attached files, all includes inline help documentation for possible featurs.
-The main concept is to allow adding new functionality to espurna with zero to minimal code changes to espurna (just adding the new files and integrating by setting a build flag only). 
+This attached template files,  to help integrating or 3rd party code. 
+Please also take a look at the attached files for inline help documentation, describing the different optionsand features.
+The main concept is to allow adding new functionality to espurna with zero to minimal code changes to espurna core system (just adding the new files and integrating by setting a build flag only).  
  
 ## Files:
-* **custom.h** - this is the generic espurna custom header include file (included by all.h based on USE_CUSTOM_H build flag) allows setting and overriding espurna core definitions.
-To this file I've added the plugin activation code and a single flag to each plugin to set if to include the plugin in the image file.
+* **custom.h** - this is the generic espurna custom header include file (included by all.h based on USE_CUSTOM_H build flag) allows setting and overriding espurna core flags definitions.
+This file includes the plugin activation code and a single integration (include in load image) enable flag for each plugin.
 
 * **plugin1.h** - The plugin header file (should be placed in config folder) includes plugin specific defines. this header is included by custom.h based on the plugin include flag (INCLUDE_PLUGINx) to allow switching on/off integration of multiple plugins.
 
