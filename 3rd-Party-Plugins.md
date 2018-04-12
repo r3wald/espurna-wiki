@@ -7,9 +7,9 @@ The main concept is to allow adding new functionality to espurna with zero to mi
 * **custom.h** - this is the generic espurna custom header include file (included by all.h based on USE_CUSTOM_H build flag) allows setting and overriding espurna core flags definitions.
 This file includes the plugin activation code and a single integration (include in load image) enable flag for each plugin.
 
-* **plugin1.h** - The plugin header file (should be placed in config folder) includes plugin specific defines. this header is included by custom.h based on the plugin include flag (INCLUDE_PLUGINx) to allow switching on/off integration of multiple plugins.
+* **plugin1.h** - The plugin header file (to be placed in config folder) includes plugin specific defines. this header is included by custom.h based on the plugin include flag (INCLUDE_PLUGINx in custom.h) to allow switching on/off integration of multiple plugins.
 
-* **plugin1.ino** - The plugin template, to be placed in code folder. this template enables writing a plugin and use all espurna services and utils (I may missed some....but will improve).
+* **plugin1.ino** - The plugin template (to be placed in code folder). this template enables writing a plugin and use all espurna services and utils (the template file will be enhanced over time).
 
 ## Status:
 In development phase, working, limited tresting.
@@ -21,7 +21,7 @@ In development phase, working, limited tresting.
 ## Template structure:
 (All inline documented )
 Like any other espurna module, includes Helper functions, setup and main loop:
-* Helper functions you can copy/add any the template includes a single main loop sample function _pluginFunction(); with all possible services hooks, you can copy it. Other helper functions are utils used by setup or loop function (like set a relay or read sensor).
+* Helper functions you can copy/add any the template includes a single main loop sample function _plugin1Function1(); with all possible services hooks, you can copy it. Other helper functions are utils used by setup or loop function (like set a relay or read sensor).
 * Setup function (pluginxSetup()) called by extraSetup() defined in custom.h. extraSetup() is called by espura.ino setup function based on USE_EXTRA flag (this is the generic espurna 3rd party code integration hook).
 * Plugin main loop called by espurna loop (via callback function registrations array). plugin loop is registered by pluginsetup function.
 
@@ -42,12 +42,12 @@ Like any other espurna module, includes Helper functions, setup and main loop:
    * THINGSPEAK publish
 
 ## Installation:
-* Copy the two .h files into espurna/config folder
-* Copy the .ino file to espurna folder
+* Copy the custom.h & plugin1.h files into espurna/config folder
+* Copy the plugin1.ino file to espurna folder
 * Build with -DUSE_CUSTOM_H flag
-* See on debug (web/serial/telnet) a loop counter (every PLUGIN_REPORT_EVERY param)
-* Terminal command plugin1 0 will stop plugin execution and plugin1 1 start
-* API command /plugin1?apikey=xxxxx&value=0 stop (value=1) start
+* See on debug (web/serial/telnet) a loop counter (every PLUGIN_REPORT_EVERY param -5 sec)
+* Terminal command "plugin1 0" will stop plugin execution and "plugin1 1" start
+* API command "/plugin1?apikey=xxxxx&value=0" stop, "/plugin1?apikey=xxxxx&value=1" start
 * Read plugin1.ino and plugin1.h inline documentation and write your espurna magic  
    
 ## Please feel free to give any feedback/comment/suggestion  
