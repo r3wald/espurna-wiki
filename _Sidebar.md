@@ -51,6 +51,7 @@
 
 ### Developers
 * Architecture
+* [3rd Party Plugins](3rd-Party-Plugins) 
 * [Coding style](CodingStyle)
 * [Pull Requests](PullRequests)
 
