@@ -9,7 +9,7 @@ To this file I've added the plugin activation code and a single flag to each plu
 
 * **plugin1.h** - The plugin header file (should be placed in config folder) includes plugin specific defines. this header is included by custom.h based on the plugin include flag (INCLUDE_PLUGINx) to allow switching on/off integration of multiple plugins.
 
-* **plugin.ino** - The plugin template, to be placed in code folder. this template enables writing a plugin and use all espurna services and utils (I may missed some....but will improve).
+* **plugin1.ino** - The plugin template, to be placed in code folder. this template enables writing a plugin and use all espurna services and utils (I may missed some....but will improve).
 
 ## Status:
 In development phase, working, limited tresting.
