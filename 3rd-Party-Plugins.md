@@ -55,6 +55,5 @@ Like any other espurna module, includes Helper functions, setup and main loop:
      
 ## Please feel free to give any feedback/comment/suggestion  
  
-[Plugin Template v0.0.1](files/plugin1-v0.0.1.zip "Plugin Template v0.0.1")
-
+[plugin1-v0.0.1.zip](https://github.com/xoseperez/espurna/files/1906034/plugin1-v0.0.1.zip)
 
