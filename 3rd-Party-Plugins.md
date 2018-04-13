@@ -1,4 +1,5 @@
 ESPurna includes integration hooks for custom code and 3rd party modules integration.
+
 This attached template files, to help integrating or 3rd party code.
 Please also take a look at the attached files for inline help documentation, describing the different optionsand features.
 
