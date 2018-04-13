@@ -42,16 +42,19 @@ Like any other espurna module, includes Helper functions, setup and main loop:
    * THINGSPEAK publish
 
 ## Installation:
-* Copy the custom.h & plugin1.h files into espurna/config folder
+* Copy the custom.h 
+* Copy plugin1.h files into lib/plugin1 folder (create plugin1 folder in existing lib)
 * Copy the plugin1.ino file to espurna folder
 * Build with -DUSE_CUSTOM_H flag
 * See on debug (web/serial/telnet) a loop counter (every PLUGIN_REPORT_EVERY param -5 sec)
 * Terminal command "plugin1 0" will stop plugin execution and "plugin1 1" start
 * API command "/plugin1?apikey=xxxxx&value=0" stop, "/plugin1?apikey=xxxxx&value=1" start
 * Read plugin1.ino and plugin1.h inline documentation and write your espurna magic  
-   
+
+(folders structure may depend on your framework and development environment, if you get compile/link error regarding existence of these files, please refer to your specific build settings documentation)
+     
 ## Please feel free to give any feedback/comment/suggestion  
  
-[plugin.zip](https://github.com/xoseperez/espurna/files/1903667/plugin.zip)
+
 
 
