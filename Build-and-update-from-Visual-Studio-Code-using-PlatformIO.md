@@ -47,7 +47,7 @@ Clone https://github.com/xoseperez/espurna.git
 
 For example into `C:\Users\{user}\Documents\PlatformIO\Projects\xoseperez=espurna`
 
-With Visual studio, open `code` folder. PlatformIO stars and detects taks.
+With Visual studio, open `code` folder. PlatformIO stars and detects tasks.
 
 # Build and update
 
