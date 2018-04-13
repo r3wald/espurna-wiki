@@ -54,6 +54,13 @@ This is the official list of supported hardware for the ESPurna firmware. The ha
 | [Schuko Wifi Plug](Hardware-Schuko-Wifi-Plug) | `WIFI_STECKER_SCHUKO` | Power plug |
 | [WiOn 50055](Hardware-WiOn-50055) | `WION_50055` | |
 | [Xenon SM PW 702U](Hardware-Xenon-SM-PW-702U) | `XENON_SM_PW702U` | |
+| [HEYGO HY02](Hardware-HEYGO-HY02) | `HEYGO_HY02` | |
+| [Maxcio W-US002S](Hardware-Maxcio-W-US002S) | `MAXCIO_WUS002S` | |
+| [YiDian XS-SSA05](Hardware-YiDian-XS-SSA05) | `YIDIAN_XSSSA05` | |
+| [Tonbux XS-SSA06](Hardware-Tonbux-XS-SSA06) | `TONBUX_XSSSA06` | |
+| [Tonbux Powerstrip02](Hardware-Tonbux-Powerstrip02) | `TONBUX_POWERSTRIP02` | 4 AC Outlets + 4 USB Charging Ports |
+| [LINGAN SWA1](Hardware-LINGAN-SWA1) | `LINGAN_SWA1` | Power plug /w power meter |
+| [TONBUX/MXQ SP04](Hardware-LINGAN-SWA1) | `LINGAN_SWA1` | Power plug /w power meter |
 
 ## Development Boards
 
@@ -82,6 +89,8 @@ This is the official list of supported hardware for the ESPurna firmware. The ha
 | [OpenEnergyMonitor Wifi MQTT Relay / Thermostat](Hardware-OpenEnergyMonitor-Wifi-MQTT-Relay) | `OPENENERGYMONITOR_MQTT_RELAY` | |
 | [Jorge García Wifi + Relay Board Kit](Hardware-Jorge-Garcia-Wifi-Relay-Board) | `JORGEGARCIA_WIFI_RELAYS` | |
 | [EXS WiFi Relay v3.1](Hardware-EXS-WiFi-Relay-v3.1) | `EXS_WIFI_RELAY_V31` | |
+| [IKE ESPike](Hardware-IKE-ESPike) | `IKE_ESPIKE` | |
+| [Arniex Swifitch](Hardware-Arniex-Swifitch) | `ARNIEX_SWIFITCH` | |
 
 ## Generic boards
 
@@ -90,18 +99,18 @@ This is the official list of supported hardware for the ESPurna firmware. The ha
 | Generic 8 Channel board | `GENERIC_8CH` | |
 | [Generic ECH1560](Hardware-Generic-ECH1560) | `GENERIC_ECH1560` | |
 | [Generic V9261F](Hardware-Generic-V9261F) | `GENERIC_V9261F` | |
+| [Green ESP8266 Relay](Hardware-Green-ESP8266-Relay) | `GREEN_ESP8266RELAY` | |
+| [Generic Relay v4.0](Hardware-Generic-Relay-v40) | `GENERIC_ESP01S_RELAY_V40` | |
+| [Generic RGBLed v1.0](Hardware-Generic-RGBLed-v10) | `GENERIC_ESP01S_RGBLED_V10` | |
+| [Generic DHT11 v1.0](Hardware-Generic-DHT11-v10) | `GENERIC_ESP01S_DHT11_V10` | |
+| [Generic DS18B20 v1.0](Hardware-Generic-DS18B20-v10) | `GENERIC_ESP01S_DS18B20_V10` | |
+| [Heltec Touch Relay](Hardware-Heltec-Touch-Relay) | `HELTEC_TOUCHRELAY` | |
 
 ## Beta Testing
 
 | Board | Build flag | Description |
 | --- | --- | --- |
-| [HEYGO HY02](Hardware-HEYGO-HY02) | `HEYGO_HY02` | |
-| [Maxcio W-US002S](Hardware-Maxcio-W-US002S) | `MAXCIO_WUS002S` | |
-| [YiDian XS-SSA05](Hardware-YiDian-XS-SSA05) | `YIDIAN_XSSSA05` | |
-| [Tonbux XS-SSA06](Hardware-Tonbux-XS-SSA06) | `TONBUX_XSSSA06` | |
-| [Tonbux Powerstrip02](Hardware-Tonbux-Powerstrip02) | `TONBUX_POWERSTRIP02` | 4 AC Outlets + 4 USB Charging Ports |
-| [LINGAN SWA1](Hardware-LINGAN-SWA1) | `LINGAN_SWA1` | |
-| [Green ESP8266 Relay](Hardware-Green-ESP8266-Relay) | `GREEN_ESP8266RELAY` | |
+| Gosund/Homecube SP1 | |
 
 ## Community boards
 
