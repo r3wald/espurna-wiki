@@ -7,7 +7,7 @@ The main concept is to allow adding new functionality to ESPurna with zero to mi
 
 ## Files
 * **custom.h** - this is the generic ESPurna custom header include file (included by all.h based on USE_CUSTOM_H build flag) allows setting and overriding ESPurna core flags definitions.
-This file includes the plugin activation code and a single integration (include in load image) enable flag for each plugin.
+This file includes the plugin activation code and a single integration (include in load image) enable flag for each plugin (INCLUDE_PLUGINx      0).
 
 * **plugin1.h** - The plugin header file (to be placed in config folder) includes plugin specific defines. this header is included by custom.h based on the plugin include flag (INCLUDE_PLUGINx in custom.h) to allow switching on/off integration of multiple plugins.
 
@@ -49,6 +49,7 @@ Like any other ESPurna module, includes Helper functions, setup and main loop:
 * Copy `plugin1.h` files into `lib/plugin1` folder (create `plugin1` folder in existing lib)
 * Copy the `plugin1.ino` file to ESPurna folder (where other *.ino files reside)
 * Build with `-DUSE_CUSTOM_H` flag
+* set INCLUDE_PLUGIN1      1 in `custom.h` config file
 * See on debug (web/serial/telnet) a loop counter (every `PLUGIN_REPORT_EVERY` param -5 sec)
 * Terminal command `plugin1 0` will stop plugin execution and `plugin1 1` start
 * API command `/plugin1?apikey=xxxxx&value=0` stop, `/plugin1?apikey=xxxxx&value=1` start
@@ -56,7 +57,7 @@ Like any other ESPurna module, includes Helper functions, setup and main loop:
 
 ## Troubleshooting:
 In any case of issues while running with plugins, first disable the plugin execution in runtime, next if this does not 
-help, disable plugin include in image file. **Please do not open issues on espurna core if you have plugin enabled**.
+help, disable plugin include in image file (INCLUDE_PLUGIN1      0). **Please do not open issues on espurna core if you have plugin enabled**.
 
 (folder structures may depend on your framework and development environment, if you get compile/link error regarding existence of these files, please refer to your specific build settings documentation)
 
