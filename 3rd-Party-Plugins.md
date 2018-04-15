@@ -1,7 +1,7 @@
 ESPurna includes integration hooks for custom code and 3rd party modules integration.
 
 This attached template files, to help integrating or 3rd party code.
-Please also take a look at the attached files for inline help documentation, describing the different optionsand features.
+Please also take a look at the attached files for inline help documentation, describing the different options and features.
 
 The main concept is to allow adding new functionality to ESPurna with zero to minimal code changes to ESPurna core system (just adding the new files and integrating by setting a build flag only).
 
@@ -14,7 +14,8 @@ This file includes the plugin activation code and a single integration (include 
 * **plugin1.ino** - The plugin template (to be placed in code folder). this template enables writing a plugin and use all ESPurna services and utils (the template file will be enhanced over time).
 
 ## Status
-In development phase, working, limited testing.
+In development phase, working, limited testing, new functionality is in progress.
+please log issues with PLUGIN: in subject
 
 ## Limitations
 * Due to current frontend structure, I did not add the HTML/JS/CSS files, since I did not want to change core files, so in case of frontend need for plugin, you need to add the plugin page, but all the web services hooks included in the template (don't forget to gulp).
@@ -52,6 +53,10 @@ Like any other ESPurna module, includes Helper functions, setup and main loop:
 * Terminal command `plugin1 0` will stop plugin execution and `plugin1 1` start
 * API command `/plugin1?apikey=xxxxx&value=0` stop, `/plugin1?apikey=xxxxx&value=1` start
 * Read `plugin1.ino` and `plugin1.h` inline documentation and write your ESPurna magic
+
+## TROUBLESHOOTING
+In any case of issues while running with plugins, first disable the plugin execution in runtime, next if this does not 
+help, disable plugin include in image file. ##Please do not open issues on espurna core if you have plugin enabled.
 
 (folder structures may depend on your framework and development environment, if you get compile/link error regarding existence of these files, please refer to your specific build settings documentation)
 
