@@ -54,9 +54,9 @@ Like any other ESPurna module, includes Helper functions, setup and main loop:
 * API command `/plugin1?apikey=xxxxx&value=0` stop, `/plugin1?apikey=xxxxx&value=1` start
 * Read `plugin1.ino` and `plugin1.h` inline documentation and write your ESPurna magic
 
-## TROUBLESHOOTING
+## Troubleshooting:
 In any case of issues while running with plugins, first disable the plugin execution in runtime, next if this does not 
-help, disable plugin include in image file. ##Please do not open issues on espurna core if you have plugin enabled.
+help, disable plugin include in image file. **Please do not open issues on espurna core if you have plugin enabled**.
 
 (folder structures may depend on your framework and development environment, if you get compile/link error regarding existence of these files, please refer to your specific build settings documentation)
 
