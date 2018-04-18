@@ -17,7 +17,7 @@ A built-in thermal sensor will automatically turn off overheating appliances, ha
 Has power meter HLW8012
 
 ## Flashing
-Hardware button is connected to GPIO 0, so soldering to that pad on the ESP-8266 module is completely optional. Users can just press the button while applying power to the device in order to put the device into flashing mode. 
+Hardware button (SW1) is connected to GPIO 0, so soldering to that pad on the ESP-8266 module is completely optional. Users can just press the button while applying power to the device in order to put the device into flashing mode. 
 
 ![KMC 70011 board](images/flashing/kmc-70011-flash1.jpg)
 ![KMC 70011 board](images/flashing/kmc-70011-flash2.jpg)
