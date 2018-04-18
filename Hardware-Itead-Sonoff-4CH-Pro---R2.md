@@ -23,6 +23,8 @@ Specification
 
 GPIO0 is not connected to anything on the 4CH Pro, the R2 has a pad broken out. To flash, connect GPIO0 to gnd when powering on. (need verification here on the 4ch pro. On my R2 it was on power, but have seen rumors of 3s delay)
 
+![Sonoff 4CH Pro R2 - Flashing](images/devices/itead-sonoff-4ch-pro-r2-flash1.jpg)
+
 ## Issues
 
 There is a secondary chip that forwards commands to the main ESP8285. Recommended configuration is to use self-locking mode for all 4 channels (S6 to 1 and K5 to 1111) if you need this to operate like a normal ON/OFF switch.
