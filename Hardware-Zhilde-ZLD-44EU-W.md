@@ -28,7 +28,7 @@ Unfortunately the TYM-E2S does not expose GPIO0 on the edge connector. This pin 
 
 ![GPIO0](images/flashing/tywe2s-pins.jpg)
 
-There is a test pad on the back of the device, that needs to be temporary shorted to ground during programming. The other required pins are all available on the edge connector on the side with VCC and GND.
+There is a test pad on the back of the device which needs to be temporary shorted to ground during programming. The other required pins are all available on the edge connector on the side with VCC and GND.
 
 Note that once the espurna firmware is onboard, updates and changes can be done with the OTA feature of the firmware without phisically accessing the device again.
 
