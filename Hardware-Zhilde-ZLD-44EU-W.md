@@ -19,7 +19,7 @@
 
 ## Flashing
 
-The hardware is based on [Tuya's](https://docs.tuya.com/en/) ESP8285 based [TYW-E2S](https://docs.tuya.com/en/hardware/WiFi-module/wifi-e2s-module.html) WI-FI module, documented in <br> https://docs.tuya.com/en/hardware/WiFi-module/wifi-e2s-module.html <br>
+The hardware is based on [Tuya's](https://docs.tuya.com/en/) [TYW-E2S](https://docs.tuya.com/en/hardware/WiFi-module/wifi-e2s-module.html) ESP8285 WI-FI module, documented in <br> https://docs.tuya.com/en/hardware/WiFi-module/wifi-e2s-module.html <br>
 (in the same website you find documentation for [TYW-E1S](https://docs.tuya.com/en/hardware/WiFi-module/wifi-e1s-module.html) and [TYW-E3S](https://docs.tuya.com/en/hardware/WiFi-module/wifi-e3s-module.html) as well)
 
 ![ZLD-44EU-W](images/flashing/tywe2s-module.jpg)
