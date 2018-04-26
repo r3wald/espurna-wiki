@@ -44,7 +44,7 @@ If platformio is installed and was used at least once to build ESPurna, it is lo
 ```
 ~/.platformio/packages/framework-arduinoespressif8266/tools/espota.py
 ```
-*or* [OTA script](https://github.com/esp8266/Arduino/blob/master/tools/espota.py) can be fetched directly.
+*or* [OTA script](https://raw.githubusercontent.com/esp8266/Arduino/master/tools/espota.py) can be fetched directly.
 
 It does require existing firmware .bin file. Example using file from **Releases**:
 ```bash
