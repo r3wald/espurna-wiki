@@ -8,7 +8,7 @@ This mod provides for the recognition of a wider set of remote control codes tha
 
 ## Software
 
-This mod requires a ESPurna to be compiled using the **RFB_DIRECT** setting set to 1, so it is aware that we have to encode/decode the signals in software rather than talk to the microcontroller. 
+This mod requires a ESPurna to be compiled using the **RFB_DIRECT** setting set to 1 (available since 1.12.6), so it is aware that we have to encode/decode the signals in software rather than talk to the microcontroller. 
 
 ## Hardware modifications
 
