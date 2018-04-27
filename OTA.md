@@ -38,6 +38,19 @@ With version 1.9.0 the platformio.ini file defines 3 useful environments for cus
 
 Sometimes OTA updates fail. It happens. It's not a problem since the firmware does not get overwritten if the upload fails. But if you cannot update the device firmware even after several attempts, you might try to check if you have a firewall and disable it.
 
+### Using espota.py
+
+If platformio is installed and was used at least once to build ESPurna, it is located at
+```
+~/.platformio/packages/framework-arduinoespressif8266/tools/espota.py
+```
+*or* [OTA script](https://raw.githubusercontent.com/esp8266/Arduino/master/tools/espota.py) can be fetched directly.
+
+It does require existing firmware .bin file. Example using file from **Releases**:
+```bash
+> python espota.py --progress --ip 192.168.4.1 --auth fibonacci --file espurna-<version>-itead-sonoff-basic.bin
+```
+
 ## Web interface updates
 
 You can directly upload the firmware file (.bin extension) to the device using the "Upgrade" option in the "Admin" tab of the web interface. You can find the latest firmware images for your device in the [releases page](https://github.com/xoseperez/espurna/releases/).

@@ -34,7 +34,7 @@ generic.menu.FlashSize.1M0.upload.maximum_size=1023984
 
 ```
 
-Same thing for ESP8295 boards, locate the `esp8285.menu.FlashSize.1M64` group of lines and copy the following line below that one:
+Same thing for ESP8285 boards, locate the `esp8285.menu.FlashSize.1M64` group of lines and copy the following line below that one:
 
 ```
 esp8285.menu.FlashSize.1M0=1M (no SPIFFS)
