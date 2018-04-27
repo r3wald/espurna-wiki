@@ -4,9 +4,9 @@
 
 |Property|Value|
 |---|---|
-|Manufacturer|Itead Studio|
-|Product page||
-|Wiki page|[https://www.itead.cc/wiki/Sonoff](https://www.itead.cc/wiki/Sonoff)|
+|Manufacturer|[Itead Studio](https://www.itead.cc)|
+|Product page|https://www.itead.cc/sonoff-rf-bridge-433.html|
+|Wiki page|https://www.itead.cc/wiki/Sonoff_RF_Bridge_433|
 |Build flag|`ITEAD_SONOFF_RFBRIDGE`|
 
 ## Introduction
