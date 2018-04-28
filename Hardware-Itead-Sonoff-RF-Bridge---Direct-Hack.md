@@ -2,6 +2,10 @@ Many thanks to [**@wildwiz**](https://github.com/wildwiz) for documenting and de
 
 > NOTE: this hack requires soldering and cutting traces. Once you do it it will be hard to reverse (although not impossible). You will also lose the beeping notification from the device when in learning mode. On the other side, the device capabilities will be increased since the firmware will be able to handle the encoding/decoding itself and that means more remotes will be supported.
 
+|Property|Value|
+|---|---|
+|Build flags|`ITEAD_SONOFF_RFBRIDGE, RFB_DIRECT=1`|
+
 This mod provides for the recognition of a wider set of remote control codes than those natively handled by the EFM8B1 auxiliary microcontroller inside the sonoff bridge. The EFM8B1 microcontroller (at the center of the image, just under the switch) is entirely bypassed, allowing the ESP8266 to take care of decoding and decoding the RC pulses in a more flexible way.
 
 ![Sonoff RF Bridge](images/devices/rfbridge/rf-hack-400.jpg)
