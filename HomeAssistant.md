@@ -6,6 +6,8 @@ Once the ESPurna powered device is connected to your MQTT broker of choice, it's
 
 *Note: I'm assuming here you already have Home Assistant installed somewhere. Head over to their [getting started](https://home-assistant.io/getting-started/) page to do it if you have not.*
 
+*Note: Integration with Home Assistant is done using "MQTT platform", not "MQTT-JSON platform". Each message is sent to it's own topic. This means you should **disable "JSON payload"** in the ESPurna MQTT tab to make it work.
+
 ## HomeAssistant Configuration 
 
 First make sure your Home Assistant instance connects to the same broker you connected the ESPurna device. You can read the [Home Assistant MQTT](https://home-assistant.io/components/mqtt/) page for a full explanation of the process but you will basically have to add these lines to your configuration.yaml file:
