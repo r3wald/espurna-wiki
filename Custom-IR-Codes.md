@@ -29,10 +29,12 @@ uint64_t data = 0xFFE01F;
 the **uint64_t data** value is useful to us. 
 5. Change `IR_BUTTON_COUNT` to number of buttons defined
 4. replace the codes inside the new IR codes set you created 
-![Screenshot](https://thumb.ibb.co/kfC0B7/Screenshot_from_2018_05_02_13_49_28.png)
+
+![Screenshot](https://preview.ibb.co/gwR5dn/Screenshot_from_2018_05_02_13_49_28.png)
 
 5. change the `IR_BUTTON_SET' of the board of your choice in `hardware.h` 
-![Screenshot](https://thumb.ibb.co/mJCdyn/Screenshot_from_2018_05_02_13_49_59.png)
+
+![Screenshot](https://preview.ibb.co/dpw5dn/Screenshot_from_2018_05_02_13_49_59.png)
 
 6. Done! 
 
