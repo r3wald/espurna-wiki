@@ -1,5 +1,3 @@
-# Adding Custom IR Codes
-
 1. Open `general.h` in your favourite text editor
 2. make a copy of any IR code set and paste it, iterating the parameter `IR_BUTTON_SET`
 3. Use [IRrecvDumpV2](https://github.com/markszabo/IRremoteESP8266/tree/master/examples/IRrecvDumpV2) to get IR Codes , You'd get something like this :
