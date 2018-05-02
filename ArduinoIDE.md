@@ -88,7 +88,6 @@ This is the list, in **bold** the text you have to search for:
 |**Embedis** by David Turnball and Tom Moxon|[GIT](https://github.com/thingSoC/embedis)||
 |**IRRemoteESP8266** by Sebastien Warin et al.|[GIT](https://github.com/markszabo/IRremoteESP8266)|Required when IR_SUPPORT is 1|
 |**OneWire** by Paul Stoffregen (et al.)|[GIT](https://github.com/PaulStoffregen/OneWire)|Required when DALLAS_SUPPORT is 1|
-|**PMS Library** by Mariusz Kacki|[GIT](https://github.com/fu-hsi/PMS)|Required when PMSX003_SUPPORT is 1|
 |**PubSubClient** by Nick O'Leary|[GIT](https://github.com/knolleary/pubsubclient)|Required when MQTT_USE_ASYNC is 0. Read note below|
 
 **Note**: The PubSubClient library requires a little modification in order to work with long MQTT message payloads (like when using Domoticz integration). You will need to edit the '**PubSubClient.h**' file (for me that file is under the '**C:\Users\xose\Documents\Arduino\libraries\arduino_281549\src\PubSubClient.h**' folder), line 26 and change the MQTT_MAX_PACKET_SIZE to at least 400.
@@ -116,7 +115,7 @@ You will have to install manually the libraries that are not available from the 
 |**ESPAsyncTCP** by Hristo Gochkov|[GIT](https://github.com/me-no-dev/ESPAsyncTCP)|[ZIP](https://github.com/me-no-dev/ESPAsyncTCP/archive/master.zip)|See note 1 below|
 |**ESPAsyncWebServer** by Hristo Gochkov|[GIT](https://github.com/me-no-dev/ESPAsyncWebServer)|[ZIP](https://github.com/me-no-dev/ESPAsyncWebServer/archive/master.zip)|See note 2 below|
 |**FauxmoESP** by Xose Pérez|[GIT](https://bitbucket.org/xoseperez/fauxmoesp)|[ZIP](https://bitbucket.org/xoseperez/fauxmoesp/get/master.zip)|Required if ALEXA_SUPPORT is 1 (default value)|
-|**HLW8012** by Xose Pérez|[GIT](https://bitbucket.org/xoseperez/hlw8012)|[ZIP](https://bitbucket.org/xoseperez/hlw8012/get/master.zip)|Required if HLW8012_SUPPORRT is 1|
+|**HLW8012** by Xose Pérez|[GIT](https://github.com/xoseperez/hlw8012)|[ZIP](https://github.com/xoseperez/hlw8012/archive/master.zip)|Required if HLW8012_SUPPORRT is 1|
 |**JustWifi** by Xose Pérez|[GIT](https://bitbucket.org/xoseperez/justwifi)|[ZIP](https://bitbucket.org/xoseperez/justwifi/get/master.zip)||
 |**mDNSResolver** by Myles Eftos|[GIT](https://github.com/madpilot/mDNSResolver)|[ZIP](https://github.com/madpilot/mDNSResolver/archive/master.zip)|Required if MDNS_CLIENT_SUPPORT is 1|
 |**my92xx** by Xose Pérez|[GIT](https://github.com/xoseperez/my92xx)|[ZIP](https://github.com/xoseperez/my92xx/archive/master.zip)|Required if LIGHT_PROVIDER_MY92XX|
