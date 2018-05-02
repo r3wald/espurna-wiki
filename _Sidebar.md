@@ -30,7 +30,7 @@
 * Telnet
 * Scheduler
 * [Terminal](Terminal)
-
+* [Custom IR Codes](custom_IR)
 ### Integrations
 * [MQTT](MQTT)
 * [REST API](RESTAPI)
