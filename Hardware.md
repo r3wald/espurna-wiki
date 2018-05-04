@@ -18,6 +18,7 @@ This is the official list of supported hardware for the ESPurna firmware. The ha
 | [ITEAD Sonoff RF](Hardware-Itead-Sonoff-RF) | `ITEAD_SONOFF_RF` | Switch with RF Receiver |
 | [ITEAD Sonoff Dual](Hardware-Itead-Sonoff-Dual) | `ITEAD_SONOFF_DUAL` <br> `ITEAD_SONOFF_DUAL_R2`  | 2 Switches |
 | [ITEAD Sonoff POW](Hardware-Itead-Sonoff-POW) | `ITEAD_SONOFF_POW` | Switch with Power Consumption Measurement |
+| [ITEAD Sonoff POW R2](Hardware-Itead-Sonoff-POW-R2) | `ITEAD_SONOFF_POW_R2` | Switch with Power Consumption Measurement |
 | [ITEAD Sonoff TH10/16](Hardware-Itead-Sonoff-TH) | `ITEAD_SONOFF_TH` | Switch with Temperature and Humidity Monitoring |
 | [ITEAD Sonoff 4CH](Hardware-Itead-Sonoff-4CH) | `ITEAD_SONOFF_4CH` |  4 Switches with din rail mounting |
 | [ITEAD Sonoff 4CH Pro](Hardware-Itead-Sonoff-4CH-Pro) | `ITEAD_SONOFF_4CH_PRO` | 4 Switches with din rail mounting and RF Receiver|
@@ -28,6 +29,7 @@ This is the official list of supported hardware for the ESPurna firmware. The ha
 | [ITEAD Sonoff RF Bridge](Hardware-Itead-Sonoff-RF-Bridge) | `ITEAD_SONOFF_RFBRIDGE` | Bridge between 433MHz RF and WiFi |
 | [ITEAD Slampher](Hardware-Itead-Slampher)<br>[ITEAD Slampher 2.0](Hardware-Itead-Slampher-v2)  | `ITEAD_SLAMPHER` | 433MHz RF & WiFi Smart Light Bulb Holder |
 | [ITEAD S20](Hardware-Itead-S20) | `ITEAD_S20` | Outlet |
+| [ITEAD S31](Hardware-Itead-S31) | `ITEAD_SONOFF_S31` | Outlet |
 | [ITEAD 1CH Inching](Hardware-Itead-1CH) | `ITEAD_1CH_INCHING` | [Inching/Self-Locking Switch](https://www.quora.com/What-is-an-inching-switch) |
 | [ITEAD Motor Clockwise/Anticlockwise](Hardware-Itead-Motor) | `ITEAD_MOTOR` | Controls 7-32V DC or 125-250V AC motor|
 | [ITEAD Sonoff SV](Hardware-Itead-Sonoff-SV) | `ITEAD_SONOFF_SV` |  5-24V low voltage Switch |
