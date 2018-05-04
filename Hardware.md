@@ -92,7 +92,7 @@ This is the official list of supported hardware for the ESPurna firmware. The ha
 | [EXS WiFi Relay v3.1](Hardware-EXS-WiFi-Relay-v3.1) | `EXS_WIFI_RELAY_V31` | |
 | [IKE ESPike](Hardware-IKE-ESPike) | `IKE_ESPIKE` | |
 | [Arniex Swifitch](Hardware-Arniex-Swifitch) | `ARNIEX_SWIFITCH` | |
-| [Luani HVIO (german)](https://luani.de/projekte/esp8266-hvio/) - [google translated(english)](https://translate.google.com/translate?sl=auto&tl=en&js=y&prev=_t&hl=en&ie=UTF-8&u=https%3A%2F%2Fluani.de%2Fprojekte%2Fesp8266-hvio%2F&edit-text=&act=url) | `LUANI_HVIO` | |
+| [Luani HVIO (german)](https://luani.de/projekte/esp8266-hvio/) | `LUANI_HVIO` | [translated (english)](https://translate.google.com/translate?sl=auto&tl=en&js=y&prev=_t&hl=en&ie=UTF-8&u=https%3A%2F%2Fluani.de%2Fprojekte%2Fesp8266-hvio%2F&edit-text=&act=url)|
 
 ## Generic boards
 
