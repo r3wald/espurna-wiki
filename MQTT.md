@@ -106,7 +106,7 @@ State topic               | Example payload | Notes
 `{root topic}/rgb`        | `255,0,0`       | if "Use CSS style" is off
 `{root topic}/hsv`        | `300,100,100`   | see note below
 `{root topic}/brightness` | `35`            | from 0 to 255
-`{root topic}/ch/0`       | `128`           | from 0 to 255, see note 1 below
+`{root topic}/channel/0`       | `128`           | from 0 to 255, see note 1 below
 
 Command topic                 | Example payload | Notes
 ----------------------------- | --------------- | -------------------------------------
