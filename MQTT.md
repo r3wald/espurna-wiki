@@ -114,7 +114,7 @@ Command topic                 | Example payload | Notes
 `{root topic}/rgb/set`        | `255,0,0`       | or CSV (comma-separated-values)
 `{root topic}/hsv/set`        | `300,100,100`   | see note 2 below
 `{root topic}/brightness/set` | `35`            | from 0 to 255
-`{root topic}/ch/0/set`       | `128`           | for each channel, from 0 to 255
+`{root topic}/channel/0/set`       | `128`           | for each channel, from 0 to 255
 `{root topic}/mired/set`      | `320`           | color temperature in Mired
 `{root topic}/kelvin/set`     | `6000`          | color temperature in Kelvin
 
