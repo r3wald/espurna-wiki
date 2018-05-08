@@ -96,19 +96,19 @@ Postman is an Desktop and Google Chrome App to test and develop APIs. You can do
 
 PowerShell is a scripting language used on windows. This example used the REST API to first query the Sonoff S20 relais, and then toggle it.
 
-$result = $null #clear vars
-$base = 'http://192.168.4.100/' #change this to your devices IP
-$key= 'apikey=F7DDDA33EEAFGB' #chaqnge this to you API key as generated in the web interface
-$request = 'api/relay/0' # depending on your device you can add more relays or sensors
-$headers = New-Object 'System.Collections.Generic.Dictionary[[string],[string]]'
-$headers.Add('Accept','application/json') # I like to get a JSON result, so that we can use the returned objects immediately
+`$result = $null #clear vars`
+`$base = 'http://192.168.4.100/' #change this to your devices IP`
+`$key= 'apikey=F7DDDA33EEAFGB' #chaqnge this to you API key as generated in the web interface`
+`$request = 'api/relay/0' # depending on your device you can add more relays or sensors`
+`$headers = New-Object 'System.Collections.Generic.Dictionary[[string],[string]]'`
+`$headers.Add('Accept','application/json') # I like to get a JSON result, so that we can use the returned objects immediately`
 
-# build the string we will use to query the device
-$uri = $base+$request+ '?' + $key # read the switch
-'current value:'
-$result = Invoke-RestMethod -Headers $headers -uri $uri -Method Get
-$result
-'toggled:'
-$uri = $base+$request+ '?' + $key + '&value=2' #toggle the switch
-$result = Invoke-RestMethod -Headers $headers -uri $uri -Method get
-$result
+`# build the string we will use to query the device`
+`$uri = $base+$request+ '?' + $key # read the switch`
+`'current value:'`
+`$result = Invoke-RestMethod -Headers $headers -uri $uri -Method Get`
+`$result`
+`'toggled:'`
+`$uri = $base+$request+ '?' + $key + '&value=2' #toggle the switch`
+`$result = Invoke-RestMethod -Headers $headers -uri $uri -Method get`
+`$result`
