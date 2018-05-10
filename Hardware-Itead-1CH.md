@@ -40,7 +40,7 @@ From here on you can flash it with you favourite tool/IDE. All wires, including 
 
 ![1CH PSF-B01 - programmer](images/flashing/1ch-inching-psfb01-flash2.jpg)
 
-Pictures and explanation by **Florin Finaru**, thank you! Check his original document here: [https://docs.google.com/document/d/1B37Lv4ATsoNzSFv7-rVEFn2rBZTA1oadgdXeNPQj4ZM/edit](https://docs.google.com/document/d/1B37Lv4ATsoNzSFv7-rVEFn2rBZTA1oadgdXeNPQj4ZM/edit)
+Pictures and explanation by **Florin Finaru**, thank you! Check his original document [here](https://docs.google.com/document/d/1B37Lv4ATsoNzSFv7-rVEFn2rBZTA1oadgdXeNPQj4ZM/edit).
 
 ## Issues
 
