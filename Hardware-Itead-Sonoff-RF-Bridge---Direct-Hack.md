@@ -1,4 +1,4 @@
-> NOTE: the images for the update of this article are being uploaded. If you don't see the image, [temporary follow this link](https://github.com/wildwiz/espurna/wiki/Hardware-Itead-Sonoff-RF-Bridge---Direct-Hack)
+> NOTE: this article is being updated. If you don't see the images, [temporary follow this link](https://github.com/wildwiz/espurna/wiki/Hardware-Itead-Sonoff-RF-Bridge---Direct-Hack)
 
 Many thanks to [**@wildwiz**](https://github.com/wildwiz) for documenting and developing the necessary code for this modification.
 
