@@ -11,7 +11,8 @@
 
 ## Introduction
 
-*TODO*
+Here is the original post on sonoff rf bridge:<br>
+http://tinkerman.cat/hacking-sonoff-rf-bridge-433
 
 ## Modifications
 
@@ -21,8 +22,6 @@ ESPurna supports two hacked variants of the Sonoff RFBridge:
 ## Flashing
 
 ![Sonoff RF Bridge board](images/flashing/sonoff-rf-bridge-v2.jpg)
-
-http://tinkerman.cat/hacking-sonoff-rf-bridge-433/
 
 *TODO*
 
