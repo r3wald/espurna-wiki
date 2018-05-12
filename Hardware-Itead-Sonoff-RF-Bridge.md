@@ -16,7 +16,7 @@
 ## Modifications
 
 ESPurna supports two hacked variants of the Sonoff RFBridge:
-* RF_RAW_SUPPORT based on custom EFM8 firmware (https://github.com/Portisch/RF-Bridge-EFM8BB1)
+* [RF_RAW_SUPPORT](https://github.com/Portisch/RF-Bridge-EFM8BB1) based on custom EFM8 firmware 
 * [RFB_DIRECT](https://github.com/xoseperez/espurna/wiki/Hardware-Itead-Sonoff-RF-Bridge---Direct-Hack) hack that bypasses the EFM8 microcontroller and lets ESPurna handle the encoding/decoding
 ## Flashing
 
