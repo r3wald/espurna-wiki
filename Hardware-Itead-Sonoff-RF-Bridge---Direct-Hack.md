@@ -35,7 +35,7 @@ The power led has been removed in the pictures to expose the area to be modified
 
 **_IMPORTANT!: The R2 boards have a bug in PCB routing that swaps the GPIO4 and GPIO5 pins (see marking [3]). The silkscreen on this board is WRONG as the names for IO4 and IO5 are swapped._**
 
-The R2 boards feature a boost inverter to raise the power supply of the RF transimtter, improving the transmit distance of the bridge.
+The R2 boards feature a boost inverter (see marking [4]) to raise the power supply of the RF transimtter, improving the transmit distance of the bridge.
 
 ## Apply the hardware changes
 
