@@ -23,8 +23,6 @@ ESPurna supports two hacked variants of the Sonoff RFBridge:
 
 ![Sonoff RF Bridge board](images/flashing/sonoff-rf-bridge-v2.jpg)
 
-*TODO*
-
 ## Issues
 
 *TODO*
