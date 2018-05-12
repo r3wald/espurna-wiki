@@ -73,7 +73,7 @@ The traces toward the usb connector need to be cut to avoid interference by the 
 
 ## Connections
 
-The connections can be made either with simple wire or (recommended) with a resistor (anything in the range 180-680 ohms, 1/4 1/8 W will do). The advantage of using a resistance is that if you inadvertently solder the wrong pins, the resistor will prevent any damage to the semiconductors. This is especially true for the TX side of the transmitter modification, as the track where to solder the resistor is really very thin and it is easy to short the connection to ground by mistake.
+The connections can be made either with simple wire or (recommended) with a resistor (anything in the range 180-680 ohms, 1/4 1/8 W will do). The advantage of using a resistor is that if you inadvertently solder the wrong pins, the resistor will prevent any damage to the semiconductors. This is especially true for the TX side of the transmitter modification, as the track where to solder the resistor is really very thin and it is easy to short the connection to ground by mistake.
 
 ## Cutting traces
 
