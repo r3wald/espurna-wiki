@@ -61,7 +61,7 @@ It is recommended to use a resistor to connect GPIO5 and R13 on the UHF transimt
 
 **_IMPORTANT: DO NOT TRUST the markings IO4 IO5 on the board, use the pin indicated in the image for your board type._**
 
-### USB data lines (ONLY FOR R2 BOARDS)
+### USB data lines deactivation (ONLY FOR R2 BOARDS)
 
 ![USB signal path](images/devices/rfbridge/mod-cut-usb-r2v1-final-800.png)
 
