@@ -1,5 +1,3 @@
-> NOTE: this article is being updated. If you don't see the images, [temporary follow this link](https://github.com/wildwiz/espurna/wiki/Hardware-Itead-Sonoff-RF-Bridge---Direct-Hack)
-
 Many thanks to [**@wildwiz**](https://github.com/wildwiz) for documenting and developing the necessary code for this modification.
 
 > NOTE: this hack requires soldering and cutting traces. Once you do it it will be hard to reverse (although not impossible). You will also lose the beeping notification from the device when in learning mode. On the other side, the device capabilities will be increased since the firmware will be able to handle the encoding/decoding itself and that means more remotes will be supported.
