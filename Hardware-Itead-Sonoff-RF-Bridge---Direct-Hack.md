@@ -63,7 +63,7 @@ It is recommended to use a resistor to connect GPIO5 and R13 on the UHF transimt
 
 ![USB signal path](images/devices/rfbridge/mod-cut-usb-r2v1-final-800.png)
 
-**ONLY for R2 boards:** The R2 boards connect pins GPIO4 and GPIO5 to the USB data lines of the power connector. Compliant USB chargers/power supply are expected to short the two pins together, which is no good for the changess applied. These lines are not used by the original firmware, nor by ESPurna.
+**ONLY for R2 boards:** The R2 boards connect pins GPIO4 and GPIO5 to the USB data lines of the power connector. Compliant USB chargers/power supply are expected to short the two pins together, which is no good for the changes applied. These lines are not used by the original firmware, nor by ESPurna.
 
 The traces toward the USB connector need to be cut to avoid interference by the USB wiring. 
 
