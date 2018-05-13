@@ -14,6 +14,8 @@ This upgrade requires ESPurna to be compiled using the setting `RFB_DIRECT=1` (a
 
 The specific firmware, is available as **_espurna-`x.x.x`-itead-sonoff-rfbridge-`direct`.bin_** under https://github.com/xoseperez/espurna/releases. This firmware will work ONLY if the hardware changes below has been applied. An unmodified Sonoff board will receive nothing from the remote.
 
+Please check notes section at the end of the document.
+
 # Hardware changes
 
 ## Detect the type of your board
@@ -76,3 +78,7 @@ The connections can be made either with simple wire or (recommended) with a resi
 ## Cutting traces
 
 The easiest way to cut traces is with the corner/edge of small flat screwdriver. A cutter will do too, but with a screwdriver you can apply more force. Be careful to obtain a clean cut, without leaving copper shorting either side of the cut line with the adjacent ones. If the cut is not deep enough, you will just smear the copper and short the trace with the adjacent ones.
+
+## RF Codes
+
+The RF codes produced by the firmware for the "direct" modified board are different from the ones produced by the "vanilla" bridge for same remote. This was a design choice, due to the different kind of information passed by the hardware processor and the software library. This should not be a problem given that, well, you modify the hardware to switch from one configuration to the other.
