@@ -6,11 +6,11 @@ Many thanks to [**@wildwiz**](https://github.com/wildwiz) for documenting and de
 |---|---|
 |Build flags|`ITEAD_SONOFF_RFBRIDGE, RFB_DIRECT=1`|
 
-This upgrade provides for the recognition of a wider set of remote control codes than those natively handled by the EFM8B1 auxiliary microcontroller inside the sonoff bridge. The EFM8B1 microcontroller is entirely bypassed, allowing the ESP8266 to take care of decoding and decoding the RC pulses in a more flexible way.
+This upgrade provides for the recognition of a wider set of remote control codes than those natively handled by the EFM8BB1 auxiliary microcontroller inside the sonoff bridge. The EFM8BB1 microcontroller is entirely bypassed, allowing the ESP8266 to take care of decoding and decoding the RC pulses in a more flexible way.
 
 # Software
 
-This upgrade requires ESPurna to be compiled using the setting `RFB_DIRECT=1` (available since 1.12.6), so that the firmware is aware that we have to encode/decode the signals in software rather than talk to the EFM8B1 microcontroller. 
+This upgrade requires ESPurna to be compiled using the setting `RFB_DIRECT=1` (available since 1.12.6), so that the firmware is aware that we have to encode/decode the signals in software rather than talk to the EFM8BB1 microcontroller. 
 
 The specific firmware, is available as **_espurna-`x.x.x`-itead-sonoff-rfbridge-`direct`.bin_** under https://github.com/xoseperez/espurna/releases. This firmware will work ONLY if the hardware changes below has been applied. An unmodified Sonoff board will receive nothing from the remote.
 
@@ -41,7 +41,7 @@ The R2 boards feature a boost inverter (see marking [4]) to raise the power supp
 
 ![RX signal path](images/devices/rfbridge/mod-route-rx-both-800.png)
 
-The output of the UHF receiver, pin 10, is routed directly to the GPIO4 pin of the ESP8266, which is exposed on one of the connectors. The original connection between the UHF receiver and the EFM8B1 microcontroller is left unchanged. Depending on the type of your board, the pin for GPIO4 may be either the 2nd or the 3rd from the right in the connector holes. 
+The output of the UHF receiver, pin 10, is routed directly to the GPIO4 pin of the ESP8266, which is exposed on one of the connectors. The original connection between the UHF receiver and the EFM8BB1 microcontroller is left unchanged. Depending on the type of your board, the pin for GPIO4 may be either the 2nd or the 3rd from the right in the connector holes. 
 
 It is recommended to use a resistor to connect GPIO4 and pin 10 of the UHF receiver (see notes below)
 
@@ -51,9 +51,9 @@ It is recommended to use a resistor to connect GPIO4 and pin 10 of the UHF recei
 
 ![TX signal path](images/devices/rfbridge/mod-route-tx-both-800.png)
 
-The tx signal is generated directly on the GPIO5 pin of the ESP8266 and routed to the transmitter in place of the signal from EFM8B1. Depending on the type of your board, the pin for GPIO5 may be either the 3nd or the 2rd from the right in the connector holes. 
+The tx signal is generated directly on the GPIO5 pin of the ESP8266 and routed to the transmitter in place of the signal from EFM8BB1. Depending on the type of your board, the pin for GPIO5 may be either the 3nd or the 2rd from the right in the connector holes. 
 
-The EFM8B1 microcontroller MUST be excluded from the signal path cutting the trace as shown, otherwise there will be a conflict between the EFM81B microcontroller output and the GPIO5 output, possibly damaging one of both chips.
+The EFM8BB1 microcontroller MUST be excluded from the TX signal path cutting the trace as shown, otherwise there will be a conflict between the EFM8BB1 microcontroller output and the GPIO5 output, possibly damaging one of both chips.
 
 It is recommended to use a resistor to connect GPIO5 and R13 on the UHF transimtter (see notes below)
 
