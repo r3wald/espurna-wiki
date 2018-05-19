@@ -20,3 +20,7 @@ This is due to a missing function in a core library (https://github.com/esp8266/
 ## Wifi Stops
 
 * First check you supply enough voltage to ESP8266. Not all power supplies are the same.
+
+## Unable to login to Web UI
+* use Chrome or Firefox browser.
+* Safari and Edge may not work with the WebSockets Auth scheme Espurna uses by default
