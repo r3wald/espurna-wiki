@@ -116,7 +116,7 @@ You will have to install manually the libraries that are not available from the 
 |**ESPAsyncWebServer** by Hristo Gochkov|[GIT](https://github.com/me-no-dev/ESPAsyncWebServer)|[ZIP](https://github.com/me-no-dev/ESPAsyncWebServer/archive/master.zip)|See note 2 below|
 |**FauxmoESP** by Xose Pérez|[GIT](https://bitbucket.org/xoseperez/fauxmoesp)|[ZIP](https://bitbucket.org/xoseperez/fauxmoesp/get/master.zip)|Required if ALEXA_SUPPORT is 1 (default value)|
 |**HLW8012** by Xose Pérez|[GIT](https://github.com/xoseperez/hlw8012)|[ZIP](https://github.com/xoseperez/hlw8012/archive/master.zip)|Required if HLW8012_SUPPORRT is 1|
-|**JustWifi** by Xose Pérez|[GIT](https://bitbucket.org/xoseperez/justwifi)|[ZIP](https://bitbucket.org/xoseperez/justwifi/get/master.zip)||
+|**JustWifi** by Xose Pérez|[GIT](https://github.com/xoseperez/justwifi)|[ZIP](https://github.com/xoseperez/justwifi/archive/master.zip)||
 |**mDNSResolver** by Myles Eftos|[GIT](https://github.com/madpilot/mDNSResolver)|[ZIP](https://github.com/madpilot/mDNSResolver/archive/master.zip)|Required if MDNS_CLIENT_SUPPORT is 1|
 |**my92xx** by Xose Pérez|[GIT](https://github.com/xoseperez/my92xx)|[ZIP](https://github.com/xoseperez/my92xx/archive/master.zip)|Required if LIGHT_PROVIDER_MY92XX|
 |**NoFUSS** by Xose Pérez|[GIT](https://bitbucket.org/xoseperez/nofuss)|[ZIP](https://bitbucket.org/xoseperez/nofuss/get/master.zip)|Required if NOFUSS_SUPPORT is 1|
