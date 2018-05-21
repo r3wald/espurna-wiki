@@ -43,6 +43,33 @@ node node_modules/gulp/bin/gulp.js
 
 The resulting byte array will be embedded in 'code/espurna/static/index.html.gz.h'
 
+## Custom vendor files
+
+### PureCSS
+
+The PureCSS file used in ESPurna are created using the [developer build script](https://github.com/pure-css/pure#build-from-source) but modifying the build script to remove unneeded media types.
+
+**Note** this is not necessary unless you want to update the PureCSS files and reduce their default size.
+
+```
+index 7398e1f..a7f0b5b 100644
+--- a/Gruntfile.js
++++ b/Gruntfile.js
+@@ -212,10 +212,7 @@ grunt.initConfig({
+
+             options: {
+                 mediaQueries: {
+-                    sm: 'screen and (min-width: 35.5em)',   // 568px
+-                    md: 'screen and (min-width: 48em)',     // 768px
+                     lg: 'screen and (min-width: 64em)',     // 1024px
+-                    xl: 'screen and (min-width: 80em)'      // 1280px
+                 }
+             }
+         }
+```
+
+See [PR 870](https://github.com/xoseperez/espurna/pull/870), thanks to [@mcspr](https://github.com/mcspr) and [@gn0st1c](https://github.com/gn0st1c) for this improvement.
+
 ## Troubleshooting
 
 Some users have had issue with old versions of Node.js. Check you have at least 4.6.0. They have reported they had to install additional packages but that is still untested and I don't want to add things I'm not sure they are needed. Check issue [#147](https://github.com/xoseperez/espurna/issues/147)
