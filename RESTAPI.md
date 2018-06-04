@@ -69,10 +69,23 @@ relay0 => 1
 From version 1.7.0 if your device has an RGB light source you can control the color via API too (both GET and PUT, "%23" is the URL encoded value for '#'):
 
 ```
-$ curl -X PUT -H "Accept: application/json" http://192.168.1.108/api/color --data "apikey=C62ED7BE7593B658&value=%23FF0000"
-{ "color": "#FF0000" }
-$ curl "http://192.168.1.108/api/color?apikey=C62ED7BE7593B658&value=%23FF0000"
+$ curl -X PUT -H "Accept: application/json" http://192.168.1.108/api/rgb --data "apikey=C62ED7BE7593B658&value=%23FF0000"
+{ "rgb": "#FF0000" }
+$ curl "http://192.168.1.108/api/rgb?apikey=C62ED7BE7593B658&value=%23FF0000"
 #FF0000
+```
+
+You can also change the color using the `hsv`, `kelvin` and `mired` entry points.
+
+## Channel setting
+
+You can set individual channel values using the `channel` entry point:
+
+```
+$ curl -X PUT -H "Accept: application/json" http://192.168.1.108/api/channel/0 --data "apikey=C62ED7BE7593B658&value=128"
+{ "channel/0": "#FF0000" }
+$ curl "http://192.168.1.108/api/channel/0?apikey=C62ED7BE7593B658&value=128"
+128
 ```
 
 ## Sensor values
