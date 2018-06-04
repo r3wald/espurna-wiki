@@ -96,7 +96,7 @@ Below is a list of all *_SUPPORT flags that ESPurna supports (sorted alphabetica
 
 | Feature | Build flag | Description |
 | --- | --- | --- |
-| IR Transmitter GPIO | `IR_PIN` | GPIO where IR transmitter is connected (default: `4`) |
+| IR Receiver GPIO | `IR_PIN` | GPIO where IR receiver is connected (default: `4`) |
 | | `IR_BUTTON_SET` | Which of the predefined IR button sets to use. One of: <br> - `1` - Original MagicLed controller (default) <br>  - `2` - Alternative controller shipped with another variant of MagicLed controllers  |
 
 ## MQTT settings
