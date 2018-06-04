@@ -42,7 +42,7 @@ Below is a list of all *_SUPPORT flags that ESPurna supports (sorted alphabetica
 | Domoticz | `DOMOTICZ_SUPPORT` | Enable [Domoticz](http://domoticz.com)-specific layout of MQTT topics (default: same as `MQTT_SUPPORT`) |
 | Home Assistant | `HOMEASSISTANT_SUPPORT` | Enable [Home Assistant](https://home-assistant.io)-specific support (default: same as `MQTT_SUPPORT`) |
 | InfluxDB | `INFLUXDB_SUPPORT` | Enable [InfluxDB](https://en.wikipedia.org/wiki/InfluxDB) HTTP interface (default: `0` - off) <Br> Uses ESPAsyncTCP library (see below) |
-| IR Rx/Tx | `IR_SUPPORT` | Enable [IR Receiver / Transmitter](https://en.wikipedia.org/wiki/Consumer_IR) support (default: `0` - off) |
+| IR Rx/Tx | `IR_SUPPORT` | Enable [IR Receiver](https://en.wikipedia.org/wiki/Consumer_IR) support (default: `0` - off) |
 | LLMNR | `LLMNR_SUPPORT` | Support for [Link-Local Multicast Name Resolution](https://en.wikipedia.org/wiki/Link-Local_Multicast_Name_Resolution) (default: `0` - off) |
 | mDNS discovery | `MDNS_CLIENT_SUPPORT` | Use [mDNS](https://en.wikipedia.org/wiki/Multicast_DNS) to discover endpoints (like MQTT or InfluxDB) (default: `0` - off) |
 | mDNS announcements | `MDNS_SERVER_SUPPORT` | Announce device via [mDNS](https://en.wikipedia.org/wiki/Multicast_DNS) (default: `1` - on) |
