@@ -2,14 +2,14 @@
 
 The wiring of this project is straight forward. I used a NodeMCU board to host ESPurna.  
 The Geiger counter itself is based on aa Arduino-ready Kit from [RH Electronics](http://www.rhelectronics.net/store/radiation-detector-geiger-counter-diy-kit-second-edition.html).
-![Wiring Diagram](https://github.com/Trickx/espurna/blob/dev/images/devices//geiger_wiring_diagram.png)
+![Wiring Diagram](images/devices/geiger/geiger_wiring_diagram.png)
 The Geiger board is prepared for two variants of interrupt outputs. I soldered the C-Int type, consisting of 10nF capacitor in front of the output. The corresponding impulse looks like this.
 
-![Scope screenshot of Geiger impulse](https://github.com/Trickx/espurna/blob/dev/images/devices/geiger_scope_single_pulse.png)
+![Scope screenshot of Geiger impulse](images/devices/geiger/geiger_scope_single_pulse.png)
 
 Yes, I know the NodeMCU is a 3V3 powered device, while the Geiger board runs at 5V. Well, the interrupt impuls shows a peak of below 4V and it did not kill my NodeMCU, yet. Use this wiring at your own risk :-) However the impuls shows a width of 20ms, so I decided to go with a debounce time of 25ms, just to be sure. Debouncing does not seem to be required here, but I wanted to be on the safe side. I will test the system with different settings but for the moment rising edge detection is configured. The closest time between two impulses I could fetch while playing with the scope was about 50ms. This would result in a quiet high radiation level.
 
-![Scope screenshot of 2 folowing Geiger impulses](https://github.com/Trickx/espurna/blob/dev/images/devices/geiger_scope_following_pulses.png)
+![Scope screenshot of 2 folowing Geiger impulses](images/devices/geiger/geiger_scope_following_pulses.png)
 
 ## Calibration
 The Geiger counter board generates an interrupt per detection.
@@ -37,15 +37,12 @@ This leads to a conversion factor of ~ 0,0041666 (inverse= 240), which is my def
 I recommend to configure a read/counti interval of at least a minute to get stable results.
 Averaging does not makes sense for impulse counting, since the longer the count interval, the more stable are the results anyway.
 
-![ESPurna Configuration Page](https://github.com/Trickx/espurna/blob/dev/images/devices/geiger_espurna_configuration.png)
+![ESPurna Configuration Page](images/devices/geiger/geiger_espurna_configuration.png)
 
 ## Result Visualisation
 I'm using an InfluxDB and Grafana stack to visualise my sensor data. The screenshot below illustrates a typical result from the sensor. On the left hand side the values are dispalyed in the unit "µSv/h", while on the right hand side "counts per minute" are given. 
 
-![Grafana dashboard for the Geiger Counter](https://github.com/Trickx/espurna/blob/dev/images/devices/geiger_grafana_dashboard.png)
+![Grafana dashboard for the Geiger Counter](images/devices/geiger/geiger_grafana_dashboard.png)
 
 The last values are mentioned on the status page of the device's webpage.
-![ESPurna Status Page](https://github.com/Trickx/espurna/blob/dev/images/devices/geiger_espurna_status.png)
-
-
-
+![ESPurna Status Page](images/devices/geiger/geiger_espurna_status.png)
