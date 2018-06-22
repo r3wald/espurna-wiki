@@ -11,7 +11,7 @@ Obviously the default values for WIFI network and MQTT will probably not match y
 
 * Connect with phone or computer to the "ESPURNA_XXXXXX" network.
 * Password is "fibonacci".
-* Once connected browse to "http://192.168.4.1". If you are on a mobile phone, make sure to disable cellular data as you may not be able to access this IP otherwise.
+* Once connected browse to "http://192.168.4.1" or http://192.168.244.1". If you are on a mobile phone, make sure to disable cellular data as you may not be able to access this IP otherwise.
 * It will then present an **authentication challenge**.
 * **Default user and password are "admin" and "fibonacci"**.
 * Then you will be presented a page to change this default password. The new password has to have a minimum of 8 characters (letters, numbers and _) including one number, one lower case and one uppercase. The same password is used for the WIFI Access Point, for the web interface and for the OTA firmware upload.
