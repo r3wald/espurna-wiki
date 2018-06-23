@@ -20,7 +20,7 @@ This is the official list of supported hardware for the ESPurna firmware. The ha
 | [ITEAD Sonoff POW](Hardware-Itead-Sonoff-POW) | `ITEAD_SONOFF_POW` <br> `ITEAD_SONOFF_POW_R2` | Switch with Power Consumption Measurement |
 | [ITEAD Sonoff TH10/16](Hardware-Itead-Sonoff-TH) | `ITEAD_SONOFF_TH` | Switch with Temperature and Humidity Monitoring |
 | [ITEAD Sonoff 4CH](Hardware-Itead-Sonoff-4CH) | `ITEAD_SONOFF_4CH` |  4 Switches with din rail mounting |
-| [ITEAD Sonoff 4CH Pro](Hardware-Itead-Sonoff-4CH-Pro---R2) | `ITEAD_SONOFF_4CH_PRO` | 4 Switches with din rail mounting and RF Receiver|
+| [ITEAD Sonoff 4CH Pro / Pro R2](Hardware-Itead-Sonoff-4CH-Pro---R2) | `ITEAD_SONOFF_4CH_PRO` | 4 Switches with din rail mounting and RF Receiver|
 | [ITEAD Sonoff Touch](Hardware-Itead-Sonoff-Touch) | `ITEAD_SONOFF_TOUCH` | Touch Wall Switch |
 | [ITEAD Sonoff B1](Hardware-Itead-Sonoff-B1) | `ITEAD_SONOFF_B1` | Dimmable E27 LED Lamp RGB Color Light Bulb |
 | [ITEAD Sonoff T1](Hardware-Itead-Sonoff-T1) | `ITEAD_SONOFF_T1_1CH` <br> `ITEAD_SONOFF_T1_2CH` <br> `ITEAD_SONOFF_T1_3CH` | 1-3 Gang Touch Wall Switch |
