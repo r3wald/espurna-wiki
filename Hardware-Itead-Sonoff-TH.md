@@ -34,3 +34,9 @@ It also looks like ready to have an RF module the same way as the Sonoff RF, but
 You have all the required pins in an unpopulated header in one of the corners of the board (see top left corner in the image above). Solder a 4 pins male or female header here and connect it to your favorite USB-to-UART module.
 
 As in the Sonoff the button is connected to GPIO0, so to enter flash mode press and hold the button and connect the programmer to your computer to power the board.
+
+## Troubleshooting
+
+Sometimes the sensors might report an error because the plug has not been fully inserted. Please make sure you hear a "click" when inserting the 2.5 TRRS plug in the socket (picture courtesy of @mattster98).
+
+![](https://user-images.githubusercontent.com/1469426/41855184-023c7cdc-7860-11e8-8234-6234535ab8d0.png)
