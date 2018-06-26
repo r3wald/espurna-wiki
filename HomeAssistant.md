@@ -23,6 +23,44 @@ mqtt:
 
 This is the bare minimum (username and password are optional, but you really should use them). If your broker setup is not standard check all the configuration options in the [Home Assistant MQTT](https://home-assistant.io/components/mqtt/) page.
 
+## MQTT Discovery
+
+Instead of manually editing configuration.yaml you can use [MQTT Discovery](https://www.home-assistant.io/docs/mqtt/discovery/) to allow ESPurna device to configure itself automatically.
+
+To enable, add this to the `mqtt` component configuration:
+```yaml
+mqtt:
+  discovery: true
+  discovery_prefix: homeassistant
+```
+
+### Configuration
+
+|Key|Description|Possible values|Default value|
+| --- | --- | --- | --- |
+|haEnabled|MQTT Discovery|0 (no) or 1 (yes)|1 (yes)|
+|haPrefix|MQTT Prefix|A string|homeassistant
+
+### Terminal commands
+
+|Command|Description|Arguments|
+| --- | --- | --- |
+|ha.send|Send message for MQTT Discovery in Home Assistant (if enabled)| - |
+|ha.clear|Clear retained message for MQTT Discovery in Home Assistant| - |
+|ha.config|Output Home Assistant configuration.yaml code for the device| - |
+
+### Troubleshooting
+
+Discovery topic has the following format:
+> {**haPrefix**}/{**switch** or **light**}/{**hostname**}_{**switch** or **light** index}/config
+
+For example:
+> homeassistant/switch/ESPURNA-820501_0/config
+
+Discovery topic is sent to the MQTT broker with `retained` flag enabled. To disable discovery manually, send empty message with `retained` flag to the discovery topic.
+
+Home Assistant will keep discovered devices until the next restart.
+
 ## Link your ESPurna device to Home Assistant 
 
 Home Assistant has a special type of device called "switch". You can configure this switch to use MQTT connection. Basically you will have to define the command (write) and status (read) topics and payloads.
