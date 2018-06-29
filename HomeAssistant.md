@@ -8,6 +8,8 @@ Once the ESPurna powered device is connected to your MQTT broker of choice, it's
 
 > Note: Integration with Home Assistant is done using "MQTT platform", not "MQTT-JSON platform". Each message is sent to it's own topic. This means you should **disable "JSON payload"** in the ESPurna MQTT tab to make it work.
 
+> Note: If [Discovery](https://www.home-assistant.io/components/discovery/) component is configured and Alexa emulation is enabled on the device, Home Assistant will discover ESPurna as WeMo switch / light.
+
 ## HomeAssistant Configuration 
 
 First make sure your Home Assistant instance connects to the same broker you connected the ESPurna device. You can read the [Home Assistant MQTT](https://home-assistant.io/components/mqtt/) page for a full explanation of the process but you will basically have to add these lines to your configuration.yaml file:
