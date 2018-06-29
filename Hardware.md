@@ -61,8 +61,8 @@ This is the official list of supported hardware for the ESPurna firmware. The ha
 | [Tonbux XS-SSA06](Hardware-Tonbux-XS-SSA06) | `TONBUX_XSSSA06` | |
 | [Tonbux Powerstrip02](Hardware-Tonbux-Powerstrip02) | `TONBUX_POWERSTRIP02` | 4 AC Outlets + 4 USB Charging Ports |
 | [Zhilde ZLD-44EU-W](Hardware-Zhilde-ZLD-44EU-W) | `ZHILDE_EU44_W` | 4 AC Outlets + 4 USB power supply ports |
-| [LINGAN SWA1](Hardware-LINGAN-SWA1) | `LINGAN_SWA1` | Power plug /w power meter |
-| [TONBUX/MXQ SP04](Hardware-LINGAN-SWA1) | `LINGAN_SWA1` | Power plug /w power meter |
+| [LINGAN SWA1](Hardware-LINGAN-SWA1) | `LINGAN_SWA1` | Power plug |
+| [TONBUX/MXQ SP04](Hardware-LINGAN-SWA1) | `LINGAN_SWA1` | Power plug |
 
 ## Development Boards
 
