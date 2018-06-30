@@ -37,10 +37,10 @@ To enter flashing mode the main board should be disconnected from the rear relay
 
 The Correct Sequence for putting the board in Programming Mode
 
-1. Hold Main Button
-2. Press Reset Button
-3. Release Reset Button
-4. Release Main button
+1. Hold Main Button (No 1)
+2. Press Reset Button (No 4)
+3. Release Reset Button (No 1)
+4. Release Main button (No 4)
 
 ## Issues
 
