@@ -10,10 +10,18 @@ Once the ESPurna powered device is connected to your MQTT broker of choice, it's
 
 > Note: If [Discovery](https://www.home-assistant.io/components/discovery/) component is configured and Alexa emulation is enabled on the device, Home Assistant will discover ESPurna as WeMo switch / light.
 
-## HomeAssistant Configuration 
+## Basic configuration
+
+### Build settings
+
+| Build flag | Description | Default value |
+| --- | --- | --- |
+| `HOMEASSISTANT_SUPPORT` | Enable Home Assistant module | `MQTT_SUPPORT` |
+| `HOMEASSISTANT_ENABLED` | Send MQTT discovery message | `0` (off) |
+
+### Home Assistant
 
 First make sure your Home Assistant instance connects to the same broker you connected the ESPurna device. You can read the [Home Assistant MQTT](https://home-assistant.io/components/mqtt/) page for a full explanation of the process but you will basically have to add these lines to your configuration.yaml file:
-
 
 ```yaml
 mqtt:
@@ -49,7 +57,6 @@ mqtt:
 | --- | --- | --- |
 |ha.send|Send message for MQTT Discovery in Home Assistant (if enabled)| - |
 |ha.clear|Clear retained message for MQTT Discovery in Home Assistant| - |
-|ha.config|Output Home Assistant configuration.yaml code for the device| - |
 
 ### Troubleshooting
 
@@ -63,12 +70,21 @@ Discovery topic is sent to the MQTT broker with `retained` flag enabled. To disa
 
 Home Assistant will keep discovered devices until the next restart.
 
-## Link your ESPurna device to Home Assistant 
+## Manual configuration 
+
+### WebUI
+
+HASS panel contains configuration generator. Tap **Show** at the **Configuration** section and then add it's output to the configuration.yaml
+
+### Terminal
+
+`ha.config` command will output Home Assistant configuration.yaml code for the device
+
+### Configuration for relays
 
 Home Assistant has a special type of device called "switch". You can configure this switch to use MQTT connection. Basically you will have to define the command (write) and status (read) topics and payloads.
 
-Here you have a sample configuration (add these lines to the same configuration.yaml file):
-
+Configuration sample:
 
 ```yaml
 switch:
@@ -81,14 +97,15 @@ switch:
     optimistic: false
     qos: 0
     retain: true
-
 ```
 
-As you can see we are setting the "platform" to "mqtt" to use the connection be have previously configured. We can use the same topic for command and status. The topic you have to use is the "MQTT Root Topic" you configure in the MQTT page in your ESPurna device web interface, plus "/relay/" plus the number of the relay (if your board has only one relay that would be number 0). Also note the payloads for both of them, these are required by ESPurna.
+As you can see we are setting the "platform" to "mqtt" to use the connection be have previously configured. We can use the same topic for command and status. The topic you have to use is the "MQTT Root Topic" you configure in the MQTT page in your ESPurna device web interface ("test/switch/D1MINI" in the example), plus "/relay/" plus the number of the relay (if your board has only one relay that would be number 0). Also note the payloads for both of them, these are required by ESPurna (1 for on, 0 for off).
 
-## Link an ESPurna light to Home Assistant ##
+### Configuration for lights
 
-ESpurna supports color, brightness, temperature color and individual channels for light devices (dimmers, my9192-based light bulbs,...). An example configuration for Home Assistant would be:
+ESPurna supports color, brightness, temperature color and individual channels for light devices (dimmers, my9192-based light bulbs,...).
+
+Configuration sample:
 
 ```yaml
 light:
