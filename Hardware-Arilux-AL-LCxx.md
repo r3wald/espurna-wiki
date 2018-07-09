@@ -19,7 +19,24 @@
 
 ## Flashing
 
-*TODO*
+Open the plastic enclosure (using a sharp tool) and extract the little board inside.
+
+You will see some soldering points with labels: GND, TX, RX and I00. If you are good enought with the soldering iron, connect dupont wires to these pads (check this guide)[Hardware-Magic-Home-LED-Controller]. 
+
+If you prefer to got the safe way, use this tricky method: 
+
+* bend the tip of some dupont wires, 
+* glue the tip to a short piece of a ziptie
+* hold the board in place with a couple of pins,
+* hold the the zipties with clothespins
+* adjust the tips of the dupont wires placing them carefully on the soldering pads 
+
+![arilux_flashing_without_soldering_02](https://user-images.githubusercontent.com/697599/42446451-915c1f64-8376-11e8-9ac7-4c797d6673ce.jpg)
+![arilux_flashing_without_soldering_01](https://user-images.githubusercontent.com/697599/42446452-91df2972-8376-11e8-898b-d1014e15f9d8.jpg)
+
+
+Finally, connect the dupont wires to your FTDI-USB dongle and follow the general instructions in [Binaries] to start flashing.
+
 
 ## Issues
 
