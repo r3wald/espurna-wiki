@@ -25,7 +25,7 @@ You will see some soldering points with labels: GND, TX, RX and I00. If you are 
 
 If you prefer to got the safe way, use this tricky method: 
 
-* bend the tip of some dupont wires, 
+* bend the tip of some dupont wires 
 * glue the tip to a short piece of a ziptie
 * hold the board in place with a couple of pins,
 * hold the the zipties with clothespins
@@ -34,8 +34,13 @@ If you prefer to got the safe way, use this tricky method:
 ![arilux_flashing_without_soldering_02](https://user-images.githubusercontent.com/697599/42446451-915c1f64-8376-11e8-9ac7-4c797d6673ce.jpg)
 ![arilux_flashing_without_soldering_01](https://user-images.githubusercontent.com/697599/42446452-91df2972-8376-11e8-898b-d1014e15f9d8.jpg)
 
+Finally, connect the dupont wires to your FTDI-USB dongle:
 
-Finally, connect the dupont wires to your FTDI-USB dongle and follow the general instructions in [this page](Binaries) to start flashing.
+* TX -> RX
+* RX -> TX
+* GND and I00 -> GND
+
+And follow the general instructions in [this page](Binaries) to start the flashing procedure. 
 
 
 ## Issues
