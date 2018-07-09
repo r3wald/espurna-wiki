@@ -35,7 +35,7 @@ If you prefer to got the safe way, use this tricky method:
 ![arilux_flashing_without_soldering_01](https://user-images.githubusercontent.com/697599/42446452-91df2972-8376-11e8-898b-d1014e15f9d8.jpg)
 
 
-Finally, connect the dupont wires to your FTDI-USB dongle and follow the general instructions in [Binaries] to start flashing.
+Finally, connect the dupont wires to your FTDI-USB dongle and follow the general instructions in [this page](Binaries) to start flashing.
 
 
 ## Issues
