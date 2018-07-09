@@ -21,7 +21,7 @@
 
 Open the plastic enclosure (using a sharp tool) and extract the little board inside.
 
-You will see some soldering points with labels: GND, TX, RX and I00. If you are good enought with the soldering iron, connect dupont wires to these pads (check this guide)[Hardware-Magic-Home-LED-Controller]. 
+You will see some soldering points with labels: GND, TX, RX and I00. If you are good enought with the soldering iron, connect dupont wires to these pads ([check this guide](Hardware-Magic-Home-LED-Controller)). 
 
 If you prefer to got the safe way, use this tricky method: 
 
