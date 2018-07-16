@@ -84,7 +84,7 @@ This is the list, in **bold** the text you have to search for:
 
 |Library|Repository|Notes|
 |-|-|-|
-|**ArduinoJson** by Benoit Blanchon|[GIT](https://github.com/bblanchon/ArduinoJson)||
+|**ArduinoJson** by Benoit Blanchon|[GIT](https://github.com/bblanchon/ArduinoJson)|ESPurna is not yet compatible with ArduinoJson 6.X.X, use 5.13.2 instead|
 |**Brzo I2C** by Pascal Kurtansky|[GIT](https://github.com/pasko-zh/brzo_i2c)|Required when I2C_USE_BRZO is 1|
 |**Embedis** by David Turnball and Tom Moxon|[GIT](https://github.com/thingSoC/embedis)||
 |**IRRemoteESP8266** by Sebastien Warin et al.|[GIT](https://github.com/markszabo/IRremoteESP8266)|Required when IR_SUPPORT is 1|
