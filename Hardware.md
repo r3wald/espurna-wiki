@@ -46,6 +46,7 @@ This is the official list of supported hardware for the ESPurna firmware. The ha
 | [Arilux E27](Hardware-Arilux-E27) | `ARILUX_E27` | |
 | [InterMitTech QuinLED](Hardware-QuinLED) | `INTERMITTECH_QUINLED` | |
 | [Autohometion LYT8266](Hardware-Autohometion-LYT8266) | `AUTHOMETION_LYT8266` | |
+| [Generic AG-L4](Hardware-AG-L4) | `GENERIC_AG_L4` | |
 
 ## Power Plugs
 
