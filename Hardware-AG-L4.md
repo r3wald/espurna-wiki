@@ -1,7 +1,6 @@
 # AG-L4 LED Desk Lamp
 
-![AG-L4](images/devices/generic-ag-l4-1.jpg)
-
+## info
 |Property|Value|
 |---|---|
 |Manufacturer|Generic|
@@ -12,6 +11,18 @@
 ## Introduction
 
 AG-L4 LED Desk Lamp
+
+## images
+
+![](https://github.com/xoseperez/espurna/blob/dev/images/devices/generic-ag-l4-1.jpg)
+
+![](https://github.com/xoseperez/espurna/blob/dev/images/devices/generic-ag-l4-2.jpg)
+
+![](https://github.com/xoseperez/espurna/blob/dev/images/devices/generic-ag-l4-3.jpg)
+
+![](https://github.com/xoseperez/espurna/blob/dev/images/devices/generic-ag-l4-4.jpg)
+
+![](https://github.com/xoseperez/espurna/blob/dev/images/devices/generic-ag-l4-5.jpg)
 
 ## Flashing
 
