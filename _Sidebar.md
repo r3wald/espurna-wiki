@@ -27,7 +27,7 @@
 * [Initial](Configuration)
 * Default values
 * Web interface
-* Telnet
+* [Telnet](Telnet)
 * Scheduler
 * [Terminal](Terminal)
 * [Custom IR Codes](Adding-Custom-IR-Codes)

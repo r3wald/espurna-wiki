@@ -21,6 +21,8 @@ Tested devices:
 | Itead Sonoff TH10 | mimbamonkeyhouse | 2018-Feb-20 |
 | Itead Sonoff TH16 | mimbamonkeyhouse | 2018-Feb-20 |
 | Itead Sonoff S20  | sanka32 | 2018-May-10 |
+| Switch Lx-wifi-03o  | ctripodi | 2018-Jan-23 |
+
 
 If you test/verify any other device, please update the table above.
 

@@ -1,5 +1,7 @@
 # ESPurna based Geiger Counter
 
+Support and documentation by Sven ([@Trickx](https://github.com/Trickx)). Thank you very much!
+
 The wiring of this project is straight forward. I used a NodeMCU board to host ESPurna.  
 The Geiger counter itself is based on aa Arduino-ready Kit from [RH Electronics](http://www.rhelectronics.net/store/radiation-detector-geiger-counter-diy-kit-second-edition.html).
 ![Wiring Diagram](images/devices/geiger/geiger_wiring_diagram.png)

@@ -4,11 +4,13 @@
 
 You will need the latest version of the [esptool.py](https://github.com/espressif/esptool) tool. From now on I will assume you have it somewhere on your path, otherwise use the absolute path to it in the commands below.
 
-You will also need a binary image of the ESPurna firmware. Pre-built binary images for the latest releases are available in the [releases](https://github.com/xoseperez/espurna/releases/) page. Grab the latest one for your device and save it locally.
+Examples below are for Linux and assume USB2UART adapter dev path is `/dev/ttyUSB0`. Normal user may not have access to the `/dev/ttyUSB#` by default. Make sure to follow [this guide](http://docs.platformio.org/en/latest/faq.html#platformio-udev-rules) if you are having trouble accessing it.
+
+Of course, you will also need a binary image of the ESPurna firmware. Pre-built binary images for the latest releases are available on the [releases](https://github.com/xoseperez/espurna/releases/) page. Grab the latest one for your device and save it locally.
 
 ## Set up your device
-_if you haven't already, consider backing up your stock firmware._
-_[Backup the stock firmware](https://github.com/xoseperez/espurna/wiki/Backup)_
+__If you haven't already, consider backing up your stock firmware!__
+__[Backup the stock firmware](https://github.com/xoseperez/espurna/wiki/Backup)__
 
 To flash the image you will need to boot your board in flash mode. The procedure is exactly the same as when you are getting ready to flash a new image and it will depend on your device. Check the [supported hardware page](https://github.com/xoseperez/espurna/wiki/Hardware) for instructions.
 

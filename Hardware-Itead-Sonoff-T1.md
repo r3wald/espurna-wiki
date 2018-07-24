@@ -35,6 +35,13 @@ The devices comes in EU, UK and USA versions that differ in the form factor. Eac
 
 To enter flashing mode the main board should be disconnected from the rear relay to prevent power drain that will cause the ESP to reset often while flashing. Then connect your programmer to the 4-pin header (use 3V3!!!). To enter flash mode button 1 (check pictures above) should be held while reset button (number 4 in picture above) is pressed. Once in flash mode you can release button 1.
 
+The Correct Sequence for putting the board in Programming Mode
+
+1. Hold Main Button (No 1)
+2. Press Reset Button (No 4)
+3. Release Reset Button (No 1)
+4. Release Main button (No 4)
+
 ## Issues
 
 Since it uses touch panel the best experience requires a different approach to button definitions. This is the definition for button 1 for Sonoff T1, as you see the event is fired on press (not on release) and most of other events are disabled.

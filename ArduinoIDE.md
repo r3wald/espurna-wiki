@@ -49,7 +49,8 @@ These new flash layout refer to a file ('**eagle.flash.1m0.ld**') that does not 
 ```
 /* Flash Split for 1M chips, no SPIFFS */
 /* sketch 999KB */
-/* eeprom 20KB */
+/* eeprom 4KB */
+/* reserved 16KB */
 
 MEMORY
 {
@@ -83,7 +84,7 @@ This is the list, in **bold** the text you have to search for:
 
 |Library|Repository|Notes|
 |-|-|-|
-|**ArduinoJson** by Benoit Blanchon|[GIT](https://github.com/bblanchon/ArduinoJson)||
+|**ArduinoJson** by Benoit Blanchon|[GIT](https://github.com/bblanchon/ArduinoJson)|ESPurna is not yet compatible with ArduinoJson 6.X.X, use 5.13.2 instead|
 |**Brzo I2C** by Pascal Kurtansky|[GIT](https://github.com/pasko-zh/brzo_i2c)|Required when I2C_USE_BRZO is 1|
 |**Embedis** by David Turnball and Tom Moxon|[GIT](https://github.com/thingSoC/embedis)||
 |**IRRemoteESP8266** by Sebastien Warin et al.|[GIT](https://github.com/markszabo/IRremoteESP8266)|Required when IR_SUPPORT is 1|
@@ -111,6 +112,7 @@ You will have to install manually the libraries that are not available from the 
 |-|-|-|-|
 |**AsyncMqttClient** by Marvin Roger|[GIT](https://github.com/marvinroger/async-mqtt-client)|[ZIP](https://github.com/marvinroger/async-mqtt-client/archive/master.zip)|Required if MQTT_USE_ASYNC is 1 (default value)|
 |**DebounceEvent** by Xose Pérez|[GIT](https://bitbucket.org/xoseperez/debounceevent)|[ZIP](https://bitbucket.org/xoseperez/debounceevent/get/master.zip)||
+|**EEPROM_Rotate** by Xose Pérez|[GIT](https://github.com/xoseperez/eeprom_rotate)|[ZIP](https://github.com/xoseperez/eeprom_rotate/archive/master.zip)||
 |**ESPSoftwareSerial** fork by Oscar rovira|[GIT](https://github.com/krosk93/espsoftwareserial)|[ZIP](https://github.com/krosk93/espsoftwareserial/archive/master.zip)|Required if either MHZ19_SUPPORT, PMSX003_SUPPORT or V9261F_SUPPORT are set to 1|
 |**ESPAsyncTCP** by Hristo Gochkov|[GIT](https://github.com/me-no-dev/ESPAsyncTCP)|[ZIP](https://github.com/me-no-dev/ESPAsyncTCP/archive/master.zip)|See note 1 below|
 |**ESPAsyncWebServer** by Hristo Gochkov|[GIT](https://github.com/me-no-dev/ESPAsyncWebServer)|[ZIP](https://github.com/me-no-dev/ESPAsyncWebServer/archive/master.zip)|See note 2 below|
@@ -123,7 +125,7 @@ You will have to install manually the libraries that are not available from the 
 |**NtpCLientLib** by Germán Martín (fork)|[GIT](https://github.com/xoseperez/NtpClient/tree/develop)|[ZIP](https://github.com/xoseperez/NtpClient/archive/develop.zip)|Development branch is required|
 |**RemoteSwitch** by Randy Simons (fork)|[GIT](https://github.com/xoseperez/RemoteSwitch-arduino-library)|[ZIP](https://github.com/xoseperez/RemoteSwitch-arduino-library/archive/master.zip)|Required if RF_SUPPORT is 1|
 |**Time** by Michael Maregolis and Paul Stoffregen (fork)|[GIT](https://github.com/xoseperez/Time)|[ZIP](https://github.com/xoseperez/Time/archive/master.zip)||
-
+|**eeprom_rotate** by Xose Pérez|[GIT](https://github.com/xoseperez/eeprom_rotate)|[ZIP](https://github.com/xoseperez/eeprom_rotate/archive/master.zip)||
 
 (1) If you are using Arduino core 2.3.0 stable, please install and use this version, [ESPAsyncTCP #9b0cc37](https://github.com/me-no-dev/ESPAsyncTCP/tree/9b0cc37cd7bdf4b7d17a363141d2e988aa46652c).
 
