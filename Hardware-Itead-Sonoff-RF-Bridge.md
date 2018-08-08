@@ -39,6 +39,12 @@ ESPurna supports two hacked variants of the Sonoff RFBridge:
 
 ![Sonoff RF Bridge board](images/flashing/sonoff-rf-bridge-v2.jpg)
 
+Flashing esp8285:
+  * disconnect the sonoff-rf-bridge from all power sources
+  * move the switch towards off position (towards the 5pin serial connector)
+  * press and hold the button on the side
+  * connect serial cable (gnd, rx, tx, 3v3)
+  * flash firmware
 ## Issues
 
 *TODO*
