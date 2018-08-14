@@ -52,7 +52,7 @@ This is the official list of supported hardware for the ESPurna firmware. The ha
 
 | Board | Build flag | Description |
 | --- | --- | --- |
-| [KMC 70011](Hardware-KMC-70011) | `70011` | Power plug /w power meter |
+| [KMC 70011](Hardware-KMC-70011) | `70011` | Power plug w/ power metering |
 | [Schuko Wifi Plug](Hardware-Schuko-Wifi-Plug) | `WIFI_STECKER_SCHUKO` | Power plug |
 | [WiOn 50055](Hardware-WiOn-50055) | `WION_50055` | |
 | [Xenon SM PW 702U](Hardware-Xenon-SM-PW-702U) | `XENON_SM_PW702U` | |
@@ -64,6 +64,7 @@ This is the official list of supported hardware for the ESPurna firmware. The ha
 | [Zhilde ZLD-44EU-W](Hardware-Zhilde-ZLD-44EU-W) | `ZHILDE_EU44_W` | 4 AC Outlets + 4 USB power supply ports |
 | [LINGAN SWA1](Hardware-LINGAN-SWA1) | `LINGAN_SWA1` | Power plug |
 | [TONBUX/MXQ SP04](Hardware-LINGAN-SWA1) | `LINGAN_SWA1` | Power plug |
+| [BLITZWOLF BW-SHP2](Hardware-BLITZWOLF-BW-SHP2) | `BLITZWOLF_BWSHP2 ` | Power plug w/ power metering |
 
 ## Development Boards
 
