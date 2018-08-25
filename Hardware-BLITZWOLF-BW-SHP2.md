@@ -25,6 +25,6 @@ Open the device using special tools (the [Xiaomi Wiha 24-in-1 toolkit](https://w
 
 Short GPIO0 and GND during boot to enter flash mode before connecting to the serial programmer. The power indicator LED will be strong red to confirm the device has entered this mode. As soon as the short is removed, the red color will be dimmed. The device will then be ready for flashing.
 
-![BlitzWolf BW-SHP2 flashing circuit](images/flashing/blitzwolf-bw-shp2-flash.jpg)
+![BlitzWolf BW-SHP2 flashing circuit](images/flashing/blitzwolf-bw-shp2-flash-flash.jpg)
 
-![BlitzWolf BW-SHP2 flashing circuit](images/flashing/blitzwolf-bw-shp2-jumpers)
+![BlitzWolf BW-SHP2 flashing circuit](images/flashing/blitzwolf-bw-shp2-flash-flash-jumpers.jpg)
