@@ -58,3 +58,42 @@ Now you can build espurna, including web files, directly from Visual Studio Code
 To build / upload firmware for a specific board, use "Tasks / Run Task..." (<kbd>CTRL</kbd>+<kbd>ALT</kbd>+<kbd>T</kbd> by default) and search for "Build (...)" / "Upload (...)" tasks.
 
 `PlatformIO: Build` and button on the bottom bar builds 'default' environment specified in 'code/platformio.ini' (`wemos-d1mini-relayshield` at the time of writing this)
+
+## Environment variables for OTA uploads
+
+In recent versions of Espurna some required OTA parameters are now picked up from environment variables.
+
+You need to set them up for every `Upload (ota)` task. Here's how to do it:
+
+- Press <kbd>F1</kbd> (on Mac it's usually <kbd>Fn</kbd>+<kbd>F1</kbd>)
+- Type a part of the name and click `Tasks: Configure Task`
+- Type a part of `Upload (ota)` task you need and click it when it appears
+- An editor for a JSON config opens. You'll see a section added with your task name, ex.:
+
+```json
+"type": "PlatformIO",
+"task": "Upload (itead-sonoff-th-ota)",
+"problemMatcher": [
+    "$platformio"
+]
+```
+
+- Add the `options` section before the `problemMatcher`, so you have this:
+
+```json
+"type": "PlatformIO",
+"task": "Upload (itead-sonoff-th-ota)",
+"options": {
+    "env": {
+        "ESPURNA_IP": "192.168.4.1",
+        "ESPURNA_AUTH": "fibonacci"
+    }
+},
+"problemMatcher": [
+    "$platformio"
+]
+```
+
+- If you have custom IP or password, put them here. Otherwise, use `192.168.4.1` and `fibonacci`
+- Save and close the file. Now you can OTA upload successfully
+
