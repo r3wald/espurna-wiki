@@ -111,7 +111,7 @@ You will have to install manually the libraries that are not available from the 
 |Library|Repository|ZIP|Notes|
 |-|-|-|-|
 |**AsyncMqttClient** by Marvin Roger|[GIT](https://github.com/marvinroger/async-mqtt-client)|[ZIP](https://github.com/marvinroger/async-mqtt-client/archive/master.zip)|Required if MQTT_USE_ASYNC is 1 (default value)|
-|**DebounceEvent** by Xose Pérez|[GIT](https://bitbucket.org/xoseperez/debounceevent)|[ZIP](https://bitbucket.org/xoseperez/debounceevent/get/master.zip)||
+|**DebounceEvent** by Xose Pérez|[GIT](https://github.com/xoseperez/debounceevent)|[ZIP](https://github.com/xoseperez/debounceevent/archive/master.zip)||
 |**EEPROM_Rotate** by Xose Pérez|[GIT](https://github.com/xoseperez/eeprom_rotate)|[ZIP](https://github.com/xoseperez/eeprom_rotate/archive/master.zip)||
 |**ESPSoftwareSerial**|[GIT](https://github.com/plerup/espsoftwareserial)|[ZIP](https://github.com/plerup/espsoftwareserial/archive/master.zip)|Required if either MHZ19_SUPPORT, PMSX003_SUPPORT or V9261F_SUPPORT are set to 1|
 |**ESPAsyncTCP** by Hristo Gochkov|[GIT](https://github.com/me-no-dev/ESPAsyncTCP)|[ZIP](https://github.com/me-no-dev/ESPAsyncTCP/archive/master.zip)|See note 1 below|
