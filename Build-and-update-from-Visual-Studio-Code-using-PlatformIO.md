@@ -95,5 +95,7 @@ You need to set them up for every `Upload (ota)` task. Here's how to do it:
 ```
 
 - If you have custom IP or password, put them here. Otherwise, use `192.168.4.1` and `fibonacci`
-- Save and close the file. Now you can OTA upload successfully
+- Save and close the file. Now you can OTA upload this target successfully
+
+You need to add a section to the config for every OTA target you want to use. The pro is you can natively support several devices with different IPs and passwords right from the VSCode 
 
