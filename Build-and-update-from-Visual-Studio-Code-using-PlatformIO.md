@@ -63,7 +63,7 @@ To build / upload firmware for a specific board, use "Tasks / Run Task..." (<kbd
 
 In recent versions of Espurna some required OTA parameters are now picked up from environment variables.
 
-You need to set them up for every `Upload (ota)` task. Here's how to do it:
+You need to set them up for every `Upload (ota)` task you want to use. Here's how to do it:
 
 - Press <kbd>F1</kbd> (on Mac it's usually <kbd>Fn</kbd>+<kbd>F1</kbd>)
 - Type a part of the name and click `Tasks: Configure Task`
@@ -98,4 +98,3 @@ You need to set them up for every `Upload (ota)` task. Here's how to do it:
 - Save and close the file. Now you can OTA upload this target successfully
 
 You need to add a section to the config for every OTA target you want to use. The pro is you can natively support several devices with different IPs and passwords right from the VSCode 
-
