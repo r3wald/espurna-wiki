@@ -244,6 +244,13 @@ Command topic                | Example payload        | Notes
 The `mqttGroup` and `mqttGroupInv` topics are set per each relay in the board and let you synchronize relays between devices. You can use the web UI or the terminal to set them. Any relay of any device with the same `mqttGroup` topic (and connected to the same broker, of course) will be synch'd. If you want the relay to be in opposite state set the topic in the `mqttGroupInv` key instead.
 
 ### Home Assistant auto-discovery
+
+The Home Assistant module provides two features: output the configuration code to copy-paste it in the config file and send autodiscovery messages via MQTT using the [MQTT Discovery](https://www.home-assistant.io/docs/mqtt/discovery/) feature.
+
+This second feature sends an MQTT message to a certain topic (`homeassistant/light/livingroom/config` for instance) with the required parameters for HA to configure the light (in this case). It also works for switches and sensors. 
+
+Please mind HA does not store these settings in any way (database or YAML config file) but instead it saved them in memory. To avoid sending the message every now and then it is recommended to set the RETAIN flag to ON (in the MQTT tab) so HA will receive the same configuration every time it restarts. In this case, if this feature is not enabled it will send a message to the same topic but empty payload to effectively "erase" the configuration from the broker retained messages.
+
 ### Domoticz
 
 ## Implementation
