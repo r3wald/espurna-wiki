@@ -253,10 +253,23 @@ Please mind HA does not store these settings in any way (database or YAML config
 
 ### Domoticz
 
+Domoticz integration is done using the [MQTT protocol specification for Domoticz](https://www.domoticz.com/wiki/MQTT). Currently only for relays and sensors.
+
 ## Implementation
 
 ### AsyncMqttClient vs PubSubClient
-### mqttRegister
+
+ESPurna uses the [AsyncMqttClient library by Marvin Roger](https://github.com/marvinroger/async-mqtt-client),  based on the [ESPAsyncTCP library by Hristo Gochkov](https://github.com/me-no-dev/ESPAsyncTCP). This library provides a framework to send and receive MQTT message in an asynchronous way, no blocking sends and event-based messages.
+
+Alternatively, you can compile ESPurna using the [PubSubClient library by Nick O'Leary](https://github.com/knolleary/pubsubclient). Please mind that this option is not tested regularly.
+
+### MQTT module API
+
+Going a bit deep in the code, the MQTT module provides an API other modules can use. It's not my intention to provide an extensive documentation here but I'd like to show you the main methods so you have a place to start studying the code.
+
+* `mqttSend` and `mqttSendRaw` to send messages. They have different signatures but the main difference between them is that `mqttSend` uses a predefined topic structure (with a topic template, a root topic and getter/setter particles) and the `mqttSendRaw` will send the message to the topic you specify.
+
+* `mqttRegister` expects a function with a specific signature that will be called whenever an MQTT event happens. These events can be connection, disconnection and message arriving.
 
 ## SSL support
 
