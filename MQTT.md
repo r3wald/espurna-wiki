@@ -81,6 +81,14 @@ State topic             | Example payload       | Notes
 
 Relay and light status are also sent along with the heartbeat. Check topics for those below.
 
+### Actions
+
+An ESPurna device will subscribe to some generic topics listening for different actions to be performed. At the moment these topics are:
+
+Command topic              | Payload         | Notes
+-------------------------- | --------------- | ---------------------------
+`{root topic}/action/set`  | `reboot`        | Reboots the device
+
 ### Relays
 
 The relay module publishes the relay state and subscribes to command topics to manage the relays via MQTT. The specific message topic will always end with a 0-based index (first relay is index 0).
@@ -106,7 +114,7 @@ State topic               | Example payload | Notes
 `{root topic}/rgb`        | `255,0,0`       | if "Use CSS style" is off
 `{root topic}/hsv`        | `300,100,100`   | see note below
 `{root topic}/brightness` | `35`            | from 0 to 255
-`{root topic}/channel/0`       | `128`           | from 0 to 255, see note 1 below
+`{root topic}/channel/0`  | `128`           | from 0 to 255, see note 1 below
 
 Command topic                 | Example payload | Notes
 ----------------------------- | --------------- | -------------------------------------
@@ -114,11 +122,11 @@ Command topic                 | Example payload | Notes
 `{root topic}/rgb/set`        | `255,0,0`       | or CSV (comma-separated-values)
 `{root topic}/hsv/set`        | `300,100,100`   | see note 2 below
 `{root topic}/brightness/set` | `35`            | from 0 to 255
-`{root topic}/channel/0/set`       | `128`           | for each channel, from 0 to 255
+`{root topic}/channel/0/set`  | `128`           | for each channel, from 0 to 255
 `{root topic}/mired/set`      | `320`           | color temperature in Mired
 `{root topic}/kelvin/set`     | `6000`          | color temperature in Kelvin
 
-(1) Channel topic will end with a 0-based index of the channel. In particular for an RGB bulb, red channel is index 0, green is index 1 and blue is index 2.  
+(1) Channel topic will end with a 0-based index of the channel. In particular, for an RGB bulb, red channel is index 0, green is index 1 and blue is index 2.  
 (2) Hue value ranges from 0 to 360. Saturation and Value from 0 to 100.
 
 ### Sensors
@@ -138,18 +146,23 @@ State topic                 | Example payload | Notes
 `{root topic}/apparent`     | `320`           | apparent power, in W
 `{root topic}/reactive`     | `100`           | reactive power, in W
 `{root topic}/factor`       | `95`            | power factor, in %
-`{root topic}/energy`       | `253654`        | aggregated, in J
-`{root topic}/energy_delta` | `60`            | since last report, in J 
+`{root topic}/energy`       | `253654`        | aggregated, in J or Wh or kWh, see note 1 below
+`{root topic}/energy_delta` | `60`            | since last report, in J or Wh or kWh, see note 1 below
 `{root topic}/analog`       | `780`           | from 0 to 1023
 `{root topic}/digital`      | `1`             | 0 (low) or 1 (high)
-`{root topic}/events`       | `18`            | since last report, count
+`{root topic}/event`        | `18`            | since last report, count
 `{root topic}/pm1dot0`      | `180`           | in ppm
 `{root topic}/pm2dot5`      | `13`            | in ppm
 `{root topic}/pm10`         | `5`             | in ppm
 `{root topic}/co2`          | `65`            | in ppm
 `{root topic}/lux`          | `430`           | in lux
+`{root topic}/distance`     | `0.128`         | in meters
+`{root topic}/hcho`         | `18`            | in ppm
+`{root topic}/ldr_cpm`      | `24`            | events
+`{root topic}/ldr_uSvh`     | `0.108`         | in microsievert
+`{root topic}/count`        | `12`            | events
 
-(1) Temperature units are defined in the Sensors tab in the web UI.
+(1) Temperature and energy units are defined in the Sensors tab in the web UI.
 
 ### Buttons
 
