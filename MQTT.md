@@ -225,6 +225,18 @@ Command topic                | Example payload        | Notes
 
 The IR module also supports RAW messages when IR_USE_RAW is enabled but format is much more complex. Read the module header for more info.
 
+### UART-MQTT module
+
+The UART-MQTT module enables a transparent bridge to and from MQTT to a hardware UART. This is especially interesting for UART sensors like barcode scanners or RFID readers.
+
+State topic           | Example payload      | Notes
+--------------------- | -------------------- | -----------------
+`{root topic}/uartin` | `245324234`          | 
+
+Command topic                | Example payload        | Notes
+---------------------------- | ---------------------- | -----------------
+`{root topic}/uartout/set`   | `245324234`            | 
+
 ## Features based on MQTT
 
 ### Relay & color synchronization across devices
