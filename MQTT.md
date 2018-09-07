@@ -241,8 +241,7 @@ Command topic                | Example payload        | Notes
 
 ### Relay & color synchronization across devices
 
-* mqttGroup
-* mqttGroupInv
+The `mqttGroup` and `mqttGroupInv` topics are set per each relay in the board and let you synchronize relays between devices. You can use the web UI or the terminal to set them. Any relay of any device with the same `mqttGroup` topic (and connected to the same broker, of course) will be synch'd. If you want the relay to be in opposite state set the topic in the `mqttGroupInv` key instead.
 
 ### Home Assistant auto-discovery
 ### Domoticz
