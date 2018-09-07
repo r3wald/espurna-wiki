@@ -211,6 +211,20 @@ Command topic                | Example payload        | Notes
 (1) Triggers a learn action. The index after the "learn" magnitude indicates the relay the code will be linked to. The payload of the message indicates the action (`0` for off, `1` for on).  
 (2) Raw codes require a special firmware in the EFM8BB1. See issue #386 for more info.
 
+### IR
+
+The IR module enables different MQTT messages in and out via the `irin` and `irout` topics.
+
+State topic         | Example payload      | Notes
+--------------------| -------------------- | -----------------
+`{root topic}/irin` | `2:121944:32`        | <type>:<code>:<bits>
+
+Command topic                | Example payload        | Notes
+---------------------------- | ---------------------- | -----------------
+`{root topic}/rfout/set`     | `2:121944:32:1`        | <type>:<code>:<bits>[:<repeat(1)>]
+
+The IR module also supports RAW messages when IR_USE_RAW is enabled but format is much more complex. Read the module header for more info.
+
 ## Features based on MQTT
 
 ### Relay & color synchronization across devices
