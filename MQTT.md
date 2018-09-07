@@ -217,11 +217,11 @@ The IR module enables different MQTT messages in and out via the `irin` and `iro
 
 State topic         | Example payload      | Notes
 --------------------| -------------------- | -----------------
-`{root topic}/irin` | `2:121944:32`        | <type>:<code>:<bits>
+`{root topic}/irin` | `2:121944:32`        | &lt;type&gt;:&lt;code&gt;:&lt;bits&gt;
 
 Command topic                | Example payload        | Notes
 ---------------------------- | ---------------------- | -----------------
-`{root topic}/rfout/set`     | `2:121944:32:1`        | <type>:<code>:<bits>[:<repeat(1)>]
+`{root topic}/rfout/set`     | `2:121944:32:1`        | &lt;type&gt;:&lt;code&gt;:&lt;bits&gt;[:&lt;repeat(1)&gt;]
 
 The IR module also supports RAW messages when IR_USE_RAW is enabled but format is much more complex. Read the module header for more info.
 
