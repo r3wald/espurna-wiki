@@ -5,7 +5,7 @@
 |Property|Value|
 |---|---|
 |Manufacturer|Coolcam|
-|Product page|[AliExpress Link](https://www.aliexpress.com/item/NEO-COOLCAM-Wifi-Smart-Plug-EU-Socket-Support-Alexa-Google-Home-IFTTT-Outlet-With-Timer-and/32859702805.htmll)|
+|Product page|[AliExpress Link](https://www.aliexpress.com/item/NEO-COOLCAM-Wifi-Smart-Plug-EU-Socket-Support-Alexa-Google-Home-IFTTT-Outlet-With-Timer-and/32859702805.html)|
 |Wiki page||
 |Build flag|`NEO_COOLCAM_NAS_WR01W`|
 
