@@ -14,7 +14,7 @@
 Here is the original post on sonoff rf bridge:<br>
 http://tinkerman.cat/hacking-sonoff-rf-bridge-433
 
-Please note that flashing ESPurna alone, while giving you most of the features you would expect from this firmware, *cannot* widen the range of RC remotes that the Sonoff RF Bridge can recognize. On this device the RF decoding is not performed by the main processor runnint ESPurna. Instead, the task is performed on an auxiliary microcontroller, an EFM8BB1, which has its *own* firmware dedicated to this job.
+Please note that flashing ESPurna alone, while giving you most of the features you would expect from this firmware, *cannot* widen the range of RC remotes that the Sonoff RF Bridge can recognize. On this device the RF decoding is not performed by the main processor running ESPurna. Instead, the task is performed on an auxiliary microcontroller, an EFM8BB1, which has its *own* firmware dedicated to this job.
 
 Currently, there are two ways to overcome this limitation and they are listed below in the section *Modifications*.
 
