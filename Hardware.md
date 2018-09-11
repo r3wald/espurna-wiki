@@ -28,6 +28,7 @@ This is the official list of supported hardware for the ESPurna firmware. The ha
 | [ITEAD Sonoff RF Bridge](Hardware-Itead-Sonoff-RF-Bridge) | `ITEAD_SONOFF_RFBRIDGE` | Bridge between 433MHz RF and WiFi |
 | [ITEAD Slampher](Hardware-Itead-Slampher)<br>[ITEAD Slampher 2.0](Hardware-Itead-Slampher-v2)  | `ITEAD_SLAMPHER` | 433MHz RF & WiFi Smart Light Bulb Holder |
 | [ITEAD S20](Hardware-Itead-S20) | `ITEAD_S20` | Outlet |
+| [ITEAD S26](Hardware-Itead-S26) | `ITEAD_S20` | Outlet (same image as S20) |
 | [ITEAD S31](Hardware-Itead-S31) | `ITEAD_SONOFF_S31` | Outlet |
 | [ITEAD 1CH Inching](Hardware-Itead-1CH) | `ITEAD_1CH_INCHING` | [Inching/Self-Locking Switch](https://www.quora.com/What-is-an-inching-switch) |
 | [ITEAD Motor Clockwise/Anticlockwise](Hardware-Itead-Motor) | `ITEAD_MOTOR` | Controls 7-32V DC or 125-250V AC motor|
