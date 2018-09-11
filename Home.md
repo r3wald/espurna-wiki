@@ -5,7 +5,7 @@ It uses the Arduino Core for ESP8266 framework and a number of 3rd party librari
 
 [![version](https://img.shields.io/github/release/xoseperez/espurna.svg?label=Latest%20Release)](https://github.com/xoseperez/espurna/blob/master/CHANGELOG.md)
 [![release-date](https://img.shields.io/github/release-date/xoseperez/espurna.svg?label=Released)](https://github.com/xoseperez/espurna/commits/master)
-[![branch](https://img.shields.io/badge/branch-master-orange.svg)](https://github.com/xoseperez/espurna/tree/master/)
+<br />
 [![travis](https://travis-ci.org/xoseperez/espurna.svg?branch=master)](https://travis-ci.org/xoseperez/espurna)
 [![codacy](https://img.shields.io/codacy/grade/c9496e25cf07434cba786b462cb15f49/master.svg)](https://www.codacy.com/app/xoseperez/espurna/dashboard)
 [![license](https://img.shields.io/github/license/xoseperez/espurna.svg)](LICENSE)
