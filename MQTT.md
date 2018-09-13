@@ -273,7 +273,7 @@ Going a bit deep in the code, the MQTT module provides an API other modules can 
 
 ## SSL support
 
-MQTT over SSL is available for Arduino Core version 2.4.0+. But TSL encryption requires a lot of memory so it's not available in the default binaries. You will have to build your own binary with SSL support and the following recommended configuration to reduce memory footprint:
+MQTT over SSL is available for Arduino Core version 2.4.0+. But TLS encryption requires a lot of memory so it's not available in the default binaries. You will have to build your own binary with SSL support and the following recommended configuration to reduce memory footprint:
 
 ```
 #define ASYNC_TCP_SSL_ENABLED  1
