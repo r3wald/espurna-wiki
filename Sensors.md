@@ -31,7 +31,7 @@ build_flags = ${common.build_flags_1m} -DDHT_SUPPORT=1 -DDHT_PIN=14
 | [PZEM004T based power monitor](#pzem004t-based-power-monitor) |`PZEM004T` |
 | [V9261F based power sensor](#v9261f-based-power-sensor) | `V9261F_SUPPORT` | 
 | **Temperature and/or Humidity Sensors** | |
-| [BME280/BMP280 environmental sensor](#bme280/bmp280-environmental-sensor) | `BMX280_SUPPORT` | 
+| [BME280/BMP280 environmental sensor](#bme280bmp280-environmental-sensor) | `BMX280_SUPPORT` | 
 | [Dallas 1-Wire sensors](#dallas-1-wire-sensors) | `DALLAS_SUPPORT` | 
 | [DHT environmental sensors](#dht-environmental-sensors) | `DHT_SUPPORT` | 
 | [SHT3X environmental sensor](#sht3x-environmental-sensor) | `SHT3X_I2C_SUPPORT` | 
