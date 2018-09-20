@@ -11,7 +11,7 @@
 * Build the [Web Interface](WebInterface)
 * [Over-the-air updates](OTA)
 * [Two-step updates](TwoStepUpdates)
-* ESPurna OTA Manager
+* [ESPurna OTA Manager](OTA-Manager)
 * NoFUSS
 * [Troubleshooting](Troubleshooting)
 
