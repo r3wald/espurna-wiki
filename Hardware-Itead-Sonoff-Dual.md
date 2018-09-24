@@ -1,4 +1,4 @@
-# Itead Sonoff Dual
+# Itead Sonoff Dual R1, R2
 
 ![Sonoff Dual](images/devices/itead-sonoff-dual.jpg)
 
@@ -14,7 +14,7 @@
 
 *TODO*
 
-## Flashing
+## Flashing R1
 
 ![Sonoff DUAL - Inside back view](images/flashing/sonoff-dual-flash.jpg)
 
@@ -23,6 +23,10 @@ The Sonoff Dual it's a bit tricky to flash since GPIO0 is not connected to the b
 In the picture above you have a location of an available and easily accessible GPIO0 pad. The other required pins are brought out in the top header.
 
 Once flashed you can use OTA to update the firmware without having to open the device.
+
+## Flashing R2
+
+Short GPIO0 (BUTTON 0) to GND while powering the device.
 
 ## Issues
 
