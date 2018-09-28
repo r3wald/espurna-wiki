@@ -1,6 +1,6 @@
 # Bestek MRJ1011
 
-![Bestek MRJ1011](images/devices/bestek-mrj1011.jpg)
+![Bestek MRJ1011](https://user-images.githubusercontent.com/6459774/46044539-a77d1580-c0e0-11e8-916a-82a58b14528c.jpg)
 
 |Property|Value|
 |---|---|
@@ -18,14 +18,15 @@
 
 ## Flashing
 The switch can be easily opened by removing the only screw on the back under the BESTEK label and gently prying from the notch on right side.
-![Bestek MRJ1011 removing cover](images/flashing/bestek-mrj1011-cover.jpg)
-![Bestek MRJ1011 inside](images/flashing/bestek-mrj1011-inside.jpg)
+![Bestek MRJ1011 removing cover](https://user-images.githubusercontent.com/6459774/46044535-a77d1580-c0e0-11e8-89ce-5d039c715d20.jpg)
+![Bestek MRJ1011 inside](https://user-images.githubusercontent.com/6459774/46044536-a77d1580-c0e0-11e8-89a5-147330dfce58.jpg)
 
 It uses [TYWE2S](https://docs.tuya.com/en/hardware/WiFi-module/wifi-e2s-module.html) Wi-Fi module which contains ESP8255 radio chip with 1MB flash. The module inserts into the main board vertically and has  3.3V, Gnd, Rx and Tx pins on one end. The GPIO0 pad on the back side.
 
 ![TYWE2S2](http://images.airtakeapp.com/smart_res/sample_module/TYWE2S2.png)
-![Bestek MRJ1011 TYWE2S](images/flashing/bestek-mrj1011-tywe2s.jpg)
-![Bestek MRJ1011 TYWE2S pins](images/flashing/bestek-mrj1011-tywe2s-back.jpg)
+
+![Bestek MRJ1011 TYWE2S](https://user-images.githubusercontent.com/6459774/46044537-a77d1580-c0e0-11e8-8fcd-7b8aae8ebdcb.jpg)
+![Bestek MRJ1011 TYWE2S pins](https://user-images.githubusercontent.com/6459774/46044538-a77d1580-c0e0-11e8-8769-e3fa2d33e4e8.jpg)
 
 
 
