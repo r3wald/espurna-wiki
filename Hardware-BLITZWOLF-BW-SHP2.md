@@ -29,7 +29,9 @@ Short GPIO0 and GND during boot to enter flash mode before connecting to the ser
 
 ![BlitzWolf BW-SHP2 flashing circuit](images/flashing/blitzwolf-bw-shp2-flash-flash-jumpers.jpg)
 
-@pilzandreas sent a clever way to flash this device and compatible ones (check https://github.com/xoseperez/espurna/issues/1238)
+## Flashing (another method)
+
+[@pilzandreas](https://github.com/pilzandreas) sent a clever way to flash this device and compatible ones (check https://github.com/xoseperez/espurna/issues/1238)
 
 ![BlitzWolf BW-SHP2 flash alternative](https://user-images.githubusercontent.com/9336296/46261929-df2df800-c4fa-11e8-894b-a0c4acce1de2.jpg)
 
