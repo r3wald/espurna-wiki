@@ -28,3 +28,35 @@ Short GPIO0 and GND during boot to enter flash mode before connecting to the ser
 ![BlitzWolf BW-SHP2 flashing circuit](images/flashing/blitzwolf-bw-shp2-flash-flash.jpg)
 
 ![BlitzWolf BW-SHP2 flashing circuit](images/flashing/blitzwolf-bw-shp2-flash-flash-jumpers.jpg)
+
+@pilzandreas sent a clever way to flash this device and compatible ones (check https://github.com/xoseperez/espurna/issues/1238)
+
+![BlitzWolf BW-SHP2 flash alternative](https://user-images.githubusercontent.com/9336296/46261929-df2df800-c4fa-11e8-894b-a0c4acce1de2.jpg)
+
+1. pins:
+   ```
+   DTR - nc
+   RX - orange
+   TX - yellow
+   VCC - green
+   CTS - nc
+   GND - brown
+   ```
+1. splitting GND (brown) to blue and black cable
+1. blue - GND (from splitter pin)
+1. orange - RX
+1. green - VCC
+1. low - TX
+1. tip with black (from splitter pin) on boot to init flash mode - note: there is one free pin betw(7)  (6) and 1. even if it seems the black wire would be connected the pin next to (6) - its just hanging loosely on my photo.
+
+You will find these power plugs being sold under various labels - i bought a pack of 4 and another with 2 labeld TFLAG (ASIN B07D2Z3YVM) and TECKIN (ASIN B07D5V139R).
+
+Using windows flashing the compiled images offered here worked well doing:
+* (reboot, short (7) with black, red light dims as you release the pin)
+* esptool.py --port COM8 erase_flash
+* (reboot, short (7) with black, red light dims as you release the pin)
+* esptool.py --port COM8 write_flash --flash_mode dout 0x00000 espurna-1.13.1-blitzwolf-bwshp2.bin
+* (reboot)
+* connect wifi to test 'espurna_xxxxx' pw fibonacci 
+* browse to http://192.168.4.1 (admin/fibonacci)
+* logged in
