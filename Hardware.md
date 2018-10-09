@@ -17,7 +17,8 @@ This is the official list of supported hardware for the ESPurna firmware. The ha
 | [ITEAD Sonoff Basic](Hardware-Itead-Sonoff-Basic) | `ITEAD_SONOFF_BASIC` | Switch |
 | [ITEAD Sonoff RF](Hardware-Itead-Sonoff-RF) | `ITEAD_SONOFF_RF` | Switch with RF Receiver |
 | [ITEAD Sonoff Dual](Hardware-Itead-Sonoff-Dual) | `ITEAD_SONOFF_DUAL` <br> `ITEAD_SONOFF_DUAL_R2`  | 2 Switches |
-| [ITEAD Sonoff POW](Hardware-Itead-Sonoff-POW) | `ITEAD_SONOFF_POW` <br> `ITEAD_SONOFF_POW_R2` | Switch with Power Consumption Measurement |
+| [ITEAD Sonoff POW](Hardware-Itead-Sonoff-POW) | `ITEAD_SONOFF_POW` | Switch with Power Consumption Measurement |
+| [ITEAD Sonoff POW R2](Hardware-Itead-Sonoff-POW-R2) | `ITEAD_SONOFF_POW_R2` | Switch with Power Consumption Measurement |
 | [ITEAD Sonoff TH10/16](Hardware-Itead-Sonoff-TH) | `ITEAD_SONOFF_TH` | Switch with Temperature and Humidity Monitoring |
 | [ITEAD Sonoff 4CH](Hardware-Itead-Sonoff-4CH) | `ITEAD_SONOFF_4CH` |  4 Switches with din rail mounting |
 | [ITEAD Sonoff 4CH Pro / Pro R2](Hardware-Itead-Sonoff-4CH-Pro---R2) | `ITEAD_SONOFF_4CH_PRO` | 4 Switches with din rail mounting and RF Receiver|
