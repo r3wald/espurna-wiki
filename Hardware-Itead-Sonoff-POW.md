@@ -14,6 +14,8 @@
 
 [iTead Sonoff Pow with Energy Monitoring](http://sonoff.itead.cc/en/products/sonoff/sonoff-pow)
 
+[iTead Sonoff Pow R2 with Energy Monitoring](http://sonoff.itead.cc/en/products/sonoff/sonoff-pow-r2)
+
 ## Flashing
 
 ![Sonoff POW - Inside back view](images/flashing/sonoff-pow-flash.jpg)
