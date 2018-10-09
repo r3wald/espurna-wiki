@@ -1,4 +1,4 @@
-# Itead Sonoff POW/POW R2
+# Itead Sonoff POW
 
 ![Sonoff POW](images/devices/itead-sonoff-pow.jpg)
 
@@ -13,8 +13,6 @@
 ## Introduction
 
 [iTead Sonoff Pow with Energy Monitoring](http://sonoff.itead.cc/en/products/sonoff/sonoff-pow)
-
-[iTead Sonoff Pow R2 with Energy Monitoring](http://sonoff.itead.cc/en/products/sonoff/sonoff-pow-r2)
 
 ## Flashing
 
