@@ -1,4 +1,4 @@
-# Itead Sonoff POW
+# Itead Sonoff POW/POW R2
 
 ![Sonoff POW](images/devices/itead-sonoff-pow.jpg)
 
