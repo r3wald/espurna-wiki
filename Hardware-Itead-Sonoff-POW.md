@@ -12,7 +12,7 @@
 
 ## Introduction
 
-*TODO*
+[iTead Sonoff Pow with Energy Monitoring](http://sonoff.itead.cc/en/products/sonoff/sonoff-pow)
 
 ## Flashing
 
