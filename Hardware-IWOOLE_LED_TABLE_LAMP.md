@@ -12,8 +12,6 @@
 
 iWoole LED Table Lamp
 
-This device is currently in the dev branch.
-
 Note: The translucent part of the casing is locked into place with 4 evenly spaced serated clips. The easiest way to separate it is to quite forcibly tap the plastic as close to the alloy casing as possible - do that all the way around until you are certain that it is free to move. I'm not sure whether there is glue used, but it does seems a lot easier to separate when you have tapped it a lot. Don't use metal tools or you will mark the plastic. If you are lucky you'll manage to get one or more of the clips to move to the next tooth quite quickly, and at that point if you can insert a plastic card in the gap and work it around you'll find that the plastic will fairly easily pop out.
 
 ## images
