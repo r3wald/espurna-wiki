@@ -51,4 +51,4 @@ $ curl -u admin:mynewpassword http://192.168.4.1/config
   "ssid0": "NewWiFi"
 }
 ```
-> Note: "app" key is mandatory and **must** be equal to "ESPRUNA". Configuration will be ignored otherwise.
+> Note: "app" key is mandatory and **must** be equal to "ESPURNA". Configuration will be ignored otherwise.
