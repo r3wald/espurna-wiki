@@ -5,7 +5,7 @@
 |Property|Value|
 |---|---|
 |Manufacturer|TONBUX / OITTM|
-|Product page|[Aliexpress Link](https://www.aliexpress.com/item/Original-Tonbux-50-100M-Smart-Mosquito-Killer-USB-Plug-No-Noise-Repellent-App-Smart-Module/32859330820.html)|
+|Product page|[Aliexpress Link](https://www.aliexpress.com/item/Smart-USB-Mosquito-Killer-Light-50-100M-WiFi-Electric-Intelligent-Led-Lamp-No-Noise-Anti-Mosquito/32881785893.html)|
 |Wiki page||
 |Build flag|`TONBUX_MOSQUITO_KILLER`|
 
