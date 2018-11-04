@@ -28,7 +28,8 @@ Drill a hole in the botom cover. This will allow you to easily pry off the cover
 ![Maxcio W-DE004 board](https://user-images.githubusercontent.com/16302524/47970327-38ea8a80-e084-11e8-9d6b-40595d24c82d.jpg)
 
 Loosen the two screws that are now exposed and you now have access to the insides
-![Maxcio W-DE004 board]((https://user-images.githubusercontent.com/16302524/47970328-38ea8a80-e084-11e8-8afc-4f6d841337d0.jpg)
+
+![Maxcio W-DE004 board](https://user-images.githubusercontent.com/16302524/47970328-38ea8a80-e084-11e8-8afc-4f6d841337d0.jpg)
 
 USB Port connector is a good place for connecting GND
 ![Maxcio W-DE004 board](https://user-images.githubusercontent.com/16302524/47970329-39832100-e084-11e8-85c2-0cdc39dd4209.jpg)
