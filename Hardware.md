@@ -61,7 +61,7 @@ This is the official list of supported hardware for the ESPurna firmware. The ha
 | [Xenon SM PW 702U](Hardware-Xenon-SM-PW-702U) | `XENON_SM_PW702U` | |
 | [HEYGO HY02](Hardware-HEYGO-HY02) | `HEYGO_HY02` | |
 | [Maxcio W-US002S](Hardware-Maxcio-W-US002S) | `MAXCIO_WUS002S` | |
-| [Maxcio W-DE004](Hardware-Maxcio-W-DE-003) | `MAXCIO_WDE004` | |
+| [Maxcio W-DE004](Hardware-Maxcio-W-DE004) | `MAXCIO_WDE004` | |
 | [YiDian XS-SSA05](Hardware-YiDian-XS-SSA05) | `YIDIAN_XSSSA05` | |
 | [Tonbux XS-SSA06](Hardware-Tonbux-XS-SSA06) | `TONBUX_XSSSA06` | |
 | [Tonbux Powerstrip02](Hardware-Tonbux-Powerstrip02) | `TONBUX_POWERSTRIP02` | 4 AC Outlets + 4 USB Charging Ports |
