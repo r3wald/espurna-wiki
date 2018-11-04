@@ -36,7 +36,7 @@ USB Port connector is a good place for connecting GND
 RX, TX and GPIO0 are marked here
 ![Maxcio W-DE004 board](images/flashing/maxcio-w-de004-flash4.jpg)
 
-For flashing, connect up RX<->TX and TX<->RX as usual to your programmer, GND to GND and hold GPIO0 against ground, the power it up via the USB port. 
+For flashing, connect up RX<->TX and TX<->RX as usual to your programmer, GND to GND and hold GPIO0 against ground, then power it up via the USB port. 
 Possibly there may be a way to connect 3.3V directly. I don't know, need to get myself a new multimeter one of these days and check it out. 
 ## Issues
 
