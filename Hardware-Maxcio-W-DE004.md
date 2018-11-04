@@ -1,6 +1,6 @@
 # Maxcio W-DE004
 
-![Maxcio W-DE004](images/devices/maxcio-w-de004.jpg)
+![Maxcio W-DE004](https://user-images.githubusercontent.com/16302524/47970316-0e98cd00-e084-11e8-8145-ca57a944f482.JPG)
 
 Contributed based on work by Michael Harwerth from Germany
 
