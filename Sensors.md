@@ -245,4 +245,4 @@ Note: This will enable I2C.
 | `PZEM004T_READ_INTERVAL` | Read interval between the same device in the bus (default: `1500`) |
 | `PZEM004T_MAX_DEVICES` | Maximum number of devices on the pseudo-bus (default: `3`) |
 
-See Wiki page for more details: [PZEM004t Energy Monitor](https://github.com/xoseperez/espurna/wiki/Sensors-PZEM004T)
+See Wiki page for more details: [PZEM004t Energy Monitor](https://github.com/xoseperez/espurna/wiki/Sensor-PZEM004T)
