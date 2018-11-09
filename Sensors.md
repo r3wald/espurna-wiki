@@ -241,3 +241,8 @@ Note: This will enable I2C.
 | `PZEM004T_RX_PIN` | GPIO where RX is connected (default: `13`) |
 | `PZEM004T_TX_PIN` | GPIO where TX is connected (default: `15`) |
 | `PZEM004T_HW_PORT` | Hardware serial port (if PZEM004T_USE_SOFT == 0) (default: `Serial1`) |
+| `PZEM004T_ADDRESSES` | Connected devices addresses (default: `192.168.1.1`) |
+| `PZEM004T_READ_INTERVAL` | Read interval between the same device in the bus (default: `1500`) |
+| `PZEM004T_MAX_DEVICES` | Maximum number of devices on the pseudo-bus (default: `3`) |
+
+See Wiki page for more details: [PZEM004t Energy Monitor](https://github.com/xoseperez/espurna/wiki/Sensors-PZEM004T)
