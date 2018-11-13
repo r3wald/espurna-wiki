@@ -1,5 +1,5 @@
 # AG-L4 LED Desk Lamp
-![](../../raw/dev/images/devices/ag-l4.jpg)
+![](../raw/dev/images/devices/ag-l4.jpg)
 
 ## Info
 |Property|Value|
