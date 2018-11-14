@@ -54,7 +54,6 @@ To create a master/slave UART bus, you need a resistor(10K) and some Small Signa
 BAT43), the connection diagram is the following:
 
 ![PZEM004T-Bus](images/sensors/pzem004t-bus.png)
-(Waiting image commit on Wiki - See [PR #1328](https://github.com/xoseperez/espurna/pull/1328#issuecomment-437833943))
 
 ### Configuration
 
