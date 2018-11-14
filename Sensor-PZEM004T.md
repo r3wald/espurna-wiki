@@ -6,7 +6,7 @@
 |---|---|
 |Manufacturer|PEACEFAIR|
 |Product page|[AliExpress](https://www.aliexpress.com/store/product/PEACEFAIR-AC-100A-Electric-power-monitoring-and-communication-module-power-meter-power-energy-Volt-Ammeter-with/1773456_32405328185.html)|
-|Wiki page|[ESPurna Wiki](https://github.com/xoseperez/espurna/wiki/PZEM004T)|
+|Wiki page|[ESPurna Wiki](https://github.com/xoseperez/espurna/wiki/Sensor-PZEM004T)|
 |Build flag|`PZEM004T_SUPPORT`|
 
 ## Introduction
@@ -54,6 +54,7 @@ To create a master/slave UART bus, you need a resistor(10K) and some Small Signa
 BAT43), the connection diagram is the following:
 
 ![PZEM004T-Bus](images/sensors/pzem004t-bus.png)
+(Waiting image commit on Wiki - See [PR #1328](https://github.com/xoseperez/espurna/pull/1328#issuecomment-437833943))
 
 ### Configuration
 
