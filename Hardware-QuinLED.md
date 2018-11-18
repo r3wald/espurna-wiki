@@ -21,4 +21,22 @@ NOTE: It's a 3.3V board, so don't use 5V serial connections.
 
 ## Issues
 
-*TODO*
+Since Espurna does not support non-RGB light at the moment (Novemmber 2018) when using Home Assistant MQTT auto discovery, QuinLED would show up as one light, with 2 channels. You can emulate 2 separate lights by using following example config in HASS:
+
+```yaml
+platform: mqtt
+  name: "Kitchen 1"
+  command_topic: "QUINLED/channel/0/set"
+  payload_off: "OFF"
+  brightness_command_topic: "QUINLED/channel/0/set"
+  brightness_state_topic: "QUINLED/channel/0"
+  on_command_type: "brightness"
+
+platform: mqtt
+  name: "Kitchen 2"
+  command_topic: "QUINLED/channel/1/set"
+  payload_off: "OFF"
+  brightness_command_topic: "QUINLED/channel/1/set"
+  brightness_state_topic: "QUINLED/channel/1"
+  on_command_type: "brightness"
+```
