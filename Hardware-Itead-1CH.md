@@ -42,6 +42,8 @@ From here on you can flash it with you favourite tool/IDE. All wires, including 
 
 Pictures and explanation by **Florin Finaru**, thank you! Check his original document [here](https://docs.google.com/document/d/1B37Lv4ATsoNzSFv7-rVEFn2rBZTA1oadgdXeNPQj4ZM/edit).
 
-## Issues
+Make sure to flash as DOUT. Makes an excellent switch for a gas fireplace. Just replace current remote relay with NC and the common. Use pulse mode=Normally Off and pulse time(s) = 1800 to have it auto turn off after 30 minutes
 
+## Issues
+ 
 Nothing reported.
