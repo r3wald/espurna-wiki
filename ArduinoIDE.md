@@ -126,6 +126,7 @@ You will have to install manually the libraries that are not available from the 
 |**RemoteSwitch** by Randy Simons (fork)|[GIT](https://github.com/xoseperez/RemoteSwitch-arduino-library)|[ZIP](https://github.com/xoseperez/RemoteSwitch-arduino-library/archive/master.zip)|Required if RF_SUPPORT is 1|
 |**Time** by Michael Maregolis and Paul Stoffregen (fork)|[GIT](https://github.com/xoseperez/Time)|[ZIP](https://github.com/xoseperez/Time/archive/master.zip)||
 |**eeprom_rotate** by Xose Pérez|[GIT](https://github.com/xoseperez/eeprom_rotate)|[ZIP](https://github.com/xoseperez/eeprom_rotate/archive/master.zip)||
+|**PZEM004T** by @olehs|[GIT](https://github.com/olehs/PZEM004T)|[ZIP](https://github.com/olehs/PZEM004T/archive/master.zip)|Required if PZEM004T_SUPPORT is 1|
 
 (1) If you are using Arduino core 2.3.0 stable, please install and use this version, [ESPAsyncTCP #9b0cc37](https://github.com/me-no-dev/ESPAsyncTCP/tree/9b0cc37cd7bdf4b7d17a363141d2e988aa46652c).
 
