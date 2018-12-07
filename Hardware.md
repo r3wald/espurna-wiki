@@ -50,7 +50,7 @@ This is the official list of supported hardware for the ESPurna firmware. The ha
 | [Autohometion LYT8266](Hardware-Autohometion-LYT8266) | `AUTHOMETION_LYT8266` | |
 | [Generic AG-L4](Hardware-AG-L4) | `GENERIC_AG_L4` | |
 | [iWoole Smart Table Lamp](Hardware-IWOOLE_LED_TABLE_LAMP) | `IWOOLE_LED_TABLE_LAMP` | RGBW Table Lamp|
-| [Lombex Lux Nova](Hardware-Lombex-Lux-Nova) | `LOMBEX_LUX_NOVA2_TUNABLE_WHITE` <br> `LOMBEX_LUX_NOVA2_WHITE_COLOR` | Cool/Warm White smart bulb |
+| [Lombex Lux Nova](Hardware-Lombex-Lux-Nova) | `LOMBEX_LUX_NOVA2_TUNABLE_WHITE` <br> `LOMBEX_LUX_NOVA2_WHITE_COLOR` | Smart bulb |
 
 ## Power Plugs
 
