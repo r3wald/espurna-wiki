@@ -105,13 +105,25 @@ Note: Will automatically enable I2C.
 
 ---
 
-## Dallas 1-Wire sensors
+## Dallas 1-Wire sensors (DS18B20 and alike)
 
 | Option | Note | 
 | --- | --- |
 | `DALLAS_PIN={0-15}` | GPIO where 1-Wire will be enabled | 
 
 All sensors discovered on a 1-Wire bus will be reported.
+
+Troubleshooting (thanks to @AlberWeterings):
+
+As most of you know on aliexpress many cheap DS18B20 sensors are sold and a lot of them are (counterfeit) fake. I have got myself a lot of them. Having that said I will sum up some problems you might run into using these sensors on ESPURNA.
+
+* A Sonoff TH10 has internally two 10K resistors in parallel from VCC 3v3 to IO pin 14 resulting in a 5K resistance. So if you use a genuine or fake sensor no 4K7 resistor is needed.
+* If you connect a fake sensor for example to a Sonoff TH10 and you use a resistor of 4k7 from VCC to DO you will see the temperature rising over time this is due to the sensor heating up its self rapidly. The 4k7 resistor makes it worse.
+* Most Fake sensors also heat up with the Sonoff's internal resistance of 5K
+* Replacing the internal two 10K resistors with one 50K resistor stops the rapid heating up. but measurement is still inaccurate.
+* If you have your fake DS18B20 mounted on a surface or floating in a fluid it will not heat up rapidly anymore but still is giving inaccurate measurements as it is heating its self internally.
+
+I was unable to find a setup in which the fake sensors where measuring accurate so my advise if you ever have issues with these type of sensors compare it to a sensor that is known genuine.
 
 ---
 
