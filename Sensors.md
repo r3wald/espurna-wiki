@@ -105,7 +105,9 @@ Note: Will automatically enable I2C.
 
 ---
 
-## Dallas 1-Wire sensors (DS18B20 and alike)
+## Dallas 1-Wire sensors
+
+These are sensors like the DS18B20.
 
 | Option | Note | 
 | --- | --- |
