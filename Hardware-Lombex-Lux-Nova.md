@@ -17,7 +17,7 @@ Lombex Lux Nova is a line of smart bulbs that includes:
 |Bulb Name|Channels|
 |---|---|
 |Nova 1 White and Color|RGB/WW|
-|Nova 2 White and Color|RGB/WW?|
+|Nova 2 White and Color|RGB/CW?|
 |Nova 2 Simply White|WW|
 |Nova 2 Tunable White|CW/WW|
 
@@ -42,7 +42,7 @@ If you want less tricky soldering, alternatively you may be able to lift the ass
 
 On the main board across from the ESP edge are spots for 4 resistors corresponding to the 4 channels from the MY9291 chip. On the tunable white model, two are unpopulated (as it only needs two channels). Two resistors can be added to add support for the missing channels, and the LED boards are fairly interchangeable between models of this bulb.
 
-The Nova 2 White and Color manufacturer firmware employs a sliding scale between supposedly cool and warm ends similar to the tunable white model despite the lack of two separate white LED sets. It does this by setting the RGB LEDS a little bit orange to make the light appear warmer toward that end of the scale. However there appears to be a defect, unknown how widespread, as the bulbs I myself received use warm LEDs to begin with. Given the sliding scale feature and the product description, they are almost certainly supposed to be cool. The current build assumes you have a defective bulb with warm LEDs, based on the gamble that a product with 3 reviews on Amazon probably has just as bad manufacturing practices as it seems to.
+The Nova 2 White and Color manufacturer firmware employs a sliding scale between supposedly cool and warm ends similar to the tunable white model despite the lack of two separate white LED sets. It does this by setting the RGB LEDS a little bit orange to make the light appear warmer toward that end of the scale. However there appears to be a defect, unknown how widespread, as the bulbs I myself received use warm LEDs to begin with. Given the sliding scale feature and the product description, they are almost certainly supposed to be cool. The current build assumes cool leds as the fourth channel. If your bulb uses warm leds keep this in mind as features like "Use white channel" might look weird.
 
 The RGB LEDs on equal power to each channel produce a very cool blue light. It may be possible to use that as the cool end of the scale against the warm LEDs. See note in issues section before attempting however.
 
