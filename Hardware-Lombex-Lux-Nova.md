@@ -25,8 +25,8 @@ All of the bulbs use an ESP8266 and MY9291 LED driver. The bulb itself does not 
 
 ## Flashing
 
-![Lux Nova - Flashing](images/flashing/lombex-lux-nova-flash.jpg)
-![Lux Nova - Flashing](images/flashing/lombex-lux-nova-flash-2.jpg)
+![Lux Nova - Flashing](../raw/dev/images/devices/lombex-lux-nova-flash.jpg)
+![Lux Nova - Flashing](../raw/dev/images/devices/lombex-lux-nova-flash-2.jpg)
 
 There are three PCBs connected together at their edges with solder. The LED PCB, the ESP module, and the main board which contains the MY9291 chip and the power supply.
 
