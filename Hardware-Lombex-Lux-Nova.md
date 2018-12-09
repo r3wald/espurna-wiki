@@ -1,6 +1,6 @@
 # Lombex Lux Nova smart bulb
 
-![Lombex Lux Nova smart bulb](images/devices/lombex-lux-nova.jpg)
+![Lombex Lux Nova smart bulb](../raw/dev/images/devices/lombex-lux-nova.jpg)
 
 |Property|Value|Property|Value|
 |---|---|---|---|
