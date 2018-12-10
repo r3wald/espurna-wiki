@@ -72,6 +72,7 @@ This is the official list of supported hardware for the ESPurna firmware. The ha
 | [NEO COOLCAM NAS WR01W](Hardware-NEO-COOLCAM-NAS-WR01W) | `NEO_COOLCAM_NAS_WR01W ` | Power plug |
 | [BLITZWOLF BW-SHP2](Hardware-BLITZWOLF-BW-SHP2) | `BLITZWOLF_BWSHP2 ` | Power plug w/ power metering |
 | [Bestek MRJ1011](Hardware-Bestek-MRJ1011) | `BESTEK_MRJ1011` | Power plug w/ 2 USB ports |
+| [Orvibo B25 EU/UK](Hardware-Orvibo-B25) | `ORVIBO_B25` | Power plug |
 
 ## Development Boards
 
