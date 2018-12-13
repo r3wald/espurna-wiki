@@ -199,6 +199,8 @@ Energy Monitor based on interval analog GPIO.
 | `HLW8012_VOLTAGE_R_UP`   | Upstream voltage resistor, default: `( 5 * 470000 )` |
 | `HLW8012_VOLTAGE_R_DOWN` | Downstream voltage resistor, default: `( 1000 )` |
 
+Notice: some people have reported issues when using HLW8012 with SSL (see #1248).
+
 ---
 
 ## MHZ19 CO2 sensor
