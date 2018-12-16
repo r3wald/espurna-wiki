@@ -4,9 +4,9 @@
 
 |Property|Value|
 |---|---|
-|Manufacturer|Itead Studio|
+|Manufacturer|Avatar Controls|
 |Product page|[http://www.avatarcontrols.com/index.php?ac=article&at=read&did=181)|
-|Wiki page|[tbd|
+|Wiki page|tbd|
 |Build flag|`tbd`|
 
 ## Introduction
