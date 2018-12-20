@@ -15,7 +15,7 @@
 * Rated current: 16A (3840W)
 * Product size: L5.08 x W7.62
 
-## Flashing
+## Flashing (for Revision lower than V2.3)
 
 Open the device using special tools (the [Xiaomi Wiha 24-in-1 toolkit](https://www.banggood.com/XIAOMI-Wiha-25-in-1-Screwdrivers-Kits-With-24pcs-S2-Steel-Screw-Bits-and-Aluminium-Alloy-Screwdriver-p-1187158.html) has it):
 
@@ -62,3 +62,7 @@ Using windows flashing the compiled images offered here worked well doing:
 * connect wifi to test 'espurna_xxxxx' pw fibonacci 
 * browse to http://192.168.4.1 (admin/fibonacci)
 * logged in
+
+## Flashing (for Revision V2.3)
+
+For now give a look at the descriptions at Sonoff-Tasmota Wiki: https://github.com/arendst/Sonoff-Tasmota/wiki/Gosund-SP1#new-hardware-revision
