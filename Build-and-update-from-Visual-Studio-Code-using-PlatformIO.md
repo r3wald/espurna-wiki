@@ -61,13 +61,13 @@ To build / upload firmware for a specific board, use "Tasks / Run Task..." (<kbd
 
 ## Environment variables for OTA uploads
 
-In recent versions of Espurna some required OTA parameters are now picked up from environment variables.
+OTA parameters are now picked up from environment variables.
 
-You need to set them up for every `Upload (ota)` task you want to use. Here's how to do it:
+You need to set them up for every `Upload (...-ota)` task you want to use. Here's how to do it:
 
 - Press <kbd>F1</kbd> (on Mac it's usually <kbd>Fn</kbd>+<kbd>F1</kbd>)
-- Type a part of the name and click `Tasks: Configure Task`
-- Type a part of `Upload (ota)` task you need and click it when it appears
+- Select `Tasks: Configure Task` *(type a part of the name and click it when it appears)*
+- Select `Upload (...-ota)` task you need to use *(type a part of the name and click it when it appears)*
 - An editor for a JSON config opens. You'll see a section added with your task name, ex.:
 
 ```json
