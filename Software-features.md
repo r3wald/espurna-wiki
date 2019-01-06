@@ -150,6 +150,7 @@ Below is a list of all *_SUPPORT flags that ESPurna supports (sorted alphabetica
 || `NTP_TIMEOUT` ||
 || `NTP_TIME_OFFSET` ||
 || `NTP_UPDATE_INTERVAL` ||
+| Wait for NTP synchronization | `NTP_WAIT_FOR_SYNC` | Normally, ESPurna will wait for NTP to sync over wifi before enabling the scheduler. This is so it ensures that the schedules will never run outside their specified times, even if that means they don't run at all. If, instead, you want them to always run, even if the time is not correct, you can set this build flag to `0`, which will cause ESPurna to act as if the time is correct when it boots up. That way, schedules will run even if NTP has not synced (but obviously at potentially the wrong times). If the network becomes available at some point, NTP will sync and resume running at the correct times. |
 
 ## RF
 
