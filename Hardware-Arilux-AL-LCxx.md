@@ -9,13 +9,26 @@
 |Manufacturer|Arilux|
 |Product page||
 |Wiki page||
-|Build flag|`ARILUX_AL_LC01`<br>`ARILUX_AL_LC02`<br> `ARILUX_AL_LC11`|
+|Build flag|`ARILUX_AL_LC01`<br>`ARILUX_AL_LC02`<br>`ARILUX_AL_LC02_V14`<br> `ARILUX_AL_LC11`|
 
 ## Introduction
 
-|LC01|LC02|LC11|
-|---|---|---|
-|Working Voltage: DC 5-28V<br>Output Channel: 3 channels<br>Output Current: RGB, 4Ax3<br>Max. Power: 4A x 3 x 12V = 144W<br>Connection: Common anode<br>Dimension: about L46 x W19 x H8 mm|Working Voltage: DC 9-12V<br>Output Channel: 4 channels<br>Output Current: RGBW, 4Ax4<br>Max. Power: 4A x 4 x 12V = 192W<br>Connection: Common anode<br>Dimension: about L46 x W19 x H8 mm|Working Voltage: DC 9-28V<br>Output Channel: 5 channels<br>Output Current: RGBW/WW, 4Ax5<br>Output Power: ≤240W<br>Connection: Common anode<br>Dimension: about L46 x W19 x H8 mm|
+|   |LC01|LC02|LC11|
+|---|---|---|---|
+|Working Voltage (DC)|5-28V|9-12V<br/>(version 1.4): 9-28V|9-28V|
+|Output Channels|3|4|5|
+|Output Type|RGB|RGBW|RGBW/WW|
+|Output Current|4A x 3|4A x 4|4A x 5|
+|Max. Power|≤144W|≤192W|≤240W|
+|Connection|Common anode|Common anode|Common anode|
+|Dimension (approx)|L46 x W19 x H8 mm|L46 x W19 x H8 mm|L46 x W19 x H8 mm|
+
+### Version 1.4 of LC02 and incorrect colours on output ###
+Now you may encounter newer version of AL-LC02 devices being sold that uses different output pins than older ones. Result is that if you flash "normal" LC02 espurna firmware you'll have mismatched RGBW output (green ok, blue light instead of red, white light instead of blue).
+Solution is to use espurna firmware arilux-al-lc02**v14** dedicated for those devices which has correct pins mapped.
+From outside only difference is input voltage printed on the label (9-28V on devices with 1.4 version and 9-12V on most of the older ones). Unfortunately only way to be 100% sure that you have 1.4 device is to check version number printed on the PCB inside the device.
+
+![Image of LC02 v1.4 PCB](images/flashing/ledcontroller-flash.jpg)
 
 ## Flashing
 
