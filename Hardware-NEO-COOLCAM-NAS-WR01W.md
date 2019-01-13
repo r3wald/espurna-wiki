@@ -39,6 +39,6 @@ in Platformio for tasmota flag change from 1MB to 8MB is needed, otherwise flash
 in Arduino IDE, board selected - "Node MCU 1.0", standard
 
 ## NEO device is connected as
-LED = GPIO4 (D2 NodeMCU)
-RELAIS = GPIO12 (D6 ModeMCU)
-BUTTON = GPIO13 (D7 NodeMCU)
+* LED = GPIO4 (D2 NodeMCU)
+* RELAIS = GPIO12 (D6 ModeMCU)
+* BUTTON = GPIO13 (D7 NodeMCU)
