@@ -12,9 +12,12 @@
 
 ## Introduction
 
-Variant of Blitzwolf SHP2
+Variant of [Blitzwolf SHP2](Hardware-BLITZWOLF-BW-SHP2)
 
-See https://github.com/xoseperez/espurna/issues/1283, https://github.com/xoseperez/espurna/issues/1431 and https://github.com/arendst/Sonoff-Tasmota/issues/3950
+See
+https://github.com/xoseperez/espurna/issues/1283
+https://github.com/xoseperez/espurna/issues/1431
+https://github.com/arendst/Sonoff-Tasmota/issues/3950
 
 ## Flashing
 
@@ -24,10 +27,10 @@ As the case is glued (no screws anymore) it's really difficult to open. SMD hot 
 
 This device is based on [TYWE2S](https://fccid.io/2ANDL-TYWE2S/User-Manual/Users-Manual-3596121). Connect pins accordingly (right-to-left on the picture below):
 
-Red - VCC (3v3)
-Blue - GND
-Purple - RX
-Green - TX
+Red - VCC (3v3)  
+Blue - GND  
+Purple - RX  
+Green - TX  
 
 ![serial connection](https://user-images.githubusercontent.com/3238360/50052913-5bb09a00-012c-11e9-9ac3-045d05786bd2.jpg)
 ![serial adapter connection](https://user-images.githubusercontent.com/3238360/50052962-0d4fcb00-012d-11e9-866a-e14304d2699e.jpg)
