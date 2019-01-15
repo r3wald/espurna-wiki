@@ -14,9 +14,9 @@
 
 Variant of [Blitzwolf SHP2](Hardware-BLITZWOLF-BW-SHP2)
 
-See
-https://github.com/xoseperez/espurna/issues/1283
-https://github.com/xoseperez/espurna/issues/1431
+See  
+https://github.com/xoseperez/espurna/issues/1283  
+https://github.com/xoseperez/espurna/issues/1431  
 https://github.com/arendst/Sonoff-Tasmota/issues/3950
 
 ## Flashing
