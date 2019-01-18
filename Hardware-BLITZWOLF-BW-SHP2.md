@@ -17,6 +17,8 @@
 
 ## Flashing (for Revision lower than V2.3)
 
+> NOTE: Relay only works when powered trough 200v, with the 3.3V from the uart-usb converter it won't trigger.
+
 Open the device using special tools (the [Xiaomi Wiha 24-in-1 toolkit](https://www.banggood.com/XIAOMI-Wiha-25-in-1-Screwdrivers-Kits-With-24pcs-S2-Steel-Screw-Bits-and-Aluminium-Alloy-Screwdriver-p-1187158.html) has it):
 
 ![BlitzWolf BW-SHP2 shell](images/flashing/blitzwolf-bw-shp2-flash-shell.jpg)
