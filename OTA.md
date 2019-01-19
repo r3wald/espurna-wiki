@@ -49,15 +49,15 @@ Sometimes OTA updates fail. It happens. It's not a problem since the firmware do
 
 ### Using espota.py
 
-If platformio was used at least once to build ESPurna, espota.py can be found inside arduino framework directory:
+If platformio was used at least once to build and upload ESPurna, espota.py can be found inside .platformio packages directory:
+```
+~/.platformio/packages/tool-espotapy/espota.py
+```
+It is also can be found inside Arduino framework directory:
 ```
 ~/.platformio/packages/framework-arduinoespressif8266/tools/espota.py
 ```
-If different platforms are used at the same time, packages/ directory may have multiple frameworks. For example, Core 2.3.0 espota.py will be at:
-```
-~/.platformio/packages/framework-arduinoespressif8266@1.20300.1/tools/espota.py
-```
-*or* [OTA script](https://raw.githubusercontent.com/esp8266/Arduino/master/tools/espota.py) can be fetched directly.
+*or* [latest OTA script version](https://raw.githubusercontent.com/esp8266/Arduino/master/tools/espota.py) can be fetched directly.
 
 It does require existing firmware .bin file. Example using file from **Releases**:
 ```bash
