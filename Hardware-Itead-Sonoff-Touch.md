@@ -28,3 +28,5 @@ Once flashed you can use OTA to update the firmware without having to open the d
 ## Issues
 
 The original Sonoff has some connectivity issues. This is probably due to the antenna placement close to live lines. It works fine if it's near the AP, otherwise, it's often reported to lose connectivity.
+
+The header cannot remain after flashing. At the bottom, it comes too near the powerlines while at the top, it does not fit behind the front.
