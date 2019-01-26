@@ -44,7 +44,7 @@ Pictures and explanation by **Florin Finaru**, thank you! Check his original doc
 
 Make sure to flash as DOUT. Makes an excellent switch for a gas fireplace. Just replace current remote relay with NO and the common. Use pulse mode=Normally Off and pulse time(s) = 1800 to have it auto turn off after 30 minutes
 
-Flashing instructions for the "1CH DC5V/7-32V and RF" are the same as PSF-B01. The only difference is the 4 point header is rotated, but the 4 point header is rotated. The trace still comes from the 3v3 point. The RF learning function is hardware, so no binary modification is needed.
+Flashing instructions for the "1CH DC5V/7-32V and RF" are the same as PSF-B01. The only difference is the 4 point header is rotated, but the trace still comes from the 3v3 point. The RF learning function is hardware, so no binary modification is needed.
 
 ## Issues
  
