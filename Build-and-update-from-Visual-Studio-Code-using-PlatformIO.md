@@ -95,40 +95,40 @@ You need to set them up for every `Upload (...-ota)` task you want to use. Here'
 ```
 
 - If you have custom IP or password, put them here. Otherwise, use `192.168.4.1` and `fibonacci`
-  - If you have Zeroconf configured, you can use Zeroconf names here, ex: `sonoff-kitchen.local`
+- If you have Zeroconf configured, you can use Zeroconf names here, ex: `sonoff-kitchen.local`
 - Save and close the file. Now you can OTA upload this target successfully
 
-You need to add a section to the config for every OTA target you want to use. The pro is you can natively support several devices with different IPs and passwords right from the VSCode.
+To reuse the same environment (like `itead-sonoff-th-ota`) you will need to manually specify platformio command as a "shell" task. The pro is you can natively support several devices with different IPs and passwords right from the VSCode (ref: [Platform.IO documentation](http://docs.platformio.org/en/latest/ide/vscode.html#custom-tasks)).
 
-To do this create in task.json a new shell for each device with their IP and password like:
-
-   {
-        "label": "PlatformIO: Arbol1",
-        "type": "shell",
-        "command": "platformio run -e itead-sonoff-basic-ota -t upload",
-        "options": {
-            "env": {
-                "ESPURNA_IP": "192.168.1.200",
-                "ESPURNA_AUTH": "---"
-            },
-        },
-        "problemMatcher": [
-            "$platformio"
-        ],
+For example, here we are declaring "Arbol1" and "Light1" tasks that use the same `itead-sonoff-basic-ota` environment:
+```json
+{
+    "label": "PlatformIO: Arbol1",
+    "type": "shell",
+    "command": "platformio run -e itead-sonoff-basic-ota -t upload",
+    "options": {
+        "env": {
+            "ESPURNA_IP": "192.168.1.100",
+            "ESPURNA_AUTH": "---"
+        }
     },
-    {
-        "label": "PlatformIO: Light1",
-        "type": "shell",
-        "command": "platformio run -e itead-sonoff-basic-ota -t upload",
-        "options": {
-            "env": {
-                "ESPURNA_IP": "192.168.1.201",
-                "ESPURNA_AUTH": "---"
-            },
-        },
-        "problemMatcher": [
-            "$platformio"
-        ],
-    }
-
-Then you can execute tasks "Arbol1" and "Ligth1" for OTA download code to each device.
+    "problemMatcher": [
+        "$platformio"
+    ]
+},
+{
+    "label": "PlatformIO: Light1",
+    "type": "shell",
+    "command": "platformio run -e itead-sonoff-basic-ota -t upload",
+    "options": {
+        "env": {
+            "ESPURNA_IP": "192.168.1.200",
+            "ESPURNA_AUTH": "---"
+        }
+    },
+    "problemMatcher": [
+        "$platformio"
+    ]
+}
+```
+Source: **@oscarsan1**, [xoseperez/espurna#1515](https://github.com/xoseperez/espurna/issues/1515)
