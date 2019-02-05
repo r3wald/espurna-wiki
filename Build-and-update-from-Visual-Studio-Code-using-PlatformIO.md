@@ -98,4 +98,37 @@ You need to set them up for every `Upload (...-ota)` task you want to use. Here'
   - If you have Zeroconf configured, you can use Zeroconf names here, ex: `sonoff-kitchen.local`
 - Save and close the file. Now you can OTA upload this target successfully
 
-You need to add a section to the config for every OTA target you want to use. The pro is you can natively support several devices with different IPs and passwords right from the VSCode 
+You need to add a section to the config for every OTA target you want to use. The pro is you can natively support several devices with different IPs and passwords right from the VSCode.
+
+To do this create in task.json a new shell for each device with their IP and password like:
+
+   {
+        "label": "PlatformIO: Arbol1",
+        "type": "shell",
+        "command": "platformio run -e itead-sonoff-basic-ota -t upload",
+        "options": {
+            "env": {
+                "ESPURNA_IP": "192.168.1.200",
+                "ESPURNA_AUTH": "---"
+            },
+        },
+        "problemMatcher": [
+            "$platformio"
+        ],
+    },
+    {
+        "label": "PlatformIO: Light1",
+        "type": "shell",
+        "command": "platformio run -e itead-sonoff-basic-ota -t upload",
+        "options": {
+            "env": {
+                "ESPURNA_IP": "192.168.1.201",
+                "ESPURNA_AUTH": "---"
+            },
+        },
+        "problemMatcher": [
+            "$platformio"
+        ],
+    }
+
+Then you can execute tasks "Arbol1" and "Ligth1" for OTA download code to each device.
