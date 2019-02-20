@@ -55,7 +55,7 @@ $ curl -X PUT -H "Accept: application/json" http://192.168.1.108/api/relay/0 --d
 { "relay0": 1}
 ```
 
-Since version 1.6.4 you can also change the relay value via a GET request.
+You can also change the relay status via a GET request, when "Restful API" setting is OFF:
 
 ```
 $ curl "http://192.168.1.108/api/relay/0?apikey=C62ED7BE7593B658&value=2"
