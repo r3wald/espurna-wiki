@@ -19,8 +19,10 @@ If someone has the [00176552](https://de.hama.com/00176552/hama-wifi-steckdose-3
 
 ## Flashing
 
-![S20 Smart Socket - Inside front view](images/flashing/s20-flash.jpg)
+![Hama WiFi Steckdose 00176533 - Inside front view](images/flashing/hama-wifi-steckdose-00176533-open.jpg)
 
-There is a labeled header in the front of the PCB and the button is connected to GPIO0, so no problems here.
+There is a custom WiFi PCB based on a [TYWE3S module](https://docs.tuya.com/en/hardware/WiFi-module/wifi-e3s-module.html) soldered perpendicular into the main PCB (not visible in above picture, but you see the solder joints)
+
+I found it easiest to remove the add on board by desoldering iut from the main PCB and attach some wires with a pinheader to it, supplying it with 3.3V from my USB-UART converter.
 
 Solder a 4 pin male or female header and connect it to your USB-to-UART bridge.  Then press and hold the button and connect the programmer to your computer. The micro-controller will boot into flash mode and you are ready to update the firmware.
