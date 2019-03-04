@@ -21,9 +21,13 @@ If someone has the [00176552](https://de.hama.com/00176552/hama-wifi-steckdose-3
 
 ![Hama WiFi Steckdose 00176533 - Inside front view](images/flashing/hama-wifi-steckdose-00176533-open.jpg)
 
-There is a custom WiFi PCB based on a [TYWE3S module](https://docs.tuya.com/en/hardware/WiFi-module/wifi-e3s-module.html) soldered perpendicular into the main PCB 
+There is a custom WiFi PCB based on a [TYWE3S module](https://docs.tuya.com/en/hardware/WiFi-module/wifi-e3s-module.html) soldered perpendicular into the main PCB
+ 
 ![Hama WiFi Steckdose 00176533 - WiFi PCB](images/flashing/hama-wifi-steckdose-00176533-wifi-pcb.jpg)
 
 I found it easiest to remove the add on board by desoldering it from the main PCB and attach some wires with a pinheader to it, supplying it with 3.3V from my USB-UART converter.
 
-Solder a 4 pin male or female header and connect it to your USB-to-UART bridge.  Then press and hold the button and connect the programmer to your computer. The micro-controller will boot into flash mode and you are ready to update the firmware.
+Looks something like this then:
+![Hama WiFi Steckdose 00176533 - WiFi PCB connections](images/flashing/hama-wifi-steckdose-00176533-wifi-pcb-connections.jpg)
+
+GPIO 0 must be held on GND while connecting it to the UART converter. Can be flashed normally then. Flash size is 1MegaByte
