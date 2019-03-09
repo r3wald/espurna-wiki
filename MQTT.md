@@ -118,8 +118,8 @@ State topic               | Example payload | Notes
 
 Command topic                 | Example payload | Notes
 ----------------------------- | --------------- | -------------------------------------
-`{root topic}/rgb/set`        | `#FF0000`       | in CSS format
-`{root topic}/rgb/set`        | `255,0,0`       | or CSV (comma-separated-values)
+`{root topic}/rgb/set`        | `#FF0000`       | in CSS format (3)
+`{root topic}/rgb/set`        | `255,0,0`       | or CSV (comma-separated-values) (4)
 `{root topic}/hsv/set`        | `300,100,100`   | see note 2 below
 `{root topic}/brightness/set` | `35`            | from 0 to 255
 `{root topic}/channel/0/set`  | `128`           | for each channel, from 0 to 255
@@ -128,7 +128,8 @@ Command topic                 | Example payload | Notes
 
 (1) Channel topic will end with a 0-based index of the channel. In particular, for an RGB bulb, red channel is index 0, green is index 1 and blue is index 2.  
 (2) Hue value ranges from 0 to 360. Saturation and Value from 0 to 100.
-
+(3) #RRGGBBAA values are interpreted like RGB + brightness
+(4) if more than 3 channel: `ch0,ch1,ch2,ch3,...`. ch0->R, ch1->G, ch2->B, ch3->(white or WW, or ...)
 ### Sensors
 
 The sensors module (sensors.ino) provides a common interface with the rest of the firmware for all sensor defined in the sensors folder. See [Sensors](Sensors) for more info about the available sensors.
