@@ -6,7 +6,7 @@
 |---|---|
 |Manufacturer|Itead Studio|
 |Product page|[http://www.electrodragon.com/product/wifi-iot-relay-board-based-esp8266/](http://www.electrodragon.com/product/wifi-iot-relay-board-based-esp8266/)|
-|Wiki page|[https://www.itead.cc/wiki/Sonoff](https://www.itead.cc/wiki/Sonoff)|
+|Wiki page|[https://www.electrodragon.com/w/ESP_Relay_Board_Hardware](https://www.electrodragon.com/w/ESP_Relay_Board_Hardware)|
 |Build flag|`ELECTRODRAGON_WIFI_IOT`|
 |Voltage|<span style="color:red">5v</span>|
 
