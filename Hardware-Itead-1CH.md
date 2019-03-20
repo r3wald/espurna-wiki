@@ -38,7 +38,7 @@ The connection to the serial breakout is the same as for the 5/12V version:
 
 From here on you can flash it with you favourite tool/IDE. All wires, including GPIO0 to GND can be removed after removing the power source (serial breakout USB).
 
-![1CH PSF-B01 - programmer](images/flashing/1ch-inching-psfb01-flash2.jpg)
+![1CH PSF-B01 - programmer][(images/flashing/1ch-inching-psfb01-flash2.jpg)](images/flashing/1ch-inching-psfb01-flash2.jpg)
 
 Pictures and explanation by **Florin Finaru**, thank you! Check his original document [here](https://docs.google.com/document/d/1B37Lv4ATsoNzSFv7-rVEFn2rBZTA1oadgdXeNPQj4ZM/edit).
 
