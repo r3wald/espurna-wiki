@@ -25,7 +25,7 @@ Check my post here: [http://tinkerman.cat/the-mysterious-ic/](http://tinkerman.c
 
 ## Flashing (PSF-B01)
 
-![1CH PSF-B01 - pinout](images/flashing/1ch-inching-psfb01-flash.jpg)
+![1CH PSF-B01 - pinout](https://drive.google.com/file/d/1FnF1ffUTOx0W69G4Gigl0fV7CQs3SgYF/view?usp=sharing)
 
 Solder some pins to the TX, RX, GPIO0 on the ESP8266 module, then GND and 3v3 on the board below the relay. Connect GPIO0 to the ground terminal of the 5V power input. This way, the board goes straight into flashing mode as soon as it’s powered up.
 
