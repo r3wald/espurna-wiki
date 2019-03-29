@@ -30,7 +30,17 @@ So the best option you have is to remove the top layer by desolder the 6 pads th
 ![NEO COOLCAM - Pads](images/flashing/neo-coolcam-nas-wr01w-pads.jpg)
 
 ## Connectivity and build flags
-Connection GPIO0 to GND did not help - flashing did not work. I had also to connect RST pad to 3.3V. After that - flashing worked perfectly even without RST connected to 3.3 V (from second flash)
+Use an UART board for serial connection and flashing. 
+Connect wires as follows:
+* Board - UART
+* GND - GND
+* 3.3V - 3.3V
+* RXD0 - TX (note crossing rx to tx)
+* TXD0 - RX (note crossing tx to rx)
+* GPIO0 - GND (Disconnect after flashing)
+
+Note from other users:
+* Connection GPIO0 to GND did not help - flashing did not work. I had also to connect RST pad to 3.3V. After that - flashing worked perfectly even without RST connected to 3.3 V (from second flash)
 
 ## Important build flags.
 
