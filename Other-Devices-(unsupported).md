@@ -1,1 +1,0 @@
-ARILUX LC12
