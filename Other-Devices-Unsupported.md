@@ -1,1 +1,1 @@
-ARILUX LC12(Arilux-LC12)
+[ARILUX LC12](Arilux-LC12)
