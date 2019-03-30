@@ -4,5 +4,4 @@ The device has a an Arm procesor GD32F130F8P6 that seems to control the leds, an
 
 Then is dificult to integrate with Espurna because ESP don't control the leds directly. 
 
-(![](images/devices/itead-sonoff-basic12.jpg))
 
