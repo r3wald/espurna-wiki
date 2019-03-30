@@ -22,7 +22,7 @@
 * Lights
 * [Sensors](Sensors)
 * [Software features](Software-features)
-* [Other Devices](unsupported)
+* [Other Devices](Other-Devices-Unsupported)
 
 ### Configuration
 * [Initial](Configuration)
