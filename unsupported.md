@@ -1,1 +1,0 @@
-ARILUZ LC12
