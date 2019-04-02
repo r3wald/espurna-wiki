@@ -41,6 +41,8 @@ The switches are mapped as follows:
 * Switch 4 - socket closest to the USB connectors
 * Switch 5 - powers/unpowers the USB power supply
 
+Picture with the GPIO Config
+![Bild mit der GPIO Belegung](https://static.mydealz.de/live/comments/content/2wozm/8968089971539123664.jpg)
 The button does not command any of the relays, but it is active on extended/double click keypresses (reboot/reset to factory settings etc).
 
 ## Issues
