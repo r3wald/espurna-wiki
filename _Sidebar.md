@@ -37,7 +37,7 @@
 * [REST API](RESTAPI)
 * [Domoticz](Domoticz)
 * [Home Assistant](HomeAssistant)
-* InfluxDB
+* [InfluxDB](InfluxDB)
 * Thingspeak
 * Alexa
 * Google Home
