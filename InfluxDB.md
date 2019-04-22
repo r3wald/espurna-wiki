@@ -18,35 +18,31 @@ To add it to all your modules, an easy way is to add the following defines in th
 | `INFLUXDB_USERNAME` | Username | `dev_usr` |
 | `INFLUXDB_PASSWORD` | Passwword | `*******` |
 
-For example I add them in the following way:
+For example I added those lines in my custom.h:
 
+```
 #ifdef INFLUXDB_SUPPORT
-
     #undef INFLUXDB_SUPPORT
-
 #endif
-
 #define INFLUXDB_SUPPORT       1
 
 #ifdef INFLUXDB_ENABLED
-
     #undef INFLUXDB_ENABLED
-
 #endif
-
 #define INFLUXDB_ENABLED       1
 
-
 #ifdef INFLUXDB_HOST
-
     #undef INFLUXDB_HOST
-
 #endif
-
 #define INFLUXDB_HOST       "db.acme.com"
 
-
 [...]
+
+```
+
+## Web interface
+
+
 
 
 ## Transmitted values
