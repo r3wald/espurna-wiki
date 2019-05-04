@@ -264,7 +264,7 @@ Here is the list of supported hardware. For more information please refer to the
 ||||
 |---|---|---|
 |![Itead S20](images/devices/itead-s20.jpg)|![Itead S26](images/devices/itead-s26.jpg)|![Neo Coolcam NAS WR01W](images/devices/neo-coolcam-wifi.jpg)|
-|**Itead S20**|**Itead S26**|**Neo Coolcam NAS WR01W**|
+|**Itead S20**|**Itead S26**|**[Neo Coolcam NAS WR01W](https://github.com/xoseperez/espurna/wiki/Hardware-NEO-COOLCAM-NAS-WR01W)**|
 |![Maxcio W-US002S](images/devices/maxcio-w-us002s.jpg)|![HEYGO HY02](images/devices/heygo-hy02.jpg)|![YiDian XS-SSA05](images/devices/yidian-xs-ssa05.jpg)|
 |**Maxcio W-US002S**|**HEYGO HY02**|**YiDian XS-SSA05**|
 |![WiOn 50055](images/devices/wion-50055.jpg)|![LINGAN SWA1](images/devices/lingan-swa1.jpg)|![HomeCube 16A](images/devices/homecube-16a.jpg)|
