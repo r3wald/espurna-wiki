@@ -17,7 +17,7 @@
 
 ## Flashing
 
-Flashing the Neo Coolcam NAS WR01W is somewhat tricky. First it's got to be disassembled. 
+Flashing the Neo Coolcam NAS WR01W can be done Over-The-Air (OTA) using [Tuya Convert](https://github.com/ct-Open-Source/tuya-convert). Download the espurna image file for the [Neo Coolcam WiFi WR01W](https://github.com/xoseperez/espurna/releases/download/1.13.5/espurna-1.13.5-neo-coolcam-power-plug-wifi.bin) and replace 'thirdparty.bin' with the downloaded version. You can also flash the firmware through the available serial port, you will have to disassemble the unit.  
 
 ![NEO COOLCAM - Disassembled](images/flashing/neo-coolcam-nas-wr01w-disassemble.jpg)
 
