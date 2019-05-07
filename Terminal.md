@@ -39,7 +39,7 @@ Available commands as of 1.12.5b (the actual list of available commands will dep
 |**publish**|Built-in publish/subscriber method. Not implemented|
 |**read**|Access hardware resources. Built-in. Not implemented|
 |**relay** &lt;id&gt; [&lt;value&gt;]|Gets or sets the relay #id state|
-|**reload** &lt;id&gt; [&lt;value&gt;]|Applies committed changes|
+|**reload**|Applies committed changes|
 |**reset**|Resets board|
 |**reset.safe**|Resets board into safe mode (only WiFi AP, serial and OTA will be enabled)|
 |**select**|Built-in. Not implemented|
