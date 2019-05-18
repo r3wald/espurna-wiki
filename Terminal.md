@@ -91,45 +91,45 @@ This is a list of current settings with description and default values. '#' mean
 
 |Key|Description|Possible values|Default value|
 | --- | --- | --- | --- |
-|**ALEXA**|
+|**ALEXA**||||
 |alexaEnabled|Is Alexa integration enabled?|0 (no) or 1 (yes)|1 (yes)|
-|**API**|
+|**API**||||
 |apiEnabled|Should REST API be enabled?|0 (no) or 1 (yes)|0 (no)|
 |apiKey|API Key required for all REST API requests|HEX string|(auto-generated when saving from WebUI for the first time)|
 |apiRealTime|Should the API should respond with real time values or filtered ones?|0 (no) or 1 (yes)|0 (no)|
-|**BUTTONS**|
+|**BUTTONS**||||
 |btnDelay|Double click delay in milliseconds|an integer|500|
-|**DOMOTICZ**|
+|**DOMOTICZ**||||
 |dczEnabled|Should Domoticz be enabled?|0 (no) or 1 (yes)|1 (yes)|
 |dczTopicIn|Topic to send values to Domoticz||domoticz/in|
 |dczTopicOut|Topic where Domoticz sends commands to||domoticz/out|
 |dczRelayIdx#|IDX in Domoticz for the n-th relay (both to get and set value)|An integer, 0 or empty to disable report|0|
 |dczMagnitude#|IDX in Domoticz for the n-th magnitude (type "magnitudes" for a list of available magnitudes)|An integer, 0 or empty to disable report|0|
-|**GENERAL**|
+|**GENERAL**||||
 |adminPass|Password to access web interface, connect to the device in AP mode or perform OTA updates|String of at least eight characters (letters, numbers or the underscore) with at least one number, one lowercase and one uppercase letter|fibonacci|
 |hostname|Hostname for the device, device would be accessible at http://hostname.lan|A string|ESPURNA_XXXXXX (where XXXXXX are hex encoded bytes of Chip ID)|
 |board|Board id (this setting is meant for future identification)|||
 |boardName|Board id (this setting is used to identify the board on OTA updates)|||
 |cfg|Configuration version (this setting is meant for future identification)|||
 |loopDelay|Delay in milliseconds at the end of the main loop (reduces power consumption but also responsiveness)|A number equal or greater than 0|10|
-|**HOME ASSISTANT**|
+|**HOME ASSISTANT**||||
 |haEnabled|Home Assistant MQTT discovery feature enabled|0 (no) or 1 (yes)|1 (yes)|
 |haPrefix|Home Assistant MQTT prefix|A string|homeassistant|
-|**I2C**|
+|**I2C**||||
 |i2cCST|I2C Clock Stretch Time in milliseconds (only for I2C_Brzo library)|A positive number|200|
 |i2cFreq|I2C SCL frequency (only for I2C_Brzo library)|A positive number|1000|
 |i2cSCL|SCL GPIO|A valid digital GPIO|5|
 |i2cSDA|SDA GPIO|A valid digital GPIO|4|
-|**INFLUXDB**|
+|**INFLUXDB**||||
 |idbDatabase|InfluxDB database name|A string||
 |idbEnabled|Enable sending data to InfluxDB|0 (no) or 1 (yes)|0 (no)|
 |idbHost|InfluxDB database host|A string||
 |idbPassword|InfluxDB database password|A string||
 |idbPort|InfluxDB database port|An integer|8086|
 |idbUsername|InfluxDB database username|A string||
-|**LED**|
+|**LED**||||
 |ledMode#|Behavior for the n-th LED (currently only supported for the first LED)|One of the LED modes defined in general.h|1 (LED_MODE_WIFI)|
-|**MQTT**|
+|**MQTT**||||
 |mqttClientID|MQTT client ID|A string|Same as default hostname|
 |mqttEnabled|Enable sending MQTT messages|0 (no) or 1(yes)|1 (yes)|
 |mqttFP|Fingerprint for SSL server|A 20 hex values separated by ':'||
@@ -148,7 +148,7 @@ This is a list of current settings with description and default values. '#' mean
 |mqttUseJson|Whether to group messages in a JSON format|0 (no) or 1(yes)|0 (no)|
 |mqttUser|User to connect to the MQTT broker|A string||
 |mqttUseSSL|Whether to connect using TLS/SSL|0 (no) or 1(yes)|0 (no)|
-|**LIGHT**|
+|**LIGHT**||||
 |brightness|Brightness value|0 to 255|255|
 |ch#|Value for the n-th channel|0 to 255|0|
 |useColor|Use first 3 channels for RGB|0 (no) or 1 (yes)|1 (yes)|
@@ -157,30 +157,31 @@ This is a list of current settings with description and default values. '#' mean
 |useCSS|Use CSS (#FF0000) or comma separated values (255,0,0) for color reporting|0 (CSV) or 1 (CSS)|1 (CSS)|
 |useRGB|Use first three channels as color channels (only if light has at least 3 ch)|0 (no) or 1 (yes)|1 (yes)|
 |useTransitions|Use color transitions|0 (no) or 1 (yes)|1 (yes)|
-|**NOFUSS**|
+|**NOFUSS**||||
 |nofussEnabled|Enable checking updates against a NoFUSS server|0 (no) or 1(yes)|0 (yes)|
 |nofussInterval|Milliseconds between NoFUSS update checks|Number|3600000|
 |nofussServer|NoFUSS service URL|URL, empty to disable NoFUSS||
-|**NTP**|
+|**NTP**||||
 |ntpDST|Enable daylight saving time|0 (no) or 1 (yes)|1 (yes)|
 |ntpOffset|Time offset from UTC in minutes|Number|60|
 |ntpRegion|NTP region to use for DST calculation|0 (Europe) or 1 (USA)|0 (Europe)|
 |ntpServer#|NTP server to use (up to 3 different servers)|A string||
-|**RELAY**|
+|ntpTimeout|NTP response timeout in milliseconds|Number|1000 (`NTP_TIMEOUT`)|
+|**RELAY**||||
 |relayBoot#|Relay boot mode, what state the relay should have upon boot|0 (off), 1 (on), 2 (same as before), 3 (opposite from before)|0 (off)|
 |relayPulse#|Relay pulse mode|0 (no pulse), 1 (normally OFF), 2 (normally ON)|0 (no pulse)|
 |relayTime#|Relay pulse time in seconds|Number|1|
 |relaySync|Relay synchronization mode|0 (no sync), 1 (at most one relay ON), 2 (one and only relay ON), 3 (all the same)|0 (no sync)|
-|**RFBRIDGE**|
+|**RFBRIDGE**||||
 |rfbOFF#|Code to turn OFF the n-th device|A string||
 |rfbON#|Code to turn ON the n-th device|A string||
-|**SCHEDULER**|
+|**SCHEDULER**||||
 |schAction#|Action to perform for n-th schedule|0 (turn off), 1 (turn on) or 2 (toggle)|0 (turn off)|
 |schHour#|Time (hour) at which the n-th schedule action should take place|0 to 23|0|
 |schMinute#|Time (minute) at which the n-th schedule action should take place|0 to 59|0|
 |schSwitch#|Switch to perform the action of the n-th schedule|0 to number of relays (0-based)|0|
 |schWDs#|Weekdays at which the n-th schedule action should take place. Encoded as string of numbers where Monday is 1|A string|1234567 (Every day)|
-|**SENSORS**|
+|**SENSORS**||||
 |energyUnit|Energy unit to use|0 (Joules) or 1 (KWh)|0 (Joules)|
 |pwrRatioC|Ratio for current value|(will depend on the actual sensor)|(will depend on the actual sensor)|
 |pwrRatioP|Ratio for power value|(will depend on the actual sensor)|(will depend on the actual sensor)|
@@ -191,25 +192,31 @@ This is a list of current settings with description and default values. '#' mean
 |snsReport|Sensor report every N reads|A positive number greater than 0|10|
 |tmpUnits|Temperature unit to use|0 (Celsius) or 1 (Fahrenheit)|0 (Celsius)|
 |tmpCorrection|Temperature correction in C or F degrees|Any number|0|
-|**TELNET**|
+|**TELNET**||||
 |telnetSTA|Enable telnet when connected to a router (STAtion mode)|0 (no) or 1 (yes)|0 (no)|
-|**THINGSPEAK**|
+|telnetAuth|Ask for admin password|0 (no) or 1 (yes)|1 (yes)|
+|**THINGSPEAK**||||
 |tspkEnabled|Enable reporting values to Thingspeak platform|0 (no) or 1 (yes)|0 (no)|
 |tspkKey|API Key for the channel to send data to|A string provided by Thingspeak||
 |tspkMagnitude#|Field number for n-th magnitude|The field number to report to (1 to 8) or 0 to disable reporting|0|
 |tspkRelay#|Field number for n-th relay|The field number to report to (1 to 8) or 0 to disable reporting|0|
-|**WEB**|
+|**WEB**||||
 |webPort|Port to listen to HTTP requests|An integer|80|
 |wsAuth|Use WebSocket authentication|0 (no) or 1 (yes)|1 (yes)|
-|**WIFI**|
+|**WIFI**||||
 |dns#|DNS for the n-th WiFi network when using static IP|IP||
 |gw#|Gateway for the n-th WiFi network when using static IP|IP||
 |ip#|Static IP for the n-th WiFi network|IP||
 |mask#|Netmask for the n-th WiFi network when using static IP|||
 |pass#|Password of the n-th WiFi network|String||
-|ssid#|SSID or name of the n-th WiFi network|String|||
+|ssid#|SSID or name of the n-th WiFi network|String||
 |wifiScan|Perform a scan to find best WiFi network|0 (no) or 1 (yes)|1 (yes)|
 |wifiSleep|Set WiFi sleep mode ([see Core source](https://github.com/esp8266/Arduino/blob/eea9999dc5eaf464a432f77d5b65269f9baf198d/libraries/ESP8266WiFi/src/ESP8266WiFiType.h#L45))| 0 (WIFI_NONE_SLEEP), 1 (WIFI_LIGHT_SLEEP) or 2 (WIFI_MODEM_SLEEP)|0 (No sleep)|
+|**PZEM004T**|| ||
+|pzemAddress|PZEM IP address(es)| String |`PZEM004T_ADDRESS` (also see [wiki](https://github.com/xoseperez/espurna/wiki/Sensor-PZEM004T#configuration))|
+|pzemSoft|Use SoftwareSerial| 0 (no) or 1 (yes) |0 (no)|
+|pzemRX|RX GPIO for SoftwareSerial| Number |`PZEM004T_RX_PIN`|
+|pzemTX|TX GPIO for SoftwareSerial| Number |`PZEM004T_TX_PIN`|
 
 ## Usage ##
 
