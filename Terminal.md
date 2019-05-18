@@ -1,41 +1,30 @@
-The ESPurna firmware outputs debug information to the terminal interface (except for the Sonoff Dual and the Sonoff RF Bridge). You only have to connect your USB2UART board to the TX, RX and GND pins in your board and open a terminal at **115200 baud** (8,N,1).
+The ESPurna firmware outputs debug information to the terminal interface. You only have to connect your USB2UART board to the TX, RX and GND pins in your board and open a terminal at **115200 baud** (8,N,1).
+Not all devices have serial debug output enabled. It is controlled by build-time flag DEBUG_SERIAL_SUPPORT and, for example, Sonoff Dual and Sonoff RF Bridge have it disabled.
 
-As an alternative you can remotely connect to the device using Telnet. If you activated Telnet on the administration page of the web interface, use `telnet <ip>` (no password needed) to connect to it. Similarly, *Debug* panel in the web interface allows you to view device log and enter commands.
+As an alternative you can remotely connect to the device using Telnet. If you activated Telnet on the administration page of the web interface, use `telnet <ip>` (no password needed) / `nc <ip> 23` to connect to it. Similarly, *Debug* panel in the web interface allows you to view device log and enter commands.
 
-But the terminal not only shows information about what the device is doing, it also accepts several commands thanks to the Embedis library. You can get a list of these commands typing ```help``` and enter. It's recommended to enable echo to see what you are typing. Backspace or delete won't work in the terminal.
+But the terminal not only shows information about what the device is doing, it also accepts several commands thanks to the Embedis library. You can get a list of these commands typing `help` and enter. It's recommended to enable echo to see what you are typing. Backspace or delete won't work in the terminal.
 
-Available commands as of 1.12.5b (the actual list of available commands will depend on the built-in functionalities of your specific image):
+Available commands as of 1.13.6-dev (the actual list of available commands will depend on the built-in functionalities of your specific image):
 
-| command | description |  
+| command | description |
 | --- | --- |
-|**brightness** &lt;value&gt;|Sets RGB brightness (only for lights)|
-|**channel** &lt;id&gt; &lt;value&gt;|Sets value for channel #id (only for lights)|
-|**color** &lt;value&gt;|Sets RGB color (only for lights)|
 |**commands**|Lists available commands|
 |**crash**|Shows stack dump from last crash|
 |**del** &lt;key&gt;|Deletes setting from EEPROM. Built-in|
 |**dictionaries**|Available dictionaries. Built-in|
+|**eeprom**|Dumps some useful information about EEPROM|
+|**eeprom.commit**|Trigger EEPROM.commit() (in case firmware is configured without auto-save functionality)|
 |**eeprom.dump [&lt;ascii&gt;]**|Dumps EEPROM contents to console (pass a 1 to print ASCII characters)|
 |**erase.config**|Tries to reset SDK config and restarts the board|
 |**factory.reset**|Deletes all settings from EEPROM and resets the device|
 |**get** &lt;key&gt;|Shows the value a the given setting|
 |**gpio** &lt;id&gt; [&lt;value&gt;]|Gets or sets the GPIO #id state|
-|**ha.clear**|Clear retained message for MQTT Discovery in Home Assistant|
-|**ha.config**|Output Home Assistant configuration code|
-|**ha.send**|Send message for MQTT Discovery in Home Assistant|
 |**hardware**|Access hardware resources. Built-in. Not implemented|
 |**heap**|Shows free heap|
 |**help**|Lists available commands (alias for "commands")|
-|**i2c.scan**|Lists available i2c devices|
-|**i2c.clear**|Recovers i2c bus from failure|
 |**info**|Shows info about the device, the firmware and the WiFi connection|
-|**kelvin**|Sets the temperature color in Kelvin (only for lights)|
 |**keys**|Lists the setting keys stored in EEPROM.|
-|**magnitudes**|Lists sensor magnitudes available|
-|**mired**|Sets the temperature color in Mired (only for lights)|
-|**mqtt.reset**|Reconnects to the MQTT broker using current settings (only if MQTT support)|
-|**nofuss**|Forces a check agains NoFUSS server (only if NoFUSS support)|
-|**ota** &lt;url&gt;|Downloads a firmware image from the give URL and updates the board|
 |**publish**|Built-in publish/subscriber method. Not implemented|
 |**read**|Access hardware resources. Built-in. Not implemented|
 |**relay** &lt;id&gt; [&lt;value&gt;]|Gets or sets the relay #id state|
@@ -47,12 +36,50 @@ Available commands as of 1.12.5b (the actual list of available commands will dep
 |**subscribe**|Built-in publish/subscriber method. Not implemented|
 |**unsubscribe**|Built-in publish/subscriber method. Not implemented|
 |**uptime**|Shows the current uptime in seconds|
+|**write**|Access hardware resources. Built-in. Not implemented|
+|**flash.dump [&lt;sector&gt;]**|Dumps flash sector contents to console|
+
+You can read about some of the built-in commands at [Embedis wiki](https://github.com/thingSoC/embedis/wiki/Using-Embedis).
+
+Some modules implement their own terminal commands:
+
+| Command | description |
+| --- | --- |
+|**OTA**||
+|**ota** &lt;url&gt;|Downloads a firmware image from the give URL and updates the board|
+|**SENSOR**||
+|**magnitudes**|Lists sensor magnitudes available|
+|**LIGHT**||
+|**brightness** &lt;value&gt;|Sets RGB brightness (only for lights)|
+|**channel** &lt;id&gt; &lt;value&gt;|Sets value for channel #id (only for lights)|
+|**color** &lt;value&gt;|Sets RGB color (only for lights)|
+|**kelvin**|Sets the temperature color in Kelvin (only for lights)|
+|**mired**|Sets the temperature color in Mired (only for lights)|
+|**WiFi**||
 |**wifi.ap**|Disconnect and create an access point|
 |**wifi.reset**|Reconnects to the WiFi using current settings|
 |**wifi.scan**|Scans for WiFi networks around and shows info|
-|**write**|Access hardware resources. Built-in. Not implemented|
-
-You can read about some of the built-in commands in the [Embedis wiki](https://github.com/thingSoC/embedis/wiki/Using-Embedis).
+|**MQTT**||
+|**mqtt.reset**|Reconnects to the MQTT broker using current settings|
+|**RFBRIDGE**||
+|**learn** &lt;id&gt;|Learn RF code for relay ID|
+|**forget** &lt;id&gt;|Forget previously learned RF code|
+|**NOFUSS**||
+|**nofuss**|Forces a check against NoFUSS server|
+|**I2C**||
+|**i2c.scan**|Lists available i2c devices|
+|**i2c.clear**|Recovers i2c bus from failure|
+|**HOME ASSISTANT**||
+|**ha.clear**|Clear retained message for MQTT Discovery in Home Assistant|
+|**ha.config**|Output Home Assistant configuration code|
+|**ha.send**|Send message for MQTT Discovery in Home Assistant|
+|**PZEM004T**||
+|**pz.address** &lt;address&gt;|Set address string (use `pzemAddress` setting to permanently set it)|
+|**pz.reset** &lt;index&gt;|Reset energy total for device|
+|**pz.value** &lt;index&gt;|Show sensor values|
+|**LIGHTFOX**||
+|**lightfox.learn**|Start learning RF code|
+|**lightfox.clear**|Forget previously learned RF code|
 
 ## Settings ##
 
