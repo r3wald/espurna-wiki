@@ -182,6 +182,7 @@ This is a list of current settings with description and default values. '#' mean
 |pass#|Password of the n-th WiFi network|String||
 |ssid#|SSID or name of the n-th WiFi network|String|||
 |wifiScan|Perform a scan to find best WiFi network|0 (no) or 1 (yes)|1 (yes)|
+|wifiSleep|Set WiFi sleep mode ([see Core source](https://github.com/esp8266/Arduino/blob/eea9999dc5eaf464a432f77d5b65269f9baf198d/libraries/ESP8266WiFi/src/ESP8266WiFiType.h#L45))| 0 (WIFI_NONE_SLEEP), 1 (WIFI_LIGHT_SLEEP) or 2 (WIFI_MODEM_SLEEP)|0 (No sleep)|
 
 ## Usage ##
 
