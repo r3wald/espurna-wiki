@@ -21,3 +21,5 @@ Unlike the original POW, the new POW R2 uses a CSE7766 (sometimes a CSE7759b) po
 ## Flashing
 
 The unpopulated header in the Sonoff has all the required pins. My board has a 4 pins header. They are (from the top down) 3V3, E-RX, E-TX and GND. The button is connected to GPIO0, so all you have to do is to power the power the board while pressing the button to get into flash mode.
+
+:information_source: If flashing fails, try a connecting a pull up resistor between RX and VDD. 470Ω are known to work.
