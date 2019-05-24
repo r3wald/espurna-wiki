@@ -137,6 +137,23 @@ Since our device will only have a relay, this rule will be executed every minute
 
 Keep in mind that if the result changed the relay status, the relay change will trigger the rule execution again! Try to avoid loops in the rules like, for instance: `1 $relay0 - 0 relay`. This simple expression will turn the relay ON and OFF and ON again and OFF again forever!!
 
+### Emulate the schedule
+
+The schedule is different to the previous examples since it will only perform an action at a given time, not every time there is a time or status update like the RPN Rules module. But we can easily emulate this behaviour here:
+
+```
+now minute 0 ne end now hour 8 ne end 1 0 relay
+```
+The `end` operator takes and argument from the stack and ends the execution if the argument resolves to true. Hence:
+
+|sub-expression|description|output|
+|---|---|---|
+|now minute 0 ne end|Will end the execution if the current minute is not 0|(empty)|
+|now hour 8 ne end|Will end the execution if the current hour is not 8|(empty)|
+|1 0 relay|Turn relay 0 to ON, this will only happen at 8:00!|
+
+There is a small glitch here. If you turn the relay OFF while it's still 8:00 the rule will run and turn it ON again. But if it's not 8:00 the rule will not change the relay status.
+
 ## Terminal commands
 
 The module exposes different terminal commands to test and evaluate expressions and variables.
