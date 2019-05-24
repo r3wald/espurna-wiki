@@ -65,7 +65,8 @@ The RPN Rules module is based on the [RPNLib library](https://github.com/xoseper
 
 |Token|Description|
 |---|---|
-|now|Pushes the current epoch time into the stack|
+|now|Pushes the current local epoch time into the stack|
+|utc|Pushes the current UTC epoch time into the stack|
 |hour|Gets a timestamp from the stack and returns the hour|
 |minute|Gets a timestamp from the stack and returns the minute|
 |dow|Gets a timestamp from the stack and returns the day of week|
