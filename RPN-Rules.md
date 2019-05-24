@@ -133,10 +133,13 @@ Again, let's analyze it step by step
 |$motion and|We do an AND with the motion value, so we will now have a 1 if it's nighttime AND there is motion|0 or 1|
 |0 relay|We use the result value to turn on or off the relay #0|(empty)|
 
-Since our device will only have a relay, this rule will be executed every minute (triggered by the NTP module) and when there is a new value in the motion topic.
+Since our device will only have a relay, this rule will be executed every minute (triggered by the NTP module) and when there is a new value in the motion topic. Alternatively, if you disable the "stickyness" of the variables, the expression will fail except when the `$motion` is defined which will only happen after we receive a message to the motion topic. 
 
 Keep in mind that if the result changed the relay status, the relay change will trigger the rule execution again! Try to avoid loops in the rules like, for instance: `1 $relay0 - 0 relay`. This simple expression will turn the relay ON and OFF and ON again and OFF again forever!!
 
 ## Terminal commands
 
 The module exposes different terminal commands to test and evaluate expressions and variables.
+
+* **RPN.VARS** will output the current defined variables and their values
+* **RPN.TEST "<expression>"** will execute the expression and output the stack at the end, useful to do partial tests of sub-expressions
