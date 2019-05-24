@@ -142,4 +142,4 @@ Keep in mind that if the result changed the relay status, the relay change will 
 The module exposes different terminal commands to test and evaluate expressions and variables.
 
 * **RPN.VARS** will output the current defined variables and their values
-* **RPN.TEST "<expression>"** will execute the expression and output the stack at the end, useful to do partial tests of sub-expressions
+* **RPN.TEST "&lt;expression&gt;"** will execute the expression and output the stack at the end, useful to do partial tests of sub-expressions
