@@ -121,19 +121,21 @@ This expression will ensure the relay in ON if the temperature is below 18C and 
 In this case image we have a simple WiFi relay device and a PIR in the same room that reports presence via MQTT to the `/livingroom/motion` topic. We first define an MQTT topic for it using `motion` as the variable name. Then we can trigger the light if there is motion between 22h and 8h in the morning.
 
 ```
-1 now hour 8 23 cmp3 abs - $motion and 0 relay
+now hour 8 23 cmp3 abs $motion and 0 relay
 ```
 
 Again, let's analyze it step by step
 
 |sub-expression|description|output|
 |---|---|---|
-|1|Push a one to the stack, we will use it later ;)|1|
 |now hour|Will return the current hour|0 to 23|
 |8 23 cmp3 abs|Compare the hour in the stack to the 8-23 range and get the absolute value, will output 1 if it's below 8 or above 23, 0 otherwise|0 or 1|
-|-|Now we subtract the two values in the stack, the one we pushed at the beginning and the result of the hour comparison, this will effectively flip the values (0 if between 8h and 23h, 1 otherwise)|0 or 1|
-|$motion and|We do an AND with the motion value, so we will now have a 1 if it's nighttime and there is motion|0 or 1|
+|$motion and|We do an AND with the motion value, so we will now have a 1 if it's nighttime AND there is motion|0 or 1|
 |0 relay|We use the result value to turn on or off the relay #0|(empty)|
+
+Since our device will only have a relay, this rule will be executed every minute (triggered by the NTP module) and when there is a new value in the motion topic.
+
+Keep in mind that if the result changed the relay status, the relay change will trigger the rule execution again! Try to avoid loops in the rules like, for instance: `1 $relay0 - 0 relay`. This simple expression will turn the relay ON and OFF and ON again and OFF again forever!!
 
 ## Terminal commands
 
