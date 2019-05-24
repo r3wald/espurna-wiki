@@ -88,11 +88,52 @@ By default they are persistent (meaning that once defined they are available for
 
 ### MQTT variables
 
-MQTT variables are a special type of variable that gets 
+MQTT variables are a special type of variable that gets its content from MQTT topics. You can define an MQTT and a variable name and every time the topic receives a message the variables will get updated and the rules will be executed. Remember than variable names in the RPN expressions begin with the $ sign.
+
+### Rule execution
+
+Rules get executed X milliseconds after the last variable update. The execution delay is 100ms by default but it can be changed from the web UI. This allows for a buffer time so all variables coming from sensors get updated before rules are executed. 
+
+All variables changes trigger the rule execution after the delay time. So every time a relay is toggled, every time a sensor reports values or every time one of the MQTT topic gets updated the rules will be executed.
 
 ## Examples
 
+### Toggle a heater depending on a temperature sensor
 
+Imagine you have a device with a relay controlling a heater and a temperature sensor. You can implement a simple thermostat with hysteresis using the input variables of the sensor (`$temperature0`) and the relay (`$relay0`):
+
+```
+$temperature0 18 24 cmp3 1 + 1 $relay0 0 3 index 0 relay
+```
+Let's split the expression in parts:
+
+|sub-expression|description|output|
+|---|---|---|
+|$temperature0 18 24 cmp3|Compares the temperature to the 18-24 range, it will output -1 if temperature is below 18, +1 if it is above 24 and 0 in the middle|-1 to 1|
+|1 +|We need to shift the cmp3 result to use the index operator|0 to 2|
+|1 $relay0 0 3 index|We define an index of 3 different values (that's the `3` in the expression) that will be 1, the current status of the relay (0 or 1) and 0, the sub-expression will return one of them depending on the value in the stack|0 or 1|
+|0 relay|It will set the relay number 0 to the status in the stack|(empty)|
+
+This expression will ensure the relay in ON if the temperature is below 18C and OFF if it's above 24C. If the reported temperature is in between 18 and 24 the relay status will not change.
+
+### Open light at night if there is presence
+
+In this case image we have a simple WiFi relay device and a PIR in the same room that reports presence via MQTT to the `/livingroom/motion` topic. We first define an MQTT topic for it using `motion` as the variable name. Then we can trigger the light if there is motion between 22h and 8h in the morning.
+
+```
+1 now hour 8 23 cmp3 abs - $motion and 0 relay
+```
+
+Again, let's analyze it step by step
+
+|sub-expression|description|output|
+|---|---|---|
+|1|Push a one to the stack, we will use it later ;)|1|
+|now hour|Will return the current hour|0 to 23|
+|8 23 cmp3 abs|Compare the hour in the stack to the 8-23 range and get the absolute value, will output 1 if it's below 8 or above 23, 0 otherwise|0 or 1|
+|-|Now we subtract the two values in the stack, the one we pushed at the beginning and the result of the hour comparison, this will effectively flip the values (0 if between 8h and 23h, 1 otherwise)|0 or 1|
+|$motion and|We do an AND with the motion value, so we will now have a 1 if it's nighttime and there is motion|0 or 1|
+|0 relay|We use the result value to turn on or off the relay #0|(empty)|
 
 ## Terminal commands
 
