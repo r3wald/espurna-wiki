@@ -178,7 +178,12 @@ What if you want them to have opposite value?
 1 $relay0 - 1 relay
 ```  
 
-Now you can control relays 0 and 1 by just changing relay 0.
+Now you can control relays 0 and 1 by just changing relay 0. If you want to be able to perform an action on either 0 or 1 and toggle the other as well, you can create one rule for each but remember to disable "Sticky variables" to avoid getting into a loop:
+
+```
+1 $relay0 - 1 relay
+1 $relay1 - 0 relay
+```  
 
 ## Terminal commands
 
