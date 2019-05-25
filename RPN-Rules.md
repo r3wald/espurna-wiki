@@ -155,7 +155,7 @@ The `end` operator takes and argument from the stack and ends the execution if t
 
 There is a small glitch here. If you turn the relay OFF while it's still 8:00 the rule will run and turn it ON again. But if it's not 8:00 the rule will not change the relay status.
 
-### Light follows power consumption
+### Light color following power consumption
 
 Some devices, like the Smartlife Mini Smart Socket, have an LED light (sometime RGB) and a power consumption monitor. Wouldn't it be cool that the light would turn more and more red as the power consumption rises?
 
@@ -163,6 +163,22 @@ Some devices, like the Smartlife Mini Smart Socket, have an LED light (sometime 
 black $power0 0 1000 0 255 map 0 channel update
 ```
 This expression maps a power value between 0 and 1000W to a number between 0 and 255 and then it feeds it to channel 0 (usually red). Previously it sets all channels to 0 (`black`) and at the end forces the light driver to `update` the color. Nice.
+
+### Individually synchronize relays
+
+ESPurna has a relay synchronization feature that offers different ways to synchronize relays when there is more than one available, but all of these options perform actions of all the relays, turning them ON or OFF to match the required pattern. What if you have 4 different relays and you want to synchronize relays 0 and 1 together but leave 2 and 3 untied? Easy.
+
+```
+$relay0 1 relay
+```  
+
+What if you want them to have opposite value?
+
+```
+1 $relay0 - 1 relay
+```  
+
+Now you can control relays 0 and 1 by just changing relay 0.
 
 ## Terminal commands
 
