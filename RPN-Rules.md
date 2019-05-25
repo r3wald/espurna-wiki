@@ -8,6 +8,26 @@ This might look somewhat complicated but it actually has major benefits over the
 * Rules are simple to understand
 * It's easier to implement
 
+## Table of Contents
+
+- [RPN Rules](#rpn-rules)
+  - [Table of Contents](#table-of-contents)
+  - [Main concepts](#main-concepts)
+    - [Postfix notation](#postfix-notation)
+    - [Tokens](#tokens)
+    - [Stack](#stack)
+    - [Operators](#operators)
+    - [Variables](#variables)
+    - [MQTT variables](#mqtt-variables)
+    - [Rule execution](#rule-execution)
+  - [Examples](#examples)
+    - [Toggle a heater depending on a temperature sensor](#toggle-a-heater-depending-on-a-temperature-sensor)
+    - [Open light at night if there is presence](#open-light-at-night-if-there-is-presence)
+    - [Emulate the schedule](#emulate-the-schedule)
+    - [Light color following power consumption](#light-color-following-power-consumption)
+    - [Individually synchronize relays](#individually-synchronize-relays)
+  - [Terminal commands](#terminal-commands)
+
 ## Main concepts
 
 ### Postfix notation
