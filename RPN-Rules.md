@@ -160,9 +160,9 @@ There is a small glitch here. If you turn the relay OFF while it's still 8:00 th
 Some devices, like the Smartlife Mini Smart Socket, have an LED light (sometime RGB) and a power consumption monitor. Wouldn't it be cool that the light would turn more and more red as the power consumption rises?
 
 ```
-black $power0 0 2000 0 255 map 0 channel update
+black $power0 0 1000 0 255 map 0 channel update
 ```
-This expression maps a power value between 0 and 2000W to a number between 0 and 255 and then it feeds it to the channel 0. Previously it sets all channels to 0 and at the end forces the light driver to update the color. Nice.
+This expression maps a power value between 0 and 1000W to a number between 0 and 255 and then it feeds it to channel 0 (usually red). Previously it sets all channels to 0 (`black`) and at the end forces the light driver to `update` the color. Nice.
 
 ## Terminal commands
 
