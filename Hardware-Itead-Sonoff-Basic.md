@@ -20,7 +20,7 @@ The original Sonoff (now renamed Sonoff Basic) has an ESP8266 on board with a 8M
 |3|RX|
 |12|Relay|
 |13|LED (inversed logic)|
-|14|Available in header|
+|14|Available in header(note1)|
 
 ## Flashing
 
@@ -34,3 +34,5 @@ The last one is not necessary.  The button is connected to GPIO0 on the ESP8266 
 ## Issues
 
 The original Sonoff has some connectivity issues. This is probably due to the antenna placement close to live lines. It works fine if it's near the AP, otherwise, it's often reported to lose connectivity.
+## Note1
+New version has 5 pins header but only 4 throughole. The fifth is in the back no throfhole. And is the I02 not the I14 (old version).
