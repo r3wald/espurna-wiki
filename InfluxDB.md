@@ -42,7 +42,7 @@ For example I added those lines in my custom.h:
 
 ## Web interface
 
-
+![ESPurna UI MQTT](images/ui/espurna-ui-influxdb.png)
 
 
 ## Transmitted values
