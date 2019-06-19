@@ -8,6 +8,8 @@ You can check the [getting started](http://platformio.org/get-started) page in t
 
 PlatformIO will take care of the library dependencies. The first time you run the build process it will fetch and install all the libraries required by ESPurna in the specified versions.
 
+For the most up-to-date list, please see [`code/platformio.ini`](https://github.com/xoseperez/espurna/blob/dev/code/platformio.ini) lib_deps = ... in the common section.
+
 * Benoit Blanchon's [ArduinoJson](https://github.com/bblanchon/ArduinoJson)
 * Marvin Roger's [AsyncMqttClient](https://github.com/marvinroger/async-mqtt-client) <sup> [[1]](#footnote1)</sup>
 * Pascal Kurtansky's [Brzo I2C](https://github.com/pasko-zh/brzo_i2c) <sup> [[2]](#footnote2)</sup>
