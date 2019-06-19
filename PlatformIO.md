@@ -70,3 +70,13 @@ Wire your board (check the [Hardware page](Hardware)) and flash the firmware (wi
 ```
 
 (or any other environment, depending on the board you are working with).
+
+## Customize build settings
+If you want to modify the stock configuration but you don't want to touch the repo files you can define USE_CUSTOM_H in your build settings.
+
+Modify your environment build_flags or just define global PLATFORMIO_BUILD_FLAGS
+```
+export PLATFORMIO_BUILD_FLAGS="-DUSE_CUSTOM_H"
+```
+
+Check https://github.com/xoseperez/espurna/issues/104 for an example on how to use this file.
