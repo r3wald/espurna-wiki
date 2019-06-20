@@ -1,4 +1,4 @@
-# Zhilde ZLD-44EU-W
+# JINVOO VALVE SM-AW713
 
 ![JINVOO VALVE SM-AW713](images/devices/jinvoo-valve-sm-aw713.jpg)
 
