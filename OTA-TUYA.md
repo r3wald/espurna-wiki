@@ -1,4 +1,5 @@
 > This method is experimental. If it doesn't work, you will have to use [standard flashing method](Binaries)
+> Please reference tuya-convert project [README.md](https://github.com/ct-Open-Source/tuya-convert/blob/master/README.md) first for the most recent information on this OTA method.
 
 # Introduction 
 
@@ -9,11 +10,11 @@ https://github.com/ct-Open-Source/tuya-convert
  
 # Compatibility
 
-Ths method should be compatible with most devices on the market. However, since January 29th, 2019 Tuya has started distributing a patch that prevents tuya-convert from completing successfully. It is up to the individual brands to adopt the patch, so some devices may be affected sooner than others. To ensure the best chance of success, do not connect your device with the official app as it may automatically update the device, preventing you from flashing with tuya-convert. Some devices are already being shipped with the update, in which case there is unfortunately no work around available at this time.[^2]
+This method should be compatible with most devices on the market. However, since January 29th, 2019 Tuya has started distributing a patch that prevents tuya-convert from completing successfully. It is up to the individual brands to adopt the patch, so some devices may be affected sooner than others. To ensure the best chance of success, do not connect your device with the official app as it may automatically update the device, preventing you from flashing with tuya-convert. Some devices are already being shipped with the update, in which case there is unfortunately no work around available at this time.[^2]
 
 # Flashing ESPurna image
 
-Follow the procedure up until the "FLASH third-party firmware"[^3] step and replace `thirdparty.bin` in the URL with espurna-core .bin that is in the same directory.
+Follow the procedure up until the **FLASH third-party firmware**[^3] step and replace `thirdparty.bin` in the URL with espurna-core .bin that is in the same directory.
 
 [^1]: https://github.com/ct-Open-Source/tuya-convert#tuya-convert
 [^2]: https://github.com/ct-Open-Source/tuya-convert#procedure
