@@ -16,6 +16,12 @@ This method should be compatible with most devices on the market. However, since
 
 Follow the procedure up until the **FLASH third-party firmware**[^3] step and replace `thirdparty.bin` in the URL with espurna-core .bin that is in the same directory.
 
+# More information
+
+Also see these issues:
+https://github.com/xoseperez/espurna/issues/1458
+https://github.com/xoseperez/espurna/issues/1713
+
 [^1]: https://github.com/ct-Open-Source/tuya-convert#tuya-convert
 [^2]: https://github.com/ct-Open-Source/tuya-convert#procedure
 [^3]: https://github.com/ct-Open-Source/tuya-convert#flash-third-party-firmware
