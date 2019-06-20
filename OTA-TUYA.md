@@ -18,9 +18,7 @@ Follow the procedure up until the **FLASH third-party firmware**[^3] step and re
 
 # More information
 
-Also see these issues:
-https://github.com/xoseperez/espurna/issues/1458
-https://github.com/xoseperez/espurna/issues/1713
+Also see these issues: [#1458](https://github.com/xoseperez/espurna/issues/1458), [#1713](https://github.com/xoseperez/espurna/issues/1713)
 
 [^1]: https://github.com/ct-Open-Source/tuya-convert#tuya-convert
 [^2]: https://github.com/ct-Open-Source/tuya-convert#procedure
