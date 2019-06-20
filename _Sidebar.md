@@ -5,6 +5,7 @@
 * [Backup](Backup) the stock firmware
 * Flash a [pre-built binary](Binaries) image
 * Flash a virgin Itead Sonoff device [without opening](OTA-flashing-of-virgin-Itead-Sonoff-devices)
+* Flash TUYA-based device [without opening](OTA-TUYA)
 * Using [PlatformIO](PlatformIO)
     * from [Visual Studio Code](Build-and-update-from-Visual-Studio-Code-using-PlatformIO)
 * Using [Arduino IDE](ArduinoIDE)
