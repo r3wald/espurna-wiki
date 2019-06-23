@@ -1,6 +1,6 @@
 # JINVOO VALVE SM-AW713
 
-![JINVOO VALVE SM-AW713](images/devices/jinvoo-valve-sm-aw713.jpg)
+![JINVOO VALVE SM-AW713](../../raw/dev/images/devices/jinvoo-valve-sm-aw713.jpg)
 
 |Property|Value|
 |---|---|
