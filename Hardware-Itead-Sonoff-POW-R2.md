@@ -14,7 +14,7 @@
 
 ## Introduction
 
-Unlike the original POW, the new POW R2 uses a CSE7766 (sometimes a CSE7759b) power monitor chip. This chip is supported by ESPurna but uses the hardware UART, so there is no serial debug monitor when using the R2 (you can still use the web debug or telnet).
+Unlike the original POW, the new POW R2 uses a CSE7766 (sometimes a CSE7759b, or CSE77598-SO) power monitor chip. This chip is supported by ESPurna but uses the hardware UART, so there is no serial debug monitor when using the R2 (you can still use the web debug or telnet).
 
 [iTead Sonoff Pow R2 with Energy Monitoring](http://sonoff.itead.cc/en/products/sonoff/sonoff-pow-r2)
 
