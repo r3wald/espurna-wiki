@@ -86,7 +86,7 @@ This is the official list of supported hardware for the ESPurna firmware. The ha
 
 | Board | Build flag | Description |
 | --- | --- | --- |
-| YJZK 2-gang switch | `SWITCH_2CH` | |
+| YJZK wall switch | `YJZK_SWITCH_1CH` <br> `YJZK_SWITCH_2CH` <br> `YJZK_SWITCH_3CH` <br> | 1-3 Gang Touch Wall Switch |
 | [Tonbux Mosquito Killer](Hardware-Tonbux-Mosquito-Killer) | `TONBUX_MOSQUITO_KILLER` | UV Lamp + Fan for suction |
 
 ## Custom Boards
