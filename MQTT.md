@@ -222,7 +222,7 @@ State topic         | Example payload      | Notes
 
 Command topic                | Example payload        | Notes
 ---------------------------- | ---------------------- | -----------------
-`{root topic}/rfout/set`     | `2:121944:32:1`        | &lt;type&gt;:&lt;code&gt;:&lt;bits&gt;[:&lt;repeat(1)&gt;]
+`{root topic}/irout/set`     | `2:121944:32:1`        | &lt;type&gt;:&lt;code&gt;:&lt;bits&gt;[:&lt;repeat(1)&gt;]
 
 The IR module also supports RAW messages when IR_USE_RAW is enabled but format is much more complex. Read the module header for more info.
 
