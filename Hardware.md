@@ -89,6 +89,9 @@ This is the official list of supported hardware for the ESPurna firmware. The ha
 | YJZK wall switch | `YJZK_SWITCH_1CH` <br> `YJZK_SWITCH_2CH` <br> `YJZK_SWITCH_3CH` <br> | 1-3 Gang Touch Wall Switch |
 | [Tonbux Mosquito Killer](Hardware-Tonbux-Mosquito-Killer) | `TONBUX_MOSQUITO_KILLER` | UV Lamp + Fan for suction |
 | [Jinvoo SM-AW713](Hardware-JINVOO-VALVE-SM-AW713) | `JINVOO_VALVE_SM_AW713` | Motorized valve |
+| [Shelly 1] | `ALLTERCO-SHELLY1` | Relay Switch |
+| [Shelly 2] | `ALLTERCO-SHELLY2` | Relay Switch |
+| [Shelly 1PM] | `ALLTERCO-SHELLY1PM` | Relay Switch with power meter and overheating temperature sensor|
 
 ## Custom Boards
 
