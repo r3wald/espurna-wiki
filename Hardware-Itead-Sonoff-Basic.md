@@ -17,22 +17,22 @@ The original Sonoff (now renamed Sonoff Basic) has an ESP8266 on board with a 8M
 |---|---|
 |0|Main button|
 |1|TX|
+|2|(R2) Available in header|
 |3|RX|
 |12|Relay|
-|13|LED (inversed logic)|
-|14|Available in header(note1)|
+|13|LED (inverted logic)|
+|14|Available in header <a href="#note1"><sup>1</sup></a>|
 
 ## Flashing
 
 ![Sonoff - Inside front view](images/flashing/sonoff-flash.jpg)
 ![Sonoff - Inside back view](images/devices/itead-sonoff-basic-2.jpg)
+![Sonoff - R2 board](https://user-images.githubusercontent.com/3661426/57886246-abeb6f80-7824-11e9-8f67-9f7704b6d8a8.jpg)
 
-The unpopulated header in the Sonoff has all the required pins. My board has a 5 pins header in-line with the button. They are (from the button outwards) 3V3, RX, TX, GND and GPIO14.
+The unpopulated header in the Sonoff has all the required pins. My board has a 5 pins header in-line with the button. They are (from the button outwards) 3V3, RX, TX, GND and GPIO14 (or GPIO2).
 
-The last one is not necessary.  The button is connected to GPIO0 on the ESP8266 chip, so to enter flash mode you have to hold the button pressed while powering on the board, then you can release it again.
+The last one is not necessary.  The button is connected to GPIO0 on the ESP8266 / ESP8285 chip, so to enter flash mode you have to hold the button pressed while powering on the board, then you can release it again.
 
 ## Issues
 
 The original Sonoff has some connectivity issues. This is probably due to the antenna placement close to live lines. It works fine if it's near the AP, otherwise, it's often reported to lose connectivity.
-## Note1
-New version has 5 pins header but only 4 throughole. The fifth is in the back no throfhole. And is the I02 not the I14 (old version).
