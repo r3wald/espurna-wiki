@@ -42,6 +42,8 @@ The Correct Sequence for putting the board in Programming Mode
 3. Release Reset Button (No 1)
 4. Release Main button (No 4)
 
+For the new version T1 R2 EU for enter flasing mode you have to connect GPIO0 to GND before powering up the device, you can release after a moment of power up, and then flash the device. The prior sequence of buttons doesn't work in this new version.
+
 ## Issues
 
 Since it uses touch panel the best experience requires a different approach to button definitions. This is the definition for button 1 for Sonoff T1, as you see the event is fired on press (not on release) and most of other events are disabled.
@@ -54,8 +56,3 @@ Since it uses touch panel the best experience requires a different approach to b
 #define BUTTON1_LNGCLICK    BUTTON_MODE_NONE
 #define BUTTON1_LNGLNGCLICK BUTTON_MODE_RESET
 ```
-
-
-For the new version T1 R2 EU for enter flasing mode you have to put GPio0 to GND before power up device, you can release after a moment of power up, and then flash the device. The prior sequence of buttons doesn't work in this version.
-
-
