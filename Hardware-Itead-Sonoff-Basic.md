@@ -21,7 +21,7 @@ The original Sonoff (now renamed Sonoff Basic) has an ESP8266 on board with a 8M
 |3|RX|
 |12|Relay|
 |13|LED (inverted logic)|
-|14|Available in header <a href="#note1"><sup>1</sup></a>|
+|14|(R1) Available in header|
 
 ## Flashing
 
