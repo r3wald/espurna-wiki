@@ -81,4 +81,6 @@ The easiest way to cut traces is with the corner/edge of small flat screwdriver.
 
 ## RF Codes
 
+Please see [RFBRIDGE.md](RFBRIDGE.md) for more info about the code format.
+
 The RF codes produced by the firmware for the "direct" modified board are different from the ones produced by the "vanilla" bridge for same remote. This was a design choice, due to the different kind of information passed by the hardware processor and the software library. This should not be a problem given that, well, you modify the hardware to switch from one configuration to the other and that if you are going to modify the board your remotes are likely not working at all on "vanilla" boards/firmware.
