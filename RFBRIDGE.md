@@ -1,6 +1,8 @@
 # RFBRIDGE
 
-REDBRIDGE module ([rfbridge.ino](https://github.com/xoseperez/espurna/blob/dev/code/espurna/rfbridge.ino) was originally created for the Sonoff RF Bridge. Since 1.13.6 it was combined with RF module and now allows to use standalone ESP8266 board with an external RF receiver / transmitter.
+RFBRIDGE module ([rfbridge.ino](https://github.com/xoseperez/espurna/blob/dev/code/espurna/rfbridge.ino)), originally created for the [Itead Sonoff RF Bridge](Hardware-Itead-Sonoff-RF-Bridge). 
+
+Since version **1.13.6**, [combined with RF module and now allows to use standalone ESP8266 board with an external RF receiver / transmitter](https://github.com/xoseperez/espurna/pull/1693)
 
 ## MQTT
 
